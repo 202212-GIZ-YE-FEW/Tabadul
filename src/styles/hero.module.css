@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.image {
+    padding: 50px 120px;
+    max-width: 100%;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    flex-grow: 1;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    position: relative;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 1px;
+    background-color: #33956d;
+    margin: 0;
+}
+
+.button button {
+    background-color: #33956d;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #267548;
+}
