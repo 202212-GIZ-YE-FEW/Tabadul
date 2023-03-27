@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-s6tlq7"
+  className="css-rgd5f1"
 >
   <div
-    className="css-po170z"
+    className="css-bk7yxo"
   >
     <div>
       <h2>
@@ -13,14 +13,14 @@ exports[`renders correctly 1`] = `
       </h2>
     </div>
     <button
-      className="css-15j0nne"
+      className="css-pxz2l5"
     >
       Donate Now
     </button>
   </div>
   <img
     alt="Introduction"
-    className="css-1yni3cd"
+    className="css-xb0jve"
     data-nimg="1"
     decoding="async"
     height={370}
@@ -37,7 +37,7 @@ exports[`renders correctly 1`] = `
     width={470}
   />
   <div
-    className="css-cmyjqu"
+    className="css-s5l97y"
   />
 </div>
 `;
