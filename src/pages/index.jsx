@@ -5,6 +5,7 @@ import * as React from "react";
 
 import Layout from "@/layout/Layout";
 import Hero from "@/components/Herro";
+import Causes from "@/components/Causes";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
@@ -21,6 +22,7 @@ export default function HomePage() {
                 </Link>
             </div>
             <Hero />
+            <Causes />
         </Layout>
     );
 }
