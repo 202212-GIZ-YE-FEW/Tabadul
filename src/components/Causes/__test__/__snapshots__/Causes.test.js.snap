@@ -23,8 +23,7 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/_next/image?url=%2FCauses%2Fcauses1.png&w=256&q=75"
-        srcSet="/_next/image?url=%2FCauses%2Fcauses1.png&w=128&q=75 1x, /_next/image?url=%2FCauses%2Fcauses1.png&w=256&q=75 2x"
+        src="/Causes/causes1.svg"
         style={
           Object {
             "color": "transparent",
@@ -54,8 +53,7 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/_next/image?url=%2FCauses%2Fcauses2.png&w=256&q=75"
-        srcSet="/_next/image?url=%2FCauses%2Fcauses2.png&w=128&q=75 1x, /_next/image?url=%2FCauses%2Fcauses2.png&w=256&q=75 2x"
+        src="/Causes/causes2.svg"
         style={
           Object {
             "color": "transparent",
@@ -85,8 +83,7 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/_next/image?url=%2FCauses%2Fcauses3.png&w=256&q=75"
-        srcSet="/_next/image?url=%2FCauses%2Fcauses3.png&w=128&q=75 1x, /_next/image?url=%2FCauses%2Fcauses3.png&w=256&q=75 2x"
+        src="/Causes/causes3.svg"
         style={
           Object {
             "color": "transparent",
