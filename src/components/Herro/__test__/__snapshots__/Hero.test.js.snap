@@ -2,43 +2,35 @@
 
 exports[`renders correctly 1`] = `
 <div
-  style={
-    Object {
-      "backgroundColor": "#f1f1f1",
-    }
-  }
+  className="container"
 >
   <div
-    className="container"
+    className="inner-container"
   >
     <div
-      className="inner-container"
+      className="IntroductionText"
     >
-      <div
-        className="IntroductionText"
-      >
-        <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </h2>
-      </div>
-      <div
-        className="button"
-      >
-        <button>
-          Donate Now
-        </button>
-      </div>
+      <h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </h2>
     </div>
-    <img
-      alt="Introduction"
-      className="image"
-      height="350"
-      src="/images/hero1.png"
-      width="450"
-    />
-    <hr
-      className="line"
-    />
+    <div
+      className="button"
+    >
+      <button>
+        Donate Now
+      </button>
+    </div>
   </div>
+  <img
+    alt="Introduction"
+    className="image"
+    height="350"
+    src="/images/hero1.png"
+    width="450"
+  />
+  <hr
+    className="line"
+  />
 </div>
 `;
