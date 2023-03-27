@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <h1
+    className="css-1lc2im2"
+  >
+    Popular Items
+  </h1>
+  <div
+    className="css-hykm9t"
+  >
+    <div
+      className="css-1qsulq8"
+    >
+      <img
+        alt="CardImage"
+        className="css-1e6gr74"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-l67ye2"
+      >
+        <div
+          className="css-xa0cyn"
+        >
+          <img
+            alt="Icon"
+            className="css-1tushjo"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1enyi5z"
+          >
+            Istanbol
+          </p>
+        </div>
+        <p
+          className="css-u2umse"
+        >
+          Clothes
+        </p>
+        <p
+          className="css-1h92pxh"
+        >
+          Short description for the available item 
+        </p>
+      </div>
+    </div>
+    <div
+      className="css-1qsulq8"
+    >
+      <img
+        alt="CardImage"
+        className="css-1e6gr74"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-xa0cyn"
+      >
+        <img
+          alt="Icon"
+          className="css-1tushjo"
+          data-nimg="1"
+          decoding="async"
+          height={22.61}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Vector.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={17.77}
+        />
+        <p
+          className="css-1enyi5z"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-u2umse"
+      >
+        Clothes
+      </p>
+      <p
+        className="css-1h92pxh"
+      >
+        Short description for the available item 
+      </p>
+    </div>
+    <div
+      className="css-1qsulq8"
+    >
+      <img
+        alt="CardImage"
+        className="css-1e6gr74"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-xa0cyn"
+      >
+        <img
+          alt="Icon"
+          className="css-1tushjo"
+          data-nimg="1"
+          decoding="async"
+          height={22.61}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Vector.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={17.77}
+        />
+        <p
+          className="css-1enyi5z"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-u2umse"
+      >
+        Clothes
+      </p>
+      <p
+        className="css-1h92pxh"
+      >
+        Short description for the available item 
+      </p>
+    </div>
+    <div
+      className="css-1qsulq8"
+    >
+      <img
+        alt="CardImage"
+        className="css-1e6gr74"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-xa0cyn"
+      >
+        <img
+          alt="Icon"
+          className="css-1tushjo"
+          data-nimg="1"
+          decoding="async"
+          height={22.61}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Vector.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={17.77}
+        />
+        <p
+          className="css-1enyi5z"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-u2umse"
+      >
+        Clothes
+      </p>
+      <p
+        className="css-1h92pxh"
+      >
+        Short description for the available item 
+      </p>
+    </div>
+    <div
+      className="css-1qsulq8"
+    >
+      <img
+        alt="CardImage"
+        className="css-1e6gr74"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-xa0cyn"
+      >
+        <img
+          alt="Icon"
+          className="css-1tushjo"
+          data-nimg="1"
+          decoding="async"
+          height={22.61}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Vector.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={17.77}
+        />
+        <p
+          className="css-1enyi5z"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-u2umse"
+      >
+        Clothes
+      </p>
+      <p
+        className="css-1h92pxh"
+      >
+        Short description for the available item 
+      </p>
+    </div>
+  </div>
+  <hr
+    className="css-18i7rag"
+  />
+</div>
+`;

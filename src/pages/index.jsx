@@ -5,6 +5,8 @@ import * as React from "react";
 
 import Layout from "@/layout/Layout";
 import Hero from "@/components/Herro";
+import PopularItems from "@/components/PopularItems";
+import Line from "@/components/Herro/line";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
@@ -21,6 +23,7 @@ export default function HomePage() {
                 </Link>
             </div>
             <Hero />
+            <PopularItems />
         </Layout>
     );
 }
