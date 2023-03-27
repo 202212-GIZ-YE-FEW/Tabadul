@@ -3,19 +3,19 @@
 exports[`renders correctly 1`] = `
 <div>
   <h1
-    className="css-1lc2im2"
+    className="css-tv3vc1"
   >
     Popular Items
   </h1>
   <div
-    className="css-hykm9t"
+    className="css-1rmlzl6"
   >
     <div
-      className="css-1qsulq8"
+      className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1e6gr74"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -31,14 +31,14 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-l67ye2"
+        className="css-gdod6k"
       >
         <div
-          className="css-xa0cyn"
+          className="css-11fp3er"
         >
           <img
             alt="Icon"
-            className="css-1tushjo"
+            className="css-1ykqelx"
             data-nimg="1"
             decoding="async"
             height={22.61}
@@ -54,29 +54,30 @@ exports[`renders correctly 1`] = `
             width={17.77}
           />
           <p
-            className="css-1enyi5z"
+            className="css-dczg8a"
           >
             Istanbol
           </p>
         </div>
         <p
-          className="css-u2umse"
+          className="css-1b669ro"
         >
           Clothes
         </p>
         <p
-          className="css-1h92pxh"
+          className="css-d0iw6l"
         >
-          Short description for the available item 
+          Short description for the available item
+           
         </p>
       </div>
     </div>
     <div
-      className="css-1qsulq8"
+      className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1e6gr74"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -92,11 +93,11 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-xa0cyn"
+        className="css-11fp3er"
       >
         <img
           alt="Icon"
-          className="css-1tushjo"
+          className="css-1ykqelx"
           data-nimg="1"
           decoding="async"
           height={22.61}
@@ -112,28 +113,29 @@ exports[`renders correctly 1`] = `
           width={17.77}
         />
         <p
-          className="css-1enyi5z"
+          className="css-dczg8a"
         >
           Istanbol
         </p>
       </div>
       <p
-        className="css-u2umse"
+        className="css-1b669ro"
       >
         Clothes
       </p>
       <p
-        className="css-1h92pxh"
+        className="css-d0iw6l"
       >
-        Short description for the available item 
+        Short description for the available item
+         
       </p>
     </div>
     <div
-      className="css-1qsulq8"
+      className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1e6gr74"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -149,11 +151,11 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-xa0cyn"
+        className="css-11fp3er"
       >
         <img
           alt="Icon"
-          className="css-1tushjo"
+          className="css-1ykqelx"
           data-nimg="1"
           decoding="async"
           height={22.61}
@@ -169,28 +171,29 @@ exports[`renders correctly 1`] = `
           width={17.77}
         />
         <p
-          className="css-1enyi5z"
+          className="css-dczg8a"
         >
           Istanbol
         </p>
       </div>
       <p
-        className="css-u2umse"
+        className="css-1b669ro"
       >
         Clothes
       </p>
       <p
-        className="css-1h92pxh"
+        className="css-d0iw6l"
       >
-        Short description for the available item 
+        Short description for the available item
+         
       </p>
     </div>
     <div
-      className="css-1qsulq8"
+      className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1e6gr74"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -206,11 +209,11 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-xa0cyn"
+        className="css-11fp3er"
       >
         <img
           alt="Icon"
-          className="css-1tushjo"
+          className="css-1ykqelx"
           data-nimg="1"
           decoding="async"
           height={22.61}
@@ -226,28 +229,29 @@ exports[`renders correctly 1`] = `
           width={17.77}
         />
         <p
-          className="css-1enyi5z"
+          className="css-dczg8a"
         >
           Istanbol
         </p>
       </div>
       <p
-        className="css-u2umse"
+        className="css-1b669ro"
       >
         Clothes
       </p>
       <p
-        className="css-1h92pxh"
+        className="css-d0iw6l"
       >
-        Short description for the available item 
+        Short description for the available item
+         
       </p>
     </div>
     <div
-      className="css-1qsulq8"
+      className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1e6gr74"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -263,11 +267,11 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-xa0cyn"
+        className="css-11fp3er"
       >
         <img
           alt="Icon"
-          className="css-1tushjo"
+          className="css-1ykqelx"
           data-nimg="1"
           decoding="async"
           height={22.61}
@@ -283,25 +287,26 @@ exports[`renders correctly 1`] = `
           width={17.77}
         />
         <p
-          className="css-1enyi5z"
+          className="css-dczg8a"
         >
           Istanbol
         </p>
       </div>
       <p
-        className="css-u2umse"
+        className="css-1b669ro"
       >
         Clothes
       </p>
       <p
-        className="css-1h92pxh"
+        className="css-d0iw6l"
       >
-        Short description for the available item 
+        Short description for the available item
+         
       </p>
     </div>
   </div>
   <hr
-    className="css-18i7rag"
+    className="css-19ocln0"
   />
 </div>
 `;
