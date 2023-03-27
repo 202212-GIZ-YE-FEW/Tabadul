@@ -30,7 +30,7 @@ export const SingleCause = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    margin: 10px;
 `;
 export const Title = styled.p`
     text-align: center;
