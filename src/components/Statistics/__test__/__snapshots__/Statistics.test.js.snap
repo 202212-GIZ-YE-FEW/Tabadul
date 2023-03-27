@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="StatisticImage"
-        className="css-1wbd6tf"
+        className="css-7grte7"
         data-nimg="1"
         decoding="async"
         height={78.24}
