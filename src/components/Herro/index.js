@@ -1,26 +1,19 @@
-import styles from "../../styles/hero.module.css";
-
 import DonateButton from "./DonateButton";
+import { Container, LeftSideDiv, Line } from "./hero.style";
 import IntroductionImage from "./IntroductionImage";
 import IntroductionText from "./IntroductionText";
 
-const HeroContainer = ({ children }) => {
-    return <div style={{ backgroundColor: "#f1f1f1" }}>{children}</div>;
-};
-
-const Hero = () => {
+function Hero() {
     return (
-        <HeroContainer>
-            <div className={styles.container}>
-                <div className={styles["inner-container"]}>
-                    <IntroductionText />
-                    <DonateButton />
-                </div>
-                <IntroductionImage />
-                <hr className={styles.line} />
-            </div>
-        </HeroContainer>
+        <Container>
+            <LeftSideDiv>
+                <IntroductionText />
+                <DonateButton />
+            </LeftSideDiv>
+            <IntroductionImage />
+            <Line />
+        </Container>
     );
-};
+}
 
 export default Hero;
