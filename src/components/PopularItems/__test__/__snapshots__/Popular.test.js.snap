@@ -3,12 +3,12 @@
 exports[`renders correctly 1`] = `
 <div>
   <h1
-    className="css-tv3vc1"
+    className="css-1rnsenf"
   >
     Popular Items
   </h1>
   <div
-    className="css-1c1oze8"
+    className="css-1rmlzl6"
   >
     <div
       className="css-1g10bgd"
@@ -54,18 +54,18 @@ exports[`renders correctly 1`] = `
             width={17.77}
           />
           <p
-            className="css-dczg8a"
+            className="css-1dhhx8x"
           >
             Istanbol
           </p>
         </div>
         <p
-          className="css-1b669ro"
+          className="css-1gljplr"
         >
           Clothes
         </p>
         <p
-          className="css-d0iw6l"
+          className="css-15wgt63"
         >
           Short description for the available item
            
@@ -113,18 +113,18 @@ exports[`renders correctly 1`] = `
           width={17.77}
         />
         <p
-          className="css-dczg8a"
+          className="css-1dhhx8x"
         >
           Istanbol
         </p>
       </div>
       <p
-        className="css-1b669ro"
+        className="css-1gljplr"
       >
         Clothes
       </p>
       <p
-        className="css-d0iw6l"
+        className="css-15wgt63"
       >
         Short description for the available item
          
@@ -171,18 +171,18 @@ exports[`renders correctly 1`] = `
           width={17.77}
         />
         <p
-          className="css-dczg8a"
+          className="css-1dhhx8x"
         >
           Istanbol
         </p>
       </div>
       <p
-        className="css-1b669ro"
+        className="css-1gljplr"
       >
         Clothes
       </p>
       <p
-        className="css-d0iw6l"
+        className="css-15wgt63"
       >
         Short description for the available item
          
@@ -229,18 +229,18 @@ exports[`renders correctly 1`] = `
           width={17.77}
         />
         <p
-          className="css-dczg8a"
+          className="css-1dhhx8x"
         >
           Istanbol
         </p>
       </div>
       <p
-        className="css-1b669ro"
+        className="css-1gljplr"
       >
         Clothes
       </p>
       <p
-        className="css-d0iw6l"
+        className="css-15wgt63"
       >
         Short description for the available item
          
@@ -287,18 +287,18 @@ exports[`renders correctly 1`] = `
           width={17.77}
         />
         <p
-          className="css-dczg8a"
+          className="css-1dhhx8x"
         >
           Istanbol
         </p>
       </div>
       <p
-        className="css-1b669ro"
+        className="css-1gljplr"
       >
         Clothes
       </p>
       <p
-        className="css-d0iw6l"
+        className="css-15wgt63"
       >
         Short description for the available item
          

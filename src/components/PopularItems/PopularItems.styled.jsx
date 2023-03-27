@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Header = styled.h1`
     text-align: center;
-    font-family: "Poppins";
+    // font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
@@ -51,7 +51,7 @@ export const Cardcontainer = styled.div`
 `;
 
 export const LocationTitle = styled.p`
-    font-family: "Poppins";
+    // font-family: "Poppins";
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -60,7 +60,7 @@ export const LocationTitle = styled.p`
 `;
 
 export const CardHeader = styled.p`
-    font-family: "Poppins";
+    // font-family: "Poppins";
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -69,7 +69,7 @@ export const CardHeader = styled.p`
     margin-top: 0;
 `;
 export const CardParagraph = styled.p`
-    font-family: "Poppins";
+    // font-family: "Poppins";
     font-size: 16px;
     font-weight: 400;
     width: 200px;
