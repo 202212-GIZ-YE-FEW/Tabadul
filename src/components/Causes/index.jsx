@@ -16,7 +16,7 @@ const Causes = () => {
             <ThreeCausesDiv>
                 <SingleCause>
                     <Image
-                        src={"/Causes/causes1.png"}
+                        src={"/Causes/causes1.svg"}
                         width={100}
                         height={100}
                         alt='pic'
@@ -30,7 +30,7 @@ const Causes = () => {
                 </SingleCause>
                 <SingleCause>
                     <Image
-                        src={"/Causes/causes2.png"}
+                        src={"/Causes/causes2.svg"}
                         width={100}
                         height={100}
                         alt='pic'
@@ -44,7 +44,7 @@ const Causes = () => {
                 </SingleCause>
                 <SingleCause>
                     <Image
-                        src={"/Causes/causes3.png"}
+                        src={"/Causes/causes3.svg"}
                         width={100}
                         height={100}
                         alt='pic'
