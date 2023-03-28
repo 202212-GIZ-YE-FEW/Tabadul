@@ -7,6 +7,8 @@ import Layout from "@/layout/Layout";
 import Hero from "@/components/Herro";
 import Causes from "@/components/Causes";
 import ScrollTop from "@/components/ScrollTop";
+import PopularItems from "@/components/PopularItems";
+
 
 export default function HomePage() {
     const { t } = useTranslation("common");
@@ -24,6 +26,7 @@ export default function HomePage() {
             </div>
             <Hero />
             <Causes />
+            <PopularItems />
             <ScrollTop /> {/* leave this at the bottom of layout */}
         </Layout>
     );
