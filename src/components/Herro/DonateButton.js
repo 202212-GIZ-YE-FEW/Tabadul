@@ -1,11 +1,7 @@
-import styles from "../../styles/hero.module.css";
+import { HeroButton } from "./hero.style";
 
 const DonateButton = () => {
-    return (
-        <div className={styles.button}>
-            <button>Donate Now</button>
-        </div>
-    );
+    return <HeroButton>Donate Now</HeroButton>;
 };
 
 export default DonateButton;
