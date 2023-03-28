@@ -1,13 +1,12 @@
-import styles from "../../styles/hero.module.css";
+import { IntroImage } from "./hero.style";
 
 const IntroductionImage = () => {
     return (
-        <img
-            className={styles.image}
+        <IntroImage
             src='/images/hero1.png'
             alt='Introduction'
-            width='450'
-            height='350'
+            width='470'
+            height='370'
         />
     );
 };
