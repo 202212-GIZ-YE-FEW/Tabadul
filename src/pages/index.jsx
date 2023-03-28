@@ -6,6 +6,8 @@ import * as React from "react";
 import Layout from "@/layout/Layout";
 import Hero from "@/components/Herro";
 import Causes from "@/components/Causes";
+import { Statistic } from "@/components/Statistics/Statistics.style";
+import Statistics from "@/components/Statistics/Statistics";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
@@ -23,6 +25,7 @@ export default function HomePage() {
             </div>
             <Hero />
             <Causes />
+            <Statistics />
         </Layout>
     );
 }
