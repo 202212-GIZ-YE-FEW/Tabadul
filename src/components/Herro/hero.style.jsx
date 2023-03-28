@@ -1,15 +1,35 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 
-export const Container = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+export const HeroSection = styled.div`
     background-color: #f1f1f1;
+`;
+export const Container = styled.div`
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+    /* Medium */
+    @media (min-width: 992px) {
+        width: 970px;
+    }
 
+    /* Large */
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
     @media screen and (max-width: 1400px) {
         flex-direction: column;
     }
+`;
+
+export const InnerContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 `;
 
 export const HeroButton = styled.button`
@@ -28,7 +48,6 @@ export const HeroButton = styled.button`
 
 export const IntroImage = styled(Image)`
     max-width: 100%;
-    flex: 1;
     object-fit: contain;
     margin-bottom: 20px;
 

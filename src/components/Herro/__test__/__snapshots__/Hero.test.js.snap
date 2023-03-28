@@ -2,40 +2,48 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-rgd5f1"
+  className="css-18txov4"
 >
   <div
-    className="css-bk7yxo"
+    className="css-kwjz0o"
   >
-    <div>
-      <h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </h2>
-    </div>
-    <button
-      className="css-pxz2l5"
+    <div
+      className="css-1s00oby"
     >
-      Donate Now
-    </button>
+      <div
+        className="css-bk7yxo"
+      >
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <button
+          className="css-pxz2l5"
+        >
+          Donate Now
+        </button>
+      </div>
+      <img
+        alt="Introduction"
+        className="css-1uzgikl"
+        data-nimg="1"
+        decoding="async"
+        height={370}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimages%2Fhero1.png&w=1080&q=75"
+        srcSet="/_next/image?url=%2Fimages%2Fhero1.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fhero1.png&w=1080&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={470}
+      />
+    </div>
   </div>
-  <img
-    alt="Introduction"
-    className="css-xb0jve"
-    data-nimg="1"
-    decoding="async"
-    height={370}
-    loading="lazy"
-    onError={[Function]}
-    onLoad={[Function]}
-    src="/_next/image?url=%2Fimages%2Fhero1.png&w=1080&q=75"
-    srcSet="/_next/image?url=%2Fimages%2Fhero1.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fhero1.png&w=1080&q=75 2x"
-    style={
-      Object {
-        "color": "transparent",
-      }
-    }
-    width={470}
-  />
   <div
     className="css-s5l97y"
   />
