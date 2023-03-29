@@ -18,73 +18,77 @@ import StatisticImageFifth from "../../assets/Image/Vector.svg";
 
 function Statistics() {
     return (
-        <StatisticsContainer>
-            <IntroPhoto
-                src={StatisticsContainerImage}
-                alt='StatisticsContainerImage'
-                width={1006.7}
-                height={464.69}
-                priority={true}
-            />
-            <StatisticsParant>
-                <Statistic>
-                    <StaticInnerImage
-                        src={StatisticImage}
-                        alt='StatisticImage'
-                        width={78.24}
-                        height={78.24}
-                    />
-                    <StatisticHeading>1/3</StatisticHeading>
-                    <StatisticParagraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </StatisticParagraph>
-                </Statistic>
-                <Statistic>
-                    <Image
-                        src={StatisticImageSecond}
-                        alt='StatisticImage'
-                        width={78.24}
-                        height={78.24}
-                    />
-                    <StatisticHeading>75%</StatisticHeading>
-                    <StatisticParagraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </StatisticParagraph>
-                </Statistic>
-                <Statistic>
-                    <Image
-                        src={StatisticImagetThired}
-                        alt='StatisticImage'
-                        width={78.24}
-                        height={78.24}
-                    />
-                    <StatisticHeading>312</StatisticHeading>
-                    <StatisticParagraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </StatisticParagraph>
-                </Statistic>
-                <Statistic>
-                    <Image
-                        src={StatisticImageFifth}
-                        alt='StatisticImage'
-                        width={78.24}
-                        height={78.24}
-                    />
-                    <StatisticHeading>Fact</StatisticHeading>
-                    <StatisticParagraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </StatisticParagraph>
-                </Statistic>
-            </StatisticsParant>
-        </StatisticsContainer>
+        <>
+            <StatisticsContainer>
+                <IntroPhoto
+                    src={StatisticsContainerImage}
+                    alt='StatisticsContainerImage'
+                    width={1006.7}
+                    height={464.69}
+                    priority={true}
+                />
+            </StatisticsContainer>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <StatisticsParant>
+                    <Statistic>
+                        <StaticInnerImage
+                            src={StatisticImage}
+                            alt='StatisticImage'
+                            width={78.24}
+                            height={78.24}
+                        />
+                        <StatisticHeading>1/3</StatisticHeading>
+                        <StatisticParagraph>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </StatisticParagraph>
+                    </Statistic>
+                    <Statistic>
+                        <Image
+                            src={StatisticImageSecond}
+                            alt='StatisticImage'
+                            width={78.24}
+                            height={78.24}
+                        />
+                        <StatisticHeading>75%</StatisticHeading>
+                        <StatisticParagraph>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </StatisticParagraph>
+                    </Statistic>
+                    <Statistic>
+                        <Image
+                            src={StatisticImagetThired}
+                            alt='StatisticImage'
+                            width={78.24}
+                            height={78.24}
+                        />
+                        <StatisticHeading>312</StatisticHeading>
+                        <StatisticParagraph>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </StatisticParagraph>
+                    </Statistic>
+                    <Statistic>
+                        <Image
+                            src={StatisticImageFifth}
+                            alt='StatisticImage'
+                            width={78.24}
+                            height={78.24}
+                        />
+                        <StatisticHeading>Fact</StatisticHeading>
+                        <StatisticParagraph>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </StatisticParagraph>
+                    </Statistic>
+                </StatisticsParant>
+            </div>
+        </>
     );
 }
 
