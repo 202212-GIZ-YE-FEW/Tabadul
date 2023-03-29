@@ -2,31 +2,35 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-18txov4"
+  className="css-1qp5zs9"
 >
   <div
-    className="css-kwjz0o"
+    className="css-32cyrp"
   >
     <div
-      className="css-1s00oby"
+      className="css-q1nek9"
     >
       <div
-        className="css-bk7yxo"
+        className="css-eie7o"
       >
-        <div>
-          <p>
+        <div
+          className="css-1o2l3py"
+        >
+          <p
+            className="css-1de0bg1"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
         <button
-          className="css-pxz2l5"
+          className="css-1wbvhtv"
         >
           Donate Now
         </button>
       </div>
       <img
         alt="Introduction"
-        className="css-1uzgikl"
+        className="css-6a1bio"
         data-nimg="1"
         decoding="async"
         height={370}
@@ -43,9 +47,9 @@ exports[`renders correctly 1`] = `
         width={470}
       />
     </div>
+    <div
+      className="css-kooc4y"
+    />
   </div>
-  <div
-    className="css-s5l97y"
-  />
 </div>
 `;
