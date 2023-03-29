@@ -1,3 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `null`;
+exports[`renders correctly 1`] = `
+<div
+  className="css-1s9yku2"
+>
+  <div
+    className="css-kyxejs"
+  >
+    <img
+      alt="icon_clothes_hanger_label_.svg"
+      data-nimg="1"
+      decoding="async"
+      height={84.74}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={86.28}
+    />
+    <p
+      className="css-1j6auwn"
+    >
+      Category
+    </p>
+  </div>
+</div>
+`;
