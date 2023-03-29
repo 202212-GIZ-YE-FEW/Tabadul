@@ -1,4 +1,4 @@
-import { HeroText, HeroTextContainer } from "../Herro/hero.style";
+import { HeroText, HeroTextContainer } from "./hero.style";
 const IntroductionText = () => {
     return (
         <HeroTextContainer>
