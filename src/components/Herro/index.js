@@ -20,8 +20,8 @@ function Hero() {
                     </LeftSideDiv>
                     <IntroductionImage />
                 </InnerContainer>
+                <Line />
             </Container>
-            <Line />
         </HeroSection>
     );
 }
