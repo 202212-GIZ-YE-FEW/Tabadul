@@ -32,33 +32,28 @@ export const IntroPhoto = styled(Image)`
     }
 `;
 export const StatisticsParant = styled.div`
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    top: -130px;
     width: 90%;
+    max-width: 1689px;
     height: auto;
     background-color: #fff;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 45px;
     margin: auto;
     z-index: 500;
     padding: 30px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-column-gap: 20px;
-    @media screen and (max-width: 1400px) {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-    @media screen and (max-width: 768px) {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-row-gap: 43px;
-        top: 60%;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 44px;
+    flex-wrap: wrap;
 `;
 
 export const Statistic = styled.div`
     text-align: center;
+    padding-top: 41px;
+    width: 363.31px;
 `;
 
 export const StaticInnerImage = styled(Image)`

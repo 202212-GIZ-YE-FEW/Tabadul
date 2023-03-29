@@ -15,7 +15,7 @@ import {
 
 function PopularItems() {
     return (
-        <div>
+        <div style={{ position: "relative", top: "-90px" }}>
             <Header>Popular Items</Header>
             <Cards>
                 <Card>
