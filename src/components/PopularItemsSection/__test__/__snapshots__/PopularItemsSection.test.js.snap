@@ -1,0 +1,327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "top": "-90px",
+      }
+    }
+  >
+    <h1
+      className="css-1rnsenf"
+    >
+      Popular Items
+    </h1>
+    <div
+      className="css-1rmlzl6"
+    >
+      <div
+        className="css-1g10bgd"
+      >
+        <img
+          alt="CardImage"
+          className="css-1ygfzho"
+          data-nimg="1"
+          decoding="async"
+          height={185.44}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Cardimg.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={258.4}
+        />
+        <div
+          className="css-gdod6k"
+        >
+          <div
+            className="css-11fp3er"
+          >
+            <img
+              alt="Icon"
+              className="css-1my2hp2"
+              data-nimg="1"
+              decoding="async"
+              height={22.61}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/Vector.svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={17.77}
+            />
+            <p
+              className="css-1dhhx8x"
+            />
+          </div>
+          <p
+            className="css-1gljplr"
+          >
+            jewelery
+          </p>
+          <p
+            className="css-15wgt63"
+          >
+            Short description for the available item
+             
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-1g10bgd"
+      >
+        <img
+          alt="CardImage"
+          className="css-1ygfzho"
+          data-nimg="1"
+          decoding="async"
+          height={185.44}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Cardimg.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={258.4}
+        />
+        <div
+          className="css-gdod6k"
+        >
+          <div
+            className="css-11fp3er"
+          >
+            <img
+              alt="Icon"
+              className="css-1my2hp2"
+              data-nimg="1"
+              decoding="async"
+              height={22.61}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/Vector.svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={17.77}
+            />
+            <p
+              className="css-1dhhx8x"
+            />
+          </div>
+          <p
+            className="css-1gljplr"
+          >
+            jewelery
+          </p>
+          <p
+            className="css-15wgt63"
+          >
+            Short description for the available item
+             
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-1g10bgd"
+      >
+        <img
+          alt="CardImage"
+          className="css-1ygfzho"
+          data-nimg="1"
+          decoding="async"
+          height={185.44}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Cardimg.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={258.4}
+        />
+        <div
+          className="css-gdod6k"
+        >
+          <div
+            className="css-11fp3er"
+          >
+            <img
+              alt="Icon"
+              className="css-1my2hp2"
+              data-nimg="1"
+              decoding="async"
+              height={22.61}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/Vector.svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={17.77}
+            />
+            <p
+              className="css-1dhhx8x"
+            />
+          </div>
+          <p
+            className="css-1gljplr"
+          >
+            jewelery
+          </p>
+          <p
+            className="css-15wgt63"
+          >
+            Short description for the available item
+             
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-1g10bgd"
+      >
+        <img
+          alt="CardImage"
+          className="css-1ygfzho"
+          data-nimg="1"
+          decoding="async"
+          height={185.44}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Cardimg.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={258.4}
+        />
+        <div
+          className="css-gdod6k"
+        >
+          <div
+            className="css-11fp3er"
+          >
+            <img
+              alt="Icon"
+              className="css-1my2hp2"
+              data-nimg="1"
+              decoding="async"
+              height={22.61}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/Vector.svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={17.77}
+            />
+            <p
+              className="css-1dhhx8x"
+            />
+          </div>
+          <p
+            className="css-1gljplr"
+          >
+            jewelery
+          </p>
+          <p
+            className="css-15wgt63"
+          >
+            Short description for the available item
+             
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-1g10bgd"
+      >
+        <img
+          alt="CardImage"
+          className="css-1ygfzho"
+          data-nimg="1"
+          decoding="async"
+          height={185.44}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Cardimg.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={258.4}
+        />
+        <div
+          className="css-gdod6k"
+        >
+          <div
+            className="css-11fp3er"
+          >
+            <img
+              alt="Icon"
+              className="css-1my2hp2"
+              data-nimg="1"
+              decoding="async"
+              height={22.61}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/Vector.svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
+              }
+              width={17.77}
+            />
+            <p
+              className="css-1dhhx8x"
+            />
+          </div>
+          <p
+            className="css-1gljplr"
+          >
+            jewelery
+          </p>
+          <p
+            className="css-15wgt63"
+          >
+            Short description for the available item
+             
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr
+      className="css-19ocln0"
+    />
+  </div>
+</div>
+`;

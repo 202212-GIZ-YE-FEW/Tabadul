@@ -2,14 +2,15 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-hagbu0"
+  className="css-m5bd1v"
 >
   <div
-    className="css-kyxejs"
+    className="css-1xugpop"
     onClick={[Function]}
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
+      className="css-1fn35i"
       data-nimg="1"
       decoding="async"
       height={84.74}
@@ -26,17 +27,18 @@ exports[`renders correctly 1`] = `
       width={86.28}
     />
     <p
-      className="css-1j6auwn"
+      className="css-1jvhmrt"
     >
       All
     </p>
   </div>
   <div
-    className="css-kyxejs"
+    className="css-1xugpop"
     onClick={[Function]}
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
+      className="css-1fn35i"
       data-nimg="1"
       decoding="async"
       height={84.74}
@@ -53,17 +55,18 @@ exports[`renders correctly 1`] = `
       width={86.28}
     />
     <p
-      className="css-1j6auwn"
+      className="css-1jvhmrt"
     >
       electronics
     </p>
   </div>
   <div
-    className="css-kyxejs"
+    className="css-1xugpop"
     onClick={[Function]}
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
+      className="css-1fn35i"
       data-nimg="1"
       decoding="async"
       height={84.74}
@@ -80,17 +83,18 @@ exports[`renders correctly 1`] = `
       width={86.28}
     />
     <p
-      className="css-1j6auwn"
+      className="css-1jvhmrt"
     >
       jewelery
     </p>
   </div>
   <div
-    className="css-kyxejs"
+    className="css-1xugpop"
     onClick={[Function]}
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
+      className="css-1fn35i"
       data-nimg="1"
       decoding="async"
       height={84.74}
@@ -107,17 +111,18 @@ exports[`renders correctly 1`] = `
       width={86.28}
     />
     <p
-      className="css-1j6auwn"
+      className="css-1jvhmrt"
     >
       men's clothing
     </p>
   </div>
   <div
-    className="css-kyxejs"
+    className="css-1xugpop"
     onClick={[Function]}
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
+      className="css-1fn35i"
       data-nimg="1"
       decoding="async"
       height={84.74}
@@ -134,7 +139,7 @@ exports[`renders correctly 1`] = `
       width={86.28}
     />
     <p
-      className="css-1j6auwn"
+      className="css-1jvhmrt"
     >
       women's clothing
     </p>

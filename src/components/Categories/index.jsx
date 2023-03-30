@@ -1,7 +1,7 @@
-import Image from "next/image";
 import React from "react";
 
 import {
+    CategoryImge,
     CategoryParagraph,
     ContainerBox,
     ContainerCategories,
@@ -19,7 +19,7 @@ function Categories({ setSelectedCategory }) {
                             setSelectedCategory(category);
                         }}
                     >
-                        <Image
+                        <CategoryImge
                             src={CategoriesImge}
                             alt='icon_clothes_hanger_label_.svg'
                             width={86.28}

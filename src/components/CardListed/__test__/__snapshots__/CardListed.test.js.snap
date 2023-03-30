@@ -2,17 +2,47 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1f47tto"
+  className="css-1pwxlbs"
 >
+  <form
+    className="css-1lnk4gt"
+  >
+    <img
+      alt="SearchIcon"
+      className="css-1f2gc2x"
+      data-nimg="1"
+      decoding="async"
+      height={84.74}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={86.28}
+    />
+    <input
+      className="css-1s8mbb9"
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+  </form>
   <div
-    className="css-hagbu0"
+    className="css-m5bd1v"
   >
     <div
-      className="css-kyxejs"
+      className="css-1xugpop"
       onClick={[Function]}
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
+        className="css-1fn35i"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -29,17 +59,18 @@ exports[`renders correctly 1`] = `
         width={86.28}
       />
       <p
-        className="css-1j6auwn"
+        className="css-1jvhmrt"
       >
         All
       </p>
     </div>
     <div
-      className="css-kyxejs"
+      className="css-1xugpop"
       onClick={[Function]}
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
+        className="css-1fn35i"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -56,17 +87,18 @@ exports[`renders correctly 1`] = `
         width={86.28}
       />
       <p
-        className="css-1j6auwn"
+        className="css-1jvhmrt"
       >
         electronics
       </p>
     </div>
     <div
-      className="css-kyxejs"
+      className="css-1xugpop"
       onClick={[Function]}
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
+        className="css-1fn35i"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -83,17 +115,18 @@ exports[`renders correctly 1`] = `
         width={86.28}
       />
       <p
-        className="css-1j6auwn"
+        className="css-1jvhmrt"
       >
         jewelery
       </p>
     </div>
     <div
-      className="css-kyxejs"
+      className="css-1xugpop"
       onClick={[Function]}
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
+        className="css-1fn35i"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -110,17 +143,18 @@ exports[`renders correctly 1`] = `
         width={86.28}
       />
       <p
-        className="css-1j6auwn"
+        className="css-1jvhmrt"
       >
         men's clothing
       </p>
     </div>
     <div
-      className="css-kyxejs"
+      className="css-1xugpop"
       onClick={[Function]}
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
+        className="css-1fn35i"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -137,21 +171,21 @@ exports[`renders correctly 1`] = `
         width={86.28}
       />
       <p
-        className="css-1j6auwn"
+        className="css-1jvhmrt"
       >
         women's clothing
       </p>
     </div>
   </div>
   <div
-    className="css-10l7lfq"
+    className="css-1ko9j0m"
   >
     <div
       className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1ehnl2a"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -167,32 +201,53 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-11fp3er"
+        className="css-gdod6k"
       >
-        <p
-          className="css-1dhhx8x"
+        <div
+          className="css-11fp3er"
         >
-          Istanbol
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Istanbul
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          electronics
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
         </p>
       </div>
-      <p
-        className="css-1gljplr"
-      >
-        electronics
-      </p>
-      <p
-        className="css-15wgt63"
-      >
-        Short description for the available item
-         
-      </p>
     </div>
     <div
       className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1ehnl2a"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -208,32 +263,53 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-11fp3er"
+        className="css-gdod6k"
       >
-        <p
-          className="css-1dhhx8x"
+        <div
+          className="css-11fp3er"
         >
-          Istanbol
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Taiz
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          jewelery
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
         </p>
       </div>
-      <p
-        className="css-1gljplr"
-      >
-        jewelery
-      </p>
-      <p
-        className="css-15wgt63"
-      >
-        Short description for the available item
-         
-      </p>
     </div>
     <div
       className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1ehnl2a"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -249,32 +325,53 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-11fp3er"
+        className="css-gdod6k"
       >
-        <p
-          className="css-1dhhx8x"
+        <div
+          className="css-11fp3er"
         >
-          Istanbol
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Sana'a
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          men's clothing
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
         </p>
       </div>
-      <p
-        className="css-1gljplr"
-      >
-        men's clothing
-      </p>
-      <p
-        className="css-15wgt63"
-      >
-        Short description for the available item
-         
-      </p>
     </div>
     <div
       className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1ehnl2a"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -290,32 +387,53 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-11fp3er"
+        className="css-gdod6k"
       >
-        <p
-          className="css-1dhhx8x"
+        <div
+          className="css-11fp3er"
         >
-          Istanbol
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Paris
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          women's clothing
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
         </p>
       </div>
-      <p
-        className="css-1gljplr"
-      >
-        women's clothing
-      </p>
-      <p
-        className="css-15wgt63"
-      >
-        Short description for the available item
-         
-      </p>
     </div>
     <div
       className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1ehnl2a"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -331,32 +449,53 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-11fp3er"
+        className="css-gdod6k"
       >
-        <p
-          className="css-1dhhx8x"
+        <div
+          className="css-11fp3er"
         >
-          Istanbol
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            London
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          electronics
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
         </p>
       </div>
-      <p
-        className="css-1gljplr"
-      >
-        electronics
-      </p>
-      <p
-        className="css-15wgt63"
-      >
-        Short description for the available item
-         
-      </p>
     </div>
     <div
       className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1ehnl2a"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -372,32 +511,53 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-11fp3er"
+        className="css-gdod6k"
       >
-        <p
-          className="css-1dhhx8x"
+        <div
+          className="css-11fp3er"
         >
-          Istanbol
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Usak
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          jewelery
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
         </p>
       </div>
-      <p
-        className="css-1gljplr"
-      >
-        jewelery
-      </p>
-      <p
-        className="css-15wgt63"
-      >
-        Short description for the available item
-         
-      </p>
     </div>
     <div
       className="css-1g10bgd"
     >
       <img
         alt="CardImage"
-        className="css-1ehnl2a"
+        className="css-1ygfzho"
         data-nimg="1"
         decoding="async"
         height={185.44}
@@ -413,25 +573,232 @@ exports[`renders correctly 1`] = `
         width={258.4}
       />
       <div
-        className="css-11fp3er"
+        className="css-gdod6k"
       >
-        <p
-          className="css-1dhhx8x"
+        <div
+          className="css-11fp3er"
         >
-          Istanbol
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Ankera
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          electronics
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
         </p>
       </div>
-      <p
-        className="css-1gljplr"
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ygfzho"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-gdod6k"
       >
-        jewelery
-      </p>
-      <p
-        className="css-15wgt63"
+        <div
+          className="css-11fp3er"
+        >
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Ankera
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          electronics
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
+        </p>
+      </div>
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ygfzho"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-gdod6k"
       >
-        Short description for the available item
-         
-      </p>
+        <div
+          className="css-11fp3er"
+        >
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Ankera
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          jewelery
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
+        </p>
+      </div>
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ygfzho"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-gdod6k"
+      >
+        <div
+          className="css-11fp3er"
+        >
+          <img
+            alt="Icon"
+            className="css-1my2hp2"
+            data-nimg="1"
+            decoding="async"
+            height={22.61}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={17.77}
+          />
+          <p
+            className="css-1dhhx8x"
+          >
+            Ankera
+          </p>
+        </div>
+        <p
+          className="css-1gljplr"
+        >
+          jewelery
+        </p>
+        <p
+          className="css-15wgt63"
+        >
+          Short description for the available item
+           
+        </p>
+      </div>
     </div>
   </div>
 </div>

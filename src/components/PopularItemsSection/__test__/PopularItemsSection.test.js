@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import PopularItems from "..";
+import PopularItemsSection from "..";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<PopularItems />).toJSON();
+    const tree = renderer.create(<PopularItemsSection />).toJSON();
     expect(tree).toMatchSnapshot();
 });
