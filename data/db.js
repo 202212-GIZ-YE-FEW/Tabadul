@@ -6,7 +6,7 @@ export const CATEGORIES = [
     "women's clothing",
 ];
 
-export const Card = [
+export const CARDS = [
     {
         id: 1,
         text: "Buy rice",

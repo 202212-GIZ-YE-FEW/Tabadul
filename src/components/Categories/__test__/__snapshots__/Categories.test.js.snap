@@ -2,10 +2,11 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1s9yku2"
+  className="css-hagbu0"
 >
   <div
     className="css-kyxejs"
+    onClick={[Function]}
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
@@ -27,7 +28,115 @@ exports[`renders correctly 1`] = `
     <p
       className="css-1j6auwn"
     >
-      Category
+      All
+    </p>
+  </div>
+  <div
+    className="css-kyxejs"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon_clothes_hanger_label_.svg"
+      data-nimg="1"
+      decoding="async"
+      height={84.74}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={86.28}
+    />
+    <p
+      className="css-1j6auwn"
+    >
+      electronics
+    </p>
+  </div>
+  <div
+    className="css-kyxejs"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon_clothes_hanger_label_.svg"
+      data-nimg="1"
+      decoding="async"
+      height={84.74}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={86.28}
+    />
+    <p
+      className="css-1j6auwn"
+    >
+      jewelery
+    </p>
+  </div>
+  <div
+    className="css-kyxejs"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon_clothes_hanger_label_.svg"
+      data-nimg="1"
+      decoding="async"
+      height={84.74}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={86.28}
+    />
+    <p
+      className="css-1j6auwn"
+    >
+      men's clothing
+    </p>
+  </div>
+  <div
+    className="css-kyxejs"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon_clothes_hanger_label_.svg"
+      data-nimg="1"
+      decoding="async"
+      height={84.74}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={86.28}
+    />
+    <p
+      className="css-1j6auwn"
+    >
+      women's clothing
     </p>
   </div>
 </div>

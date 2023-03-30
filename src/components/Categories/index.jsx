@@ -3,23 +3,33 @@ import React from "react";
 
 import {
     CategoryParagraph,
-    Container,
+    ContainerBox,
     ContainerCategories,
 } from "./Categories.styled";
 import CategoriesImge from "../../assets/Image/icon_clothes_hanger_label_.svg";
-function Categories() {
+import { CATEGORIES } from "../../../data/db";
+function Categories({ setSelectedCategory }) {
     return (
-        <Container>
-            <ContainerCategories>
-                <Image
-                    src={CategoriesImge}
-                    alt='icon_clothes_hanger_label_.svg'
-                    width={86.28}
-                    height={84.74}
-                />
-                <CategoryParagraph>Category</CategoryParagraph>
-            </ContainerCategories>
-        </Container>
+        <ContainerBox>
+            {CATEGORIES.map((category) => {
+                return (
+                    <ContainerCategories
+                        key={category.id}
+                        onClick={() => {
+                            setSelectedCategory(category);
+                        }}
+                    >
+                        <Image
+                            src={CategoriesImge}
+                            alt='icon_clothes_hanger_label_.svg'
+                            width={86.28}
+                            height={84.74}
+                        />
+                        <CategoryParagraph>{category}</CategoryParagraph>
+                    </ContainerCategories>
+                );
+            })}
+        </ContainerBox>
     );
 }
 

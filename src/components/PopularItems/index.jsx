@@ -1,16 +1,17 @@
 import React from "react";
+
 import {
     Card,
-    Cardimg,
-    Header,
-    Cardinfo,
-    Icon,
-    LocationTitle,
-    CardHeader,
-    CardParagraph,
-    Line,
-    Cards,
     Cardcontainer,
+    CardHeader,
+    Cardimg,
+    Cardinfo,
+    CardParagraph,
+    Cards,
+    Header,
+    Icon,
+    Line,
+    LocationTitle,
 } from "./PopularItems.styled";
 
 function PopularItems() {

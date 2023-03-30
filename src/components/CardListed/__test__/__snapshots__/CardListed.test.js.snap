@@ -1,0 +1,438 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-1f47tto"
+>
+  <div
+    className="css-hagbu0"
+  >
+    <div
+      className="css-kyxejs"
+      onClick={[Function]}
+    >
+      <img
+        alt="icon_clothes_hanger_label_.svg"
+        data-nimg="1"
+        decoding="async"
+        height={84.74}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={86.28}
+      />
+      <p
+        className="css-1j6auwn"
+      >
+        All
+      </p>
+    </div>
+    <div
+      className="css-kyxejs"
+      onClick={[Function]}
+    >
+      <img
+        alt="icon_clothes_hanger_label_.svg"
+        data-nimg="1"
+        decoding="async"
+        height={84.74}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={86.28}
+      />
+      <p
+        className="css-1j6auwn"
+      >
+        electronics
+      </p>
+    </div>
+    <div
+      className="css-kyxejs"
+      onClick={[Function]}
+    >
+      <img
+        alt="icon_clothes_hanger_label_.svg"
+        data-nimg="1"
+        decoding="async"
+        height={84.74}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={86.28}
+      />
+      <p
+        className="css-1j6auwn"
+      >
+        jewelery
+      </p>
+    </div>
+    <div
+      className="css-kyxejs"
+      onClick={[Function]}
+    >
+      <img
+        alt="icon_clothes_hanger_label_.svg"
+        data-nimg="1"
+        decoding="async"
+        height={84.74}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={86.28}
+      />
+      <p
+        className="css-1j6auwn"
+      >
+        men's clothing
+      </p>
+    </div>
+    <div
+      className="css-kyxejs"
+      onClick={[Function]}
+    >
+      <img
+        alt="icon_clothes_hanger_label_.svg"
+        data-nimg="1"
+        decoding="async"
+        height={84.74}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={86.28}
+      />
+      <p
+        className="css-1j6auwn"
+      >
+        women's clothing
+      </p>
+    </div>
+  </div>
+  <div
+    className="css-10l7lfq"
+  >
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ehnl2a"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-11fp3er"
+      >
+        <p
+          className="css-1dhhx8x"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-1gljplr"
+      >
+        electronics
+      </p>
+      <p
+        className="css-15wgt63"
+      >
+        Short description for the available item
+         
+      </p>
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ehnl2a"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-11fp3er"
+      >
+        <p
+          className="css-1dhhx8x"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-1gljplr"
+      >
+        jewelery
+      </p>
+      <p
+        className="css-15wgt63"
+      >
+        Short description for the available item
+         
+      </p>
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ehnl2a"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-11fp3er"
+      >
+        <p
+          className="css-1dhhx8x"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-1gljplr"
+      >
+        men's clothing
+      </p>
+      <p
+        className="css-15wgt63"
+      >
+        Short description for the available item
+         
+      </p>
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ehnl2a"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-11fp3er"
+      >
+        <p
+          className="css-1dhhx8x"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-1gljplr"
+      >
+        women's clothing
+      </p>
+      <p
+        className="css-15wgt63"
+      >
+        Short description for the available item
+         
+      </p>
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ehnl2a"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-11fp3er"
+      >
+        <p
+          className="css-1dhhx8x"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-1gljplr"
+      >
+        electronics
+      </p>
+      <p
+        className="css-15wgt63"
+      >
+        Short description for the available item
+         
+      </p>
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ehnl2a"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-11fp3er"
+      >
+        <p
+          className="css-1dhhx8x"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-1gljplr"
+      >
+        jewelery
+      </p>
+      <p
+        className="css-15wgt63"
+      >
+        Short description for the available item
+         
+      </p>
+    </div>
+    <div
+      className="css-1g10bgd"
+    >
+      <img
+        alt="CardImage"
+        className="css-1ehnl2a"
+        data-nimg="1"
+        decoding="async"
+        height={185.44}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/images/Cardimg.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={258.4}
+      />
+      <div
+        className="css-11fp3er"
+      >
+        <p
+          className="css-1dhhx8x"
+        >
+          Istanbol
+        </p>
+      </div>
+      <p
+        className="css-1gljplr"
+      >
+        jewelery
+      </p>
+      <p
+        className="css-15wgt63"
+      >
+        Short description for the available item
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;
