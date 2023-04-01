@@ -6,26 +6,25 @@ import {
     ContainerBox,
     ContainerCategories,
 } from "./Categories.styled";
-import CategoriesImge from "../../assets/Image/icon_clothes_hanger_label_.svg";
 import { CATEGORIES } from "../../../data/db";
-function Categories({ setSelectedCategory }) {
+function Categories({ handleCategory }) {
     return (
         <ContainerBox>
             {CATEGORIES.map((category) => {
                 return (
                     <ContainerCategories
-                        key={category.id}
+                        key={category}
                         onClick={() => {
-                            setSelectedCategory(category);
+                            handleCategory(category.name);
                         }}
                     >
                         <CategoryImge
-                            src={CategoriesImge}
+                            src={category.Image}
                             alt='icon_clothes_hanger_label_.svg'
                             width={86.28}
                             height={84.74}
                         />
-                        <CategoryParagraph>{category}</CategoryParagraph>
+                        <CategoryParagraph>{category.name}</CategoryParagraph>
                     </ContainerCategories>
                 );
             })}

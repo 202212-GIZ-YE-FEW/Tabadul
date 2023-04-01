@@ -1,60 +1,87 @@
+import CardListed from "../public/images/Cardimg.svg";
+import CategoriesImag from "../src/assets/Image/icon_clothes_hanger_label_.svg";
 export const CATEGORIES = [
-    "All",
-    "electronics",
-    "jewelery",
-    "men's clothing",
-    "women's clothing",
+    {
+        Image: CategoriesImag,
+        name: "All",
+    },
+    {
+        Image: CategoriesImag,
+        name: "jewelery",
+    },
+    {
+        Image: CategoriesImag,
+        name: "electronics",
+    },
+    {
+        Image: CategoriesImag,
+        name: "men's clothing",
+    },
+    {
+        Image: CategoriesImag,
+        name: "women's clothing",
+    },
 ];
 
 export const CARDS = [
     {
         id: 1,
-        text: "Istanbul",
+        location: "Istanbul",
         category: "electronics",
+        photo: CardListed,
     },
     {
         id: 2,
-        text: "Taiz",
+        location: "Taiz",
         category: "jewelery",
+        photo: CardListed,
     },
     {
         id: 3,
-        text: "Sana'a",
+        location: "Sana'a",
         category: "men's clothing",
+        photo: CardListed,
     },
     {
         id: 4,
-        text: "Paris",
+        location: "Paris",
         category: "women's clothing",
+        photo: CardListed,
     },
     {
         id: 5,
-        text: "London",
+        location: "London",
         category: "electronics",
+        photo: CardListed,
     },
     {
         id: 6,
-        text: "Usak",
+        location: "Usak",
         category: "jewelery",
+        photo: CardListed,
     },
     {
         id: 7,
-        text: "Ankera",
+        location: "Ankera",
         category: "electronics",
+        photo: CardListed,
     },
     {
         id: 8,
-        text: "Ankera",
+        location: "Ankera",
         category: "electronics",
+        photo: CardListed,
     },
     {
         id: 9,
-        text: "Ankera",
+        location: "Ankera",
         category: "jewelery",
+        photo: CardListed,
     },
     {
         id: 10,
-        text: "Ankera",
+        location: "Ankera",
         category: "jewelery",
+        photo: CardListed,
     },
 ];

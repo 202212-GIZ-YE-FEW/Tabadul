@@ -93,7 +93,8 @@ export const InputContainer = styled.form`
     height: 54px;
     margin: auto auto 50px auto;
     @media screen and (max-width: 786px) {
-        width: 362px;
+        width: 350px;
+        max-width: 100%;
         height: 42px;
     }
 `;
@@ -132,4 +133,7 @@ export const SerachBarImage = styled(Image)`
     width: 32.21px;
     height: 32.84px;
     z-index: 99;
+    @media screen and (max-width: 768px) {
+        width: 32px;
+    }
 `;

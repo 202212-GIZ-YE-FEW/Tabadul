@@ -11,11 +11,11 @@ import {
     LocationTitle,
 } from "./PopularItems.styled";
 
-function PopularItems({ category, location }) {
+function PopularItems({ category, location, photo }) {
     return (
         <Card>
             <Cardimg
-                src='/images/Cardimg.svg'
+                src={photo}
                 alt='CardImage'
                 width={258.4}
                 height={185.44}

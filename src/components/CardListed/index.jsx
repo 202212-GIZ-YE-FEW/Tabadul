@@ -20,7 +20,7 @@ function CardListed() {
     }
     const itemDisplay = CARDS.filter((items) => {
         return (
-            items.text.toLowerCase().includes(search.toLowerCase()) ||
+            items.location.toLowerCase().includes(search.toLowerCase()) ||
             items.category.toLowerCase().includes(search.toLowerCase())
         );
     }).filter((item) => {
@@ -28,6 +28,9 @@ function CardListed() {
 
         return selectedCategory === item.category;
     });
+    function handleCategory(CatName) {
+        setSelectedCategory(CatName);
+    }
     return (
         <Container>
             <InputContainer>
@@ -45,14 +48,15 @@ function CardListed() {
                 />
             </InputContainer>
 
-            <Categories setSelectedCategory={setSelectedCategory} />
+            <Categories handleCategory={handleCategory} />
             <BoxCard>
                 {itemDisplay.map((element) => {
                     return (
                         <PopularItems
                             key={element.id}
-                            location={element.text}
+                            location={element.location}
                             category={element.category}
+                            photo={element.photo}
                         />
                     );
                 })}
