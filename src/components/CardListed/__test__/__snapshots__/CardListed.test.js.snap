@@ -4,35 +4,6 @@ exports[`renders correctly 1`] = `
 <div
   className="css-1pwxlbs"
 >
-  <form
-    className="css-1lnk4gt"
-  >
-    <img
-      alt="SearchIcon"
-      className="css-1f2gc2x"
-      data-nimg="1"
-      decoding="async"
-      height={84.74}
-      loading="lazy"
-      onError={[Function]}
-      onLoad={[Function]}
-      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-      style={
-        Object {
-          "color": "transparent",
-        }
-      }
-      width={86.28}
-    />
-    <input
-      className="css-1s8mbb9"
-      onChange={[Function]}
-      placeholder="Search"
-      type="text"
-      value=""
-    />
-  </form>
   <div
     className="css-m5bd1v"
   >
@@ -42,7 +13,7 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
-        className="css-1fn35i"
+        className="css-9yaktq"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -70,35 +41,7 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
-        className="css-1fn35i"
-        data-nimg="1"
-        decoding="async"
-        height={84.74}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={86.28}
-      />
-      <p
-        className="css-1jvhmrt"
-      >
-        electronics
-      </p>
-    </div>
-    <div
-      className="css-1xugpop"
-      onClick={[Function]}
-    >
-      <img
-        alt="icon_clothes_hanger_label_.svg"
-        className="css-1fn35i"
+        className="css-9yaktq"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -126,7 +69,35 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
-        className="css-1fn35i"
+        className="css-9yaktq"
+        data-nimg="1"
+        decoding="async"
+        height={84.74}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={86.28}
+      />
+      <p
+        className="css-1jvhmrt"
+      >
+        electronics
+      </p>
+    </div>
+    <div
+      className="css-1xugpop"
+      onClick={[Function]}
+    >
+      <img
+        alt="icon_clothes_hanger_label_.svg"
+        className="css-9yaktq"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -154,7 +125,7 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="icon_clothes_hanger_label_.svg"
-        className="css-1fn35i"
+        className="css-9yaktq"
         data-nimg="1"
         decoding="async"
         height={84.74}
@@ -192,7 +163,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -254,7 +226,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -316,7 +289,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -378,7 +352,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -440,7 +415,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -502,7 +478,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -564,7 +541,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -626,7 +604,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -688,7 +667,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",
@@ -750,7 +730,8 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="/images/Cardimg.svg"
+        src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
         style={
           Object {
             "color": "transparent",

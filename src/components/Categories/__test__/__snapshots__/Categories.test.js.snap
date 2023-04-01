@@ -10,7 +10,7 @@ exports[`renders correctly 1`] = `
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
-      className="css-1fn35i"
+      className="css-9yaktq"
       data-nimg="1"
       decoding="async"
       height={84.74}
@@ -38,35 +38,7 @@ exports[`renders correctly 1`] = `
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
-      className="css-1fn35i"
-      data-nimg="1"
-      decoding="async"
-      height={84.74}
-      loading="lazy"
-      onError={[Function]}
-      onLoad={[Function]}
-      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-      style={
-        Object {
-          "color": "transparent",
-        }
-      }
-      width={86.28}
-    />
-    <p
-      className="css-1jvhmrt"
-    >
-      electronics
-    </p>
-  </div>
-  <div
-    className="css-1xugpop"
-    onClick={[Function]}
-  >
-    <img
-      alt="icon_clothes_hanger_label_.svg"
-      className="css-1fn35i"
+      className="css-9yaktq"
       data-nimg="1"
       decoding="async"
       height={84.74}
@@ -94,7 +66,35 @@ exports[`renders correctly 1`] = `
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
-      className="css-1fn35i"
+      className="css-9yaktq"
+      data-nimg="1"
+      decoding="async"
+      height={84.74}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={86.28}
+    />
+    <p
+      className="css-1jvhmrt"
+    >
+      electronics
+    </p>
+  </div>
+  <div
+    className="css-1xugpop"
+    onClick={[Function]}
+  >
+    <img
+      alt="icon_clothes_hanger_label_.svg"
+      className="css-9yaktq"
       data-nimg="1"
       decoding="async"
       height={84.74}
@@ -122,7 +122,7 @@ exports[`renders correctly 1`] = `
   >
     <img
       alt="icon_clothes_hanger_label_.svg"
-      className="css-1fn35i"
+      className="css-9yaktq"
       data-nimg="1"
       decoding="async"
       height={84.74}
