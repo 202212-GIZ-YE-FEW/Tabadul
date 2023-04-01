@@ -130,7 +130,7 @@ exports[`renders correctly 1`] = `
           <p
             className="css-1gljplr"
           >
-            jewelery
+            electronics
           </p>
           <p
             className="css-15wgt63"
@@ -252,7 +252,7 @@ exports[`renders correctly 1`] = `
           <p
             className="css-1gljplr"
           >
-            jewelery
+            men's clothing
           </p>
           <p
             className="css-15wgt63"
@@ -313,7 +313,7 @@ exports[`renders correctly 1`] = `
           <p
             className="css-1gljplr"
           >
-            jewelery
+            women's clothing
           </p>
           <p
             className="css-15wgt63"

@@ -2,22 +2,27 @@ import CardListed from "../public/images/Cardimg.svg";
 import CategoriesImag from "../src/assets/Image/icon_clothes_hanger_label_.svg";
 export const CATEGORIES = [
     {
+        id: 1,
         Image: CategoriesImag,
         name: "All",
     },
     {
+        id: 2,
         Image: CategoriesImag,
         name: "jewelery",
     },
     {
+        id: 3,
         Image: CategoriesImag,
         name: "electronics",
     },
     {
+        id: 4,
         Image: CategoriesImag,
         name: "men's clothing",
     },
     {
+        id: 5,
         Image: CategoriesImag,
         name: "women's clothing",
     },

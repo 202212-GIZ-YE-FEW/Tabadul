@@ -10,28 +10,28 @@ function PopularItemsSection() {
                 <Header>Popular Items</Header>
                 <Cards>
                     <PopularItems
-                        title='Istable'
+                        title='Istanbul'
                         category='jewelery'
                         photo={photoImg}
                     />
                     <PopularItems
-                        title='Istable'
+                        title='Taiz'
+                        category='electronics'
+                        photo={photoImg}
+                    />
+                    <PopularItems
+                        title="Sana'a"
                         category='jewelery'
                         photo={photoImg}
                     />
                     <PopularItems
-                        title='Istable'
-                        category='jewelery'
+                        title='Paris'
+                        category="men's clothing"
                         photo={photoImg}
                     />
                     <PopularItems
-                        title='Istable'
-                        category='jewelery'
-                        photo={photoImg}
-                    />
-                    <PopularItems
-                        title='Istable'
-                        category='jewelery'
+                        title='London'
+                        category="women's clothing"
                         photo={photoImg}
                     />
                 </Cards>

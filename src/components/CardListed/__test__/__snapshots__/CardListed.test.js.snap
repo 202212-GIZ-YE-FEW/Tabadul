@@ -4,6 +4,35 @@ exports[`renders correctly 1`] = `
 <div
   className="css-1pwxlbs"
 >
+  <form
+    className="css-vhsds2"
+  >
+    <img
+      alt="SearchIcon"
+      className="css-1si36fx"
+      data-nimg="1"
+      decoding="async"
+      height={84.74}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={86.28}
+    />
+    <input
+      className="css-1s8mbb9"
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+  </form>
   <div
     className="css-m5bd1v"
   >

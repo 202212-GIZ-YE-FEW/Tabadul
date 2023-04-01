@@ -13,7 +13,7 @@ function Categories({ handleCategory }) {
             {CATEGORIES.map((category) => {
                 return (
                     <ContainerCategories
-                        key={category}
+                        key={category.id}
                         onClick={() => {
                             handleCategory(category.name);
                         }}
