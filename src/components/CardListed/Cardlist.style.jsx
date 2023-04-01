@@ -87,3 +87,53 @@ export const CardParagraph = styled.p`
     margin-left: 10px;
     margin-top: 0;
 `;
+export const InputContainer = styled.form`
+    position: relative;
+    width: 516px;
+    height: 54px;
+    margin: auto auto 50px auto;
+    @media screen and (max-width: 786px) {
+        width: 350px;
+        max-width: 100%;
+        height: 42px;
+    }
+`;
+
+export const SerachBar = styled.input`
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 69px;
+    border: none;
+    margin-bottom: 40px;
+    padding-left: 39px;
+    font-size: 24px;
+    line-height: 36px;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        color: #bebebe;
+    }
+    @media screen and (max-width: 768px) {
+        background: #ffffff;
+        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 69px;
+        padding-left: 21.67px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+`;
+export const SerachBarImage = styled(Image)`
+    position: absolute;
+    top: 50%;
+    right: 15.38px;
+    transform: translateY(-50%);
+    width: 32.21px;
+    height: 32.84px;
+    z-index: 99;
+    @media screen and (max-width: 768px) {
+        width: 32px;
+    }
+`;
