@@ -37,7 +37,7 @@ export const Cardinfo = styled.div`
 `;
 
 export const Icon = styled(Image)`
-    margin-right: 10px &.icon {
+    &.icon {
         width: 32px;
         height: 32px;
     }
