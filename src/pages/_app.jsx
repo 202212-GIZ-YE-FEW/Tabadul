@@ -1,4 +1,4 @@
-import { Poppins } from "@next/font/google";
+import { Poppins } from "next/font/google";
 import { appWithTranslation } from "next-i18next";
 
 import "@/styles/globals.css";
