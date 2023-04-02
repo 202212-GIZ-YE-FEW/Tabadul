@@ -12,7 +12,7 @@ import {
 import { Cardinfo, CardParagraph } from "../PopularItems/PopularItems.styled";
 
 const ItemsList = ({ filter }) => {
-    console.log("filter");
+    // console.log("filter");
     return (
         <ItemsListDiv>
             {filter &&

@@ -31,7 +31,6 @@ export default function HomePage() {
             <Causes />
             <Statistics />
             <PopularItemsSection />
-            <CardListed />
             <ScrollTop /> {/* leave this at the bottom of layout */}
         </Layout>
     );

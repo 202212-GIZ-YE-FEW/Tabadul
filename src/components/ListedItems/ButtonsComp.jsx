@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import { items } from "./data.js";
 import {
     AddItem,
     ButtonDetailDiv,
@@ -12,44 +11,11 @@ import {
     MenuItem,
     MenuItemDiv,
     MenuList,
-    SwapButton,
-    SwapDiv,
 } from "./ListedItems.styled";
-import SwapIcons from "./SwapIcons";
 
 const ButtonsComp = (props) => {
-    const {
-        setFilter,
-        setDropDown,
-        dropDown,
-        locationList,
-        sortRecent,
-        setHandleFilter,
-    } = props;
-
-    const [isRecent, setIsRecent] = useState(false);
-    const [isAll, setIsAll] = useState(true);
-    const [hitAll, setHitAll] = useState(false);
-    const [hitLocation, setHitLocation] = useState(false);
-
-    function recent() {
-        setIsRecent(true);
-        setIsAll(false);
-    }
-
-    function all() {
-        setIsAll(true);
-        setIsRecent(false);
-        setHitAll((pre) => !pre);
-    }
-
-    useEffect(() => {
-        if (isRecent) {
-            setFilter(sortRecent);
-        } else {
-            setFilter(items);
-        }
-    }, [isRecent, isAll, hitAll, hitLocation]);
+    const { setDropDown, dropDown, locationList, sortRecent, setHandleFilter } =
+        props;
 
     return (
         <ButtonsDiv>
@@ -65,7 +31,6 @@ const ButtonsComp = (props) => {
                                             key={index}
                                             onClick={() => {
                                                 setHandleFilter(location);
-                                                setHitLocation((pre) => !pre);
                                             }}
                                         >
                                             <MenuItemDiv>
@@ -86,28 +51,20 @@ const ButtonsComp = (props) => {
                         </ButtonDetailDiv>
                     </InnerDiv>
                 </FilterButton>
-                <SwapDiv>
-                    <SwapButton
-                        color={isAll ? null : "#33956d"}
-                        font={isAll ? "#2e2f2f" : "white"}
-                        onClick={recent}
-                    >
+                <FilterButton onClick={sortRecent}>
+                    <InnerDiv>
                         <ButtonDetailDiv>Recent</ButtonDetailDiv>
+
                         <ButtonDetailDiv>
-                            <SwapIcons type='Recent' />
+                            <ButtonIcon
+                                src='/SearchFilterIcons/Recent.svg'
+                                alt='icon'
+                                width={35}
+                                height={25}
+                            />
                         </ButtonDetailDiv>
-                    </SwapButton>
-                    <SwapButton
-                        color={isRecent ? null : "#33956d"}
-                        font={isRecent ? "#2e2f2f" : "white"}
-                        onClick={all}
-                    >
-                        <ButtonDetailDiv>All</ButtonDetailDiv>
-                        <ButtonDetailDiv>
-                            <SwapIcons type='All' />
-                        </ButtonDetailDiv>
-                    </SwapButton>
-                </SwapDiv>
+                    </InnerDiv>
+                </FilterButton>
             </GreenButtonsDiv>
             <div>
                 <AddItem>Add item</AddItem>
