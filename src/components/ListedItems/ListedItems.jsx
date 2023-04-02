@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 import ButtonsComp from "./ButtonsComp";
-import { items } from "./data.js";
 import ItemsList from "./ItemsList";
 import { ListedItemsDiv, SearchAndFilterDiv } from "./ListedItems.styled";
 import SearchComp from "./SearchComp";
 
-const ListedItems = () => {
-    const [filter, setFilter] = useState();
-    const [handleFilter, setHandleFilter] = useState();
+const ListedItems = (props) => {
+    const { setFilter, filter, setHandleFilter, handleFilter, items } = props;
     const [locationList, setLocationList] = useState();
     const [dropDown, setDropDown] = useState(false);
-    const [sortItems, setSort] = useState(false);
 
     function handleInputChange(e) {
         setHandleFilter(e.target.value);
@@ -22,26 +19,26 @@ const ListedItems = () => {
         sortedItems.sort((a, b) => {
             return b.date.localeCompare(a.date) || b.time.localeCompare(a.time);
         });
-        return sortedItems;
+
+        setFilter(sortedItems);
     }
 
     useEffect(() => {
         if (handleFilter) {
+            const latestHandleFilter = handleFilter;
             const copyedItems = [...items];
             const filteredItems = copyedItems?.filter((item) => {
                 return (
                     item.location
                         .toLowerCase()
-                        .includes(handleFilter?.toLowerCase()) ||
+                        .includes(latestHandleFilter?.toLowerCase()) ||
                     item.category
                         .toLowerCase()
-                        .includes(handleFilter?.toLowerCase())
+                        .includes(latestHandleFilter?.toLowerCase())
                 );
             });
-            console.log("filteredItems", filteredItems);
             setFilter(filteredItems);
         } else {
-            console.log("all items");
             setFilter(items);
         }
 
@@ -54,17 +51,16 @@ const ListedItems = () => {
     return (
         <ListedItemsDiv>
             <SearchAndFilterDiv>
-                <SearchComp handleInputChange={handleInputChange} />
+                <SearchComp
+                    handleFilter={handleFilter}
+                    handleInputChange={handleInputChange}
+                />
                 <ButtonsComp
                     setDropDown={setDropDown}
                     dropDown={dropDown}
                     locationList={locationList}
                     setHandleFilter={setHandleFilter}
-                    setSort={setSort}
-                    sortItems={sortItems}
                     sortRecent={sortRecent}
-                    setFilter={setFilter}
-                    items={items}
                 />
             </SearchAndFilterDiv>
             {filter?.length > 0 ? (
