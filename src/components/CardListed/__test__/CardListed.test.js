@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import ScrollTop from "..";
+import CardListed from "..";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<ScrollTop />).toJSON();
+    const tree = renderer.create(<CardListed />).toJSON();
     expect(tree).toMatchSnapshot();
 });

@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import ScrollTop from "..";
+import Categories from "..";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<ScrollTop />).toJSON();
+    const tree = renderer.create(<Categories />).toJSON();
     expect(tree).toMatchSnapshot();
 });
