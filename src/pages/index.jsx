@@ -9,6 +9,7 @@ import PopularItems from "@/components/PopularItems";
 import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
 import Layout from "@/layout/Layout";
+import AddItem from "@/components/AddItem/Index";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
@@ -28,6 +29,7 @@ export default function HomePage() {
             <Causes />
             <Statistics />
             <PopularItems />
+            <AddItem />
             <ScrollTop /> {/* leave this at the bottom of layout */}
         </Layout>
     );
