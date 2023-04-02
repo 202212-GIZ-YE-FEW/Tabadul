@@ -11,6 +11,7 @@ import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
 
 import Layout from "@/layout/Layout";
+import AddItem from "@/components/AddItem/Index";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
