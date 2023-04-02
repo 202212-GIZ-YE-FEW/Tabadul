@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-1pwxlbs"
+>
+  <div
+    className="css-1gcqxkm"
+  >
+    <div
+      className="css-4nncao"
+    >
+      <h2
+        className="css-151h8k6"
+      />
+      <p
+        className="css-nje6j4"
+      />
+      <button
+        className="css-1fhh3ew"
+      >
+        Read more
+      </button>
+    </div>
+    <div
+      className="css-aurlce"
+    >
+      <img
+        alt="BlogPhoto"
+        data-nimg="1"
+        decoding="async"
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src=""
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
