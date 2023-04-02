@@ -24,7 +24,11 @@ export const Blog = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 70px;
     margin-bottom: 132px;
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
 `;
 export const ContentSide = styled.div`
     text-align: left;
@@ -63,4 +67,5 @@ export const BlogButton = styled.button`
     width: 205px;
     height: 49.16px;
     border: none;
+    cursor: pointer;
 `;

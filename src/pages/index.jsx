@@ -8,7 +8,6 @@ import Causes from "@/components/Causes";
 import Hero from "@/components/Herro";
 import PopularItemsSection from "@/components/PopularItemsSection";
 import ScrollTop from "@/components/ScrollTop";
-import SingleBlog from "@/components/SingleBlog";
 import Statistics from "@/components/Statistics/Statistics";
 
 import Layout from "@/layout/Layout";
@@ -26,13 +25,13 @@ export default function HomePage() {
                 <Link href='/' locale='ar'>
                     العربية
                 </Link>
+                <Link href='/Blogs'>Blogs</Link>
             </div>
             <Hero />
             <Causes />
             <Statistics />
             <PopularItemsSection />
             <CardListed />
-            <SingleBlog />
             <ScrollTop /> {/* leave this at the bottom of layout */}
         </Layout>
     );

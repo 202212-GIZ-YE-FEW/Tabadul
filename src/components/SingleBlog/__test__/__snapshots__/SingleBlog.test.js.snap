@@ -12,10 +12,14 @@ exports[`renders correctly 1`] = `
     >
       <h2
         className="css-151h8k6"
-      />
+      >
+        Title
+      </h2>
       <p
         className="css-nje6j4"
-      />
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      </p>
       <button
         className="css-1fhh3ew"
       >
@@ -23,21 +27,24 @@ exports[`renders correctly 1`] = `
       </button>
     </div>
     <div
-      className="css-aurlce"
+      className="css-10lyku1"
     >
       <img
         alt="BlogPhoto"
         data-nimg="1"
         decoding="async"
+        height={40}
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src=""
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
         style={
           Object {
             "color": "transparent",
           }
         }
+        width={40}
       />
     </div>
   </div>

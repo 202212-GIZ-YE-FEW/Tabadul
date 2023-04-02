@@ -4,32 +4,23 @@ import React from "react";
 import {
     Blog,
     BlogButton,
-    BlogContainer,
     BlogHeading,
     BlogParagraph,
     ContentSide,
     ImageSide,
 } from "./SingleBlog.styled";
-import BlogPImage from "../../assets/Image/Photo.svg";
-function SingleBlog() {
+function SingleBlog({ title, desc, photo }) {
     return (
-        <BlogContainer>
-            <Blog>
-                <ContentSide>
-                    <BlogHeading>Title</BlogHeading>
-                    <BlogParagraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation
-                    </BlogParagraph>
-                    <BlogButton>Read more</BlogButton>
-                </ContentSide>
-                <ImageSide>
-                    <Image src={BlogPImage} alt='BlogPhoto' />
-                </ImageSide>
-            </Blog>
-        </BlogContainer>
+        <Blog>
+            <ContentSide>
+                <BlogHeading>{title}</BlogHeading>
+                <BlogParagraph>{desc}</BlogParagraph>
+                <BlogButton>Read more</BlogButton>
+            </ContentSide>
+            <ImageSide>
+                <Image src={photo} alt='BlogPhoto' />
+            </ImageSide>
+        </Blog>
     );
 }
 

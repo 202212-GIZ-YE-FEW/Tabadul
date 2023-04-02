@@ -1,5 +1,6 @@
 import CardListed from "../public/images/Cardimg.svg";
 import CategoriesImag from "../src/assets/Image/icon_clothes_hanger_label_.svg";
+import BlogImg from "../src/assets/Image/Photo.svg";
 export const CATEGORIES = [
     {
         id: 1,
@@ -88,5 +89,44 @@ export const CARDS = [
         location: "Ankera",
         category: "jewelery",
         photo: CardListed,
+    },
+];
+
+export const Blogs = [
+    {
+        id: 1,
+        title: "Istanbul",
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation`,
+        photo: BlogImg,
+    },
+    {
+        id: 2,
+        title: "Istanbul",
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation`,
+        photo: BlogImg,
+    },
+    {
+        id: 3,
+        title: "Sana'a",
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation`,
+        photo: BlogImg,
+    },
+    {
+        id: 4,
+        title: "Aden",
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation`,
+        photo: BlogImg,
     },
 ];
