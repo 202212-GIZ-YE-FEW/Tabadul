@@ -11,29 +11,29 @@ import Categories from "../Categories";
 import PopularItems from "../PopularItems";
 import SerachSvg from "../../assets/Image/SearchIcon.svg";
 import { CARDS } from "../../../data/db";
-function CardListed() {
-    const [selectedCategory, setSelectedCategory] = useState("All");
+function CardListed({ setSelectedCategory }) {
+    // const [selectedCategory, setSelectedCategory] = useState("All");
     const [search, setSearch] = useState("");
 
-    function handleSerach(e) {
-        setSearch(e.target.value);
-    }
-    const itemDisplay = CARDS.filter((items) => {
-        return (
-            items.location.toLowerCase().includes(search.toLowerCase()) ||
-            items.category.toLowerCase().includes(search.toLowerCase())
-        );
-    }).filter((item) => {
-        if (selectedCategory === "All") return true;
+    // function handleSerach(e) {
+    //     setSearch(e.target.value);
+    // }
+    // const itemDisplay = CARDS.filter((items) => {
+    //     return (
+    //         items.location.toLowerCase().includes(search.toLowerCase()) ||
+    //         items.category.toLowerCase().includes(search.toLowerCase())
+    //     );
+    // }).filter((item) => {
+    //     if (selectedCategory === "All") return true;
 
-        return selectedCategory === item.category;
-    });
+    //     return selectedCategory === item.category;
+    // });
     function handleCategory(CatName) {
         setSelectedCategory(CatName);
     }
     return (
         <Container>
-            <InputContainer>
+            {/* <InputContainer>
                 <SerachBarImage
                     src={SerachSvg}
                     alt='SearchIcon'
@@ -46,10 +46,10 @@ function CardListed() {
                     value={search}
                     onChange={handleSerach}
                 />
-            </InputContainer>
+            </InputContainer> */}
 
             <Categories handleCategory={handleCategory} />
-            <BoxCard>
+            {/* <BoxCard>
                 {itemDisplay.map((element) => {
                     return (
                         <PopularItems
@@ -60,7 +60,7 @@ function CardListed() {
                         />
                     );
                 })}
-            </BoxCard>
+            </BoxCard> */}
         </Container>
     );
 }
