@@ -29,7 +29,7 @@ export const Blog = styled.div`
     flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 132px;
-    &:nth-child(even) {
+    &:nth-of-type(even) {
         flex-direction: row-reverse;
     }
     @media (min-width: 991px) and (max-width: 1500px) {
@@ -37,7 +37,7 @@ export const Blog = styled.div`
     }
     @media screen and (max-width: 991px) {
         flex-direction: column;
-        &:nth-child(even) {
+        &:nth-of-type(even) {
             flex-direction: column;
         }
     }

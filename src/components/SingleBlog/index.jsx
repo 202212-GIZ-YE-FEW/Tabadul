@@ -10,8 +10,9 @@ import {
     ContentSide,
     ImageSide,
 } from "./SingleBlog.styled";
+import photo from "../../assets/Image/Photo.svg";
 
-function SingleBlog({ title, desc, photo, id }) {
+function SingleBlog({ title, desc, id }) {
     return (
         <Blog>
             <ContentSide>
@@ -19,13 +20,13 @@ function SingleBlog({ title, desc, photo, id }) {
                 <BlogParagraph>{desc}</BlogParagraph>
 
                 <BlogButton>
-                    <Link href={`/Blogs/${id}`}>
+                    <Link href={`Blogs/${id}`}>
                         <span>Read More</span>
                     </Link>
                 </BlogButton>
             </ContentSide>
             <ImageSide>
-                <BlogImge src={photo} alt='BlogPhoto' />
+                <BlogImge src={photo} alt='BlogPhoto' priority />
             </ImageSide>
         </Blog>
     );

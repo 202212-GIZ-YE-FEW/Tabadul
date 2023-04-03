@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-17f5qct"
+  className="css-oa1lsu"
 >
   <div
     className="css-4nncao"
@@ -17,7 +17,7 @@ exports[`renders correctly 1`] = `
       className="css-1e45nn1"
     >
       <a
-        href="/Blogs/undefined"
+        href="Blogs/undefined"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
@@ -36,15 +36,17 @@ exports[`renders correctly 1`] = `
       className="css-uzlunt"
       data-nimg="1"
       decoding="async"
-      loading="lazy"
+      height={40}
       onError={[Function]}
       onLoad={[Function]}
-      src=""
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
       style={
         Object {
           "color": "transparent",
         }
       }
+      width={40}
     />
   </div>
 </div>
