@@ -5,7 +5,7 @@ export const CATEGORIES = [
     {
         id: 1,
         Image: CategoriesImag,
-        name: "All",
+        name: "ALL",
     },
     {
         id: 2,

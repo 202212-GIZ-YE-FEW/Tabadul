@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
-import CardListed from "@/components/CardListed";
+import BlogContainer from "@/components/Blogs/BlogContainer";
 import Causes from "@/components/Causes";
 import Hero from "@/components/Herro";
 import PopularItemsSection from "@/components/PopularItemsSection";
@@ -31,7 +31,7 @@ export default function HomePage() {
             <Causes />
             <Statistics />
             <PopularItemsSection />
-            <CardListed />
+            <BlogContainer />
             <ScrollTop /> {/* leave this at the bottom of layout */}
         </Layout>
     );

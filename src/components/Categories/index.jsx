@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import {
     CategoryImge,
@@ -6,25 +6,36 @@ import {
     ContainerBox,
     ContainerCategories,
 } from "./Categories.styled";
-import { CATEGORIES } from "../../../data/db";
+import { items } from "../ListedItems/data";
+import CategoriesImag from "../../assets/Image/icon_clothes_hanger_label_.svg";
+
 function Categories({ handleCategory }) {
+    const [categoriesList, setCategoriesList] = useState();
+
+    useEffect(() => {
+        const itemsCategories = items?.map((item) => {
+            return item.category;
+        });
+        setCategoriesList(["ALL", ...new Set(itemsCategories)]);
+    }, categoriesList);
+
     return (
         <ContainerBox>
-            {CATEGORIES.map((category) => {
+            {categoriesList?.map((category) => {
                 return (
                     <ContainerCategories
-                        key={category.id}
+                        key={category}
                         onClick={() => {
-                            handleCategory(category.name);
+                            handleCategory(category);
                         }}
                     >
                         <CategoryImge
-                            src={category.Image}
+                            src={CategoriesImag}
                             alt='icon_clothes_hanger_label_.svg'
                             width={86.28}
                             height={84.74}
                         />
-                        <CategoryParagraph>{category.name}</CategoryParagraph>
+                        <CategoryParagraph>{category}</CategoryParagraph>
                     </ContainerCategories>
                 );
             })}

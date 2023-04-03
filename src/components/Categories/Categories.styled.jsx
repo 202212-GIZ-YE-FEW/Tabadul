@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 
 export const ContainerBox = styled.div`
+    margin: 70px 0 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
