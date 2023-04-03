@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-rgd5f1"
+>
+  <div
+    className="css-hsfvbr"
+  >
+    <div
+      className="css-1t1mv06"
+    >
+      <img
+        alt="Product"
+        src="/images/item2.png"
+      />
+      <ul
+        className="active css-vlg12v"
+        style={
+          Object {
+            "padding": "5px",
+          }
+        }
+      >
+        <div
+          className="css-oh7kvy"
+          onClick={[Function]}
+        >
+          <img
+            alt="Next"
+            src="/images/left.png"
+          />
+        </div>
+        <li
+          className="css-geetn"
+        >
+          <img
+            alt="Product Image 1"
+            className=""
+            data-nimg="1"
+            decoding="async"
+            height={300}
+            loading="lazy"
+            onClick={[Function]}
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimages%2Fitem1.png&w=640&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Fitem1.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fitem1.png&w=640&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={300}
+          />
+        </li>
+        <li
+          className="css-1pyc3lq"
+        >
+          <img
+            alt="Product Image 2"
+            className="selected"
+            data-nimg="1"
+            decoding="async"
+            height={300}
+            loading="lazy"
+            onClick={[Function]}
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimages%2Fitem2.png&w=640&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Fitem2.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fitem2.png&w=640&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={300}
+          />
+        </li>
+        <li
+          className="css-geetn"
+        >
+          <img
+            alt="Product Image 3"
+            className=""
+            data-nimg="1"
+            decoding="async"
+            height={300}
+            loading="lazy"
+            onClick={[Function]}
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimages%2Fitem3.png&w=640&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Fitem3.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fitem3.png&w=640&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={300}
+          />
+        </li>
+        <div
+          className="css-1rayqgy"
+          onClick={[Function]}
+        >
+          <img
+            alt="Next"
+            src="/images/right.png"
+          />
+        </div>
+      </ul>
+    </div>
+    <div
+      className="css-c7somy"
+    >
+      <h1
+        className="productName"
+      >
+        Item title
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt nisl sit amet dolor euismod, ac vehicula erat tincidunt. Fusce suscipit nulla eget odio rutrum imperdiet.
+      </p>
+      <div
+        className="css-1p9w2x1"
+      >
+        <img
+          alt="Location Logo"
+          className="css-4ksxhv"
+          src="/images/location.png"
+        />
+        <div>
+          <p>
+            Item Location
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-oa1um5"
+      >
+        <img
+          alt="Info"
+          className="css-1l8w7ag"
+          src="/images/info.png"
+        />
+        <div>
+          <p>
+            Name Surname
+          </p>
+          <p>
+            Phone: 01122334455
+          </p>
+          <p>
+            Email: mail@mail.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
