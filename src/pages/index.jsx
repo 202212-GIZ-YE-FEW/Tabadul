@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
-import CardListed from "@/components/CardListed";
+import BlogContainer from "@/components/Blogs/BlogContainer";
 import Causes from "@/components/Causes";
 import Hero from "@/components/Herro";
 import PopularItemsSection from "@/components/PopularItemsSection";
@@ -11,7 +11,6 @@ import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
 
 import Layout from "@/layout/Layout";
-import AddItem from "@/components/AddItem/Index";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
@@ -31,6 +30,7 @@ export default function HomePage() {
             <Causes />
             <Statistics />
             <PopularItemsSection />
+            <BlogContainer />
             <ScrollTop /> {/* leave this at the bottom of layout */}
         </Layout>
     );
