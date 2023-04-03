@@ -2,51 +2,50 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1pwxlbs"
+  className="css-17f5qct"
 >
   <div
-    className="css-1gcqxkm"
+    className="css-4nncao"
   >
-    <div
-      className="css-4nncao"
+    <h2
+      className="css-1gu5a0a"
+    />
+    <p
+      className="css-2496h4"
+    />
+    <button
+      className="css-1e45nn1"
     >
-      <h2
-        className="css-151h8k6"
+      <a
+        href="/Blogs/undefined"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
-        Title
-      </h2>
-      <p
-        className="css-nje6j4"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      </p>
-      <button
-        className="css-1fhh3ew"
-      >
-        Read more
-      </button>
-    </div>
-    <div
-      className="css-10lyku1"
-    >
-      <img
-        alt="BlogPhoto"
-        data-nimg="1"
-        decoding="async"
-        height={40}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
+        <span>
+          Read More
+        </span>
+      </a>
+    </button>
+  </div>
+  <div
+    className="css-10lyku1"
+  >
+    <img
+      alt="BlogPhoto"
+      className="css-uzlunt"
+      data-nimg="1"
+      decoding="async"
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src=""
+      style={
+        Object {
+          "color": "transparent",
         }
-        width={40}
-      />
-    </div>
+      }
+    />
   </div>
 </div>
 `;

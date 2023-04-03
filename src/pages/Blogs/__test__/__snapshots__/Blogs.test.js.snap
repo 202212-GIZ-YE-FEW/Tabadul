@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-167c27c"
+>
+  <div
+    className="css-17f5qct"
+  >
+    <div
+      className="css-4nncao"
+    >
+      <h2
+        className="css-1gu5a0a"
+      >
+        Istanbul
+      </h2>
+      <p
+        className="css-2496h4"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation
+      </p>
+      <button
+        className="css-1e45nn1"
+      >
+        <a
+          href="/Blogs/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <span>
+            Read More
+          </span>
+        </a>
+      </button>
+    </div>
+    <div
+      className="css-10lyku1"
+    >
+      <img
+        alt="BlogPhoto"
+        className="css-uzlunt"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={40}
+      />
+    </div>
+  </div>
+  <div
+    className="css-17f5qct"
+  >
+    <div
+      className="css-4nncao"
+    >
+      <h2
+        className="css-1gu5a0a"
+      >
+        Istanbul
+      </h2>
+      <p
+        className="css-2496h4"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation
+      </p>
+      <button
+        className="css-1e45nn1"
+      >
+        <a
+          href="/Blogs/2"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <span>
+            Read More
+          </span>
+        </a>
+      </button>
+    </div>
+    <div
+      className="css-10lyku1"
+    >
+      <img
+        alt="BlogPhoto"
+        className="css-uzlunt"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={40}
+      />
+    </div>
+  </div>
+  <div
+    className="css-17f5qct"
+  >
+    <div
+      className="css-4nncao"
+    >
+      <h2
+        className="css-1gu5a0a"
+      >
+        Sana'a
+      </h2>
+      <p
+        className="css-2496h4"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation
+      </p>
+      <button
+        className="css-1e45nn1"
+      >
+        <a
+          href="/Blogs/3"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <span>
+            Read More
+          </span>
+        </a>
+      </button>
+    </div>
+    <div
+      className="css-10lyku1"
+    >
+      <img
+        alt="BlogPhoto"
+        className="css-uzlunt"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={40}
+      />
+    </div>
+  </div>
+  <div
+    className="css-17f5qct"
+  >
+    <div
+      className="css-4nncao"
+    >
+      <h2
+        className="css-1gu5a0a"
+      >
+        Aden
+      </h2>
+      <p
+        className="css-2496h4"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation
+      </p>
+      <button
+        className="css-1e45nn1"
+      >
+        <a
+          href="/Blogs/4"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <span>
+            Read More
+          </span>
+        </a>
+      </button>
+    </div>
+    <div
+      className="css-10lyku1"
+    >
+      <img
+        alt="BlogPhoto"
+        className="css-uzlunt"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={40}
+      />
+    </div>
+  </div>
+</div>
+`;

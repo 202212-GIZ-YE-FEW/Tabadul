@@ -1,24 +1,31 @@
-import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import {
     Blog,
     BlogButton,
     BlogHeading,
+    BlogImge,
     BlogParagraph,
     ContentSide,
     ImageSide,
 } from "./SingleBlog.styled";
-function SingleBlog({ title, desc, photo }) {
+
+function SingleBlog({ title, desc, photo, id }) {
     return (
         <Blog>
             <ContentSide>
                 <BlogHeading>{title}</BlogHeading>
                 <BlogParagraph>{desc}</BlogParagraph>
-                <BlogButton>Read more</BlogButton>
+
+                <BlogButton>
+                    <Link href={`/Blogs/${id}`}>
+                        <span>Read More</span>
+                    </Link>
+                </BlogButton>
             </ContentSide>
             <ImageSide>
-                <Image src={photo} alt='BlogPhoto' />
+                <BlogImge src={photo} alt='BlogPhoto' />
             </ImageSide>
         </Blog>
     );
