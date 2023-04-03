@@ -2,20 +2,20 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-s6tlq7"
+  className="css-rgd5f1"
 >
   <div
-    className="css-1kqwrvv"
+    className="css-hsfvbr"
   >
     <div
-      className="css-5iwctg"
+      className="css-1t1mv06"
     >
       <img
         alt="Product"
         src="/images/item2.png"
       />
       <ul
-        className="active css-kqxfg0"
+        className="active css-vlg12v"
         style={
           Object {
             "padding": "5px",
@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
         }
       >
         <div
-          className="css-1l1qib6"
+          className="css-oh7kvy"
           onClick={[Function]}
         >
           <img
@@ -32,7 +32,7 @@ exports[`renders correctly 1`] = `
           />
         </div>
         <li
-          className="css-1roacuk"
+          className="css-geetn"
         >
           <img
             alt="Product Image 1"
@@ -55,7 +55,7 @@ exports[`renders correctly 1`] = `
           />
         </li>
         <li
-          className="css-sb1qpi"
+          className="css-1pyc3lq"
         >
           <img
             alt="Product Image 2"
@@ -78,7 +78,7 @@ exports[`renders correctly 1`] = `
           />
         </li>
         <li
-          className="css-1roacuk"
+          className="css-geetn"
         >
           <img
             alt="Product Image 3"
@@ -101,7 +101,7 @@ exports[`renders correctly 1`] = `
           />
         </li>
         <div
-          className="css-80hft8"
+          className="css-1rayqgy"
           onClick={[Function]}
         >
           <img
@@ -112,7 +112,7 @@ exports[`renders correctly 1`] = `
       </ul>
     </div>
     <div
-      className="css-1uv0tkp"
+      className="css-c7somy"
     >
       <h1
         className="productName"
@@ -123,11 +123,11 @@ exports[`renders correctly 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt nisl sit amet dolor euismod, ac vehicula erat tincidunt. Fusce suscipit nulla eget odio rutrum imperdiet.
       </p>
       <div
-        className="css-2rx57x"
+        className="css-1p9w2x1"
       >
         <img
           alt="Location Logo"
-          className="css-vglpa4"
+          className="css-4ksxhv"
           src="/images/location.png"
         />
         <div>
@@ -137,11 +137,11 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="css-19f5zwh"
+        className="css-oa1um5"
       >
         <img
           alt="Info"
-          className="css-4sudw3"
+          className="css-1l8w7ag"
           src="/images/info.png"
         />
         <div>
