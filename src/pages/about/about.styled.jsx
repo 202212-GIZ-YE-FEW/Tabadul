@@ -93,7 +93,7 @@ export const TeamSection = styled.div`
 `;
 export const TeamHeading = styled.h3`
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 36px;
     line-height: 54px;
     text-align: center;
@@ -103,6 +103,7 @@ export const TeamHeading = styled.h3`
         line-height: 20px;
         text-align: center;
         margin-bottom: 50px;
+        font-weight: 700;
     }
 `;
 export const TeamMemberContainer = styled.div`

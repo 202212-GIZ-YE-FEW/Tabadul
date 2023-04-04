@@ -79,12 +79,12 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-1c2ehun"
+            className="css-kelsw3"
           >
             Name Surename
           </h3>
           <p
-            className="css-1md5ex3"
+            className="css-1hpa51y"
           >
             Description for member
           </p>
@@ -111,12 +111,12 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-1c2ehun"
+            className="css-kelsw3"
           >
             Name Surename
           </h3>
           <p
-            className="css-1md5ex3"
+            className="css-1hpa51y"
           >
             Description for member
           </p>
@@ -143,12 +143,12 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-1c2ehun"
+            className="css-kelsw3"
           >
             Name Surename
           </h3>
           <p
-            className="css-1md5ex3"
+            className="css-1hpa51y"
           >
             Description for member
           </p>
@@ -175,12 +175,12 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-1c2ehun"
+            className="css-kelsw3"
           >
             Name Surename
           </h3>
           <p
-            className="css-1md5ex3"
+            className="css-1hpa51y"
           >
             Description for member
           </p>
@@ -207,12 +207,12 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-1c2ehun"
+            className="css-kelsw3"
           >
             Name Surename
           </h3>
           <p
-            className="css-1md5ex3"
+            className="css-1hpa51y"
           >
             Description for member
           </p>
