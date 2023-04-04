@@ -8,7 +8,7 @@ exports[`renders correctly 1`] = `
     className="css-w5ihqc"
   >
     <div
-      className="css-1h3rc7l"
+      className="css-1qbmca5"
     >
       <div
         className="css-17ugp5u"
@@ -50,7 +50,7 @@ exports[`renders correctly 1`] = `
       className="css-cl3gno"
     >
       <h3
-        className="css-1mvkmlg"
+        className="css-1et0mi5"
       >
         Our Team
       </h3>
@@ -79,7 +79,7 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-kelsw3"
+            className="css-1e03y3q"
           >
             Name Surename
           </h3>
@@ -111,7 +111,7 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-kelsw3"
+            className="css-1e03y3q"
           >
             Name Surename
           </h3>
@@ -143,7 +143,7 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-kelsw3"
+            className="css-1e03y3q"
           >
             Name Surename
           </h3>
@@ -175,7 +175,7 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-kelsw3"
+            className="css-1e03y3q"
           >
             Name Surename
           </h3>
@@ -207,7 +207,7 @@ exports[`renders correctly 1`] = `
             width={40}
           />
           <h3
-            className="css-kelsw3"
+            className="css-1e03y3q"
           >
             Name Surename
           </h3>

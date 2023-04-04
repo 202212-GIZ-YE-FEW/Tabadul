@@ -32,7 +32,7 @@ export const HeroSection = styled.div`
     justify-content: center;
     @media screen and (max-width: 991px) {
         height: auto;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 `;
 export const TextContent = styled.div`
