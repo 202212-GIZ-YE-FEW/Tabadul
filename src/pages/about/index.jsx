@@ -1,5 +1,7 @@
 import React from "react";
 
+import Team from "@/components/Team";
+
 import {
     AboutImg,
     AboutSection,
@@ -9,10 +11,12 @@ import {
     ImgContent,
     ParagrhContent,
     TeamHeading,
+    TeamMemberContainer,
     TeamSection,
     TextContent,
 } from "./about.styled";
 import AboutPhoto from "../../assets/Image/About.svg";
+import { TEAMS } from "../../../data/db";
 function About() {
     return (
         <AboutSection>
@@ -42,6 +46,18 @@ function About() {
                 </HeroSection>
                 <TeamSection>
                     <TeamHeading>Our Team</TeamHeading>
+                    <TeamMemberContainer>
+                        {TEAMS.map((member) => {
+                            return (
+                                <Team
+                                    key={member.id}
+                                    Surename={member.Surename}
+                                    Desctitle={member.desctitle}
+                                    MemberImg={member.teamImg}
+                                />
+                            );
+                        })}
+                    </TeamMemberContainer>
                 </TeamSection>
             </Container>
         </AboutSection>

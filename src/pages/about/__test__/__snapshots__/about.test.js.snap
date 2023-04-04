@@ -1,7 +1,224 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
-  about
+<div
+  className="css-15tqd4u"
+>
+  <div
+    className="css-w5ihqc"
+  >
+    <div
+      className="css-1h3rc7l"
+    >
+      <div
+        className="css-17ugp5u"
+      >
+        <h3
+          className="css-113i9g4"
+        >
+          Who we are
+        </h3>
+        <p
+          className="css-1pklm73"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div
+        className="css-eie7o"
+      >
+        <img
+          alt="AboutPhoto"
+          className="css-1n19hu5"
+          data-nimg="1"
+          decoding="async"
+          height={651}
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=1920&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=1080&q=75 1x, /_next/image?url=%2Fimg.jpg&w=1920&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={896}
+        />
+      </div>
+    </div>
+    <div
+      className="css-cl3gno"
+    >
+      <h3
+        className="css-1mvkmlg"
+      >
+        Our Team
+      </h3>
+      <div
+        className="css-jmcdrs"
+      >
+        <div
+          className="css-wr9924"
+        >
+          <img
+            alt="TeamImg"
+            className="css-ksyvgr"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+          <h3
+            className="css-1c2ehun"
+          >
+            Name Surename
+          </h3>
+          <p
+            className="css-1md5ex3"
+          >
+            Description for member
+          </p>
+        </div>
+        <div
+          className="css-wr9924"
+        >
+          <img
+            alt="TeamImg"
+            className="css-ksyvgr"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+          <h3
+            className="css-1c2ehun"
+          >
+            Name Surename
+          </h3>
+          <p
+            className="css-1md5ex3"
+          >
+            Description for member
+          </p>
+        </div>
+        <div
+          className="css-wr9924"
+        >
+          <img
+            alt="TeamImg"
+            className="css-ksyvgr"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+          <h3
+            className="css-1c2ehun"
+          >
+            Name Surename
+          </h3>
+          <p
+            className="css-1md5ex3"
+          >
+            Description for member
+          </p>
+        </div>
+        <div
+          className="css-wr9924"
+        >
+          <img
+            alt="TeamImg"
+            className="css-ksyvgr"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+          <h3
+            className="css-1c2ehun"
+          >
+            Name Surename
+          </h3>
+          <p
+            className="css-1md5ex3"
+          >
+            Description for member
+          </p>
+        </div>
+        <div
+          className="css-wr9924"
+        >
+          <img
+            alt="TeamImg"
+            className="css-ksyvgr"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
+          <h3
+            className="css-1c2ehun"
+          >
+            Name Surename
+          </h3>
+          <p
+            className="css-1md5ex3"
+          >
+            Description for member
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
