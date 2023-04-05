@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-    AboutImg,
+    // AboutImg,
     AboutSection,
     // Container,
     // HeadingContent,
@@ -13,7 +13,7 @@ import {
     // TeamSection,
     // TextContent,
 } from "./About.styled";
-import AboutPhoto from "../../assets/Image/About.svg";
+// import AboutPhoto from "../../assets/Image/About.svg";
 
 function Aboutus() {
     return (
@@ -41,13 +41,13 @@ function Aboutus() {
                     <TeamMemberContainer></TeamMemberContainer>
                 </TeamSection>
             </Container> */}
-            <AboutImg
+            {/* <AboutImg
                 src={AboutPhoto}
                 alt='AboutPhoto'
                 width={896}
                 height={651}
                 priority={true}
-            />
+            /> */}
         </AboutSection>
     );
 }

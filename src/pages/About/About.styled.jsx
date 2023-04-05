@@ -41,12 +41,12 @@ export const AboutSection = styled.div`
 // export const ImgContent = styled.div`
 //     flex: 1;
 // `;
-export const AboutImg = styled(Image)`
-    max-width: 100%;
-    @media screen and (max-width: 768px) {
-        height: 300px;
-    }
-`;
+// export const AboutImg = styled(Image)`
+//     max-width: 100%;
+//     @media screen and (max-width: 768px) {
+//         height: 300px;
+//     }
+// `;
 // export const HeadingContent = styled.h3`
 //     font-style: normal;
 //     font-weight: 800;
