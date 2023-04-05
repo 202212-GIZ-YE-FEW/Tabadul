@@ -43,7 +43,7 @@ function Aboutus() {
                 </HeroSection>
                 <TeamSection>
                     <TeamHeading>Our Team</TeamHeading>
-                    <TeamMemberContainer>Yes</TeamMemberContainer>
+                    <TeamMemberContainer>Yes All of you</TeamMemberContainer>
                 </TeamSection>
             </AboutContainer>
         </AboutSection>
