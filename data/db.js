@@ -1,7 +1,6 @@
 import CardListed from "../public/images/Cardimg.svg";
 import CategoriesImag from "../src/assets/Image/icon_clothes_hanger_label_.svg";
 
-
 export const CATEGORIES = [
     {
         id: 1,
@@ -92,5 +91,3 @@ export const CARDS = [
         photo: CardListed,
     },
 ];
-
-

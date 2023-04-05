@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "./Team.styled";
+import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "../Team/Team.styled";
 function Team({ Surename, Desctitle, MemberImg }) {
     return (
         <TeamCard>

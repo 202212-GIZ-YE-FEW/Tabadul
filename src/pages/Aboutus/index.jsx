@@ -6,7 +6,7 @@ import { teams } from "./about";
 function Aboutus() {
     return (
         <div>
-            {teams.map((member) => {
+            {teams?.map((member) => {
                 return (
                     <Team
                         key={member.id}
