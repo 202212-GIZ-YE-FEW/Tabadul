@@ -1,4 +1,4 @@
-import simpleImg from "../src/assets/Image/TeamPhoto.svg";
+import simpleImg from "../../assets/Image/TeamPhoto.svg";
 
 export const teams = [
     {
