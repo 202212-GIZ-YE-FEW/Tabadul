@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
     Buttoncontainer,
     CancelButton,
@@ -17,13 +18,13 @@ import {
     ItemTitle,
     Itemupload,
     LocationInput,
+    Locationoption,
     Pagecontainer,
     Selectoption,
     TitleInput,
-    UploadInput,
     UploadContainer,
+    UploadInput,
     Uploadspan,
-    Locationoption,
 } from "./AddItem.styled";
 
 function AddItem() {

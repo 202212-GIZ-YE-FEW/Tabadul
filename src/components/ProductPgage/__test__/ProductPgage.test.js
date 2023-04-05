@@ -1,4 +1,5 @@
 import renderer from "react-test-renderer";
+
 import Product from "../ProductPage";
 
 it("renders correctly", () => {
