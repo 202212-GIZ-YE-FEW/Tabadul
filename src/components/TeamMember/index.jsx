@@ -1,7 +1,6 @@
 import React from "react";
 
 import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "./TeamMember.styled";
-
 function TeamMember({ surename, desc, Imgmember }) {
     return (
         <TeamCard>

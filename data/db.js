@@ -94,12 +94,6 @@ export const CARDS = [
 
 export const team = [
     {
-        id: 0,
-        surename: "Surename",
-        desc: "Description for member",
-        memberImg: simplephoto,
-    },
-    {
         id: 1,
         surename: "Surename",
         desc: "Description for member",
@@ -125,6 +119,12 @@ export const team = [
     },
     {
         id: 5,
+        surename: "Surename",
+        desc: "Description for member",
+        memberImg: simplephoto,
+    },
+    {
+        id: 6,
         surename: "Surename",
         desc: "Description for member",
         memberImg: simplephoto,
