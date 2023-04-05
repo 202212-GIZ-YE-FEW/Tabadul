@@ -26,6 +26,7 @@ export default function HomePage() {
                     العربية
                 </Link>
                 <Link href='/Blogs'>Blogs</Link>
+                <Link href='/About'>About</Link>
             </div>
             <Hero />
             <Causes />
