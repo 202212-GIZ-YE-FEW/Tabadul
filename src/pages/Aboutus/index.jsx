@@ -1,5 +1,7 @@
 import React from "react";
 
+import TeamMember from "@/components/TeamMember";
+
 import AboutPhoto from "../../assets/Image/About.svg";
 import {
     AboutContainer,
@@ -43,7 +45,9 @@ function Aboutus() {
                 </HeroSection>
                 <TeamSection>
                     <TeamHeading>Our Team</TeamHeading>
-                    <TeamMemberContainer>Yes All of you</TeamMemberContainer>
+                    <TeamMemberContainer>
+                        <TeamMember />
+                    </TeamMemberContainer>
                 </TeamSection>
             </AboutContainer>
         </AboutSection>
