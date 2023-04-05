@@ -1,12 +1,12 @@
 import React from "react";
 
 import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "../Team/Team.styled";
-function Team({ Surename, Desctitle, MemberImg }) {
+function Team({ surename, desctitle, memberimg }) {
     return (
         <TeamCard>
-            <TeamImg src={MemberImg} alt='TeamImg' />
-            <TeamTitle>{Surename}</TeamTitle>
-            <TeamDesc>{Desctitle}</TeamDesc>
+            <TeamImg src={memberimg} alt='TeamImg' />
+            <TeamTitle>{surename}</TeamTitle>
+            <TeamDesc>{desctitle}</TeamDesc>
         </TeamCard>
     );
 }
