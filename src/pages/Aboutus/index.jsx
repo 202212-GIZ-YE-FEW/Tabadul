@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AboutContainer, AboutSection } from "./aboutus.style";
+import { AboutContainer, AboutSection } from "../../styles/aboutus.styled";
 
 function Aboutus() {
     return (
