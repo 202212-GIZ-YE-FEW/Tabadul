@@ -1,8 +1,9 @@
 import React from "react";
 
 // import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "./Team.styled";
-import { TeamCard } from "./Team.styled";
+import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "./Team.styled";
 // import simpleImg from "../../assets/Image/TeamPhoto.svg";
+import mebmerImg from "../../assets/Image/TeamPhoto.svg";
 function Team() {
     return (
         // <TeamCard>
@@ -10,7 +11,11 @@ function Team() {
         //     <TeamTitle>Name Surename</TeamTitle>
         //     <TeamDesc>Description for member</TeamDesc>
         // </TeamCard>
-        <TeamCard>Team</TeamCard>
+        <TeamCard>
+            <TeamImg src={mebmerImg} alt='member' property={true} />
+            <TeamTitle>Surename</TeamTitle>
+            <TeamDesc>Description for member</TeamDesc>
+        </TeamCard>
     );
 }
 

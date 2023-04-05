@@ -4,6 +4,34 @@ exports[`renders correctly 1`] = `
 <div
   className="css-wr9924"
 >
-  Team
+  <img
+    alt="member"
+    className="css-1v1g91h"
+    data-nimg="1"
+    decoding="async"
+    height={40}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    property={true}
+    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+    style={
+      Object {
+        "color": "transparent",
+      }
+    }
+    width={40}
+  />
+  <h3
+    className="css-1e03y3q"
+  >
+    Surename
+  </h3>
+  <p
+    className="css-1hpa51y"
+  >
+    Description for member
+  </p>
 </div>
 `;
