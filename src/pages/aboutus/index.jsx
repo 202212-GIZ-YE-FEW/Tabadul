@@ -3,22 +3,22 @@ import React from "react";
 import {
     AboutImg,
     AboutSection,
-    Container,
-    HeadingContent,
-    HeroSection,
-    ImgContent,
-    ParagrhContent,
-    TeamHeading,
-    TeamMemberContainer,
-    TeamSection,
-    TextContent,
+    // Container,
+    // HeadingContent,
+    // HeroSection,
+    // ImgContent,
+    // ParagrhContent,
+    // TeamHeading,
+    // TeamMemberContainer,
+    // TeamSection,
+    // TextContent,
 } from "./About.styled";
 import AboutPhoto from "../../assets/Image/About.svg";
 
 function About() {
     return (
         <AboutSection>
-            <Container>
+            {/* <Container>
                 <HeroSection>
                     <TextContent>
                         <HeadingContent>Who we are</HeadingContent>
@@ -33,20 +33,21 @@ function About() {
                         </ParagrhContent>
                     </TextContent>
                     <ImgContent>
-                        <AboutImg
-                            src={AboutPhoto}
-                            alt='AboutPhoto'
-                            width={896}
-                            height={651}
-                            priority={true}
-                        />
+                      
                     </ImgContent>
                 </HeroSection>
                 <TeamSection>
                     <TeamHeading>Our Team</TeamHeading>
                     <TeamMemberContainer></TeamMemberContainer>
                 </TeamSection>
-            </Container>
+            </Container> */}
+            <AboutImg
+                src={AboutPhoto}
+                alt='AboutPhoto'
+                width={896}
+                height={651}
+                priority={true}
+            />
         </AboutSection>
     );
 }
