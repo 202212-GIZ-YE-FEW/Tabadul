@@ -40,7 +40,7 @@ function Aboutus() {
                             alt='AboutPhoto'
                             width={896}
                             height={651}
-                            priority={true}
+                            priority='true'
                         />
                     </ImgContent>
                 </HeroSection>

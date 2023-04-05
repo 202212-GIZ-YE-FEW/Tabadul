@@ -9,16 +9,18 @@ exports[`renders correctly 1`] = `
     className="css-1v1g91h"
     data-nimg="1"
     decoding="async"
+    height={300}
     loading="lazy"
     onError={[Function]}
     onLoad={[Function]}
-    property={true}
+    property="true"
     src=""
     style={
       Object {
         "color": "transparent",
       }
     }
+    width={300}
   />
   <h3
     className="css-1e03y3q"
