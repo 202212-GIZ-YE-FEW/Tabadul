@@ -1,13 +1,7 @@
 import React from "react";
 
-import Team from "@/components/Team";
-
 function Aboutus() {
-    return (
-        <div>
-            <Team />
-        </div>
-    );
+    return <div>cool</div>;
 }
 
 export default Aboutus;
