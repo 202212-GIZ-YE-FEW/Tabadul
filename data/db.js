@@ -1,6 +1,6 @@
 import CardListed from "../public/images/Cardimg.svg";
 import CategoriesImag from "../src/assets/Image/icon_clothes_hanger_label_.svg";
-import simplephoto from "../src/assets/Image/TeamPhoto.svg"
+import simplephoto from "../src/assets/Image/TeamPhoto.svg";
 export const CATEGORIES = [
     {
         id: 1,
@@ -123,4 +123,4 @@ export const team = [
         desc: "Description for member",
         memberImg: simplephoto,
     },
-]
+];
