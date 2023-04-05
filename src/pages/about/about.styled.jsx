@@ -111,5 +111,5 @@ export const TeamMemberContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 45px;
 `;
