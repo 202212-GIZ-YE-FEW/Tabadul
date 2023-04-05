@@ -26,7 +26,7 @@ exports[`renders correctly 1`] = `
   <h3
     className="css-1e03y3q"
   >
-    Surename
+    Surename Y
   </h3>
   <p
     className="css-1hpa51y"

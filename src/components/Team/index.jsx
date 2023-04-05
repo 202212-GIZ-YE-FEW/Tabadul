@@ -13,7 +13,7 @@ function Team() {
         // </TeamCard>
         <TeamCard>
             <TeamImg src={mebmerImg} alt='member' property={true} />
-            <TeamTitle>Surename</TeamTitle>
+            <TeamTitle>Surename Y</TeamTitle>
             <TeamDesc>Description for member</TeamDesc>
         </TeamCard>
     );
