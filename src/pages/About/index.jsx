@@ -1,7 +1,5 @@
 import React from "react";
 
-import Team from "@/components/Team";
-
 import {
     AboutImg,
     AboutSection,
@@ -48,14 +46,7 @@ function About() {
                     <TeamHeading>Our Team</TeamHeading>
                     <TeamMemberContainer>
                         {teams?.map((member) => {
-                            return (
-                                <Team
-                                    key={member.id}
-                                    Surename={member.Surename}
-                                    Desctitle={member.desctitle}
-                                    MemberImg={member.teamImg}
-                                />
-                            );
+                            return <h3 key={member.id}>{member.Surename}</h3>;
                         })}
                     </TeamMemberContainer>
                 </TeamSection>
