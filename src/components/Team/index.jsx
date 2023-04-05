@@ -1,6 +1,7 @@
 import React from "react";
 
 // import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "./Team.styled";
+import { TeamCard } from "./Team.styled";
 // import simpleImg from "../../assets/Image/TeamPhoto.svg";
 function Team() {
     return (
@@ -9,7 +10,7 @@ function Team() {
         //     <TeamTitle>Name Surename</TeamTitle>
         //     <TeamDesc>Description for member</TeamDesc>
         // </TeamCard>
-        <div>Team</div>
+        <TeamCard>Team</TeamCard>
     );
 }
 
