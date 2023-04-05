@@ -1,3 +1,4 @@
+import { team } from "data/db";
 import React from "react";
 
 import TeamMember from "@/components/TeamMember";
@@ -46,6 +47,16 @@ function Aboutus() {
                 <TeamSection>
                     <TeamHeading>Our Team</TeamHeading>
                     <TeamMemberContainer>
+                        {team?.map((member) => {
+                            return (
+                                <TeamMember
+                                    key={member.id}
+                                    surename={member.surename}
+                                    desc={member.desc}
+                                    Imgmember={member.memberImg}
+                                />
+                            );
+                        })}
                         <TeamMember />
                     </TeamMemberContainer>
                 </TeamSection>

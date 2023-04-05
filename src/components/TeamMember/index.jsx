@@ -1,13 +1,13 @@
 import React from "react";
 
 import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "./TeamMember.styled";
-import mebmerImg from "../../assets/Image/TeamPhoto.svg";
-function TeamMember() {
+
+function TeamMember({ surename, desc, Imgmember }) {
     return (
         <TeamCard>
-            <TeamImg src={mebmerImg} alt='member' property={true} />
-            <TeamTitle>Surename</TeamTitle>
-            <TeamDesc>Description for member</TeamDesc>
+            <TeamImg src={Imgmember} alt='member' property={true} />
+            <TeamTitle>{surename}</TeamTitle>
+            <TeamDesc>{desc}</TeamDesc>
         </TeamCard>
     );
 }
