@@ -9,6 +9,9 @@ export const Header = styled.h1`
     font-size: 56px;
     line-height: 84px;
     color: #3c4347;
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+    }
 `;
 
 export const Cards = styled.div`

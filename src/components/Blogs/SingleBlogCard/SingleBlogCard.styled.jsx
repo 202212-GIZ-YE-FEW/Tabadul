@@ -9,11 +9,20 @@ export const Container = styled.div`
     height: 413px;
 `;
 
+export const BlogCard = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+`;
+
 export const ImageContainer = styled.div`
     padding-top: 4.68px;
     position: relative;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 `;
 
 export const BlogImage = styled(Image)`

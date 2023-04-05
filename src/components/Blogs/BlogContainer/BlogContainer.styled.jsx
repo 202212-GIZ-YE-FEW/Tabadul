@@ -8,6 +8,9 @@ export const Header = styled.h1`
     line-height: 84px;
     color: #3c4347;
     margin-bottom: 90px;
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+    }
 `;
 
 export const Container = styled.div`
