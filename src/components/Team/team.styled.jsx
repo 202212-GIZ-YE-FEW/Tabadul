@@ -12,6 +12,7 @@ export const TeamCard = styled.div`
 `;
 export const TeamImg = styled(Image)`
     max-width: 100%;
+    border-radius: 50%;
     @media (min-width: 1200px) and (max-width: 1500px) {
         width: 250px;
     }
