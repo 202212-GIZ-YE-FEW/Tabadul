@@ -5,18 +5,18 @@ import Team from "@/components/Team";
 import { teams } from "./about";
 function Aboutus() {
     return (
-        <div>
-            {teams?.map((member) => {
+        <>
+            {teams?.map((team) => {
                 return (
                     <Team
-                        key={member.id}
-                        Surename={member.Surename}
-                        Desctitle={member.desctitle}
-                        MemberImg={member.teamImg}
+                        key={team.id}
+                        surename={team.surename}
+                        desctitle={team.desctitle}
+                        memberimg={team.teamImg}
                     />
                 );
             })}
-        </div>
+        </>
     );
 }
 
