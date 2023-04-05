@@ -14,7 +14,7 @@ import {
     TextContent,
 } from "./About.styled";
 import AboutPhoto from "../../assets/Image/About.svg";
-import { teams } from "../../../data/db";
+
 function About() {
     return (
         <AboutSection>
@@ -44,11 +44,7 @@ function About() {
                 </HeroSection>
                 <TeamSection>
                     <TeamHeading>Our Team</TeamHeading>
-                    <TeamMemberContainer>
-                        {teams?.map((member) => {
-                            return <h3 key={member.id}>{member.Surename}</h3>;
-                        })}
-                    </TeamMemberContainer>
+                    <TeamMemberContainer></TeamMemberContainer>
                 </TeamSection>
             </Container>
         </AboutSection>
