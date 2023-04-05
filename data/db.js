@@ -1,6 +1,6 @@
 import CardListed from "../public/images/Cardimg.svg";
 import CategoriesImag from "../src/assets/Image/icon_clothes_hanger_label_.svg";
-import Teamphoto from "../src/assets/Image/TeamPhoto.svg";
+
 
 export const CATEGORIES = [
     {
@@ -93,35 +93,4 @@ export const CARDS = [
     },
 ];
 
-export const teams = [
-    {
-        id: 1,
-        Surename: "Name Surename",
-        desctitle: "Description for member",
-        teamImg: Teamphoto,
-    },
-    {
-        id: 2,
-        Surename: "Name Surename",
-        desctitle: "Description for member",
-        teamImg: Teamphoto,
-    },
-    {
-        id: 3,
-        Surename: "Name Surename",
-        desctitle: "Description for member",
-        teamImg: Teamphoto,
-    },
-    {
-        id: 4,
-        Surename: "Name Surename",
-        desctitle: "Description for member",
-        teamImg: Teamphoto,
-    },
-    {
-        id: 5,
-        Surename: "Name Surename",
-        desctitle: "Description for member",
-        teamImg: Teamphoto,
-    },
-];
+

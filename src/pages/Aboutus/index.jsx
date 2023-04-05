@@ -2,7 +2,7 @@ import React from "react";
 
 import Team from "@/components/Team";
 
-import { teams } from "../../../data/db";
+import { teams } from "./about";
 function Aboutus() {
     return (
         <div>
