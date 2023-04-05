@@ -1,12 +1,13 @@
 import React from "react";
 
 import { TeamCard, TeamDesc, TeamImg, TeamTitle } from "../Team/Team.styled";
-function Team({ surename, desctitle, memberimg }) {
+import simpleImg from "../../assets/Image/TeamPhoto.svg";
+function Team() {
     return (
         <TeamCard>
-            <TeamImg src={memberimg} alt='TeamImg' />
-            <TeamTitle>{surename}</TeamTitle>
-            <TeamDesc>{desctitle}</TeamDesc>
+            <TeamImg src={simpleImg} alt='TeamImg' priority={true} />
+            <TeamTitle>Name Surename</TeamTitle>
+            <TeamDesc>Description for member</TeamDesc>
         </TeamCard>
     );
 }
