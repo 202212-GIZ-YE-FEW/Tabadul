@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-
+import Image from "next/image";
 export const AboutSection = styled.div`
     background-color: #fff;
 `;
