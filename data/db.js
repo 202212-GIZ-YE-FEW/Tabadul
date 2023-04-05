@@ -93,7 +93,7 @@ export const CARDS = [
     },
 ];
 
-export const TEAMS = [
+export const teams = [
     {
         id: 1,
         Surename: "Name Surename",

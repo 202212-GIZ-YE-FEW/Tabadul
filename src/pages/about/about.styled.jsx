@@ -36,7 +36,6 @@ export const HeroSection = styled.div`
     }
 `;
 export const TextContent = styled.div`
-    background-color: #fff;
     flex: 1;
 `;
 export const ImgContent = styled.div`

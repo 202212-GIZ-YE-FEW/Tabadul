@@ -14,9 +14,9 @@ import {
     TeamMemberContainer,
     TeamSection,
     TextContent,
-} from "./about.styled";
+} from "./About.styled";
 import AboutPhoto from "../../assets/Image/About.svg";
-import { TEAMS } from "../../../data/db";
+import { teams } from "../../../data/db";
 function About() {
     return (
         <AboutSection>
@@ -47,7 +47,7 @@ function About() {
                 <TeamSection>
                     <TeamHeading>Our Team</TeamHeading>
                     <TeamMemberContainer>
-                        {TEAMS.map((member) => {
+                        {teams?.map((member) => {
                             return (
                                 <Team
                                     key={member.id}
