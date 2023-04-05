@@ -15,7 +15,7 @@ import {
 } from "./About.styled";
 import AboutPhoto from "../../assets/Image/About.svg";
 
-function About() {
+function Aboutus() {
     return (
         <AboutSection>
             {/* <Container>
@@ -52,4 +52,4 @@ function About() {
     );
 }
 
-export default About;
+export default Aboutus;
