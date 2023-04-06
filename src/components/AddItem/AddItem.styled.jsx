@@ -1,6 +1,9 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 
-export const Pagecontainer = styled.div``;
+export const Pagecontainer = styled.div`
+    margin: 0 0 40px 0;
+`;
 export const ItemHeader = styled.h2`
     font-weight: 700;
     font-size: 36px;
@@ -19,19 +22,32 @@ export const ItemInput = styled.div`
     margin-top: 10px;
 `;
 
+export const ItemImageInput = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+`;
+export const ItemImage = styled(Image)`
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+`;
 export const ItemTitle = styled.label`
     font-weight: 400;
     font-size: 24px;
     color: #3c4347;
     display: flex;
     align-items: flex-end;
-    margin-left: 20px;
+    margin-left: 7px;
     padding: 10px;
     @media screen and (max-width: 820px) {
         font-size: 20px;
     }
 `;
 export const TitleInput = styled.input`
+    border: none;
     width: 800px;
     height: 60.78px;
     top: 58.22px;
@@ -39,6 +55,7 @@ export const TitleInput = styled.input`
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 20px;
+
     &::placeholder {
         font-weight: 400;
         font-size: 20px;
@@ -58,7 +75,7 @@ export const ItemCatogry = styled.label`
     color: #3c4347;
     display: flex;
     align-items: flex-end;
-    margin-left: 20px;
+    margin-left: 7px;
     padding: 10px;
     @media screen and (max-width: 768px) {
         font-size: 20px;
@@ -66,6 +83,7 @@ export const ItemCatogry = styled.label`
 `;
 
 export const CatogryInput = styled.select`
+    border: none;
     width: 800px;
     height: 60.78px;
     top: 58.22px;
@@ -99,7 +117,7 @@ export const ItemLocation = styled.label`
     color: #3c4347;
     display: flex;
     align-items: flex-end;
-    margin-left: 20px;
+    margin-left: 7px;
     padding: 10px;
     @media screen and (max-width: 768px) {
         font-size: 20px;
@@ -107,6 +125,7 @@ export const ItemLocation = styled.label`
 `;
 
 export const LocationInput = styled.select`
+    border: none;
     width: 800px;
     height: 60.78px;
     top: 58.22px;
@@ -140,13 +159,14 @@ export const ItemDescription = styled.label`
     color: #3c4347;
     display: flex;
     align-items: flex-end;
-    margin-left: 20px;
+    margin-left: 7px;
     padding: 10px;
     @media screen and (max-width: 768px) {
         font-size: 20px;
     }
 `;
 export const DescriptionInput = styled.textarea`
+    border: none;
     width: 800px;
     height: 242.06px;
     top: 60.94px;
@@ -182,32 +202,37 @@ export const Itemupload = styled.label`
     }
 `;
 export const UploadContainer = styled.div`
-    width: 800px;
-    height: 242.06px;
+    border: none;
+    width: 400px;
+    height: 100%;
     background: #ffffff;
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 10px;
     position: relative;
-    z-index: 1;
+    cursor: pointer;
+
     @media screen and (max-width: 768px) {
         width: 348px;
-        height: 110px;
+        height: 100%;
     }
 `;
 
 export const Uploadspan = styled.span`
     font-weight: 400;
     font-size: 20px;
-    display: flex;
-    align-items: center;
     color: #bbbbbb;
+    overflow-wrap: break-word;
 `;
 
 export const UploadInput = styled.input`
     width: 100%;
     height: 100%;
     opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
 `;
 
 export const Buttoncontainer = styled.div`
@@ -216,7 +241,9 @@ export const Buttoncontainer = styled.div`
 `;
 
 export const ConfirmButton = styled.button`
-    background: #33956d;
+    background-color: ${(props) => (props.file ? "#33956d" : "grey")};
+    color: ${(props) => (props.file ? "white" : "black")};
+    /* background: #33956d; */
     border-radius: 54px;
     width: 150px;
     height: 48.77px;
