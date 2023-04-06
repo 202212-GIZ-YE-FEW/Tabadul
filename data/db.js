@@ -1,6 +1,6 @@
 import CardListed from "../public/images/Cardimg.svg";
 import CategoriesImag from "../src/assets/Image/icon_clothes_hanger_label_.svg";
-
+import simplephoto from "../src/assets/Image/TeamPhoto.svg";
 export const CATEGORIES = [
     {
         id: 1,
@@ -89,5 +89,44 @@ export const CARDS = [
         location: "Ankera",
         category: "jewelery",
         photo: CardListed,
+    },
+];
+
+export const team = [
+    {
+        id: 1,
+        surename: "Surename",
+        desc: "Description for member",
+        memberImg: simplephoto,
+    },
+    {
+        id: 2,
+        surename: "Surename",
+        desc: "Description for member",
+        memberImg: simplephoto,
+    },
+    {
+        id: 3,
+        surename: "Surename",
+        desc: "Description for member",
+        memberImg: simplephoto,
+    },
+    {
+        id: 4,
+        surename: "Surename",
+        desc: "Description for member",
+        memberImg: simplephoto,
+    },
+    {
+        id: 5,
+        surename: "Surename",
+        desc: "Description for member",
+        memberImg: simplephoto,
+    },
+    {
+        id: 6,
+        surename: "Surename",
+        desc: "Description for member",
+        memberImg: simplephoto,
     },
 ];

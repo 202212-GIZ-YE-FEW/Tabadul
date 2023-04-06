@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import { Circle, IconDiv, Rectangle, Triangle } from "./scrollTop.styled";
 
 const ScrollTop = () => {
@@ -28,19 +29,19 @@ const ScrollTop = () => {
             {scrollTop && (
                 <IconDiv onClick={scrollUp}>
                     <Circle
-                        src={"/ScrollTop/Circle.svg"}
+                        src='/ScrollTop/Circle.svg'
                         alt='circle'
                         width={62}
                         height={83}
                     />
                     <Triangle
-                        src={"/ScrollTop/Triangle.svg"}
+                        src='/ScrollTop/Triangle.svg'
                         alt='Triangle'
                         width={35}
                         height={20}
                     />
                     <Rectangle
-                        src={"/ScrollTop/Rectangle.svg"}
+                        src='/ScrollTop/Rectangle.svg'
                         alt='Rectangle'
                         width={14}
                         height={30}
