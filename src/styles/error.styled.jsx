@@ -46,6 +46,9 @@ export const TextContent = styled.div`
     @media screen and (max-width: 768px) {
         padding-top: 100px;
     }
+    @media screen and (max-width: 374px) {
+        padding-top: 20px;
+    }
 `;
 export const ErrorHeading = styled.h3`
     position: relative;
@@ -73,6 +76,10 @@ export const Line = styled(Image)`
     @media screen and (max-width: 768px) {
         top: 100px;
         left: 30px;
+    }
+    @media screen and (max-width: 374px) {
+        top: 25px;
+        left: 0px;
     }
 `;
 export const Errorparghrah = styled.p`
@@ -106,6 +113,9 @@ export const ErrorImg = styled(Image)`
     }
     @media screen and (max-width: 768px) {
         height: 300px;
+    }
+    @media screen and (max-width: 374px) {
+        height: 270px;
     }
 `;
 export const BackHome = styled(Link)`

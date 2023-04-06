@@ -26,12 +26,12 @@ export default function NotFoundPage() {
                             <ErrorHeading>Oooops !</ErrorHeading>
                             <Errorparghrah>
                                 We can’t seem to find a page you are looking for{" "}
-                                <Line src={ErrorLine} />
+                                <Line src={ErrorLine} property='true' />
                             </Errorparghrah>
                             <BackHome href='/'>Back to home</BackHome>
                         </TextContent>
                         <ImgContent>
-                            <ErrorImg src={ErrorPhoto} />
+                            <ErrorImg src={ErrorPhoto} property='true' />
                         </ImgContent>
                     </ErorrBox>
                 </ErorrContainer>
