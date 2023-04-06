@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
     FaceBook,
     FormSign,
@@ -10,12 +11,12 @@ import {
     Selectoption,
     SignButton,
     SignContainer,
+    Signdev,
     SignForm,
     SignHeader,
     SignInput,
-    SignTitle,
-    Signdev,
     Signspan,
+    SignTitle,
     Signwith,
 } from "./Signup.styled";
 

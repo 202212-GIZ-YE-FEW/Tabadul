@@ -3,18 +3,18 @@
 exports[`renders correctly 1`] = `
 Array [
   <h1
-    className="css-1fq2q80"
+    className="css-127jica"
   >
     Blogs
   </h1>,
   <div
-    className="css-5mawh3"
+    className="css-1rmlzl6"
   >
     <div
       className="css-1st69g8"
     >
       <div
-        className="css-1k7kckz"
+        className="css-13gji6y"
       >
         <img
           alt="Blog Image"
@@ -54,7 +54,7 @@ Array [
       className="css-1st69g8"
     >
       <div
-        className="css-1k7kckz"
+        className="css-13gji6y"
       >
         <img
           alt="Blog Image"
@@ -94,7 +94,7 @@ Array [
       className="css-1st69g8"
     >
       <div
-        className="css-1k7kckz"
+        className="css-13gji6y"
       >
         <img
           alt="Blog Image"
@@ -134,7 +134,7 @@ Array [
       className="css-1st69g8"
     >
       <div
-        className="css-1k7kckz"
+        className="css-13gji6y"
       >
         <img
           alt="Blog Image"
