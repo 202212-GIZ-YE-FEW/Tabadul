@@ -7,7 +7,7 @@ module.exports = {
         dirs: ["src"],
     },
     images: {
-        domains: ["www.greenqueen.com.hk","firebasestorage.googleapis.com"],
+        domains: ["www.greenqueen.com.hk", "firebasestorage.googleapis.com"],
     },
     reactStrictMode: true,
 };
