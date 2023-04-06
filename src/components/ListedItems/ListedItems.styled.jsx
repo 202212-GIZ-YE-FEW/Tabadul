@@ -124,12 +124,12 @@ export const MenuItem = styled.li`
         color: white;
     }
 
-    &:first-child:hover {
+    &:first-of-type:hover {
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
     }
 
-    &:last-child:hover {
+    &:last-of-type:hover {
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
     }
