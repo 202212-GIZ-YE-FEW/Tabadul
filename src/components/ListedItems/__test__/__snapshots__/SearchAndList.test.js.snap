@@ -111,11 +111,18 @@ exports[`renders correctly 1`] = `
         </button>
       </div>
       <div>
-        <button
-          className="css-w0vzl6"
+        <a
+          href="/addToItem"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          Add item
-        </button>
+          <button
+            className="css-w0vzl6"
+          >
+            Add item
+          </button>
+        </a>
       </div>
     </div>
   </div>
