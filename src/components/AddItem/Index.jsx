@@ -25,7 +25,6 @@ import {
     UploadContainer,
     UploadInput,
     Uploadspan,
-    Locationoption,
     ItemImageInput,
     ItemImage,
 } from "./AddItem.styled";
