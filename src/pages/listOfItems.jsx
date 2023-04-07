@@ -2,36 +2,50 @@ import { Container } from "@/components/CardListed/Cardlist.style";
 import Categories from "@/components/Categories";
 import ListedItems from "@/components/ListedItems/ListedItems";
 import React, { useEffect, useState } from "react";
-import { items } from "../components/ListedItems/data";
+import { fetchItems } from "@/utils/firebase";
 
 const ListofItems = () => {
     const [selectedCategory, setSelectedCategory] = useState("ALL");
     const [hitRecent, setHitRecent] = useState(false);
-    const [filter, setFilter] = useState();
+    const [filters, setFilters] = useState();
     const [handleFilter, setHandleFilter] = useState();
+    const [items, setItems] = useState();
 
-    function handleCategory(CatName) {
+    function handleSelectCategory(CatName) {
         setHitRecent((prev) => !prev);
         setSelectedCategory(CatName);
     }
+
+    async function getItems() {
+        const items = await fetchItems();
+        setFilters(items); //for initial data when the page load
+        setItems(items);
+    }
+
     useEffect(() => {
-        if (selectedCategory === "ALL") {
+        if (selectedCategory.name === "ALL") {
             setHandleFilter();
-            setFilter(items);
+            setFilters(items);
         } else {
-            setHandleFilter(selectedCategory);
+            const firebaseCates = items?.filter((item) => {
+                return item.category.id === selectedCategory.id;
+            });
+            setFilters(firebaseCates);
         }
     }, [selectedCategory, hitRecent]);
 
+    useEffect(() => {
+        getItems();
+    }, [items]);
+
     return (
         <Container>
-            <Categories handleCategory={handleCategory} />
+            <Categories handleCategory={handleSelectCategory} />
             <ListedItems
-                setFilter={setFilter}
-                filter={filter}
+                setFilters={setFilters}
+                filters={filters}
                 setHandleFilter={setHandleFilter}
                 handleFilter={handleFilter}
-                selectedCategory={selectedCategory}
                 items={items}
             />
         </Container>

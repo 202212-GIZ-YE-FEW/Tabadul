@@ -4,9 +4,10 @@ import ButtonsComp from "./ButtonsComp";
 import ItemsList from "./ItemsList";
 import { ListedItemsDiv, SearchAndFilterDiv } from "./ListedItems.styled";
 import SearchComp from "./SearchComp";
+import { fetchLocations } from "@/utils/firebase";
 
 const ListedItems = (props) => {
-    const { setFilter, filter, setHandleFilter, handleFilter, items } = props;
+    const { setFilters, filters, setHandleFilter, handleFilter, items } = props;
     const [locationList, setLocationList] = useState();
     const [dropDown, setDropDown] = useState(false);
 
@@ -17,35 +18,38 @@ const ListedItems = (props) => {
     function sortRecent() {
         const sortedItems = [...items];
         sortedItems.sort((a, b) => {
-            return b.date.localeCompare(a.date) || b.time.localeCompare(a.time);
+            const aTime = a.time.split(" ");
+            const bTime = b.time.split(" ");
+            return (
+                b.date.localeCompare(a.date) || bTime[0].localeCompare(aTime[0])
+            );
         });
 
-        setFilter(sortedItems);
+        setFilters(sortedItems);
+    }
+
+    async function getLocations() {
+        const locs = await fetchLocations();
+        setLocationList(locs);
     }
 
     useEffect(() => {
+        getLocations();
         if (handleFilter) {
-            const latestHandleFilter = handleFilter;
-            const copyedItems = [...items];
-            const filteredItems = copyedItems?.filter((item) => {
+            const filteredItems = items?.filter((item) => {
                 return (
-                    item.location
+                    item.location.name
                         .toLowerCase()
-                        .includes(latestHandleFilter?.toLowerCase()) ||
-                    item.category
+                        .includes(handleFilter?.toLowerCase()) ||
+                    item.category.name
                         .toLowerCase()
-                        .includes(latestHandleFilter?.toLowerCase())
+                        .includes(handleFilter?.toLowerCase())
                 );
             });
-            setFilter(filteredItems);
+            setFilters(filteredItems);
         } else {
-            setFilter(items);
+            setFilters(items);
         }
-
-        const location = items.map((item) => {
-            return item.location;
-        });
-        setLocationList([...new Set(location)]);
     }, [handleFilter]);
 
     return (
@@ -59,12 +63,13 @@ const ListedItems = (props) => {
                     setDropDown={setDropDown}
                     dropDown={dropDown}
                     locationList={locationList}
-                    setHandleFilter={setHandleFilter}
                     sortRecent={sortRecent}
+                    setFilters={setFilters}
+                    items={items}
                 />
             </SearchAndFilterDiv>
-            {filter?.length > 0 ? (
-                <ItemsList filter={filter} />
+            {filters?.length > 0 ? (
+                <ItemsList filters={filters} />
             ) : (
                 <p
                     style={{

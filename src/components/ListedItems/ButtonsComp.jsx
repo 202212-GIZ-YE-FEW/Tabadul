@@ -12,10 +12,24 @@ import {
     MenuItemDiv,
     MenuList,
 } from "./ListedItems.styled";
+import Link from "next/link";
 
 const ButtonsComp = (props) => {
-    const { setDropDown, dropDown, locationList, sortRecent, setHandleFilter } =
-        props;
+    const {
+        setDropDown,
+        dropDown,
+        locationList,
+        sortRecent,
+        setFilters,
+        items,
+    } = props;
+
+    function itemlocation(location) {
+        const filteredLocs = items?.filter((item) => {
+            return item.location.id === location.id;
+        });
+        setFilters(filteredLocs);
+    }
 
     return (
         <ButtonsDiv>
@@ -25,16 +39,16 @@ const ButtonsComp = (props) => {
                         <ButtonDetailDiv>Location</ButtonDetailDiv>
                         {dropDown && (
                             <MenuList>
-                                {locationList.map((location, index) => {
+                                {locationList.map((location) => {
                                     return (
                                         <MenuItem
-                                            key={index}
+                                            key={location.id}
                                             onClick={() => {
-                                                setHandleFilter(location);
+                                                itemlocation(location);
                                             }}
                                         >
                                             <MenuItemDiv>
-                                                {location}
+                                                {location.name}
                                             </MenuItemDiv>
                                         </MenuItem>
                                     );
@@ -67,7 +81,9 @@ const ButtonsComp = (props) => {
                 </FilterButton>
             </GreenButtonsDiv>
             <div>
-                <AddItem>Add item</AddItem>
+                <Link href='/addToItem'>
+                    <AddItem>Add item</AddItem>
+                </Link>
             </div>
         </ButtonsDiv>
     );

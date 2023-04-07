@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-0"
+  className="css-u9y4yi"
 >
   <h2
     className="css-te3fgk"
@@ -15,17 +15,20 @@ exports[`renders correctly 1`] = `
     <form
       className="css-0"
       method="post"
+      onSubmit={[Function]}
     >
       <div
         className="css-vaakcf"
       >
         <label
-          className="css-1afg2bl"
+          className="css-a1lghw"
         >
           Title
         </label>
         <input
-          className="css-2hmwtj"
+          className="css-1rmatr1"
+          name="title"
+          onChange={[Function]}
           placeholder="Placeholder"
           type="text"
         />
@@ -34,12 +37,14 @@ exports[`renders correctly 1`] = `
         className="css-vaakcf"
       >
         <label
-          className="css-s7589y"
+          className="css-1hrsy57"
         >
           Catogry
         </label>
         <select
-          className="css-qdiq2j"
+          className="css-1q4qui3"
+          name="category"
+          onChange={[Function]}
           placeholder="Select catogry"
           type="dropdown"
         >
@@ -50,38 +55,20 @@ exports[`renders correctly 1`] = `
           >
             Select catogry
           </option>
-          <option
-            className="css-0"
-          >
-            Catogry1
-          </option>
-          <option
-            className="css-0"
-          >
-            Catogry2
-          </option>
-          <option
-            className="css-0"
-          >
-            Catogry3
-          </option>
-          <option
-            className="css-0"
-          >
-            Catogry4
-          </option>
         </select>
       </div>
       <div
         className="css-vaakcf"
       >
         <label
-          className="css-s7589y"
+          className="css-1hrsy57"
         >
           Location
         </label>
         <select
-          className="css-rfq8sg"
+          className="css-rf41zd"
+          name="location"
+          onChange={[Function]}
         >
           <option
             className="css-0"
@@ -90,45 +77,27 @@ exports[`renders correctly 1`] = `
           >
             Select Location
           </option>
-          <option
-            className="css-0"
-          >
-            Istanbol
-          </option>
-          <option
-            className="css-0"
-          >
-            Sanaa
-          </option>
-          <option
-            className="css-0"
-          >
-            Mukallah
-          </option>
-          <option
-            className="css-0"
-          >
-            Istanbol
-          </option>
         </select>
       </div>
       <div
         className="css-vaakcf"
       >
         <label
-          className="css-s7589y"
+          className="css-1hrsy57"
         >
           Description
         </label>
         <textarea
-          className="css-1qlc3dx"
+          className="css-1cmfmn2"
           cols="105"
+          name="description"
+          onChange={[Function]}
           placeholder="Description Item"
           rows="10"
         />
       </div>
       <div
-        className="css-vaakcf"
+        className="css-z7zccs"
       >
         <label
           className="css-s7589y"
@@ -136,15 +105,35 @@ exports[`renders correctly 1`] = `
           Upload Photos
         </label>
         <div
-          className="css-sdzzex"
+          className="css-1ke4kmr"
         >
+          <img
+            alt="thumbnail"
+            className="css-vnyxpp"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={40}
+          />
           <span
-            className="css-1rnihqj"
+            className="css-b6psj7"
           >
             Upload Photos
           </span>
           <input
-            className="css-1u5iiy7"
+            className="css-1haxaoa"
+            onChange={[Function]}
+            placeholder="Upload Photos"
             type="file"
           />
         </div>
@@ -153,7 +142,8 @@ exports[`renders correctly 1`] = `
         className="css-11bfjdc"
       >
         <button
-          className="css-1sq15is"
+          className="css-1pjyio5"
+          disabled={true}
           type="submit"
         >
           <span
@@ -162,16 +152,23 @@ exports[`renders correctly 1`] = `
             Confirm
           </span>
         </button>
-        <button
-          className="css-1hhxna"
-          type="submit"
+        <a
+          href="/listOfItems"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <span
-            className="css-whghps"
+          <button
+            className="css-1hhxna"
+            type="submit"
           >
-            Cancel
-          </span>
-        </button>
+            <span
+              className="css-whghps"
+            >
+              Cancel
+            </span>
+          </button>
+        </a>
       </div>
     </form>
   </div>

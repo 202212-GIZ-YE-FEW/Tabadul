@@ -6,25 +6,27 @@ import {
     ContainerBox,
     ContainerCategories,
 } from "./Categories.styled";
-import { items } from "../ListedItems/data";
 import CategoriesImag from "../../assets/Image/icon_clothes_hanger_label_.svg";
+import { fetchCategories } from "@/utils/firebase";
 
 function Categories({ handleCategory }) {
     const [categoriesList, setCategoriesList] = useState();
 
+    async function getCategories() {
+        const cat = await fetchCategories();
+        setCategoriesList(cat);
+    }
+
     useEffect(() => {
-        const itemsCategories = items?.map((item) => {
-            return item.category;
-        });
-        setCategoriesList(["ALL", ...new Set(itemsCategories)]);
-    }, categoriesList);
+        getCategories();
+    }, [categoriesList]);
 
     return (
         <ContainerBox>
             {categoriesList?.map((category) => {
                 return (
                     <ContainerCategories
-                        key={category}
+                        key={category.id}
                         onClick={() => {
                             handleCategory(category);
                         }}
@@ -35,7 +37,7 @@ function Categories({ handleCategory }) {
                             width={86.28}
                             height={84.74}
                         />
-                        <CategoryParagraph>{category}</CategoryParagraph>
+                        <CategoryParagraph>{category.name}</CategoryParagraph>
                     </ContainerCategories>
                 );
             })}
