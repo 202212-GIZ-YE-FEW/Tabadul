@@ -36,7 +36,7 @@ const ListofItems = () => {
 
     useEffect(() => {
         getItems();
-    }, [items]);
+    }, []);
 
     return (
         <Container>
