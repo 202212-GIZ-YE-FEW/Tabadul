@@ -1,10 +1,22 @@
+import {
+    Blogcontainer,
+    Blogdec,
+    Blogimg,
+    Blogtitle,
+} from "@/styles/Blogs.styled";
 import React from "react";
+import photo from "../../assets/Image/Photo.svg";
 function blog({ blog }) {
     return (
-        <div key={blog.id}>
-            <h1>{blog.title}</h1>
-            <p>{blog.body}</p>
-        </div>
+        <Blogcontainer key={blog.id}>
+            <Blogimg src={photo} alt='Blog' />
+            <Blogtitle>{blog.title}</Blogtitle>
+            <Blogdec>{blog.body}</Blogdec>
+        </Blogcontainer>
+        // <div key={blog.id}>
+        //     <h1>{blog.title}</h1>
+        //     <p>{blog.body}</p>
+        // </div>
     );
 }
 export async function getStaticPaths() {
