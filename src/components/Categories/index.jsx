@@ -19,7 +19,7 @@ function Categories({ handleCategory }) {
 
     useEffect(() => {
         getCategories();
-    }, [categoriesList]);
+    }, []);
 
     return (
         <ContainerBox>
