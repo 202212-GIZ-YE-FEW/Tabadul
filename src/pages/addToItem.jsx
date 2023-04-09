@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { db, fetchCategories, fetchLocations } from "@/utils/firebase";
-import AddItem from "@/components/AddItem/Index";
+import AddItem from "@/components/AddItem";
 
 const AddToItem = () => {
     const [categories, setCategories] = useState();

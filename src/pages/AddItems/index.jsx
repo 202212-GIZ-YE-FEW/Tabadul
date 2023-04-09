@@ -1,4 +1,4 @@
-import AddItem from "@/components/AddItem/Index";
+import AddItem from "@/components/AddItem";
 import React from "react";
 
 function AddItems() {
