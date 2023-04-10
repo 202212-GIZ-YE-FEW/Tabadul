@@ -27,6 +27,7 @@ export default function HomePage() {
                 </Link>
                 <Link href='/Blogs'>Blogs</Link>
                 <Link href='/Aboutus'>About us</Link>
+                <Link href='/Products'>Product</Link>
             </div>
             <Hero />
             <Causes />
