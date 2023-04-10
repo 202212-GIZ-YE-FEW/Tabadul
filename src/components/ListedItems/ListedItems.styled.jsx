@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import Link from "next/link";
 
 export const ListedItemsDiv = styled.div`
     width: 100%;
@@ -157,51 +158,6 @@ export const ButtonDetailDiv = styled.div`
     gap: 20px;
 `;
 
-export const SwapDiv = styled.div`
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-size: 21px;
-    font-weight: 700;
-    height: 56px;
-    background-color: #b0d6c7;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: ease all 0.5s;
-
-    @media screen and (max-width: 600px) {
-        font-size: 15px;
-    }
-    @media screen and (max-width: 1000px) {
-        font-size: 17px;
-    }
-`;
-export const SwapButton = styled.div`
-    display: flex;
-    color: ${(props) => props.font};
-    justify-content: center;
-    padding-left: 20px;
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    background-color: ${(props) => props.color};
-    transition: ease all 0.5s;
-    @media screen and (max-width: 600px) {
-        font-size: 15px;
-        padding-left: 15px;
-    }
-    @media screen and (max-width: 1000px) {
-        font-size: 17px;
-        padding-left: 18px;
-    }
-`;
-
-export const SwapIcon = styled.div`
-    margin: 5px 15px 0 10px;
-`;
-
 export const ButtonIcon = styled(Image)`
     margin: 5px 10px 0 10px;
 
@@ -241,12 +197,15 @@ export const ItemsListDiv = styled.div`
 `;
 
 export const CardImage = styled(Image)`
+    object-fit: cover;
+    object-position: center top;
     border-radius: 19px 19px 0px 0px;
     width: 100%;
 `;
 
 export const ItemCard = styled.div`
     width: 100%;
+    height: 100%;
     background: #ffffff;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -255,25 +214,40 @@ export const ItemCard = styled.div`
 `;
 
 export const ItemIcon = styled(Image)`
-    margin-right: 10px;
+    /* margin-left: 5px; */
 `;
 
-export const CardCategory = styled.p`
-    font-weight: 700;
-    font-size: 20px;
+export const Cardinfo = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const IconsTitles = styled.p`
+    font-size: 16px;
     line-height: 30px;
     color: #3c4347;
-    margin: 0 0 0 18px;
-`;
-
-export const ItemLocationTitle = styled.p`
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    margin: 15px 0 5px 4px;
+    margin: 0 5px 0 7px;
 `;
 export const DateAndTime = styled.p`
-    padding: 0 0 0 12px;
+    /* padding: 0 0 0 12px; */
+    margin: 0 0 20px 12px;
     color: #8b8b8b;
+    font-size: 13px;
+`;
+export const ItemTitle = styled.p`
+    font-weight: 600;
+    font-size: 19px;
+    color: #3c4347;
+    margin: 0 0 0px 10px;
+    word-wrap: break-word;
+`;
+export const LocationCategoryDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    padding: 9px 0px 2px 10px;
+`;
+export const CardLink = styled(Link)`
+    text-decoration: none;
 `;
