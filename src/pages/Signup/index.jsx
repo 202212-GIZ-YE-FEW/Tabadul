@@ -1,4 +1,4 @@
-import Signup from "@/components/Sign UP";
+import Signup from "@/components/Sign UP/Index";
 import React from "react";
 
 function SignUp() {
