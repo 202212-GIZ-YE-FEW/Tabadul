@@ -1,45 +1,69 @@
 import React from "react";
 
 import {
-    CardCategory,
     CardImage,
+    CardLink,
+    Cardinfo,
     DateAndTime,
+    IconsTitles,
     ItemCard,
     ItemIcon,
-    ItemLocationTitle,
+    ItemTitle,
     ItemsListDiv,
+    LocationCategoryDiv,
 } from "./ListedItems.styled";
-import { Cardinfo, CardParagraph } from "../PopularItems/PopularItems.styled";
+import { CardParagraph } from "../PopularItems/PopularItems.styled";
 
 const ItemsList = ({ filters }) => {
     return (
         <ItemsListDiv>
             {filters?.map((item) => {
                 return (
-                    <ItemCard key={item.id}>
-                        <CardImage
-                            src={item.image}
-                            alt='CardImage'
-                            width={258.4}
-                            height={185.44}
-                        />
-                        <Cardinfo>
-                            <ItemIcon
-                                src='/images/Vector.svg'
-                                alt='Icon'
-                                width={17.77}
-                                height={22.61}
+                    <CardLink href={`Products/${item.id}`} key={item.id}>
+                        <ItemCard>
+                            <CardImage
+                                src={item.image[0]}
+                                alt='CardImage'
+                                width={258.4}
+                                height={185.44}
                             />
-                            <ItemLocationTitle>
-                                {item.location.name}
-                            </ItemLocationTitle>
-                        </Cardinfo>
-                        <CardCategory>{item.category.name}</CardCategory>
-                        <DateAndTime>
-                            {item.date} {item.time}
-                        </DateAndTime>
-                        <CardParagraph>{item.description}</CardParagraph>
-                    </ItemCard>
+                            <ItemTitle>{item.title}</ItemTitle>
+                            <LocationCategoryDiv>
+                                <Cardinfo>
+                                    <ItemIcon
+                                        src='/images/Vector.svg'
+                                        alt='Icon'
+                                        width={14}
+                                        height={16}
+                                    />
+                                    <IconsTitles>
+                                        {item.location.name}
+                                    </IconsTitles>
+                                </Cardinfo>
+                                <Cardinfo>
+                                    <ItemIcon
+                                        src='/images/tag-fill.svg'
+                                        alt='Icon'
+                                        width={14}
+                                        height={17}
+                                    />
+                                    <IconsTitles>
+                                        {item.category.name}
+                                    </IconsTitles>
+                                </Cardinfo>
+                            </LocationCategoryDiv>
+
+                            <DateAndTime>
+                                {item.date} {item.time}
+                            </DateAndTime>
+
+                            <CardParagraph>
+                                {item.description.length > 50
+                                    ? `${item.description.substring(0, 50)} ...`
+                                    : item.description}
+                            </CardParagraph>
+                        </ItemCard>
+                    </CardLink>
                 );
             })}
         </ItemsListDiv>
