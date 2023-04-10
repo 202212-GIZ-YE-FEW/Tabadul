@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-oa1lsu"
+  className="css-10ofioq"
 >
   <div
     className="css-4nncao"
@@ -12,7 +12,9 @@ exports[`renders correctly 1`] = `
     />
     <p
       className="css-2496h4"
-    />
+    >
+      ...
+    </p>
     <button
       className="css-1e45nn1"
     >
@@ -33,20 +35,19 @@ exports[`renders correctly 1`] = `
   >
     <img
       alt="BlogPhoto"
-      className="css-uzlunt"
+      className="css-iuffjg"
       data-nimg="1"
       decoding="async"
-      height={40}
+      height={432}
       onError={[Function]}
       onLoad={[Function]}
-      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      src=""
       style={
         Object {
           "color": "transparent",
         }
       }
-      width={40}
+      width={661}
     />
   </div>
 </div>

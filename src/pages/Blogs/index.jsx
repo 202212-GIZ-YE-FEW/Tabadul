@@ -2,6 +2,8 @@ import React from "react";
 
 import SingleBlog from "@/components/SingleBlog";
 
+import { fetchBlogs } from "@/utils/firebase";
+
 import { BlogContainer } from "../../components/SingleBlog/SingleBlog.styled";
 function BlogPage({ blogs }) {
     return (
@@ -11,7 +13,8 @@ function BlogPage({ blogs }) {
                     <SingleBlog
                         key={blog.id}
                         title={blog.title}
-                        desc={blog.body}
+                        desc={blog.blog}
+                        photo={blog.image}
                         id={blog.id}
                     />
                 );
@@ -22,8 +25,7 @@ function BlogPage({ blogs }) {
 export default BlogPage;
 
 export async function getStaticProps() {
-    const data = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const blogs = await data.json();
+    const blogs = await fetchBlogs(); // getting the Data Ordered & orgainzed from fetchBlogs fun at firebase.js
 
     return {
         props: {

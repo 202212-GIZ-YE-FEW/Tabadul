@@ -7,6 +7,10 @@ export const BlogContainer = styled.div`
     padding-right: 15px;
     padding-top: 100px;
     padding-bottom: 100px;
+    @media screen and (max-width: 767px) {
+        padding-top: 80px;
+        padding-bottom: 80pxpx;
+    }
     @media (min-width: 768px) {
         width: 750px;
     }
@@ -33,7 +37,7 @@ export const Blog = styled.div`
         flex-direction: row-reverse;
     }
     @media (min-width: 991px) and (max-width: 1500px) {
-        margin-bottom: 40px;
+        margin-bottom: 100px;
     }
     @media screen and (max-width: 991px) {
         flex-direction: column;
@@ -58,8 +62,13 @@ export const ImageSide = styled.div`
 `;
 export const BlogImge = styled(Image)`
     max-width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    @media screen and (max-width: 991px) {
+        margin-top: 50px;
+    }
     @media screen and (max-width: 360px) {
-        height: 280px;
+        object-fit: contain;
     }
 `;
 export const BlogHeading = styled.h2`

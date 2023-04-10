@@ -1,5 +1,5 @@
-import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
@@ -20,6 +20,7 @@ export const storage = getStorage(app);
 const categoriesCollRef = collection(db, "categories");
 const loactionsCollRef = collection(db, "locations");
 const itemsCollRef = collection(db, "items");
+const blogsCollRef = collection(db, "blogs");
 
 export const fetchCategories = async () => {
     const catsData = await getDocs(categoriesCollRef);
@@ -45,6 +46,13 @@ export const fetchItems = async () => {
     return itemsDocs;
 };
 
+export const fetchBlogs = async () => {
+    const blogsData = await getDocs(blogsCollRef);
+    const blogsDocs = blogsData.docs.map((blog) => {
+        return { ...blog.data(), id: blog.id };
+    });
+    return blogsDocs;
+};
 /*and then create a function inside your component
     to set up the useState e.g.
 
