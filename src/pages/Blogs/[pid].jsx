@@ -1,27 +1,31 @@
+import { doc, getDoc } from "firebase/firestore";
+import React from "react";
+
 import {
     Blogcontainer,
     Blogdec,
     Blogimg,
     Blogtitle,
 } from "@/styles/Blogs.styled";
-import React from "react";
-import photo from "../../assets/Image/Photo.svg";
+import { db, fetchBlogs } from "@/utils/firebase";
+
 function blog({ blog }) {
     return (
-        <Blogcontainer key={blog.id}>
-            <Blogimg src={photo} alt='Blog' />
+        <Blogcontainer>
+            <Blogimg
+                src={blog.image}
+                alt='Blog'
+                width={1188}
+                height={645}
+                property='true'
+            />
             <Blogtitle>{blog.title}</Blogtitle>
-            <Blogdec>{blog.body}</Blogdec>
+            <Blogdec>{blog.blog}</Blogdec>
         </Blogcontainer>
-        // <div key={blog.id}>
-        //     <h1>{blog.title}</h1>
-        //     <p>{blog.body}</p>
-        // </div>
     );
 }
 export async function getStaticPaths() {
-    const data = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const blogs = await data.json();
+    const blogs = await fetchBlogs(); // getting data from firbase.js so we can get id out of it
 
     const paths = blogs.map((blog) => {
         return {
@@ -36,15 +40,14 @@ export async function getStaticPaths() {
     };
 }
 export async function getStaticProps({ params }) {
-    const data = await fetch(
-        "https://jsonplaceholder.typicode.com/posts/" + params.pid
-    );
-    const blog = await data.json();
-
+    const docRef = doc(db, "blogs", params.pid);
+    const data = await getDoc(docRef);
+    const blogData = data.data();
     return {
         props: {
-            blog,
+            blog: blogData,
         },
     };
 }
+
 export default blog;
