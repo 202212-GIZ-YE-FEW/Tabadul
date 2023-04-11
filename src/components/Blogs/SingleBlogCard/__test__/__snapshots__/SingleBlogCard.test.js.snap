@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
       loading="lazy"
       onError={[Function]}
       onLoad={[Function]}
-      src="images/donation.svg"
+      src=""
       style={
         Object {
           "color": "transparent",
@@ -27,18 +27,15 @@ exports[`renders correctly 1`] = `
     <div
       className="css-1xxa61n"
     >
-      2 July
+       
+      December
     </div>
   </div>
   <div
-    className="css-qhrrsi"
-  >
-    Blog Title
-  </div>
+    className="css-304k9"
+  />
   <p
-    className="css-s62muy"
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-  </p>
+    className="css-s4ieb1"
+  />
 </div>
 `;
