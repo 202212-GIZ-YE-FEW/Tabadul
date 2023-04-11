@@ -27,8 +27,4 @@ export const Container = styled.div`
     }
 `;
 
-export const PartnerImage = styled(Image)`
-    display: flex;
-    justify-contnet: center;
-    align-items: center;
-`;
+export const PartnerImage = styled(Image)``;
