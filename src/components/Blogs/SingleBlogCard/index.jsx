@@ -9,22 +9,37 @@ import {
     ImageContainer,
 } from "./SingleBlogCard.styled";
 
-function SingleBlogCard() {
+function SingleBlogCard(props) {
+    const { blogTitle, blog, blogDate, blogImage } = props;
+
+    const dateIntoArray = blogDate?.split("/");
+
+    function getMonthName(monthNumber) {
+        const date = new Date();
+        date.setMonth(monthNumber - 1);
+
+        return date.toLocaleString("en-US", {
+            month: "long",
+        });
+    }
+
     return (
         <Container>
             <ImageContainer>
                 <BlogImage
-                    src='images/donation.svg'
+                    src={blogImage}
                     alt='Blog Image'
                     width={328.57}
                     height={217.41}
                 />
-                <CardDate>2 July</CardDate>
+                <CardDate>
+                    {dateIntoArray ? dateIntoArray[0] : null}{" "}
+                    {getMonthName(dateIntoArray ? dateIntoArray[1] : null)}
+                </CardDate>
             </ImageContainer>
-            <BlogTitle>Blog Title</BlogTitle>
+            <BlogTitle>{blogTitle}</BlogTitle>
             <BlogDescription>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
+                {blog?.length > 50 ? `${blog.substring(0, 50)} ...` : blog}
             </BlogDescription>
         </Container>
     );
