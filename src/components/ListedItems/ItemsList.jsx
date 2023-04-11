@@ -58,7 +58,7 @@ const ItemsList = ({ filters }) => {
                             </DateAndTime>
 
                             <CardParagraph>
-                                {item.description.length > 50
+                                {item.description?.length > 50
                                     ? `${item.description.substring(0, 50)} ...`
                                     : item.description}
                             </CardParagraph>
