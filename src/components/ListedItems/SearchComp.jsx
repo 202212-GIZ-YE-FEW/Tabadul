@@ -12,6 +12,7 @@ const SearchComp = ({ handleInputChange }) => {
             />
             <SearchIcon
                 src='/SearchFilterIcons/Search.svg'
+                alt='Search Icon'
                 width={25}
                 height={35}
             />

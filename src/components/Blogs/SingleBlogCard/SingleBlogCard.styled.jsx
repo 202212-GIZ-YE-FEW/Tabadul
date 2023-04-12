@@ -43,8 +43,8 @@ export const BlogTitle = styled.div`
     text-align: center;
     margin-top: 12.92px;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 29px;
 `;
 
 export const BlogDescription = styled.p`
@@ -52,6 +52,6 @@ export const BlogDescription = styled.p`
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    padding: 0 17.29px 0 17.29px;
+    padding: 10px 17.29px 0 17.29px;
     margin: 13.31px 0 29.61px 0;
 `;

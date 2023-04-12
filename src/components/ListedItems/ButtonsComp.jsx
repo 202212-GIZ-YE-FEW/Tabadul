@@ -30,16 +30,18 @@ const ButtonsComp = (props) => {
         });
         setFilters(filteredLocs);
     }
-
     return (
         <ButtonsDiv>
             <GreenButtonsDiv>
-                <FilterButton onClick={() => setDropDown(!dropDown)}>
+                <FilterButton
+                    onClick={() => setDropDown(!dropDown)}
+                    onBlur={() => setDropDown(false)}
+                >
                     <InnerDiv>
                         <ButtonDetailDiv>Location</ButtonDetailDiv>
                         {dropDown && (
                             <MenuList>
-                                {locationList.map((location) => {
+                                {locationList?.map((location) => {
                                     return (
                                         <MenuItem
                                             key={location.id}
