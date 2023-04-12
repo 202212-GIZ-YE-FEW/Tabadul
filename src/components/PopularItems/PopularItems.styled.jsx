@@ -23,6 +23,7 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
     // position: absolute;
+    height: 100%;
     background: #ffffff;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -30,6 +31,8 @@ export const Card = styled.div`
 `;
 
 export const Cardimg = styled(Image)`
+    object-fit: cover;
+    object-position: center top;
     border-radius: 19px 19px 0px 0px;
 `;
 
@@ -55,11 +58,12 @@ export const Cardcontainer = styled.div`
 
 export const LocationTitle = styled.p`
     // font-family: "Poppins";
+    color: #3c4347;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 10px;
     text-align: center;
-    margin-left: 10px;
+    margin: 0 0 0 10px;
 `;
 
 export const CardHeader = styled.p`
@@ -98,4 +102,20 @@ export const Line = styled.hr`
     height: 0px;
     background-color: #33956d;
     margin-top: 40px;
+`;
+
+export const Lo_Ca_Div = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    padding: 13px 0px 14px 1px;
+    /* margin: 0 0 14px 0; */
+`;
+export const ProductTitle = styled.p`
+    font-weight: 600;
+    font-size: 20px;
+    color: #3c4347;
+    margin: 0 0 0 10px;
+    word-wrap: break-word;
 `;

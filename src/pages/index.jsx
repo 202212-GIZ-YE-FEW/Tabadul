@@ -10,10 +10,10 @@ import Partners from "@/components/Partners";
 import PopularItemsSection from "@/components/PopularItemsSection";
 import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
-
 import Layout from "@/layout/Layout";
+import { fetchBlogs, fetchItems } from "@/utils/firebase";
 
-export default function HomePage() {
+export default function HomePage({ items, blogs }) {
     const { t } = useTranslation("common");
 
     return (
@@ -33,8 +33,8 @@ export default function HomePage() {
             <Hero />
             <Causes />
             <Statistics />
-            <PopularItemsSection />
-            <BlogContainer />
+            <PopularItemsSection items={items} />
+            <BlogContainer blogs={blogs} />
             <Partners />
             <ScrollTop /> {/* leave this at the bottom of layout */}
         </Layout>
@@ -42,10 +42,14 @@ export default function HomePage() {
 }
 
 export async function getStaticProps({ locale }) {
+    const items = await fetchItems();
+    const blogs = await fetchBlogs();
     return {
         props: {
             ...(await serverSideTranslations(locale, ["common"])),
             // Will be passed to the page component as props
+            items,
+            blogs,
         },
     };
 }
