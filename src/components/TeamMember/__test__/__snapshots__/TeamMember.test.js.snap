@@ -6,7 +6,7 @@ exports[`renders correctly 1`] = `
 >
   <img
     alt="member"
-    className="css-1v1g91h"
+    className="css-tba05b"
     data-nimg="1"
     decoding="async"
     height={300}
