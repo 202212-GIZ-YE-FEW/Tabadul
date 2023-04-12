@@ -1,4 +1,6 @@
 import { team } from "data/db";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
 import TeamMember from "@/components/TeamMember";
@@ -18,20 +20,15 @@ import {
     TextContent,
 } from "../../styles/aboutus.styled";
 function Aboutus() {
+    const { t } = useTranslation("common");
     return (
         <AboutSection>
             <AboutContainer>
                 <HeroSection>
                     <TextContent>
-                        <HeadingContent>Who we are</HeadingContent>
+                        <HeadingContent>{t("aboutheroheader")}</HeadingContent>
                         <ParagrhContent>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.
+                            {t("aboutheroparagraph")}
                         </ParagrhContent>
                     </TextContent>
                     <ImgContent>
@@ -45,7 +42,7 @@ function Aboutus() {
                     </ImgContent>
                 </HeroSection>
                 <TeamSection>
-                    <TeamHeading>Our Team</TeamHeading>
+                    <TeamHeading>{t("teamheading")}</TeamHeading>
                     <TeamMemberContainer>
                         {team?.map((member) => {
                             return (
@@ -65,4 +62,12 @@ function Aboutus() {
     );
 }
 
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ["common"])),
+            // Will be passed to the page component as props
+        },
+    };
+}
 export default Aboutus;

@@ -15,10 +15,10 @@ import Layout from "@/layout/Layout";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
-
     return (
         <Layout>
             <p>{t("ooo")}</p>
+            <p>{t("ppp")}</p>
             <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
                 <Link href='/' locale='en'>
                     English

@@ -95,20 +95,20 @@ export const CARDS = [
 export const team = [
     {
         id: 1,
-        surename: "Surename",
-        desc: "Description for member",
+        surename: "Ahmed Alrai",
+        desc: "Frontend Developer",
         memberImg: simplephoto,
     },
     {
         id: 2,
-        surename: "Surename",
-        desc: "Description for member",
+        surename: "Sara Salem",
+        desc: "Frontend Developer",
         memberImg: simplephoto,
     },
     {
         id: 3,
-        surename: "Surename",
-        desc: "Description for member",
+        surename: "Yassin Alhumaidi",
+        desc: "Frontend Developer",
         memberImg: simplephoto,
     },
     {
