@@ -113,20 +113,20 @@ export const team = [
     },
     {
         id: 4,
-        surename: "Surename",
-        desc: "Description for member",
+        surename: "Maria Abdullah",
+        desc: "Frontend Developer",
         memberImg: simplephoto,
     },
     {
         id: 5,
-        surename: "Surename",
-        desc: "Description for member",
+        surename: "Aseel Flihan",
+        desc: "Frontend Developer",
         memberImg: simplephoto,
     },
     {
         id: 6,
-        surename: "Surename",
-        desc: "Description for member",
+        surename: "Sanaa Abo Hager",
+        desc: "Frontend Developer",
         memberImg: simplephoto,
     },
 ];

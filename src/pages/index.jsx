@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
+import { useEffect } from "react";
 
 import BlogContainer from "@/components/Blogs/BlogContainer";
 import Causes from "@/components/Causes";
@@ -14,11 +16,20 @@ import Statistics from "@/components/Statistics/Statistics";
 import Layout from "@/layout/Layout";
 
 export default function HomePage() {
+    const router = useRouter();
+
     const { t } = useTranslation("common");
+
+    useEffect(() => {
+        let dir = router.locale == "ar" ? "rtl" : "ltr";
+        let lang = router.locale == "ar" ? "ar" : "en";
+        document.querySelector("html").setAttribute("dir", dir);
+        document.querySelector("html").setAttribute("lang", lang);
+    }, [router.locale]);
+
     return (
         <Layout>
             <p>{t("ooo")}</p>
-            <p>{t("ppp")}</p>
             <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
                 <Link href='/' locale='en'>
                     English

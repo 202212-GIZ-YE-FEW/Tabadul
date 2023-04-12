@@ -54,7 +54,6 @@ function Aboutus() {
                                 />
                             );
                         })}
-                        <TeamMember />
                     </TeamMemberContainer>
                 </TeamSection>
             </AboutContainer>
