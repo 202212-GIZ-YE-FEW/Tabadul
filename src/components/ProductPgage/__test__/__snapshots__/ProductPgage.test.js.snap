@@ -2,23 +2,24 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-rgd5f1"
+  className="css-ol394g"
 >
   <div
     className="css-hsfvbr"
   >
     <div
-      className="css-1t1mv06"
+      className="css-1viuenm"
     >
       <img
         alt="Product"
-        src="/images/item2.png"
+        className="active"
+        src=""
       />
       <ul
-        className="active css-vlg12v"
+        className="active css-vcznx6"
         style={
           Object {
-            "padding": "5px",
+            "paddingRight": "50px",
           }
         }
       >
@@ -27,79 +28,10 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
         >
           <img
-            alt="Next"
+            alt="Previous"
             src="/images/left.png"
           />
         </div>
-        <li
-          className="css-geetn"
-        >
-          <img
-            alt="Product Image 1"
-            className=""
-            data-nimg="1"
-            decoding="async"
-            height={300}
-            loading="lazy"
-            onClick={[Function]}
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/_next/image?url=%2Fimages%2Fitem1.png&w=640&q=75"
-            srcSet="/_next/image?url=%2Fimages%2Fitem1.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fitem1.png&w=640&q=75 2x"
-            style={
-              Object {
-                "color": "transparent",
-              }
-            }
-            width={300}
-          />
-        </li>
-        <li
-          className="css-1pyc3lq"
-        >
-          <img
-            alt="Product Image 2"
-            className="selected"
-            data-nimg="1"
-            decoding="async"
-            height={300}
-            loading="lazy"
-            onClick={[Function]}
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/_next/image?url=%2Fimages%2Fitem2.png&w=640&q=75"
-            srcSet="/_next/image?url=%2Fimages%2Fitem2.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fitem2.png&w=640&q=75 2x"
-            style={
-              Object {
-                "color": "transparent",
-              }
-            }
-            width={300}
-          />
-        </li>
-        <li
-          className="css-geetn"
-        >
-          <img
-            alt="Product Image 3"
-            className=""
-            data-nimg="1"
-            decoding="async"
-            height={300}
-            loading="lazy"
-            onClick={[Function]}
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/_next/image?url=%2Fimages%2Fitem3.png&w=640&q=75"
-            srcSet="/_next/image?url=%2Fimages%2Fitem3.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fitem3.png&w=640&q=75 2x"
-            style={
-              Object {
-                "color": "transparent",
-              }
-            }
-            width={300}
-          />
-        </li>
         <div
           className="css-1rayqgy"
           onClick={[Function]}
@@ -116,12 +48,8 @@ exports[`renders correctly 1`] = `
     >
       <h1
         className="productName"
-      >
-        Item title
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt nisl sit amet dolor euismod, ac vehicula erat tincidunt. Fusce suscipit nulla eget odio rutrum imperdiet.
-      </p>
+      />
+      <p />
       <div
         className="css-1p9w2x1"
       >
@@ -130,11 +58,6 @@ exports[`renders correctly 1`] = `
           className="css-4ksxhv"
           src="/images/location.png"
         />
-        <div>
-          <p>
-            Item Location
-          </p>
-        </div>
       </div>
       <div
         className="css-oa1um5"
@@ -153,6 +76,169 @@ exports[`renders correctly 1`] = `
           </p>
           <p>
             Email: mail@mail.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1
+    className="css-fvxgzr"
+  >
+    Related Items
+  </h1>
+  <div
+    className="css-1hye3rh"
+  >
+    <div
+      className="css-1hye3rh"
+    >
+      <div
+        className="css-1s80y0p"
+      >
+        <img
+          alt="Related Item 1"
+          className="css-1esr6bg"
+          height={200}
+          src="/images/item1.png"
+          width={250}
+        />
+        <div
+          className="css-17t2h4g"
+        >
+          <h3
+            className="css-nk7oc1"
+          >
+            Related Item 1
+          </h3>
+          <p
+            className="css-15ouilb"
+          >
+            Location 1
+          </p>
+          <p
+            className="css-1dpl0sr"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-1s80y0p"
+      >
+        <img
+          alt="Related Item 2"
+          className="css-1esr6bg"
+          height={200}
+          src="/images/item1.png"
+          width={250}
+        />
+        <div
+          className="css-17t2h4g"
+        >
+          <h3
+            className="css-nk7oc1"
+          >
+            Related Item 2
+          </h3>
+          <p
+            className="css-15ouilb"
+          >
+            Location 2
+          </p>
+          <p
+            className="css-1dpl0sr"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-1s80y0p"
+      >
+        <img
+          alt="Related Item 3"
+          className="css-1esr6bg"
+          height={200}
+          src="/images/item1.png"
+          width={250}
+        />
+        <div
+          className="css-17t2h4g"
+        >
+          <h3
+            className="css-nk7oc1"
+          >
+            Related Item 3
+          </h3>
+          <p
+            className="css-15ouilb"
+          >
+            Location 3
+          </p>
+          <p
+            className="css-1dpl0sr"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-1s80y0p"
+      >
+        <img
+          alt="Related Item 4"
+          className="css-1esr6bg"
+          height={200}
+          src="/images/item1.png"
+          width={250}
+        />
+        <div
+          className="css-17t2h4g"
+        >
+          <h3
+            className="css-nk7oc1"
+          >
+            Related Item 4
+          </h3>
+          <p
+            className="css-15ouilb"
+          >
+            Location 4
+          </p>
+          <p
+            className="css-1dpl0sr"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      <div
+        className="css-1s80y0p"
+      >
+        <img
+          alt="Related Item 5"
+          className="css-1esr6bg"
+          height={200}
+          src="/images/item1.png"
+          width={250}
+        />
+        <div
+          className="css-17t2h4g"
+        >
+          <h3
+            className="css-nk7oc1"
+          >
+            Related Item 5
+          </h3>
+          <p
+            className="css-15ouilb"
+          >
+            Location 5
+          </p>
+          <p
+            className="css-1dpl0sr"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
       </div>
