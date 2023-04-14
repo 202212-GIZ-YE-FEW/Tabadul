@@ -1,7 +1,12 @@
+import Signin from "@/components/Signin";
 import React from "react";
 
 function SignIn() {
-    return <div></div>;
+    return (
+        <div>
+            <Signin />
+        </div>
+    );
 }
 
 export default SignIn;
