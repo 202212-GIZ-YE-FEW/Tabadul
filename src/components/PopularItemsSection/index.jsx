@@ -12,7 +12,7 @@ function PopularItemsSection({ items }) {
             <div style={{ position: "relative", top: "-90px" }}>
                 <Header>Popular Items</Header>
                 <Cards>
-                    {items?.map((item) => {
+                    {items?.slice(0, 5).map((item) => {
                         return (
                             <CardLink
                                 key={item.id}
@@ -21,7 +21,7 @@ function PopularItemsSection({ items }) {
                                 <PopularItems
                                     location={item.location.name}
                                     category={item.category.name}
-                                    photo={item.image[0]}
+                                    photo={item.image[0].url}
                                     description={item.description}
                                     title={item.title}
                                     date={item.date}
