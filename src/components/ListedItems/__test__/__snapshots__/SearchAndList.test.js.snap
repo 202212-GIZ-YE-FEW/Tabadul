@@ -17,6 +17,7 @@ exports[`renders correctly 1`] = `
         type="text"
       />
       <img
+        alt="Search Icon"
         className="css-aeci7b"
         data-nimg="1"
         decoding="async"
@@ -41,6 +42,7 @@ exports[`renders correctly 1`] = `
       >
         <button
           className="css-1gla2lw"
+          onBlur={[Function]}
           onClick={[Function]}
         >
           <div

@@ -22,12 +22,17 @@ const ItemsList = ({ filters }) => {
                     <CardLink href={`Products/${item.id}`} key={item.id}>
                         <ItemCard>
                             <CardImage
-                                src={item.image[0]}
+                                src={item.image[0].url}
                                 alt='CardImage'
                                 width={258.4}
                                 height={185.44}
                             />
-                            <ItemTitle>{item.title}</ItemTitle>
+                            <ItemTitle>
+                                {item.title?.length > 20
+                                    ? `${item.title?.substring(0, 20)} ...`
+                                    : item.title}
+                            </ItemTitle>
+
                             <LocationCategoryDiv>
                                 <Cardinfo>
                                     <ItemIcon
@@ -58,7 +63,7 @@ const ItemsList = ({ filters }) => {
                             </DateAndTime>
 
                             <CardParagraph>
-                                {item.description.length > 50
+                                {item.description?.length > 50
                                     ? `${item.description.substring(0, 50)} ...`
                                     : item.description}
                             </CardParagraph>

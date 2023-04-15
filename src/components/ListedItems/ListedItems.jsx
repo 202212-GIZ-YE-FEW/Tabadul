@@ -43,6 +43,9 @@ const ListedItems = (props) => {
                         .includes(handleFilter?.toLowerCase()) ||
                     item.category.name
                         .toLowerCase()
+                        .includes(handleFilter?.toLowerCase()) ||
+                    item.title
+                        .toLowerCase()
                         .includes(handleFilter?.toLowerCase())
                 );
             });
