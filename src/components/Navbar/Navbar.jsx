@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
     Arrow,
@@ -43,7 +43,10 @@ export default function Navbar() {
     const [activeIdx, setActiveIdx] = useState(false);
     const [navdroplan, setNavdroplan] = useState(false);
     const [navdrop, setNavdrop] = useState(false);
-    const width = null;
+    const [width, setWidth] = useState(0);
+    useEffect(() => {
+        setWidth(window.innerWidth);
+    }, []);
     return (
         <Header>
             <Nav>
@@ -54,7 +57,7 @@ export default function Navbar() {
                 </Homeiconlink>
 
                 <Navmenubar
-                    onClick={() => setNavActive(!navActive)}
+                    onClick={() => setNavActive((prevState) => !prevState)}
                     onBlur={() => setNavdrop(!navdrop)}
                 >
                     <Navmenubardiv></Navmenubardiv>
@@ -62,14 +65,17 @@ export default function Navbar() {
                     <Navmenubardiv></Navmenubardiv>
                 </Navmenubar>
                 <Mynav>
-                    {(navActive || width > 768) && (
+                    {(navActive || width > 1000) && (
                         <Navmenulist>
                             {MENU_LIST.map((menu, idx) => {
                                 return (
                                     <div
+                                        //ToDo: Style this to center it
                                         onClick={() => {
                                             setActiveIdx(idx);
-                                            setNavActive(false);
+                                            setNavActive(
+                                                (prevState) => !prevState
+                                            );
                                         }}
                                         key={menu.text}
                                     >
