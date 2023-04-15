@@ -24,7 +24,11 @@ function PopularItems({ category, location, photo, description, title, date }) {
                 height={185.44}
             />
             <Cardcontainer>
-                <ProductTitle>{title}</ProductTitle>
+                <ProductTitle>
+                    {title?.length > 50
+                        ? `${title.substring(0, 50)} ...`
+                        : title}
+                </ProductTitle>
                 <Lo_Ca_Div>
                     <Cardinfo>
                         <Icon
