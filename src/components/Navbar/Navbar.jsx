@@ -58,7 +58,7 @@ export default function Navbar() {
 
                 <Navmenubar
                     onClick={() => setNavActive((prevState) => !prevState)}
-                    onBlur={() => setNavdrop(!navdrop)}
+                    onBlur={() => setNavdrop((prevState) => !prevState)}
                 >
                     <Navmenubardiv></Navmenubardiv>
                     <Navmenubardiv></Navmenubardiv>
