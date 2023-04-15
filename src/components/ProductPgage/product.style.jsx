@@ -1,9 +1,11 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 
 export const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     background-color: #f1f1f1;
 
     @media screen and (max-width: 1400px) {
@@ -30,8 +32,16 @@ export const ProductImages = styled.div`
 
     img {
         max-width: 100%;
+        max-height: 800px;
         height: auto;
         border-radius: 10px;
+        object-fit: contain;
+
+        &.active {
+            opacity: 1;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+            transition: box-shadow 0.3s ease-in-out;
+        }
     }
 
     @media only screen and (max-width: 768px) {
@@ -55,8 +65,10 @@ export const ImageList = styled.ul`
     justify-content: center;
 
     li {
-        margin-right: 20px;
+        margin-right: 10px;
         cursor: pointer;
+        justify-content: center;
+        padding-top: 10px;
     }
 
     li:last-child {
@@ -140,6 +152,7 @@ export const ContactInfo = styled.div`
 
 export const ImageListItem = styled.li`
     img {
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
         opacity: ${(props) => (props.active ? "1" : "0.4")};
         &.selected {
             box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
@@ -150,4 +163,61 @@ export const ImageListItem = styled.li`
             transition: box-shadow 0.3s ease-in-out;
         }
     }
+`;
+
+export const RelatedItemsContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+`;
+
+export const RelatedItemCard = styled.div`
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+`;
+
+export const RelatedItemImage = styled.img`
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+`;
+
+export const RelatedItemDetails = styled.div`
+    padding: 10px;
+`;
+
+export const RelatedItemTitle = styled.h3`
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+`;
+
+export const RelatedItemLocation = styled.p`
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+`;
+
+export const RelatedItemDescription = styled.p`
+    margin: 10px 0 0 0;
+    font-size: 0.9rem;
+`;
+
+export const Title = styled.h1`
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    color: #000000;
+    width: 100%;
 `;
