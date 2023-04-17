@@ -30,10 +30,6 @@ export const ForgetSection = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    @media screen and (max-width: 991px) {
-        height: auto;
-        flex-direction: column-reverse;
-    }
 `;
 
 export const TextContent = styled.div`
@@ -47,26 +43,42 @@ export const TextContent = styled.div`
 `;
 export const ImageForget = styled(Image)`
     max-width: 100%;
+    @media screen and (max-width: 768px) {
+        width: 150px;
+    }
 `;
 export const ForgetHeading = styled.h3`
     font-size: 22px;
     font-weight: 700;
     color: #000000;
     margin: 0;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
 `;
 export const Forgetform = styled.form`
-    width: 100%;
+    width: 500px;
+    max-width: 100%;
+    padding: 10px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `;
 export const ForgetText = styled.p`
     font-size: 18px;
     font-weight: 400;
     color: #000000;
     width: 450px;
+    max-width: 100%;
     text-align: center;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        font-size: 16px;
+    }
 `;
 export const ForgetInput = styled.input`
-    width: 500px;
-    max-width: 100%;
+    display: inline-block;
+    width: 100%;
     padding: 15px 20px;
     margin-bottom: 25px;
     border-radius: 15px;
@@ -74,6 +86,7 @@ export const ForgetInput = styled.input`
     outline: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 0;
+    font-size: 16px;
     &.input-error {
         border: 2px solid #ff00009b;
     }
@@ -82,9 +95,12 @@ export const ForgetInput = styled.input`
         color: #cacaca;
         line-height: 0;
     }
+    @media screen and (max-width: 768px) {
+        padding: 10px 15px;
+    }
 `;
 export const BtnResetPass = styled.button`
-    font-size: 20px;
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     background-color: #33956d;
@@ -100,6 +116,10 @@ export const BtnResetPass = styled.button`
     &:disabled {
         opacity: 0.35;
     }
+    @media screen and (max-width: 768px) {
+        width: 80%;
+        padding: 8px 0;
+    }
 `;
 export const BackToLogin = styled.p`
     font-size: 16px;
@@ -113,9 +133,13 @@ export const LoginReturn = styled(Link)`
 `;
 export const ImgContent = styled.div`
     flex: 1;
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
 `;
 export const ForgetImage = styled(Image)`
     width: 100%;
+    max-width: 100%;
 `;
 export const ForgetErorrs = styled.p`
     font-size: 13px;
