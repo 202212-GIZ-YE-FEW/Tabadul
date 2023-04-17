@@ -29,6 +29,7 @@ export const ForgetSection = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
     @media screen and (max-width: 991px) {
         height: auto;
         flex-direction: column-reverse;
@@ -41,6 +42,8 @@ export const TextContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
+    text-align: center;
 `;
 export const ImageForget = styled(Image)`
     max-width: 100%;
@@ -70,18 +73,18 @@ export const ForgetInput = styled.input`
     border: 2px solid #33956d;
     outline: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0;
+    &.input-error {
+        border: 2px solid #ff00009b;
+    }
     &::placeholder {
         font-size: 18px;
         color: #cacaca;
         line-height: 0;
     }
-    &:active {
-        border: 1px solid #2bdf97;
-    }
 `;
 export const BtnResetPass = styled.button`
     font-size: 20px;
-
     font-weight: 400;
     color: #fff;
     background-color: #33956d;
@@ -93,6 +96,10 @@ export const BtnResetPass = styled.button`
     border: none;
     font-size: 16px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 20px;
+    &:disabled {
+        opacity: 0.35;
+    }
 `;
 export const BackToLogin = styled.p`
     font-size: 16px;
@@ -109,4 +116,13 @@ export const ImgContent = styled.div`
 `;
 export const ForgetImage = styled(Image)`
     width: 100%;
+`;
+export const ForgetErorrs = styled.p`
+    font-size: 13px;
+    font-weight: 700;
+    color: #ff00009b;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-left: 10px;
 `;
