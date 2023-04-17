@@ -41,6 +41,7 @@ export default function HomePage({ items, blogs }) {
                 <Link href='/Blogs'>Blogs</Link>
                 <Link href='/Aboutus'>About us</Link>
                 <Link href='/Items'>Profile</Link>
+                <Link href='/Forgetpassword'>forgetPassword</Link>
             </div>
             <Hero />
             <Causes />
