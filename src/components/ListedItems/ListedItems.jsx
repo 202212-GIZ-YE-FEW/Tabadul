@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { ShimmerPostList } from "react-shimmer-effects-18";
+
+import { fetchLocations } from "@/utils/firebase";
 
 import ButtonsComp from "./ButtonsComp";
 import ItemsList from "./ItemsList";
 import { ListedItemsDiv, SearchAndFilterDiv } from "./ListedItems.styled";
 import SearchComp from "./SearchComp";
-import { fetchLocations } from "@/utils/firebase";
 
 const ListedItems = (props) => {
     const { setFilters, filters, setHandleFilter, handleFilter, items } = props;
@@ -74,15 +76,12 @@ const ListedItems = (props) => {
             {filters?.length > 0 ? (
                 <ItemsList filters={filters} />
             ) : (
-                <p
-                    style={{
-                        marginTop: "200px",
-                        marginBottom: "100px",
-                        fontSize: "20px",
-                    }}
-                >
-                    There&#39;re no matching items{" "}
-                </p>
+                <ShimmerPostList
+                    postStyle='STYLE_FOUR'
+                    col={3}
+                    row={2}
+                    gap={30}
+                />
             )}
         </ListedItemsDiv>
     );

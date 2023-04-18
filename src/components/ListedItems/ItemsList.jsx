@@ -2,14 +2,14 @@ import React from "react";
 
 import {
     CardImage,
-    CardLink,
     Cardinfo,
+    CardLink,
     DateAndTime,
     IconsTitles,
     ItemCard,
     ItemIcon,
-    ItemTitle,
     ItemsListDiv,
+    ItemTitle,
     LocationCategoryDiv,
 } from "./ListedItems.styled";
 import { CardParagraph } from "../PopularItems/PopularItems.styled";
