@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Buttonspan,
     Checkinput,
@@ -26,14 +26,42 @@ import {
     ChangePass,
     ContainerImg,
 } from "./Signin.styled";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "@/utils/firebase";
+import { useRouter } from "next/router";
+// import { useFormik } from "formik";
 
 function Signin() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    // const r = useRouter();
+    const signIn = async (e) => {
+        e.preventDefault();
+        try {
+            // await auth.setPersistence(keepMeLoggedIn ? firebase.auth.Auth.Persistence.SESSION : firebase.auth.Auth.Persistence.LOCAL);
+            await signInWithEmailAndPassword(auth, email, password);
+            // r.push("/");
+        } catch (error) {
+            console.error(error);
+            alert("email or password is not vaild");
+        }
+    };
+    // const { values, handleBlur, handleChange } = useFormik({
+    //     initialValues: {
+    //         Name: "",
+    //         email: "",
+    //         password: "",
+    //         confirmpassword: "",
+    //         phone: "",
+    //         location: "",
+    //     },
+    // });
     return (
         <SigninContainer>
             <Itemscontainer>
                 <Inputscontainer>
                     <Signinheader>Log in</Signinheader>
-                    <Signinform>
+                    <Signinform onSubmit={signIn}>
                         <Containerinput>
                             <Test>
                                 <Itemsdev>
@@ -41,6 +69,11 @@ function Signin() {
                                     <Signininput
                                         placeholder='Enter your email'
                                         type='text'
+                                        value={email}
+                                        onChange={(e) =>
+                                            setEmail(e.target.value)
+                                        }
+                                        required
                                     />
                                 </Itemsdev>
                                 <Itemsdev>
@@ -48,6 +81,11 @@ function Signin() {
                                     <Signininput
                                         placeholder='Enter your password'
                                         type='password'
+                                        value={password}
+                                        onChange={(e) =>
+                                            setPassword(e.target.value)
+                                        }
+                                        required
                                     />
                                 </Itemsdev>
                                 <Checklabel>

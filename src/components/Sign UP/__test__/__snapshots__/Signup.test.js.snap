@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
   >
     <form
       className="css-0"
-      method="post"
+      onSubmit={[Function]}
     >
       <div
         className="css-vaakcf"
@@ -27,6 +27,7 @@ exports[`renders correctly 1`] = `
         <input
           className="css-1a6rg6a"
           placeholder="Enter your name"
+          required={true}
           type="text"
         />
       </div>
@@ -40,8 +41,11 @@ exports[`renders correctly 1`] = `
         </label>
         <input
           className="css-1a6rg6a"
+          onChange={[Function]}
           placeholder="Enter your email"
+          required={true}
           type="email"
+          value=""
         />
       </div>
       <div
@@ -53,9 +57,13 @@ exports[`renders correctly 1`] = `
           Password
         </label>
         <input
+          autoComplete="current-password"
           className="css-1a6rg6a"
+          onChange={[Function]}
           placeholder="Enter your password"
+          required={true}
           type="password"
+          value=""
         />
       </div>
       <div
@@ -69,6 +77,7 @@ exports[`renders correctly 1`] = `
         <input
           className="css-1a6rg6a"
           placeholder="Confirm your password"
+          required={true}
           type="password"
         />
       </div>
@@ -83,6 +92,7 @@ exports[`renders correctly 1`] = `
         <input
           className="css-1a6rg6a"
           placeholder="Enter your Phone"
+          required={true}
           type="number"
         />
       </div>
@@ -92,10 +102,11 @@ exports[`renders correctly 1`] = `
         <label
           className="css-18drj25"
         >
-          Phone
+          Location
         </label>
         <select
           className="css-kgetvl"
+          required={true}
         >
           <option
             className="css-0"

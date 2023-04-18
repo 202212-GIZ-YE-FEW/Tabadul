@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
     FaceBook,
@@ -19,22 +19,51 @@ import {
     SignTitle,
     Signwith,
 } from "./Signup.styled";
+import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
+import { auth } from "@/utils/firebase";
+import { useRouter } from "next/router";
 
 function Signup() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    // const rout = useRouter();
+
+    const signUp = async (e) => {
+        e.preventDefault();
+        try {
+            const user = await createUserWithEmailAndPassword(
+                auth,
+                email,
+                password
+            );
+            // rout.push("/");
+        } catch (err) {
+            console.error(err);
+            // alert("error")
+        }
+    };
+
     return (
         <SignContainer>
             <SignHeader>Sign Up</SignHeader>
             <SignForm>
-                <FormSign method='post'>
+                <FormSign onSubmit={signUp}>
                     <Signdev>
                         <SignTitle>Name</SignTitle>
-                        <SignInput type='text' placeholder='Enter your name' />
+                        <SignInput
+                            type='text'
+                            placeholder='Enter your name'
+                            required
+                        />
                     </Signdev>
                     <Signdev>
                         <SignTitle>Email</SignTitle>
                         <SignInput
                             type='email'
                             placeholder='Enter your email'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
                         />
                     </Signdev>
                     <Signdev>
@@ -42,6 +71,10 @@ function Signup() {
                         <SignInput
                             type='password'
                             placeholder='Enter your password'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            autoComplete='current-password'
+                            required
                         />
                     </Signdev>
                     <Signdev>
@@ -49,6 +82,7 @@ function Signup() {
                         <SignInput
                             type='password'
                             placeholder='Confirm your password'
+                            required
                         />
                     </Signdev>
                     <Signdev>
@@ -56,11 +90,12 @@ function Signup() {
                         <SignInput
                             type='number'
                             placeholder='Enter your Phone'
+                            required
                         />
                     </Signdev>
                     <Signdev>
-                        <SignTitle>Phone</SignTitle>
-                        <LocationSelect>
+                        <SignTitle>Location</SignTitle>
+                        <LocationSelect required>
                             <Selectoption disabled selected>
                                 Select Location
                             </Selectoption>

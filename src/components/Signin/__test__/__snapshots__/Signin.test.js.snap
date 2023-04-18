@@ -17,6 +17,7 @@ exports[`renders correctly 1`] = `
       </h1>
       <form
         className="css-0"
+        onSubmit={[Function]}
       >
         <div
           className="css-1ohf0ui"
@@ -34,8 +35,11 @@ exports[`renders correctly 1`] = `
               </label>
               <input
                 className="css-l3wdrh"
+                onChange={[Function]}
                 placeholder="Enter your email"
+                required={true}
                 type="text"
+                value=""
               />
             </div>
             <div
@@ -48,8 +52,11 @@ exports[`renders correctly 1`] = `
               </label>
               <input
                 className="css-l3wdrh"
+                onChange={[Function]}
                 placeholder="Enter your password"
+                required={true}
                 type="password"
+                value=""
               />
             </div>
             <label
