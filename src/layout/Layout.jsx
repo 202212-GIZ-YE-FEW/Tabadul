@@ -7,8 +7,8 @@ export default function Layout({ children }) {
     // Example
     return (
         <>
-            {/* <Navbar />
-        {children} */}
+            {/* <Navbar /> */}
+            {children}
             <Footer />
         </>
     );
