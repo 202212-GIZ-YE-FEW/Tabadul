@@ -251,3 +251,8 @@ export const LocationCategoryDiv = styled.div`
 export const CardLink = styled(Link)`
     text-decoration: none;
 `;
+
+export const ShimmerContainer = styled.div`
+    width: 80%;
+    margin: 100px auto;
+`;

@@ -1,7 +1,9 @@
+import React, { useEffect, useState } from "react";
+
 import { Container } from "@/components/CardListed/Cardlist.style";
 import Categories from "@/components/Categories";
 import ListedItems from "@/components/ListedItems/ListedItems";
-import React, { useEffect, useState } from "react";
+
 import { fetchItems } from "@/utils/firebase";
 
 const ProductsItems = () => {
