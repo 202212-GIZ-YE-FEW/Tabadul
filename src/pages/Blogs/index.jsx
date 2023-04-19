@@ -1,4 +1,5 @@
 import React from "react";
+import { ShimmerContentBlock } from "react-shimmer-effects-18";
 
 import SingleBlog from "@/components/SingleBlog";
 
@@ -8,17 +9,43 @@ import { BlogContainer } from "../../components/SingleBlog/SingleBlog.styled";
 function BlogPage({ blogs }) {
     return (
         <BlogContainer>
-            {blogs?.map((blog) => {
-                return (
-                    <SingleBlog
-                        key={blog.id}
-                        title={blog.title}
-                        desc={blog.blog}
-                        photo={blog.image}
-                        id={blog.id}
+            {blogs?.length > 0 ? (
+                blogs.map((blog) => {
+                    return (
+                        <SingleBlog
+                            key={blog.id}
+                            title={blog.title}
+                            desc={blog.blog}
+                            photo={blog.image}
+                            id={blog.id}
+                        />
+                    );
+                })
+            ) : (
+                <>
+                    <ShimmerContentBlock
+                        title
+                        text
+                        cta
+                        thumbnailWidth={370}
+                        thumbnailHeight={370}
                     />
-                );
-            })}
+                    <ShimmerContentBlock
+                        title
+                        text
+                        cta
+                        thumbnailWidth={370}
+                        thumbnailHeight={370}
+                    />
+                    <ShimmerContentBlock
+                        title
+                        text
+                        cta
+                        thumbnailWidth={370}
+                        thumbnailHeight={370}
+                    />
+                </>
+            )}
         </BlogContainer>
     );
 }

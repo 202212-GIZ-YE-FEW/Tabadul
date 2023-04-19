@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import {
@@ -12,7 +13,6 @@ import {
     MenuItemDiv,
     MenuList,
 } from "./ListedItems.styled";
-import Link from "next/link";
 
 const ButtonsComp = (props) => {
     const {
