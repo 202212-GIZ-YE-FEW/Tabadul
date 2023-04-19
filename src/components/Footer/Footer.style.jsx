@@ -2,8 +2,6 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 
 export const Footercss = styled.div`
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: #33956d;
     color: #fff;
