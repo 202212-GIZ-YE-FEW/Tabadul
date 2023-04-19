@@ -5,7 +5,6 @@ export const Footercss = styled.div`
     width: 100%;
     background-color: #33956d;
     color: #fff;
-
     @media screen and (max-width: 700px) {
         position: relative;
         bottom: 0px;

@@ -8,6 +8,7 @@ export const IconDiv = styled.div`
     right: 20px;
     bottom: 10px;
     cursor: pointer;
+    z-index: 1000;
 `;
 export const Circle = styled(Image)`
     position: relative;
