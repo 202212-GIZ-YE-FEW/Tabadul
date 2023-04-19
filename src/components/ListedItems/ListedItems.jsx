@@ -83,7 +83,7 @@ const ListedItems = (props) => {
                 <ShimmerContainer>
                     <ShimmerPostList
                         postStyle='STYLE_FOUR'
-                        col={3}
+                        col={4}
                         row={2}
                         gap={30}
                         rounded={true}
