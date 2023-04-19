@@ -5,7 +5,11 @@ import { fetchLocations } from "@/utils/firebase";
 
 import ButtonsComp from "./ButtonsComp";
 import ItemsList from "./ItemsList";
-import { ListedItemsDiv, SearchAndFilterDiv } from "./ListedItems.styled";
+import {
+    ListedItemsDiv,
+    SearchAndFilterDiv,
+    ShimmerContainer,
+} from "./ListedItems.styled";
 import SearchComp from "./SearchComp";
 
 const ListedItems = (props) => {
@@ -76,12 +80,15 @@ const ListedItems = (props) => {
             {filters?.length > 0 ? (
                 <ItemsList filters={filters} />
             ) : (
-                <ShimmerPostList
-                    postStyle='STYLE_FOUR'
-                    col={3}
-                    row={2}
-                    gap={30}
-                />
+                <ShimmerContainer>
+                    <ShimmerPostList
+                        postStyle='STYLE_FOUR'
+                        col={3}
+                        row={2}
+                        gap={30}
+                        rounded={true}
+                    />
+                </ShimmerContainer>
             )}
         </ListedItemsDiv>
     );

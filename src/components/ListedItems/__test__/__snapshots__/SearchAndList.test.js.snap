@@ -128,17 +128,241 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
   </div>
-  <p
-    style={
-      Object {
-        "fontSize": "20px",
-        "marginBottom": "100px",
-        "marginTop": "200px",
-      }
-    }
+  <div
+    className="css-d0uswh"
   >
-    There're no matching items
-     
-  </p>
+    <div
+      className="grid grid-gap-30 grid-column-3"
+    >
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
