@@ -23,6 +23,7 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
     // position: absolute;
+    width: 260px;
     height: 100%;
     background: #ffffff;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
@@ -83,6 +84,7 @@ export const CardParagraph = styled.p`
     color: #3c4347;
     margin-left: 10px;
     margin-top: 0;
+    word-wrap: break-word;
 `;
 
 export const Line = styled.hr`

@@ -26,13 +26,25 @@ export const ItemImageInput = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin-top: 10px;
+    padding: 10px;
+    margin: 10px 0 30px 0;
+    width: 100%;
+`;
+export const ImagesDiv = styled.div`
+    width: 100%;
+    display: grid;
+    grid-gap: 30px 10px;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
 `;
 export const ItemImage = styled(Image)`
     border-radius: 20px;
     width: 100%;
-    height: 100%;
+    height: 300px;
+    /* object-position: center top; */
+    object-fit: ${(props) =>
+        props.alt === "thumbnail" ? "cover" : " contain"};
 `;
 export const ItemTitle = styled.label`
     font-weight: 400;
@@ -47,6 +59,7 @@ export const ItemTitle = styled.label`
     }
 `;
 export const TitleInput = styled.input`
+    font-family: inherit;
     border: none;
     width: 800px;
     height: 60.78px;
@@ -55,14 +68,17 @@ export const TitleInput = styled.input`
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 20px;
-
+    padding-left: 20px;
     &::placeholder {
         font-weight: 400;
         font-size: 20px;
-        padding-left: 20px;
         color: #bbbbbb;
     }
 
+    &:focus {
+        outline: none !important;
+        border: 2px solid #33956d;
+    }
     @media screen and (max-width: 768px) {
         width: 348px;
         height: 50px;
@@ -96,7 +112,7 @@ export const CatogryInput = styled.select`
     line-height: 30px;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     color: #bbbbbb;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -107,6 +123,10 @@ export const CatogryInput = styled.select`
     @media screen and (max-width: 768px) {
         width: 348px;
         height: 50px;
+    }
+    &:focus {
+        outline: none !important;
+        border: 2px solid #33956d;
     }
 `;
 export const Selectoption = styled.option``;
@@ -137,7 +157,7 @@ export const LocationInput = styled.select`
     line-height: 30px;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     color: #bbbbbb;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -148,6 +168,10 @@ export const LocationInput = styled.select`
     @media screen and (max-width: 768px) {
         width: 348px;
         height: 50px;
+    }
+    &:focus {
+        outline: none !important;
+        border: 2px solid #33956d;
     }
 `;
 
@@ -166,6 +190,7 @@ export const ItemDescription = styled.label`
     }
 `;
 export const DescriptionInput = styled.textarea`
+    font-family: inherit;
     border: none;
     width: 800px;
     height: 242.06px;
@@ -174,14 +199,21 @@ export const DescriptionInput = styled.textarea`
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    line-height: 30px;
     &::placeholder {
         font-weight: 400;
         font-size: 20px;
         display: flex;
         align-items: center;
         color: #bbbbbb;
-        padding-left: 20px;
-        padding-top: 10px;
+        /* padding-left: 20px;
+        padding-top: 10px; */
+    }
+    &:focus {
+        outline: none !important;
+        border: 2px solid #33956d;
     }
     @media screen and (max-width: 768px) {
         width: 348px;
@@ -202,8 +234,10 @@ export const Itemupload = styled.label`
     }
 `;
 export const UploadContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     border: none;
-    width: 400px;
+    width: 380px;
     height: 100%;
     background: #ffffff;
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
@@ -223,6 +257,7 @@ export const Uploadspan = styled.span`
     font-size: 20px;
     color: #bbbbbb;
     overflow-wrap: break-word;
+    width: 100%;
 `;
 
 export const UploadInput = styled.input`
@@ -233,6 +268,7 @@ export const UploadInput = styled.input`
     cursor: pointer;
     top: 0;
     left: 0;
+    /* border: 2px solid black; */
 `;
 
 export const Buttoncontainer = styled.div`
@@ -241,10 +277,11 @@ export const Buttoncontainer = styled.div`
 `;
 
 export const ConfirmButton = styled.button`
-    background-color: ${(props) => (props.file ? "#33956d" : "grey")};
-    color: ${(props) => (props.file ? "white" : "black")};
+    background-color: ${(props) => (props.imagesList ? "#33956d" : "grey")};
+    color: ${(props) => (props.imagesList ? "white" : "black")};
     /* background: #33956d; */
     border-radius: 54px;
+    border: none;
     width: 150px;
     height: 48.77px;
     text-align: center;
@@ -283,4 +320,52 @@ export const Cancelspan = styled.span`
     @media screen and (max-width: 768px) {
         font-size: 16px;
     }
+`;
+
+export const DisplayContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 380px;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        width: 348px;
+        height: 100%;
+    }
+`;
+
+export const ErrorLabel = styled.label`
+    color: #f07167;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 17px;
+`;
+export const LabelDiv = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+export const PlusDiv = styled.div`
+    width: 93%;
+    height: 400px;
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #6f6f6f;
+    position: relative;
+`;
+export const DeleteIcon = styled.div`
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
 `;
