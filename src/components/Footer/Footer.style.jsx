@@ -2,12 +2,9 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 
 export const Footercss = styled.div`
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: #33956d;
     color: #fff;
-
     @media screen and (max-width: 700px) {
         position: relative;
         bottom: 0px;
