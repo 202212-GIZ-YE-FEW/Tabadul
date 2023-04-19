@@ -47,10 +47,11 @@ export const SignInput = styled.input`
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 20px;
+    outline: none;
+    padding: 10px 20px;
     &::placeholder {
         font-weight: 400;
         font-size: 20px;
-        padding-left: 20px;
         color: #bbbbbb;
     }
     &::-webkit-inner-spin-button {
@@ -151,3 +152,31 @@ export const Linedin = styled(Image)`
     padding: 10px;
     bottom: 0;
 `;
+export const Erorrsmsgs = styled.p`
+    font-size: 13px;
+    font-weight: 700;
+    color: #ff00009b;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+`;
+export const Loaddingmeg = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    color: #fff;
+    font-size: 20px;
+    &:i {
+        font-size: 50px;
+        margin-right: 10px;
+    }
+`;
+export const LoadinParaghraph = styled.p``;

@@ -70,22 +70,24 @@ export const Signininput = styled.input`
     box-sizing: border-box;
     width: 500px;
     height: 49px;
-    left: 37px;
-    top: 100px;
     border: 2px solid #33956d;
     border-radius: 15px;
     font-size: 20px;
     margin-top: 10px;
+    outline: none;
+    padding: 10px 20px;
     &::placeholder {
         font-weight: 400;
         font-size: 16px;
         line-height: 30px;
         color: #cacaca;
-        padding-left: 20px;
     }
     @media screen and (max-width: 600px) {
         width: 364px;
         height: 58.77;
+    }
+    &.input-error {
+        border: 2px solid #ff00009b;
     }
 `;
 
@@ -222,3 +224,32 @@ export const ContainerImg = styled.div`
     }
 `;
 export const Signinimage = styled(Image)``;
+export const Erorrsmsg = styled.p`
+    font-size: 13px;
+    font-weight: 700;
+    color: #ff00009b;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+`;
+
+export const Loadding = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    color: #fff;
+    font-size: 20px;
+    &:i {
+        font-size: 50px;
+        margin-right: 10px;
+    }
+`;
+export const Loadinglabel = styled.p``;

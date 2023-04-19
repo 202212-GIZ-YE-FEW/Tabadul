@@ -12,7 +12,7 @@ const BlogContainer = ({ blogs }) => {
         <>
             <Header>Blogs</Header>
             <BlogCard>
-                {blogs?.map((blog) => {
+                {blogs?.slice(0, 4).map((blog) => {
                     return (
                         <CardLink key={blog.id} href={`Blogs/${blog.id}`}>
                             <SingleBlogCard

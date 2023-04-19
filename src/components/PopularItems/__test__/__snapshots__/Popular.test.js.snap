@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1pm9wa2"
+  className="css-ihlp1b"
 >
   <img
     alt="CardImage"
@@ -83,7 +83,7 @@ exports[`renders correctly 1`] = `
       className="css-1eccmhm"
     />
     <p
-      className="css-15wgt63"
+      className="css-1c9mivk"
     />
   </div>
 </div>

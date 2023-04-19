@@ -25,10 +25,13 @@ exports[`renders correctly 1`] = `
           Name
         </label>
         <input
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="name"
+          name="name"
+          onChange={[Function]}
           placeholder="Enter your name"
-          required={true}
           type="text"
+          value=""
         />
       </div>
       <div
@@ -40,10 +43,11 @@ exports[`renders correctly 1`] = `
           Email
         </label>
         <input
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="email"
+          name="email"
           onChange={[Function]}
           placeholder="Enter your email"
-          required={true}
           type="email"
           value=""
         />
@@ -58,10 +62,11 @@ exports[`renders correctly 1`] = `
         </label>
         <input
           autoComplete="current-password"
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="password"
+          name="passwprd"
           onChange={[Function]}
           placeholder="Enter your password"
-          required={true}
           type="password"
           value=""
         />
@@ -75,10 +80,13 @@ exports[`renders correctly 1`] = `
           Confirm Password
         </label>
         <input
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="confirmpassword"
+          name="confirmpassword"
+          onChange={[Function]}
           placeholder="Confirm your password"
-          required={true}
           type="password"
+          value=""
         />
       </div>
       <div
@@ -90,10 +98,13 @@ exports[`renders correctly 1`] = `
           Phone
         </label>
         <input
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="phone"
+          name="phone"
+          onChange={[Function]}
           placeholder="Enter your Phone"
-          required={true}
           type="number"
+          value=""
         />
       </div>
       <div
@@ -106,7 +117,9 @@ exports[`renders correctly 1`] = `
         </label>
         <select
           className="css-kgetvl"
-          required={true}
+          id="location"
+          name="location"
+          onChange={[Function]}
         >
           <option
             className="css-0"

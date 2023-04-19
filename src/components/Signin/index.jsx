@@ -1,61 +1,87 @@
 import React, { useState } from "react";
+
 import {
     Buttonspan,
+    ChangePass,
     Checkinput,
     Checklabel,
+    ContainerImg,
     Containerinput,
+    Erorrsmsg,
+    FaceBookImg,
+    Imgsdev,
     Inputscontainer,
+    InstagramImg,
     Itemscontainer,
     Itemsdev,
+    LinedinImg,
     Linkparagraph,
+    Loadding,
+    Loadinglabel,
     Paraghraph,
     ParaghraphConatainer,
-    SigninContainer,
     Signinbutton,
+    SigninContainer,
     Signinform,
     Signinheader,
+    Signinimage,
     Signininput,
     Signintitle,
-    Imgsdev,
-    FaceBookImg,
-    InstagramImg,
-    LinedinImg,
     Signinwith,
-    Signinimage,
     Test,
-    ChangePass,
-    ContainerImg,
 } from "./Signin.styled";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/utils/firebase";
 import { useRouter } from "next/router";
-// import { useFormik } from "formik";
 
 function Signin() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    // const r = useRouter();
+    const [emailError, setEmailError] = useState("");
+    const [passError, setPassError] = useState("");
+    const [loading, setLoading] = useState(false);
+    const r = useRouter();
     const signIn = async (e) => {
         e.preventDefault();
         try {
+            if (!email) {
+                setEmailError("Please enter your email");
+            } else {
+                setEmailError("");
+            }
+            if (!password) {
+                setPassError("Please enter your password");
+            } else {
+                setPassError("");
+            }
             // await auth.setPersistence(keepMeLoggedIn ? firebase.auth.Auth.Persistence.SESSION : firebase.auth.Auth.Persistence.LOCAL);
             await signInWithEmailAndPassword(auth, email, password);
-            // r.push("/");
+            r.push("/");
+            setLoading(true);
         } catch (error) {
             console.error(error);
             alert("email or password is not vaild");
+            setLoading(false);
         }
     };
-    // const { values, handleBlur, handleChange } = useFormik({
-    //     initialValues: {
-    //         Name: "",
-    //         email: "",
-    //         password: "",
-    //         confirmpassword: "",
-    //         phone: "",
-    //         location: "",
-    //     },
-    // });
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (!email) {
+    //         setEmailError("Please enter your email");
+    //     }
+    //     if(!password){
+    //         setPassError("Please enter your password");
+    //     }
+    // };
+    // const handleLogin = () => {
+    //     setLoading(true);
+
+    //     // Perform authentication here
+    //     // Once authentication is complete, set loading to false
+    //     // setLoading(false);
+    //   };
+
     return (
         <SigninContainer>
             <Itemscontainer>
@@ -67,14 +93,19 @@ function Signin() {
                                 <Itemsdev>
                                     <Signintitle>Email</Signintitle>
                                     <Signininput
+                                        id='email'
+                                        name='email'
                                         placeholder='Enter your email'
                                         type='text'
                                         value={email}
                                         onChange={(e) =>
                                             setEmail(e.target.value)
                                         }
-                                        required
+                                        // onBlur={handleSubmit}
                                     />
+                                    {emailError && (
+                                        <Erorrsmsg>{emailError}</Erorrsmsg>
+                                    )}
                                 </Itemsdev>
                                 <Itemsdev>
                                     <Signintitle>Password</Signintitle>
@@ -85,16 +116,28 @@ function Signin() {
                                         onChange={(e) =>
                                             setPassword(e.target.value)
                                         }
-                                        required
+                                        // onBlur={handleSubmit}
                                     />
+                                    {passError && (
+                                        <Erorrsmsg>{passError}</Erorrsmsg>
+                                    )}
                                 </Itemsdev>
                                 <Checklabel>
                                     <Checkinput type='checkbox' />
                                     keep me logged in
                                 </Checklabel>
-                                <Signinbutton type='submit'>
+                                <Signinbutton
+                                    type='submit'
+                                    // onClick={handleSubmit}
+                                >
                                     <Buttonspan>Log in</Buttonspan>
                                 </Signinbutton>
+                                {loading && (
+                                    <Loadding>
+                                        <i></i>
+                                        <Loadinglabel>Loading...</Loadinglabel>
+                                    </Loadding>
+                                )}
                             </Test>
                         </Containerinput>
                     </Signinform>
@@ -106,7 +149,9 @@ function Signin() {
                                     Sign up
                                 </Linkparagraph>
                             </Paraghraph>
-                            <ChangePass>Forget Password</ChangePass>
+                            <ChangePass href='/Forgetpass'>
+                                Forget Password
+                            </ChangePass>
                         </ParaghraphConatainer>
                         <Signinwith>Log in with</Signinwith>
                         <Imgsdev>
