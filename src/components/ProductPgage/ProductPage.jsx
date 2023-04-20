@@ -24,49 +24,6 @@ import {
     Title,
 } from "./product.style";
 
-const relatedItems = [
-    {
-        id: 1,
-        imageSrc: "/images/item1.png",
-        title: "Related Item 1",
-        location: "Location 1",
-        type: "Clothes",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-        id: 2,
-        imageSrc: "/images/item1.png",
-        title: "Related Item 2",
-        location: "Location 2",
-        type: "Shoes",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-        id: 3,
-        imageSrc: "/images/item1.png",
-        title: "Related Item 3",
-        location: "Location 3",
-        type: "Accessories",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-        id: 4,
-        imageSrc: "/images/item1.png",
-        title: "Related Item 4",
-        location: "Location 4",
-        type: "Electronics",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-        id: 5,
-        imageSrc: "/images/item1.png",
-        title: "Related Item 5",
-        location: "Location 5",
-        type: "Home Appliances",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-];
-
 const Product = ({ title, description, images = [], location }) => {
     const [activeImage, setActiveImage] = useState(
         images.length > 0 ? images[0].url : ""
@@ -159,34 +116,6 @@ const Product = ({ title, description, images = [], location }) => {
                     </ContactInfo>
                 </ProductDetails>
             </StyledProduct>
-
-            <Title>Related Items</Title>
-            <RelatedItemsContainer>
-                <RelatedItemsContainer>
-                    {relatedItems.map((item) => (
-                        <RelatedItemCard key={item.id}>
-                            <RelatedItemImage
-                                src={item.imageSrc}
-                                alt={item.title}
-                                width={250}
-                                height={200}
-                            />
-
-                            <RelatedItemDetails>
-                                <RelatedItemTitle>
-                                    {item.title}
-                                </RelatedItemTitle>
-                                <RelatedItemLocation>
-                                    {item.location}
-                                </RelatedItemLocation>
-                                <RelatedItemDescription>
-                                    {item.description}
-                                </RelatedItemDescription>
-                            </RelatedItemDetails>
-                        </RelatedItemCard>
-                    ))}
-                </RelatedItemsContainer>
-            </RelatedItemsContainer>
         </Container>
     );
 };

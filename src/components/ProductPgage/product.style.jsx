@@ -164,7 +164,6 @@ export const ImageListItem = styled.li`
         }
     }
 `;
-
 export const RelatedItemsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -199,18 +198,28 @@ export const RelatedItemDetails = styled.div`
 
 export const RelatedItemTitle = styled.h3`
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
+    text-decoration: none;
+    color: #000000;
 `;
 
 export const RelatedItemLocation = styled.p`
     margin: 5px 0 0 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #555;
 `;
 
 export const RelatedItemDescription = styled.p`
-    margin: 10px 0 0 0;
-    font-size: 0.9rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
 `;
 
 export const Title = styled.h1`
