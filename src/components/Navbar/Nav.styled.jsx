@@ -55,8 +55,6 @@ export const Navmenulist = styled.div`
     width: 100%;
     row-gap: 24px;
     padding: 24px 16px;
-    // right: -50%;
-    // right: ${(props) => (props.$navActive ? "-50" : "0")};
     min-height: calc(100vh - 60px);
     text-align: center;
     transition: all 0.2s;
