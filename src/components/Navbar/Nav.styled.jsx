@@ -2,10 +2,9 @@ import styled from "@emotion/styled";
 import Link from "next/link";
 
 export const Header = styled.header`
-    background-color: #f1f1f1;
     position: sticky;
-    top: 0;
-    z-index: 10;
+    z-index: 10;\n
+    width: 100%;
 `;
 
 export const Nav = styled.nav`
@@ -13,6 +12,19 @@ export const Nav = styled.nav`
     padding: 6px;
     justify-content: space-between;
     align-items: center;
+    background-color: #f1f1f1;
+
+    @media only screen and (max-width: 767px) {
+     {
+          width: 100%;
+        }
+
+    
+        @media only screen and (min-width: 768px) {
+         
+              width: 768px;
+             
+            }
 `;
 
 export const Navmenubar = styled.div`
@@ -22,6 +34,7 @@ export const Navmenubar = styled.div`
 
     @media screen and (min-width: 768px) {
         display: none;
+        gap: 10px;
     }
 `;
 
@@ -38,25 +51,30 @@ export const Navmenulist = styled.div`
     flex-direction: column;
     position: fixed;
     top: 100px;
-    width: 50%;
+    left: 0px;
+    width: 100%;
     row-gap: 24px;
     padding: 24px 16px;
     // right: -50%;
     // right: ${(props) => (props.$navActive ? "-50" : "0")};
     min-height: calc(100vh - 60px);
-    /* background-color: yellow; */
     text-align: center;
     transition: all 0.2s;
+    background-color: #f1f1f1;
 
     @media screen and (min-width: 768px) {
         position: unset;
         min-height: fit-content;
-        width: fit-content;
+        width: auto;
         flex-direction: row;
         align-items: center;
         column-gap: 24px;
     }
-    /* padding-right: 150px; */
+
+    @media screen and (max-width: 768px) {
+        gap: 10px;
+        right: 0;
+    }
 `;
 
 export const Navlink = styled.a`
@@ -65,8 +83,9 @@ export const Navlink = styled.a`
     text-decoration: none;
     color: #3c4347;
     transition: all 0.2s;
-    font-weight: ${(props) => (props.$active ? "normal" : "bold")};
-    &hover {
+  
+
+    &:hover {
         font-weight: bold;
     }
 
@@ -74,24 +93,26 @@ export const Navlink = styled.a`
         &:before {
             content: "";
             position: absolute;
-            width: 0;
+            width: 0px;
             bottom: -16px;
-            left: 0;
             height: 6px;
             transition: all 0.2s;
             background-color: #33956d;
-            &:hover {
-                width: 100%;
-            }
-            // &active {
-            //     width: 100%;
-            // }
         }
+        
+        &:hover:before {
+            width: 70px;\n    }
     }
+    
 `;
 
 export const Homeiconlink = styled(Link)`
     text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+        gap: 10px;
+        display: none;
+    }
 `;
 
 export const Homeicon = styled.div`
@@ -101,7 +122,7 @@ export const Homeicon = styled.div`
 `;
 
 export const IconVector = styled.img`
-    &before {
+    &:before {
         padding-left: 26px;
     }
 `;
@@ -109,7 +130,6 @@ export const IconVector = styled.img`
 export const Dropbtn = styled.button`
     background-color: transparent;
     color: white;
-    /* padding: 16px; */
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -122,10 +142,6 @@ export const Dropbtn = styled.button`
 export const Dropdown = styled.div`
     position: relative;
     display: inline-block;
-
-    // &:hover {
-    //     display: block;
-    // }
 `;
 
 export const Dropdowncontent = styled.div`
@@ -158,19 +174,15 @@ export const Mynav = styled.div`
 export const NavButtons = styled.div`
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 768px) {
+        gap: 10px;
+    }
 `;
 
 export const Imageicon = styled.img`
-    // &first-of-type {
-    //     height: 40px;
-    //     width: 40px;
-    // }
-
     height: 50px;
     width: 50px;
-
-    &hover {
-    }
 `;
 
 export const Arrow = styled.img`

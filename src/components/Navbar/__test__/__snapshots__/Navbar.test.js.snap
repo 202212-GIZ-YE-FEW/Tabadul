@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <header
-  className="css-ga8lz6"
+  className="css-13um9b0"
 >
   <nav
-    className="css-97a4l7"
+    className="css-1x3zj1f"
   >
     <a
-      className="css-1qj8w5r"
+      className="css-1kc05pi"
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -19,13 +19,13 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
       >
         <img
-          className="css-x41lxq"
+          className="css-1kh5p4n"
           src="./images/Logo.svg"
         />
       </div>
     </a>
     <div
-      className="css-pkg6m"
+      className="css-cnauqz"
       onBlur={[Function]}
       onClick={[Function]}
     >
@@ -43,32 +43,32 @@ exports[`renders correctly 1`] = `
       className="css-1t7ejvz"
     >
       <div
-        className="css-11f3fck"
+        className="css-11erx38"
       >
         <div
-          className="css-1c5viz"
+          className="css-cf8cyr"
         >
           <button
-            className="css-17usi8j"
+            className="css-1a7iigq"
             onBlur={[Function]}
             onClick={[Function]}
           >
             <img
-              className="css-gdzbep"
+              className="css-55gwj7"
               src="./images/users.svg"
             />
           </button>
         </div>
         <div
-          className="css-1c5viz"
+          className="css-cf8cyr"
         >
           <button
-            className="css-17usi8j"
+            className="css-1a7iigq"
             onBlur={[Function]}
             onClick={[Function]}
           >
             <img
-              className="css-gdzbep"
+              className="css-55gwj7"
               src="./images/flag.svg"
             />
             <img
