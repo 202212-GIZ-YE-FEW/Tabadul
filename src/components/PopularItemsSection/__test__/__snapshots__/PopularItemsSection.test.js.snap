@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "top": "-90px",
+      }
+    }
+  >
+    <h1
+      className="css-1pvbwn7"
+    >
+      Popular Items
+    </h1>
+    <div
+      className="css-1rmlzl6"
+    />
+    <hr
+      className="css-19ocln0"
+    />
+  </div>
+</div>
+`;

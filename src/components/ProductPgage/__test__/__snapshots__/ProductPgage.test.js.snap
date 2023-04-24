@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-ol394g"
+>
+  <div
+    className="css-hsfvbr"
+  >
+    <div
+      className="css-1viuenm"
+    >
+      <img
+        alt="Product"
+        className="active"
+        src=""
+      />
+      <ul
+        className="active css-vcznx6"
+        style={
+          Object {
+            "paddingRight": "50px",
+          }
+        }
+      >
+        <div
+          className="css-oh7kvy"
+          onClick={[Function]}
+        >
+          <img
+            alt="Previous"
+            src="/images/left.png"
+          />
+        </div>
+        <div
+          className="css-1rayqgy"
+          onClick={[Function]}
+        >
+          <img
+            alt="Next"
+            src="/images/right.png"
+          />
+        </div>
+      </ul>
+    </div>
+    <div
+      className="css-c7somy"
+    >
+      <h1
+        className="productName"
+      />
+      <p />
+      <div
+        className="css-1p9w2x1"
+      >
+        <img
+          alt="Location Logo"
+          className="css-4ksxhv"
+          src="/images/location.png"
+        />
+      </div>
+      <div
+        className="css-oa1um5"
+      >
+        <img
+          alt="Info"
+          className="css-1l8w7ag"
+          src="/images/info.png"
+        />
+        <div>
+          <p>
+            Name Surname
+          </p>
+          <p>
+            Phone: 01122334455
+          </p>
+          <p>
+            Email: mail@mail.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

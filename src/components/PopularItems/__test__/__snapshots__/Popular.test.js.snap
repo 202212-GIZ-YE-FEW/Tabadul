@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-ihlp1b"
+>
+  <img
+    alt="CardImage"
+    className="css-xwv4wc"
+    data-nimg="1"
+    decoding="async"
+    height={185.44}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src=""
+    style={
+      Object {
+        "color": "transparent",
+      }
+    }
+    width={258.4}
+  />
+  <div
+    className="css-gdod6k"
+  >
+    <p
+      className="css-18ekudf"
+    />
+    <div
+      className="css-65ralr"
+    >
+      <div
+        className="css-11fp3er"
+      >
+        <img
+          alt="Icon"
+          className="css-1my2hp2"
+          data-nimg="1"
+          decoding="async"
+          height={20.61}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/Vector.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={17.77}
+        />
+        <p
+          className="css-c1ouhe"
+        />
+      </div>
+      <div
+        className="css-11fp3er"
+      >
+        <img
+          alt="Icon"
+          className="css-1my2hp2"
+          data-nimg="1"
+          decoding="async"
+          height={20}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/images/tag-fill.svg"
+          style={
+            Object {
+              "color": "transparent",
+            }
+          }
+          width={14}
+        />
+        <p
+          className="css-c1ouhe"
+        />
+      </div>
+    </div>
+    <p
+      className="css-1eccmhm"
+    />
+    <p
+      className="css-1c9mivk"
+    />
+  </div>
+</div>
+`;

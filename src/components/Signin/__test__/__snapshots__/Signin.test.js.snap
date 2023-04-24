@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-0"
+>
+  <div
+    className="css-132yxzz"
+  >
+    <div
+      className="css-1caouas"
+    >
+      <h1
+        className="css-wr410z"
+      >
+        Log in
+      </h1>
+      <form
+        className="css-0"
+        onSubmit={[Function]}
+      >
+        <div
+          className="css-1ohf0ui"
+        >
+          <div
+            className="css-tjuh7q"
+          >
+            <div
+              className="css-crx4p4"
+            >
+              <label
+                className="css-3vajn4"
+              >
+                Email
+              </label>
+              <input
+                className="css-17aovyj"
+                id="email"
+                name="email"
+                onChange={[Function]}
+                placeholder="Enter your email"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              className="css-crx4p4"
+            >
+              <label
+                className="css-3vajn4"
+              >
+                Password
+              </label>
+              <input
+                className="css-17aovyj"
+                onChange={[Function]}
+                placeholder="Enter your password"
+                type="password"
+                value=""
+              />
+            </div>
+            <label
+              className="css-1xfha8l"
+            >
+              <input
+                className="css-gpgqoe"
+                type="checkbox"
+              />
+              keep me logged in
+            </label>
+            <button
+              className="css-otrrrr"
+              type="submit"
+            >
+              <span
+                className="css-1wr31v7"
+              >
+                Log in
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div
+        className="css-tjuh7q"
+      >
+        <div
+          className="css-1brzwz1"
+        >
+          <p
+            className="css-lx5yh4"
+          >
+            Do not have an account ?
+            <a
+              className="css-175it1b"
+              href="/Signup"
+            >
+              Sign up
+            </a>
+          </p>
+          <a
+            className="css-gw1mbz"
+            href="/Forgetpass"
+          >
+            Forget Password
+          </a>
+        </div>
+        <p
+          className="css-uc1awu"
+        >
+          Log in with
+        </p>
+        <div
+          className="css-1mzzuk6"
+        >
+          <img
+            alt="Facebook"
+            className="css-1vai4q9"
+            data-nimg="1"
+            decoding="async"
+            height={42.3}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/Facebook.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={42.3}
+          />
+          <img
+            alt="Instagram"
+            className="css-1vai4q9"
+            data-nimg="1"
+            decoding="async"
+            height={42.3}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/Instagram.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={42.3}
+          />
+          <img
+            alt="Linkedin"
+            className="css-1vai4q9"
+            data-nimg="1"
+            decoding="async"
+            height={42.3}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/Linkedin.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={42.3}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-12lhnmd"
+    >
+      <img
+        alt="sign in"
+        className="css-0"
+        data-nimg="1"
+        decoding="async"
+        height={650}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="./images/Signin.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={750}
+      />
+    </div>
+  </div>
+</div>
+`;

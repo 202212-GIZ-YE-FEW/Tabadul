@@ -1,10 +1,11 @@
-.container {
+/* .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1440px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .image {
@@ -47,4 +48,4 @@
 
 .button button:hover {
     background-color: #267548;
-}
+} */

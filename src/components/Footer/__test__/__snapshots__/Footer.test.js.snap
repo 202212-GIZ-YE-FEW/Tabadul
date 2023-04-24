@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-1yhlq7n"
+>
+  <div
+    className="css-kp9m8d"
+  >
+    <div
+      className="css-xvkl1c"
+    >
+      <img
+        alt=""
+        className="css-n2b87z"
+        data-nimg="1"
+        decoding="async"
+        height={50}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="./images/footerlogo.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={50}
+      />
+    </div>
+    <div
+      className="css-xvkl1c"
+    >
+      <p>
+        About Us
+      </p>
+      <p>
+        Blogs
+      </p>
+      <p>
+        Listed items
+      </p>
+    </div>
+    <div
+      className="css-xvkl1c"
+    >
+      <p>
+        Contact Us
+      </p>
+      <div
+        className="css-18icqaw"
+      >
+        <a
+          className="css-1i6zk58"
+        >
+          <img
+            alt=""
+            className="css-3g96gi"
+            data-nimg="1"
+            decoding="async"
+            height={50}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/facebook .svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={50}
+          />
+        </a>
+        <a
+          className="css-1i6zk58"
+        >
+          <img
+            alt=""
+            className="css-3g96gi"
+            data-nimg="1"
+            decoding="async"
+            height={50}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/instagram (2).svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={50}
+          />
+        </a>
+        <a
+          className="css-1i6zk58"
+        >
+          <img
+            alt=""
+            className="css-3g96gi"
+            data-nimg="1"
+            decoding="async"
+            height={50}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/linkedin (2).svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={50}
+          />
+        </a>
+        <a
+          className="css-1i6zk58"
+        >
+          <img
+            alt=""
+            className="css-3g96gi"
+            data-nimg="1"
+            decoding="async"
+            height={50}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/share.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={50}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="css-xvkl1c"
+    >
+      <p>
+        Address
+      </p>
+      <p>
+        street 01,07
+      </p>
+      <p>
+        Yemen, Sanaa
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,444 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-rsoya5"
+>
+  <div
+    className="css-1ucdenm"
+  >
+    <div
+      className="css-1rpnq9q"
+    >
+      <input
+        className="css-ht1ag6"
+        onChange={[Function]}
+        placeholder="Search"
+        type="text"
+      />
+      <img
+        alt="Search Icon"
+        className="css-aeci7b"
+        data-nimg="1"
+        decoding="async"
+        height={35}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/SearchFilterIcons/Search.svg"
+        style={
+          Object {
+            "color": "transparent",
+          }
+        }
+        width={25}
+      />
+    </div>
+    <div
+      className="css-n40r9z"
+    >
+      <div
+        className="css-1eb9gkv"
+      >
+        <button
+          className="css-1gla2lw"
+          onBlur={[Function]}
+          onClick={[Function]}
+        >
+          <div
+            className="css-zx4cze"
+          >
+            <div
+              className="css-15i7kcb"
+            >
+              Location
+            </div>
+            <div
+              className="css-15i7kcb"
+            >
+              <img
+                alt="icon"
+                className="css-1xxk55y"
+                data-nimg="1"
+                decoding="async"
+                height={19}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="/SearchFilterIcons/Polygon.svg"
+                style={
+                  Object {
+                    "color": "transparent",
+                  }
+                }
+                width={21}
+              />
+            </div>
+          </div>
+        </button>
+        <button
+          className="css-1gla2lw"
+          onClick={[Function]}
+        >
+          <div
+            className="css-zx4cze"
+          >
+            <div
+              className="css-15i7kcb"
+            >
+              Recent
+            </div>
+            <div
+              className="css-15i7kcb"
+            >
+              <img
+                alt="icon"
+                className="css-1xxk55y"
+                data-nimg="1"
+                decoding="async"
+                height={25}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="/SearchFilterIcons/Recent.svg"
+                style={
+                  Object {
+                    "color": "transparent",
+                  }
+                }
+                width={35}
+              />
+            </div>
+          </div>
+        </button>
+      </div>
+      <div>
+        <a
+          href="/addToItem"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <button
+            className="css-w0vzl6"
+          >
+            Add item
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-d0uswh"
+  >
+    <div
+      className="grid grid-gap-30 grid-column-4"
+    >
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="shimmer-card"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="shimmer shimmer-thumbnail mb-0"
+              style={
+                Object {
+                  "height": "250px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="p-30"
+          >
+            <div
+              className="grid shimmer-text grid-gap-10"
+            >
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+              <div
+                className="shimmer shimmer-text-line"
+              />
+            </div>
+            <div
+              className="shimmer shimmer-button shimmer-button--sm"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

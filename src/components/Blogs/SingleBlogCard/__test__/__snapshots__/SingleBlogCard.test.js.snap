@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-1st69g8"
+>
+  <div
+    className="css-13gji6y"
+  >
+    <img
+      alt="Blog Image"
+      className="css-1ygfzho"
+      data-nimg="1"
+      decoding="async"
+      height={217.41}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src=""
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={328.57}
+    />
+    <div
+      className="css-1xxa61n"
+    >
+       
+      December
+    </div>
+  </div>
+  <div
+    className="css-304k9"
+  />
+  <p
+    className="css-s4ieb1"
+  />
+</div>
+`;

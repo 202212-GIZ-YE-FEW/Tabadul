@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-wr9924"
+>
+  <img
+    alt="member"
+    className="css-tba05b"
+    data-nimg="1"
+    decoding="async"
+    height={300}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    property="true"
+    src=""
+    style={
+      Object {
+        "color": "transparent",
+      }
+    }
+    width={300}
+  />
+  <h3
+    className="css-1e03y3q"
+  />
+  <p
+    className="css-1hpa51y"
+  />
+</div>
+`;

@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-0"
+>
+  <h2
+    className="css-143k8nc"
+  >
+    Sign Up
+  </h2>
+  <div
+    className="css-1ieito0"
+  >
+    <form
+      className="css-0"
+      onSubmit={[Function]}
+    >
+      <div
+        className="css-vaakcf"
+      >
+        <label
+          className="css-18drj25"
+        >
+          Name
+        </label>
+        <input
+          className="css-1uo441q"
+          id="name"
+          name="name"
+          onChange={[Function]}
+          placeholder="Enter your name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="css-vaakcf"
+      >
+        <label
+          className="css-18drj25"
+        >
+          Email
+        </label>
+        <input
+          className="css-1uo441q"
+          id="email"
+          name="email"
+          onChange={[Function]}
+          placeholder="Enter your email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        className="css-vaakcf"
+      >
+        <label
+          className="css-18drj25"
+        >
+          Password
+        </label>
+        <input
+          autoComplete="current-password"
+          className="css-1uo441q"
+          id="password"
+          name="passwprd"
+          onChange={[Function]}
+          placeholder="Enter your password"
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        className="css-vaakcf"
+      >
+        <label
+          className="css-18drj25"
+        >
+          Confirm Password
+        </label>
+        <input
+          className="css-1uo441q"
+          id="confirmpassword"
+          name="confirmpassword"
+          onChange={[Function]}
+          placeholder="Confirm your password"
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        className="css-vaakcf"
+      >
+        <label
+          className="css-18drj25"
+        >
+          Phone
+        </label>
+        <input
+          className="css-1uo441q"
+          id="phone"
+          name="phone"
+          onChange={[Function]}
+          placeholder="Enter your Phone"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="css-vaakcf"
+      >
+        <label
+          className="css-18drj25"
+        >
+          Location
+        </label>
+        <select
+          className="css-kgetvl"
+          id="location"
+          name="location"
+          onChange={[Function]}
+        >
+          <option
+            className="css-0"
+            disabled={true}
+            selected={true}
+          >
+            Select Location
+          </option>
+          <option
+            className="css-0"
+          >
+            Mukalla
+          </option>
+          <option
+            className="css-0"
+          >
+            Istanbul
+          </option>
+          <option
+            className="css-0"
+          >
+            Sanaa
+          </option>
+          <option
+            className="css-0"
+          >
+            egypt
+          </option>
+        </select>
+      </div>
+      <div
+        className="css-omk73n"
+      >
+        <button
+          className="css-1ittbjx"
+          type="submit"
+        >
+          <span
+            className="css-f4tyiu"
+          >
+            Sign UP
+          </span>
+        </button>
+        <p
+          className="css-1057m3k"
+        >
+          Sign Up with
+        </p>
+        <div
+          className="css-1mzzuk6"
+        >
+          <img
+            alt="Facebook"
+            className="css-1vai4q9"
+            data-nimg="1"
+            decoding="async"
+            height={42.3}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/Facebook.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={42.3}
+          />
+          <img
+            alt="Instagram"
+            className="css-1vai4q9"
+            data-nimg="1"
+            decoding="async"
+            height={42.3}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/Instagram.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={42.3}
+          />
+          <img
+            alt="Linkedin"
+            className="css-1vai4q9"
+            data-nimg="1"
+            decoding="async"
+            height={42.3}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="./images/Linkedin.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={42.3}
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

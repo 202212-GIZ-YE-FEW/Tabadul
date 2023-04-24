@@ -6,5 +6,12 @@ module.exports = {
     eslint: {
         dirs: ["src"],
     },
+    images: {
+        domains: [
+            "www.greenqueen.com.hk",
+            "firebasestorage.googleapis.com",
+            "img.freepik.com",
+        ],
+    },
     reactStrictMode: true,
 };
