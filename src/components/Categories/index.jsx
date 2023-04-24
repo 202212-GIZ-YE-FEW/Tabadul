@@ -17,8 +17,15 @@ function Categories({ handleCategory }) {
         setCategoriesList(cat);
     }
 
+    function checkLang(category) {
+        if (document.querySelector("html").lang === "en") {
+            return category?.name;
+        } else return category?.name_ar;
+    }
+
     useEffect(() => {
         getCategories();
+        checkLang();
     }, []);
 
     return (
@@ -37,7 +44,9 @@ function Categories({ handleCategory }) {
                             width={86.28}
                             height={84.74}
                         />
-                        <CategoryParagraph>{category.name}</CategoryParagraph>
+                        <CategoryParagraph>
+                            {checkLang(category)}
+                        </CategoryParagraph>
                     </ContainerCategories>
                 );
             })}
