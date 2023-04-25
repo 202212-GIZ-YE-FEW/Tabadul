@@ -5,6 +5,8 @@ import Categories from "@/components/Categories";
 import ListedItems from "@/components/ListedItems/ListedItems";
 
 import { fetchItems } from "@/utils/firebase";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const ProductsItems = () => {
     const [selectedCategory, setSelectedCategory] = useState("ALL");
@@ -41,16 +43,20 @@ const ProductsItems = () => {
     }, []);
 
     return (
-        <Container>
-            <Categories handleCategory={handleSelectCategory} />
-            <ListedItems
-                setFilters={setFilters}
-                filters={filters}
-                setHandleFilter={setHandleFilter}
-                handleFilter={handleFilter}
-                items={items}
-            />
-        </Container>
+        <div>
+            <Navbar />
+            <Container>
+                <Categories handleCategory={handleSelectCategory} />
+                <ListedItems
+                    setFilters={setFilters}
+                    filters={filters}
+                    setHandleFilter={setHandleFilter}
+                    handleFilter={handleFilter}
+                    items={items}
+                />
+            </Container>
+            <Footer />
+        </div>
     );
 };
 

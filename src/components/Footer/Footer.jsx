@@ -5,6 +5,7 @@ import {
     Footercss,
     Imgsocial,
     Imgsociallogo,
+    PagesList,
     Section,
     Social,
     SocialLink,
@@ -16,7 +17,7 @@ function Footer() {
             <Container>
                 <Section>
                     <Imgsociallogo
-                        src='./images/footerlogo.svg'
+                        src='/images/footerlogo.svg'
                         alt=''
                         width={50}
                         height={50}
@@ -24,9 +25,9 @@ function Footer() {
                 </Section>
 
                 <Section>
-                    <p>About Us</p>
-                    <p>Blogs</p>
-                    <p>Listed items</p>
+                    <PagesList href='/Aboutus'>About us</PagesList>
+                    <PagesList href='/Blogs'>Blogs</PagesList>
+                    <PagesList href='/Products'>Listed items</PagesList>
                 </Section>
 
                 <Section>
@@ -35,7 +36,7 @@ function Footer() {
                     <Social>
                         <SocialLink>
                             <Imgsocial
-                                src='./images/facebook .svg'
+                                src='/images/facebook .svg'
                                 alt=''
                                 width={50}
                                 height={50}
@@ -44,7 +45,7 @@ function Footer() {
 
                         <SocialLink>
                             <Imgsocial
-                                src='./images/instagram (2).svg'
+                                src='/images/instagram (2).svg'
                                 alt=''
                                 width={50}
                                 height={50}
@@ -53,7 +54,7 @@ function Footer() {
 
                         <SocialLink>
                             <Imgsocial
-                                src='./images/linkedin (2).svg'
+                                src='/images/linkedin (2).svg'
                                 alt=''
                                 width={50}
                                 height={50}
@@ -62,7 +63,7 @@ function Footer() {
 
                         <SocialLink>
                             <Imgsocial
-                                src='./images/share.svg'
+                                src='/images/share.svg'
                                 alt=''
                                 width={50}
                                 height={50}

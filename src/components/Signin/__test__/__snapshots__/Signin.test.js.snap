@@ -100,7 +100,7 @@ exports[`renders correctly 1`] = `
           </p>
           <a
             className="css-gw1mbz"
-            href="/Forgetpass"
+            href="/Forgetpassword"
           >
             Forget Password
           </a>

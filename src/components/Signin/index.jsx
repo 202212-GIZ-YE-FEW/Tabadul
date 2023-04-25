@@ -149,7 +149,7 @@ function Signin() {
                                     Sign up
                                 </Linkparagraph>
                             </Paraghraph>
-                            <ChangePass href='/Forgetpass'>
+                            <ChangePass href='/Forgetpassword'>
                                 Forget Password
                             </ChangePass>
                         </ParaghraphConatainer>

@@ -8,20 +8,26 @@ import {
     Blogtitle,
 } from "@/styles/Blogs.styled";
 import { db, fetchBlogs } from "@/utils/firebase";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 function blog({ blog }) {
     return (
-        <Blogcontainer>
-            <Blogimg
-                src={blog.image}
-                alt='Blog'
-                width={1188}
-                height={645}
-                property='true'
-            />
-            <Blogtitle>{blog.title}</Blogtitle>
-            <Blogdec>{blog.blog}</Blogdec>
-        </Blogcontainer>
+        <div>
+            <Navbar />
+            <Blogcontainer>
+                <Blogimg
+                    src={blog.image}
+                    alt='Blog'
+                    width={1188}
+                    height={645}
+                    property='true'
+                />
+                <Blogtitle>{blog.title}</Blogtitle>
+                <Blogdec>{blog.blog}</Blogdec>
+            </Blogcontainer>
+            <Footer />
+        </div>
     );
 }
 export async function getStaticPaths() {

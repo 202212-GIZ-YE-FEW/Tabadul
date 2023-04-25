@@ -19,7 +19,7 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="./images/footerlogo.svg"
+        src="/images/footerlogo.svg"
         style={
           Object {
             "color": "transparent",
@@ -31,15 +31,24 @@ exports[`renders correctly 1`] = `
     <div
       className="css-xvkl1c"
     >
-      <p>
-        About Us
-      </p>
-      <p>
+      <a
+        className="css-1dbkwr8"
+        href="/Aboutus"
+      >
+        About us
+      </a>
+      <a
+        className="css-1dbkwr8"
+        href="/Blogs"
+      >
         Blogs
-      </p>
-      <p>
+      </a>
+      <a
+        className="css-1dbkwr8"
+        href="/Products"
+      >
         Listed items
-      </p>
+      </a>
     </div>
     <div
       className="css-xvkl1c"
@@ -62,7 +71,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/facebook .svg"
+            src="/images/facebook .svg"
             style={
               Object {
                 "color": "transparent",
@@ -83,7 +92,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/instagram (2).svg"
+            src="/images/instagram (2).svg"
             style={
               Object {
                 "color": "transparent",
@@ -104,7 +113,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/linkedin (2).svg"
+            src="/images/linkedin (2).svg"
             style={
               Object {
                 "color": "transparent",
@@ -125,7 +134,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/share.svg"
+            src="/images/share.svg"
             style={
               Object {
                 "color": "transparent",
