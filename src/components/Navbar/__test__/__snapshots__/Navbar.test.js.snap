@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="css-13um9b0"
+>
+  <nav
+    className="css-1x3zj1f"
+  >
+    <a
+      className="css-1kc05pi"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="css-1q0bv5v"
+        onClick={[Function]}
+      >
+        <img
+          className="css-1kh5p4n"
+          src="./images/Logo.svg"
+        />
+      </div>
+    </a>
+    <div
+      className="css-cnauqz"
+      onBlur={[Function]}
+      onClick={[Function]}
+    >
+      <div
+        className="css-w9k2l0"
+      />
+      <div
+        className="css-w9k2l0"
+      />
+      <div
+        className="css-w9k2l0"
+      />
+    </div>
+    <div
+      className="css-1t7ejvz"
+    >
+      <div
+        className="css-11erx38"
+      >
+        <div
+          className="css-cf8cyr"
+        >
+          <button
+            className="css-1a7iigq"
+            onBlur={[Function]}
+            onClick={[Function]}
+          >
+            <img
+              className="css-55gwj7"
+              src="./images/users.svg"
+            />
+          </button>
+        </div>
+        <div
+          className="css-cf8cyr"
+        >
+          <button
+            className="css-1a7iigq"
+            onBlur={[Function]}
+            onClick={[Function]}
+          >
+            <img
+              className="css-55gwj7"
+              src="./images/flag.svg"
+            />
+            <img
+              className="css-jcgd1c"
+              src="./images/arrow.svg"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+`;
