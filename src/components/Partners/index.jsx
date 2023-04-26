@@ -18,6 +18,29 @@ function Partners() {
             <Header>Our Partners</Header>
             <Container>
                 <Swiper
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1,
+                        },
+                        400: {
+                            slidesPerView: 1,
+                        },
+                        639: {
+                            slidesPerView: 2,
+                        },
+                        865: {
+                            slidesPerView: 2,
+                        },
+                        1000: {
+                            slidesPerView: 3,
+                        },
+                        1500: {
+                            slidesPerView: 3,
+                        },
+                        1700: {
+                            slidesPerView: 4,
+                        },
+                    }}
                     modules={[Navigation, Pagination]}
                     spaceBetween={50}
                     slidesPerView={3}
