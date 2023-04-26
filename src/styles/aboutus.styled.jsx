@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
-export const AboutSection = styled.div`
-    background-color: #fff;
-`;
+export const AboutSection = styled.div``;
 export const AboutContainer = styled.div`
     margin-left: auto;
     margin-right: auto;

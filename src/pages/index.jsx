@@ -1,10 +1,11 @@
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 import { useEffect } from "react";
-import { Router } from "react-router-dom";
+import { useState } from "react";
 
 import BlogContainer from "@/components/Blogs/BlogContainer";
 import Causes from "@/components/Causes";
@@ -15,19 +16,32 @@ import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
 
 import Layout from "@/layout/Layout";
-import { fetchBlogs, fetchItems } from "@/utils/firebase";
+import { auth, fetchBlogs, fetchItems } from "@/utils/firebase";
 
 export default function HomePage({ items, blogs }) {
     const router = useRouter();
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     const { t } = useTranslation("common");
 
     useEffect(() => {
-        let dir = Router.locale == "ar" ? "rtl" : "ltr";
+        const Listerner = onAuthStateChanged(auth, async (user) => {
+            setIsAuthenticated(Boolean(user));
+        });
+        return () => {
+            Listerner();
+        };
+    }, []);
+
+    useEffect(() => {
+        let dir = router.locale == "ar" ? "rtl" : "ltr";
         let lang = router.locale == "ar" ? "ar" : "en";
         document.querySelector("html").setAttribute("dir", dir);
         document.querySelector("html").setAttribute("lang", lang);
     }, [router.locale]);
+    const signout = async () => {
+        await signOut(auth);
+    };
 
     return (
         <Layout>
@@ -39,11 +53,9 @@ export default function HomePage({ items, blogs }) {
                 <Link href='/' locale='ar'>
                     العربية
                 </Link>
-                <Link href='/Blogs'>Blogs</Link>
-                <Link href='/Aboutus'>About us</Link>
-                <Link href='/Products'>Products</Link>
-                <Link href='/Forgetpassword'>forgetPassword</Link>
             </div>
+            {isAuthenticated && auth?.currentUser?.email}
+            {isAuthenticated && <button onClick={signout}>logout</button>}
             <Hero />
             <Causes />
             <Statistics />

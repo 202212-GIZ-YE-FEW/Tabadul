@@ -5,7 +5,6 @@ export const Footercss = styled.div`
     width: 100%;
     background-color: #33956d;
     color: #fff;
-
     @media screen and (max-width: 700px) {
         position: relative;
         bottom: 0px;
@@ -30,6 +29,13 @@ export const Section = styled.div`
     @media screen and (max-width: 700px) {
         margin: 5px 0;
     }
+`;
+export const PagesList = styled.a`
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    line-height: 2;
 `;
 
 export const Social = styled.div`

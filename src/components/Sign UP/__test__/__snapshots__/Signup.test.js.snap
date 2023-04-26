@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
   >
     <form
       className="css-0"
-      method="post"
+      onSubmit={[Function]}
     >
       <div
         className="css-vaakcf"
@@ -25,9 +25,13 @@ exports[`renders correctly 1`] = `
           Name
         </label>
         <input
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="name"
+          name="name"
+          onChange={[Function]}
           placeholder="Enter your name"
           type="text"
+          value=""
         />
       </div>
       <div
@@ -39,9 +43,13 @@ exports[`renders correctly 1`] = `
           Email
         </label>
         <input
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="email"
+          name="email"
+          onChange={[Function]}
           placeholder="Enter your email"
           type="email"
+          value=""
         />
       </div>
       <div
@@ -53,9 +61,14 @@ exports[`renders correctly 1`] = `
           Password
         </label>
         <input
-          className="css-1a6rg6a"
+          autoComplete="current-password"
+          className="css-1uo441q"
+          id="password"
+          name="passwprd"
+          onChange={[Function]}
           placeholder="Enter your password"
           type="password"
+          value=""
         />
       </div>
       <div
@@ -67,9 +80,13 @@ exports[`renders correctly 1`] = `
           Confirm Password
         </label>
         <input
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="confirmpassword"
+          name="confirmpassword"
+          onChange={[Function]}
           placeholder="Confirm your password"
           type="password"
+          value=""
         />
       </div>
       <div
@@ -81,9 +98,13 @@ exports[`renders correctly 1`] = `
           Phone
         </label>
         <input
-          className="css-1a6rg6a"
+          className="css-1uo441q"
+          id="phone"
+          name="phone"
+          onChange={[Function]}
           placeholder="Enter your Phone"
           type="number"
+          value=""
         />
       </div>
       <div
@@ -92,10 +113,13 @@ exports[`renders correctly 1`] = `
         <label
           className="css-18drj25"
         >
-          Phone
+          Location
         </label>
         <select
           className="css-kgetvl"
+          id="location"
+          name="location"
+          onChange={[Function]}
         >
           <option
             className="css-0"
