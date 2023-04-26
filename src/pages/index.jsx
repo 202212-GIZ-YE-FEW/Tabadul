@@ -1,6 +1,5 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
@@ -19,7 +18,6 @@ import Layout from "@/layout/Layout";
 import { auth, fetchBlogs, fetchItems } from "@/utils/firebase";
 
 export default function HomePage({ items, blogs }) {
-    const router = useRouter();
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     const { t } = useTranslation("common");
@@ -32,13 +30,6 @@ export default function HomePage({ items, blogs }) {
             Listerner();
         };
     }, []);
-
-    useEffect(() => {
-        let dir = router.locale == "ar" ? "rtl" : "ltr";
-        let lang = router.locale == "ar" ? "ar" : "en";
-        document.querySelector("html").setAttribute("dir", dir);
-        document.querySelector("html").setAttribute("lang", lang);
-    }, [router.locale]);
     const signout = async () => {
         await signOut(auth);
     };
