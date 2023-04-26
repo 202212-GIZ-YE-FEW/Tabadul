@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 import { useEffect } from "react";
+import { Router } from "react-router-dom";
 
 import BlogContainer from "@/components/Blogs/BlogContainer";
 import Causes from "@/components/Causes";
@@ -22,7 +23,7 @@ export default function HomePage({ items, blogs }) {
     const { t } = useTranslation("common");
 
     useEffect(() => {
-        let dir = router.locale == "ar" ? "rtl" : "ltr";
+        let dir = Router.locale == "ar" ? "rtl" : "ltr";
         let lang = router.locale == "ar" ? "ar" : "en";
         document.querySelector("html").setAttribute("dir", dir);
         document.querySelector("html").setAttribute("lang", lang);
