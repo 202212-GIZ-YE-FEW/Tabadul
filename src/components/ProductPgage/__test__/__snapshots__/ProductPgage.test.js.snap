@@ -10,11 +10,15 @@ exports[`renders correctly 1`] = `
     <div
       className="css-1viuenm"
     >
-      <img
-        alt="Product"
-        className="active"
-        src=""
-      />
+      <div
+        className="active-image-container"
+      >
+        <img
+          alt="Product"
+          className="active-image"
+          src=""
+        />
+      </div>
       <ul
         className="active css-vcznx6"
         style={
