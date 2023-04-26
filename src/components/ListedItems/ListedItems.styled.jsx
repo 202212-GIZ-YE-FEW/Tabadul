@@ -20,20 +20,12 @@ export const SearchAndFilterDiv = styled.div`
 export const SearchDiv = styled.div`
     width: 516px;
     display: flex;
-    justify-content: center;
+    background-color: red;
     position: relative;
     margin: 20px 0 20px 0;
-    transition: ease all 0.5s;
-    @media screen and (max-width: 1024px) {
-        margin: 20px 2vw 20px 2vw;
-    }
-`;
-
-export const SearchInput = styled.input`
-    width: 100%;
-    font-size: 24px;
-    padding-left: 39px;
-    margin-top: 5px;
+    padding-inline-start: 39px;
+    padding-inline-end: 39px;
+    background-color: red;
     color: #1a4b38;
     display: flex;
     justify-content: space-between;
@@ -44,6 +36,15 @@ export const SearchInput = styled.input`
     border-radius: 69px;
     transition: ease all 0.5s;
 
+    @media screen and (max-width: 1024px) {
+        margin: 20px 2vw 20px 2vw;
+    }
+`;
+
+export const SearchInput = styled.input`
+    width: 100%;
+    border: none;
+    font-size: 24px;
     &:focus-visible {
         outline: none;
         border: 2px solid #33956d;
@@ -57,9 +58,7 @@ export const SearchInput = styled.input`
 
 export const SearchIcon = styled(Image)`
     color: #5a5a5a;
-    position: absolute;
-    right: 29px;
-    top: 10px;
+    height: 100%;
     @media screen and (max-width: 600px) {
         width: 20px;
     }
@@ -105,6 +104,7 @@ export const MenuList = styled.ul`
     top: 46px;
     right: 0px;
     padding-left: 0;
+    padding-right: 0;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 `;
@@ -120,6 +120,9 @@ export const MenuItem = styled.li`
     color: #33956d;
     font-weight: 400;
 
+    &:last-child div {
+        border-style: none;
+    }
     &:hover {
         background-color: #33956d;
         color: white;
@@ -139,10 +142,11 @@ export const MenuItem = styled.li`
 export const InnerDiv = styled.div`
     display: flex;
     position: relative;
-    justify-content: center;
-    padding-left: 20px;
+    justify-content: space-between;
+    padding: 0 17px 0 17px;
     height: 100%;
     width: 100%;
+    gap: 10px;
 `;
 
 export const GreenButtonsDiv = styled.div`
@@ -155,9 +159,11 @@ export const ButtonDetailDiv = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
 `;
-
+export const ButtonName = styled.div`
+    display: flex;
+    place-items: center;
+`;
 export const ButtonIcon = styled(Image)`
     margin: 5px 10px 0 10px;
 

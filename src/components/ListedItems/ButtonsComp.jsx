@@ -5,6 +5,7 @@ import {
     AddItem,
     ButtonDetailDiv,
     ButtonIcon,
+    ButtonName,
     ButtonsDiv,
     FilterButton,
     GreenButtonsDiv,
@@ -38,7 +39,7 @@ const ButtonsComp = (props) => {
                     onBlur={() => setDropDown(false)}
                 >
                     <InnerDiv>
-                        <ButtonDetailDiv>Location</ButtonDetailDiv>
+                        <ButtonName>Location</ButtonName>
                         {dropDown && (
                             <MenuList>
                                 {locationList?.map((location) => {
@@ -69,7 +70,7 @@ const ButtonsComp = (props) => {
                 </FilterButton>
                 <FilterButton onClick={sortRecent}>
                     <InnerDiv>
-                        <ButtonDetailDiv>Recent</ButtonDetailDiv>
+                        <ButtonName>Recent</ButtonName>
 
                         <ButtonDetailDiv>
                             <ButtonIcon

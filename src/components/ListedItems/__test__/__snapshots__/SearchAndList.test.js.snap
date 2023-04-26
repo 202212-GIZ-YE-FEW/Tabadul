@@ -8,17 +8,17 @@ exports[`renders correctly 1`] = `
     className="css-1ucdenm"
   >
     <div
-      className="css-1rpnq9q"
+      className="css-krkqyk"
     >
       <input
-        className="css-ht1ag6"
+        className="css-d0uq2k"
         onChange={[Function]}
         placeholder="Search"
         type="text"
       />
       <img
         alt="Search Icon"
-        className="css-aeci7b"
+        className="css-14bl51q"
         data-nimg="1"
         decoding="async"
         height={35}
@@ -46,15 +46,15 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-zx4cze"
+            className="css-pzznw7"
           >
             <div
-              className="css-15i7kcb"
+              className="css-1m0n573"
             >
               Location
             </div>
             <div
-              className="css-15i7kcb"
+              className="css-1e9lu37"
             >
               <img
                 alt="icon"
@@ -81,15 +81,15 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
         >
           <div
-            className="css-zx4cze"
+            className="css-pzznw7"
           >
             <div
-              className="css-15i7kcb"
+              className="css-1m0n573"
             >
               Recent
             </div>
             <div
-              className="css-15i7kcb"
+              className="css-1e9lu37"
             >
               <img
                 alt="icon"
