@@ -30,6 +30,13 @@ export const Section = styled.div`
         margin: 5px 0;
     }
 `;
+export const PagesList = styled.a`
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    line-height: 2;
+`;
 
 export const Social = styled.div`
     margin: 20px 0;

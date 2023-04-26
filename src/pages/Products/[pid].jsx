@@ -4,6 +4,8 @@ import { doc, getDoc } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import RelatedItems from "../../components/relatedItems/relatedItems";
 import styles from "./SingleProduct.module.css";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const SingleProduct = ({ Item }) => {
     const [relatedItems, setRelatedItems] = useState([]);
@@ -34,6 +36,7 @@ const SingleProduct = ({ Item }) => {
 
     return (
         <div>
+            <Navbar />
             {loading && (
                 <div className={styles["loading-message"]}>
                     <div className={styles.loader}></div>
@@ -49,6 +52,7 @@ const SingleProduct = ({ Item }) => {
             {relatedItems.length > 0 && (
                 <RelatedItems relatedItems={relatedItems} />
             )}
+            <Footer />
         </div>
     );
 };

@@ -53,10 +53,6 @@ export default function HomePage({ items, blogs }) {
                 <Link href='/' locale='ar'>
                     العربية
                 </Link>
-                <Link href='/Blogs'>Blogs</Link>
-                <Link href='/Aboutus'>About us</Link>
-                <Link href='/Products'>Products</Link>
-                <Link href='/Forgetpassword'>forgetPassword</Link>
             </div>
             {isAuthenticated && auth?.currentUser?.email}
             {isAuthenticated && <button onClick={signout}>logout</button>}

@@ -29,13 +29,13 @@ const MENU_LIST = [
         href: "/",
     },
 
-    { id: 2, text: "About US", href: "#" },
+    { id: 2, text: "About us", href: "Aboutus" },
 
-    { id: 3, text: "Products", href: "#" },
+    { id: 3, text: "Products", href: "Products" },
 
-    { id: 4, text: "Blogs", href: "#" },
+    { id: 4, text: "Blogs", href: "Blogs" },
 
-    { id: 5, text: "profile", href: "#" },
+    { id: 5, text: "profile", href: "Profile" },
 ];
 
 export default function Navbar() {
@@ -52,7 +52,7 @@ export default function Navbar() {
             <Nav>
                 <Homeiconlink href='/'>
                     <Homeicon onClick={() => setActiveIdx(false)}>
-                        <IconVector src='./images/Logo.svg' />
+                        <IconVector src='/images/Logo.svg' />
                     </Homeicon>
                 </Homeiconlink>
 
@@ -92,15 +92,17 @@ export default function Navbar() {
                         <Dropdown>
                             <Dropbtn
                                 onClick={() => setNavdrop(!navdrop)}
-                                onBlur={() => setNavdrop(!navdrop)}
+                                onBlur={() =>
+                                    setTimeout(() => setNavdrop(false), 100)
+                                }
                             >
-                                <Imageicon src='./images/users.svg' />
+                                <Imageicon src='/images/users.svg' />
                             </Dropbtn>
 
                             {navdrop && (
                                 <Dropdowncontent>
-                                    <Lanlink href='#'>Log in </Lanlink>
-                                    <Lanlink href='#'>Sign up</Lanlink>
+                                    <Lanlink href='/Signin'>Log in</Lanlink>
+                                    <Lanlink href='/Signup'>Sign up</Lanlink>
                                     <Lanlink href='#'>Log out</Lanlink>
                                 </Dropdowncontent>
                             )}
@@ -110,22 +112,22 @@ export default function Navbar() {
                                 onClick={() => setNavdroplan(!navdroplan)}
                                 onBlur={() => setNavdroplan(!navdroplan)}
                             >
-                                <Imageicon src='./images/flag.svg' />
-                                <Arrow src='./images/arrow.svg' />
+                                <Imageicon src='/images/flag.svg' />
+                                <Arrow src='/images/arrow.svg' />
                             </Dropbtn>
                             {navdroplan && (
                                 <Dropdowncontent>
                                     <Lanlink href='#'>
                                         English
-                                        <Lan src='./images/flag.svg' />
+                                        <Lan src='/images/flag.svg' />
                                     </Lanlink>
                                     <Lanlink href='#'>
                                         Arabic
-                                        <Lan src='./images/Saudi Arabia.svg' />
+                                        <Lan src='/images/Saudi Arabia.svg' />
                                     </Lanlink>
                                     <Lanlink href='#'>
                                         Turkish
-                                        <Lan src='./images/Turkey.svg' />
+                                        <Lan src='/images/Turkey.svg' />
                                     </Lanlink>
                                 </Dropdowncontent>
                             )}

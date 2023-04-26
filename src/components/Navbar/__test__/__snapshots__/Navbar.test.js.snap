@@ -20,7 +20,7 @@ exports[`renders correctly 1`] = `
       >
         <img
           className="css-1kh5p4n"
-          src="./images/Logo.svg"
+          src="/images/Logo.svg"
         />
       </div>
     </a>
@@ -55,7 +55,7 @@ exports[`renders correctly 1`] = `
           >
             <img
               className="css-55gwj7"
-              src="./images/users.svg"
+              src="/images/users.svg"
             />
           </button>
         </div>
@@ -69,11 +69,11 @@ exports[`renders correctly 1`] = `
           >
             <img
               className="css-55gwj7"
-              src="./images/flag.svg"
+              src="/images/flag.svg"
             />
             <img
               className="css-jcgd1c"
-              src="./images/arrow.svg"
+              src="/images/arrow.svg"
             />
           </button>
         </div>
