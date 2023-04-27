@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 import {
     ContactInfo,
     Container,
@@ -14,14 +13,6 @@ import {
     ProductImages,
     RightArrow,
     StyledProduct,
-    RelatedItemsContainer,
-    RelatedItemCard,
-    RelatedItemImage,
-    RelatedItemDetails,
-    RelatedItemTitle,
-    RelatedItemLocation,
-    RelatedItemDescription,
-    Title,
 } from "./product.style";
 
 const Product = ({ title, description, images = [], location }) => {
@@ -29,6 +20,11 @@ const Product = ({ title, description, images = [], location }) => {
         images.length > 0 ? images[0].url : ""
     );
     const [navActive, setNavActive] = useState(true);
+
+    useEffect(() => {
+        setActiveImage(images.length > 0 ? images[0].url : "");
+        setNavActive(true);
+    }, [images, location]);
 
     const handlePrev = () => {
         const currentIndex = images.findIndex(
@@ -56,7 +52,13 @@ const Product = ({ title, description, images = [], location }) => {
         <Container>
             <StyledProduct>
                 <ProductImages>
-                    <img src={activeImage} alt='Product' className='active' />
+                    <div className='active-image-container'>
+                        <img
+                            src={activeImage}
+                            alt='Product'
+                            className='active-image'
+                        />
+                    </div>
                     <ImageList
                         className={`${navActive ? "active" : ""}`}
                         style={{ paddingRight: "50px" }}
