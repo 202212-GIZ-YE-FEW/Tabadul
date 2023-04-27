@@ -19,7 +19,7 @@ const ItemsList = ({ filters }) => {
         <ItemsListDiv>
             {filters?.map((item) => {
                 return (
-                    <CardLink href={`Products/${item.id}`} key={item.id}>
+                    <CardLink href={`/Products/${item.id}`} key={item.id}>
                         <ItemCard>
                             <CardImage
                                 src={item.image[0].url}
