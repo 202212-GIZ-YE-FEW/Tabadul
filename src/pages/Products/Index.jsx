@@ -41,18 +41,16 @@ const ProductsItems = () => {
     }, []);
 
     return (
-        <div>
-            <Container>
-                <Categories handleCategory={handleSelectCategory} />
-                <ListedItems
-                    setFilters={setFilters}
-                    filters={filters}
-                    setHandleFilter={setHandleFilter}
-                    handleFilter={handleFilter}
-                    items={items}
-                />
-            </Container>
-        </div>
+        <Container>
+            <Categories handleCategory={handleSelectCategory} />
+            <ListedItems
+                setFilters={setFilters}
+                filters={filters}
+                setHandleFilter={setHandleFilter}
+                handleFilter={handleFilter}
+                items={items}
+            />
+        </Container>
     );
 };
 
