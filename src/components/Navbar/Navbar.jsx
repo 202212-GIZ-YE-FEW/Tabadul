@@ -20,6 +20,8 @@ import {
     Navmenulist,
 } from "./Nav.styled";
 import { NavItem } from "./NavItem";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth } from "@/utils/firebase";
 
 const MENU_LIST = [
     {
@@ -29,23 +31,39 @@ const MENU_LIST = [
         href: "/",
     },
 
-    { id: 2, text: "About us", href: "Aboutus" },
+    { id: 2, text: "About us", href: "/Aboutus" },
 
-    { id: 3, text: "Products", href: "Products" },
+    { id: 3, text: "Products", href: "/Products" },
 
-    { id: 4, text: "Blogs", href: "Blogs" },
+    { id: 4, text: "Blogs", href: "/Blogs" },
 
-    { id: 5, text: "profile", href: "Profile" },
+    { id: 5, text: "profile", href: "/Profile" },
 ];
 
 export default function Navbar() {
+    // const router = useRouter();
+
     const [navActive, setNavActive] = useState(false);
     const [activeIdx, setActiveIdx] = useState(false);
     const [navdroplan, setNavdroplan] = useState(false);
     const [navdrop, setNavdrop] = useState(false);
     const [width, setWidth] = useState(0);
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
     useEffect(() => {
         setWidth(window.innerWidth);
+    }, []);
+
+    const signout = async () => {
+        await signOut(auth);
+    };
+
+    useEffect(() => {
+        const Listerner = onAuthStateChanged(auth, async (user) => {
+            setIsAuthenticated(Boolean(user));
+        });
+        return () => {
+            Listerner();
+        };
     }, []);
     return (
         <Header>
@@ -101,27 +119,37 @@ export default function Navbar() {
 
                             {navdrop && (
                                 <Dropdowncontent>
-                                    <Lanlink href='/Signin'>Log in</Lanlink>
-                                    <Lanlink href='/Signup'>Sign up</Lanlink>
-                                    <Lanlink href='#'>Log out</Lanlink>
+                                    {!isAuthenticated && (
+                                        <Lanlink href='/Signin'>Log in</Lanlink>
+                                    )}
+                                    {!isAuthenticated && (
+                                        <Lanlink href='/Signup'>
+                                            Sign up
+                                        </Lanlink>
+                                    )}
+                                    {isAuthenticated && (
+                                        <Lanlink onClick={signout} href='/'>
+                                            Log out
+                                        </Lanlink>
+                                    )}
                                 </Dropdowncontent>
                             )}
                         </Dropdown>
                         <Dropdown>
                             <Dropbtn
                                 onClick={() => setNavdroplan(!navdroplan)}
-                                onBlur={() => setNavdroplan(!navdroplan)}
+                                // onBlur={() => setNavdroplan(!navdroplan)}
                             >
                                 <Imageicon src='/images/flag.svg' />
                                 <Arrow src='/images/arrow.svg' />
                             </Dropbtn>
                             {navdroplan && (
                                 <Dropdowncontent>
-                                    <Lanlink href='#'>
+                                    <Lanlink href='#' locale='en'>
                                         English
                                         <Lan src='/images/flag.svg' />
                                     </Lanlink>
-                                    <Lanlink href='#'>
+                                    <Lanlink href='#' locale='ar'>
                                         Arabic
                                         <Lan src='/images/Saudi Arabia.svg' />
                                     </Lanlink>

@@ -53,16 +53,16 @@ const SingleProduct = ({ Item }) => {
     );
 };
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
     const Items = await fetchItems();
 
-    const paths = Items.map((Items) => {
-        return {
-            params: {
-                pid: String(Items.id),
-            },
-        };
-    });
+    const paths = Items.map((item) =>
+        locales.map((locale) => ({
+            params: { pid: item.id },
+            locale, // Pass locale here
+        }))
+    ).flat(); // Flatten array to avoid nested arrays
+
     return {
         paths,
         fallback: false, // can also be true or 'blocking'

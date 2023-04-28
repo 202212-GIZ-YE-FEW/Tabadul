@@ -5,6 +5,7 @@ import {
     CategoryParagraph,
     ContainerBox,
     ContainerCategories,
+    ShimmerBox,
 } from "./Categories.styled";
 import CategoriesImag from "../../assets/Image/icon_clothes_hanger_label_.svg";
 import { fetchCategories } from "@/utils/firebase";
@@ -30,26 +31,36 @@ function Categories({ handleCategory }) {
 
     return (
         <ContainerBox>
-            {categoriesList?.map((category) => {
-                return (
-                    <ContainerCategories
-                        key={category.id}
-                        onClick={() => {
-                            handleCategory(category);
-                        }}
-                    >
-                        <CategoryImge
-                            src={CategoriesImag}
-                            alt='icon_clothes_hanger_label_.svg'
-                            width={86.28}
-                            height={84.74}
-                        />
-                        <CategoryParagraph>
-                            {checkLang(category)}
-                        </CategoryParagraph>
-                    </ContainerCategories>
-                );
-            })}
+            {categoriesList?.length > 0 ? (
+                categoriesList?.map((category) => {
+                    return (
+                        <ContainerCategories
+                            key={category.id}
+                            onClick={() => {
+                                handleCategory(category);
+                            }}
+                        >
+                            <CategoryImge
+                                src={CategoriesImag}
+                                alt='icon_clothes_hanger_label_.svg'
+                                width={86.28}
+                                height={84.74}
+                            />
+                            <CategoryParagraph>
+                                {checkLang(category)}
+                            </CategoryParagraph>
+                        </ContainerCategories>
+                    );
+                })
+            ) : (
+                <>
+                    <ShimmerBox height={250} width={240} rounded={true} />
+                    <ShimmerBox height={250} width={240} rounded />
+                    <ShimmerBox height={250} width={240} rounded />
+                    <ShimmerBox height={250} width={240} rounded />
+                    <ShimmerBox height={250} width={240} rounded />
+                </>
+            )}
         </ContainerBox>
     );
 }

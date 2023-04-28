@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { ShimmerThumbnail } from "react-shimmer-effects-18";
 
 export const ContainerBox = styled.div`
     margin: 70px 0 100px 0;
@@ -61,4 +62,8 @@ export const CategoryParagraph = styled.p`
         padding-bottom: 0;
         margin-bottom: 0;
     }
+`;
+
+export const ShimmerBox = styled(ShimmerThumbnail)`
+    box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.08);
 `;

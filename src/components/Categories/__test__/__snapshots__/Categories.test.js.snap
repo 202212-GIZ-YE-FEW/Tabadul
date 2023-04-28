@@ -3,5 +3,71 @@
 exports[`renders correctly 1`] = `
 <div
   className="css-186khl2"
-/>
+>
+  <div
+    className=""
+  >
+    <div
+      className="shimmer shimmer-thumbnail border-rounded css-1quxnu4"
+      style={
+        Object {
+          "height": "250px",
+          "width": "240px",
+        }
+      }
+    />
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="shimmer shimmer-thumbnail border-rounded css-1quxnu4"
+      style={
+        Object {
+          "height": "250px",
+          "width": "240px",
+        }
+      }
+    />
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="shimmer shimmer-thumbnail border-rounded css-1quxnu4"
+      style={
+        Object {
+          "height": "250px",
+          "width": "240px",
+        }
+      }
+    />
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="shimmer shimmer-thumbnail border-rounded css-1quxnu4"
+      style={
+        Object {
+          "height": "250px",
+          "width": "240px",
+        }
+      }
+    />
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="shimmer shimmer-thumbnail border-rounded css-1quxnu4"
+      style={
+        Object {
+          "height": "250px",
+          "width": "240px",
+        }
+      }
+    />
+  </div>
+</div>
 `;
