@@ -63,7 +63,9 @@ exports[`renders correctly 1`] = `
               className="css-1xfha8l"
             >
               <input
+                checked={false}
                 className="css-gpgqoe"
+                onChange={[Function]}
                 type="checkbox"
               />
               keep me logged in

@@ -81,9 +81,12 @@ function Signup() {
             } else {
                 setLocationError("");
             }
-            await createUserWithEmailAndPassword(auth, email, password);
-            rout.push("/");
-            setLoading(true);
+            if (email && password && name && phone && location && confirmpass) {
+                await createUserWithEmailAndPassword(auth, email, password);
+
+                rout.push("/");
+                setLoading(true);
+            }
         } catch (err) {
             console.error(err);
             // alert("error")

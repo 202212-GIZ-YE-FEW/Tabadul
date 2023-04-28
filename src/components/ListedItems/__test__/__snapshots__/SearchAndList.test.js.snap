@@ -112,20 +112,7 @@ exports[`renders correctly 1`] = `
           </div>
         </button>
       </div>
-      <div>
-        <a
-          href="/addToItem"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onTouchStart={[Function]}
-        >
-          <button
-            className="css-w0vzl6"
-          >
-            Add item
-          </button>
-        </a>
-      </div>
+      <div />
     </div>
   </div>
   <div

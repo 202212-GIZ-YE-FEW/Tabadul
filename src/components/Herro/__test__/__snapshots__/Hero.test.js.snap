@@ -24,8 +24,9 @@ exports[`renders correctly 1`] = `
         </div>
         <button
           className="css-thbdpf"
+          onClick={[Function]}
         >
-          Donate Now
+           Donate Now
         </button>
       </div>
       <img
