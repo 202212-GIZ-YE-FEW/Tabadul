@@ -33,7 +33,7 @@ export default function HomePage({ items, blogs }) {
 
     return (
         <Layout>
-            <p>{t("ooo")}</p>
+            {/* <p>{t("ooo")}</p>
             <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
                 <Link href='/' locale='en'>
                     English
@@ -41,7 +41,11 @@ export default function HomePage({ items, blogs }) {
                 <Link href='/' locale='ar'>
                     العربية
                 </Link>
-            </div>
+            </div> 
+
+
+               ^-^ just to make sure the nabvar is working 
+            */}
             {isAuthenticated && auth?.currentUser?.email}
             {/* {isAuthenticated && <button onClick={signout}>logout</button>} */}
             <Hero />
