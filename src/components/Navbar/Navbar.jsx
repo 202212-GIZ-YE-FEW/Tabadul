@@ -31,16 +31,18 @@ const MENU_LIST = [
         href: "/",
     },
 
-    { id: 2, text: "About us", href: "Aboutus" },
+    { id: 2, text: "About us", href: "/Aboutus" },
 
-    { id: 3, text: "Products", href: "Products" },
+    { id: 3, text: "Products", href: "/Products" },
 
-    { id: 4, text: "Blogs", href: "Blogs" },
+    { id: 4, text: "Blogs", href: "/Blogs" },
 
-    { id: 5, text: "profile", href: "Profile" },
+    { id: 5, text: "profile", href: "/Profile" },
 ];
 
 export default function Navbar() {
+    // const router = useRouter();
+
     const [navActive, setNavActive] = useState(false);
     const [activeIdx, setActiveIdx] = useState(false);
     const [navdroplan, setNavdroplan] = useState(false);
@@ -136,18 +138,18 @@ export default function Navbar() {
                         <Dropdown>
                             <Dropbtn
                                 onClick={() => setNavdroplan(!navdroplan)}
-                                onBlur={() => setNavdroplan(!navdroplan)}
+                                // onBlur={() => setNavdroplan(!navdroplan)}
                             >
                                 <Imageicon src='/images/flag.svg' />
                                 <Arrow src='/images/arrow.svg' />
                             </Dropbtn>
                             {navdroplan && (
                                 <Dropdowncontent>
-                                    <Lanlink href='#'>
+                                    <Lanlink href='#' locale='en'>
                                         English
                                         <Lan src='/images/flag.svg' />
                                     </Lanlink>
-                                    <Lanlink href='#'>
+                                    <Lanlink href='#' locale='ar'>
                                         Arabic
                                         <Lan src='/images/Saudi Arabia.svg' />
                                     </Lanlink>

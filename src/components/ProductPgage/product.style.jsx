@@ -169,6 +169,7 @@ export const RelatedItemsContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+    padding-bottom: 10%;
 `;
 
 export const RelatedItemCard = styled.div`
