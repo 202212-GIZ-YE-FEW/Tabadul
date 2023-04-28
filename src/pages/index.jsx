@@ -13,7 +13,6 @@ import PopularItemsSection from "@/components/PopularItemsSection";
 import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
 
-import Layout from "@/layout/Layout";
 import { auth, fetchBlogs, fetchItems } from "@/utils/firebase";
 import { useState } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
@@ -44,7 +43,7 @@ export default function HomePage({ items, blogs }) {
     };
 
     return (
-        <Layout>
+        <div>
             <p>{t("ooo")}</p>
             <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
                 <Link href='/' locale='en'>
@@ -63,7 +62,7 @@ export default function HomePage({ items, blogs }) {
             <BlogContainer blogs={blogs} />
             <Partners />
             <ScrollTop /> {/* leave this at the bottom of layout */}
-        </Layout>
+        </div>
     );
 }
 
