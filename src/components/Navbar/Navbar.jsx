@@ -20,6 +20,8 @@ import {
     Navmenulist,
 } from "./Nav.styled";
 import { NavItem } from "./NavItem";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth } from "@/utils/firebase";
 
 const MENU_LIST = [
     {
@@ -44,8 +46,22 @@ export default function Navbar() {
     const [navdroplan, setNavdroplan] = useState(false);
     const [navdrop, setNavdrop] = useState(false);
     const [width, setWidth] = useState(0);
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
     useEffect(() => {
         setWidth(window.innerWidth);
+    }, []);
+
+    const signout = async () => {
+        await signOut(auth);
+    };
+
+    useEffect(() => {
+        const Listerner = onAuthStateChanged(auth, async (user) => {
+            setIsAuthenticated(Boolean(user));
+        });
+        return () => {
+            Listerner();
+        };
     }, []);
     return (
         <Header>
@@ -101,9 +117,19 @@ export default function Navbar() {
 
                             {navdrop && (
                                 <Dropdowncontent>
-                                    <Lanlink href='/Signin'>Log in</Lanlink>
-                                    <Lanlink href='/Signup'>Sign up</Lanlink>
-                                    <Lanlink href='#'>Log out</Lanlink>
+                                    {!isAuthenticated && (
+                                        <Lanlink href='/Signin'>Log in</Lanlink>
+                                    )}
+                                    {!isAuthenticated && (
+                                        <Lanlink href='/Signup'>
+                                            Sign up
+                                        </Lanlink>
+                                    )}
+                                    {isAuthenticated && (
+                                        <Lanlink onClick={signout} href='/'>
+                                            Log out
+                                        </Lanlink>
+                                    )}
                                 </Dropdowncontent>
                             )}
                         </Dropdown>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import {
     AddItem,
@@ -14,8 +14,11 @@ import {
     MenuItemDiv,
     MenuList,
 } from "./ListedItems.styled";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "@/utils/firebase";
 
 const ButtonsComp = (props) => {
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
     const {
         setDropDown,
         dropDown,
@@ -31,6 +34,15 @@ const ButtonsComp = (props) => {
         });
         setFilters(filteredLocs);
     }
+
+    useEffect(() => {
+        const Listerner = onAuthStateChanged(auth, async (user) => {
+            setIsAuthenticated(Boolean(user));
+        });
+        return () => {
+            Listerner();
+        };
+    }, []);
     return (
         <ButtonsDiv>
             <GreenButtonsDiv>
@@ -84,9 +96,11 @@ const ButtonsComp = (props) => {
                 </FilterButton>
             </GreenButtonsDiv>
             <div>
-                <Link href='/addToItem'>
-                    <AddItem>Add item</AddItem>
-                </Link>
+                {isAuthenticated && (
+                    <Link href='/addToItem'>
+                        <AddItem>Add item</AddItem>
+                    </Link>
+                )}
             </div>
         </ButtonsDiv>
     );

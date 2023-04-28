@@ -30,7 +30,12 @@ import {
     Signinwith,
     Test,
 } from "./Signin.styled";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import {
+    browserSessionPersistence,
+    inMemoryPersistence,
+    setPersistence,
+    signInWithEmailAndPassword,
+} from "firebase/auth";
 import { auth } from "@/utils/firebase";
 import { useRouter } from "next/router";
 
@@ -40,9 +45,13 @@ function Signin() {
     const [emailError, setEmailError] = useState("");
     const [passError, setPassError] = useState("");
     const [loading, setLoading] = useState(false);
+    const [keepLoggedIn, setKeepLoggedIn] = useState(false);
     const r = useRouter();
     const signIn = async (e) => {
         e.preventDefault();
+        if (!keepLoggedIn) {
+            setPersistence(auth, browserSessionPersistence);
+        }
         try {
             if (!email) {
                 setEmailError("Please enter your email");
@@ -60,27 +69,12 @@ function Signin() {
             setLoading(true);
         } catch (error) {
             console.error(error);
-            alert("email or password is not vaild");
+            if (email && password) {
+                alert("email or password is not vaild");
+            }
             setLoading(false);
         }
     };
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     if (!email) {
-    //         setEmailError("Please enter your email");
-    //     }
-    //     if(!password){
-    //         setPassError("Please enter your password");
-    //     }
-    // };
-    // const handleLogin = () => {
-    //     setLoading(true);
-
-    //     // Perform authentication here
-    //     // Once authentication is complete, set loading to false
-    //     // setLoading(false);
-    //   };
 
     return (
         <SigninContainer>
@@ -123,7 +117,15 @@ function Signin() {
                                     )}
                                 </Itemsdev>
                                 <Checklabel>
-                                    <Checkinput type='checkbox' />
+                                    <Checkinput
+                                        type='checkbox'
+                                        checked={keepLoggedIn}
+                                        onChange={(event) =>
+                                            setKeepLoggedIn(
+                                                event.target.checked
+                                            )
+                                        }
+                                    />
                                     keep me logged in
                                 </Checklabel>
                                 <Signinbutton

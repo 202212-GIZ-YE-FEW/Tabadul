@@ -39,9 +39,6 @@ export default function HomePage({ items, blogs }) {
         document.querySelector("html").setAttribute("dir", dir);
         document.querySelector("html").setAttribute("lang", lang);
     }, [router.locale]);
-    const signout = async () => {
-        await signOut(auth);
-    };
 
     return (
         <Layout>
@@ -55,7 +52,7 @@ export default function HomePage({ items, blogs }) {
                 </Link>
             </div>
             {isAuthenticated && auth?.currentUser?.email}
-            {isAuthenticated && <button onClick={signout}>logout</button>}
+            {/* {isAuthenticated && <button onClick={signout}>logout</button>} */}
             <Hero />
             <Causes />
             <Statistics />
