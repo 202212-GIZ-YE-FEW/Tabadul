@@ -6,53 +6,47 @@ import SingleBlog from "@/components/SingleBlog";
 import { fetchBlogs } from "@/utils/firebase";
 
 import { BlogContainer } from "../../components/SingleBlog/SingleBlog.styled";
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
 function BlogPage({ blogs }) {
     return (
-        <div>
-            <Navbar />
-            <BlogContainer>
-                {blogs?.length > 0 ? (
-                    blogs.map((blog) => {
-                        return (
-                            <SingleBlog
-                                key={blog.id}
-                                title={blog.title}
-                                desc={blog.blog}
-                                photo={blog.image}
-                                id={blog.id}
-                            />
-                        );
-                    })
-                ) : (
-                    <>
-                        <ShimmerContentBlock
-                            title
-                            text
-                            cta
-                            thumbnailWidth={370}
-                            thumbnailHeight={370}
+        <BlogContainer>
+            {blogs?.length > 0 ? (
+                blogs.map((blog) => {
+                    return (
+                        <SingleBlog
+                            key={blog.id}
+                            title={blog.title}
+                            desc={blog.blog}
+                            photo={blog.image}
+                            id={blog.id}
                         />
-                        <ShimmerContentBlock
-                            title
-                            text
-                            cta
-                            thumbnailWidth={370}
-                            thumbnailHeight={370}
-                        />
-                        <ShimmerContentBlock
-                            title
-                            text
-                            cta
-                            thumbnailWidth={370}
-                            thumbnailHeight={370}
-                        />
-                    </>
-                )}
-            </BlogContainer>
-            <Footer />
-        </div>
+                    );
+                })
+            ) : (
+                <>
+                    <ShimmerContentBlock
+                        title
+                        text
+                        cta
+                        thumbnailWidth={370}
+                        thumbnailHeight={370}
+                    />
+                    <ShimmerContentBlock
+                        title
+                        text
+                        cta
+                        thumbnailWidth={370}
+                        thumbnailHeight={370}
+                    />
+                    <ShimmerContentBlock
+                        title
+                        text
+                        cta
+                        thumbnailWidth={370}
+                        thumbnailHeight={370}
+                    />
+                </>
+            )}
+        </BlogContainer>
     );
 }
 export default BlogPage;

@@ -14,8 +14,8 @@ import PopularItemsSection from "@/components/PopularItemsSection";
 import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
 
-import Layout from "@/layout/Layout";
 import { auth, fetchBlogs, fetchItems } from "@/utils/firebase";
+import Layout from "@/layout/Layout";
 
 export default function HomePage({ items, blogs }) {
     const [isAuthenticated, setIsAuthenticated] = useState(false);

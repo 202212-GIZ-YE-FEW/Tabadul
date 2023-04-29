@@ -1,532 +1,202 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
-  <header
-    className="css-15n33le"
+<div
+  className="css-u9y4yi"
+>
+  <h2
+    className="css-te3fgk"
   >
-    <nav
-      className="css-97a4l7"
-    >
-      <a
-        className="css-1kc05pi"
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-      >
-        <div
-          className="css-vhhyfh"
-          onClick={[Function]}
-        >
-          <img
-            className="css-1kh5p4n"
-            src="/images/Logo.svg"
-          />
-        </div>
-      </a>
-      <div
-        className="css-8fymys"
-        onClick={[Function]}
-      >
-        <div
-          className="css-w9k2l0"
-        />
-        <div
-          className="css-w9k2l0"
-        />
-        <div
-          className="css-w9k2l0"
-        />
-      </div>
-      <div
-        className="css-1t7ejvz"
-      >
-        <div
-          className="css-1x194yc"
-        >
-          <div
-            onClick={[Function]}
-          >
-            <a
-              className="css-148a5t1"
-              href="/"
-            >
-              <span
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Home",
-                  }
-                }
-              />
-            </a>
-          </div>
-          <div
-            onClick={[Function]}
-          >
-            <a
-              className="css-148a5t1"
-              href="/Aboutus"
-            >
-              <span
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "About us",
-                  }
-                }
-              />
-            </a>
-          </div>
-          <div
-            onClick={[Function]}
-          >
-            <a
-              className="css-148a5t1"
-              href="/Products"
-            >
-              <span
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Products",
-                  }
-                }
-              />
-            </a>
-          </div>
-          <div
-            onClick={[Function]}
-          >
-            <a
-              className="css-148a5t1"
-              href="/Blogs"
-            >
-              <span
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Blogs",
-                  }
-                }
-              />
-            </a>
-          </div>
-          <div
-            onClick={[Function]}
-          >
-            <a
-              className="css-148a5t1"
-              href="/Profile"
-            >
-              <span
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "profile",
-                  }
-                }
-              />
-            </a>
-          </div>
-          <div
-            className="css-13uj0p8"
-            onClick={[Function]}
-          >
-            X
-          </div>
-        </div>
-        <div
-          className="css-11erx38"
-        >
-          <div
-            className="css-1uoaaas"
-          >
-            <button
-              className="css-nru6sm"
-              onBlur={[Function]}
-              onClick={[Function]}
-            >
-              <img
-                className="css-55gwj7"
-                src="/images/users.svg"
-              />
-            </button>
-          </div>
-          <div
-            className="css-1uoaaas"
-          >
-            <button
-              className="css-nru6sm"
-              onBlur={[Function]}
-              onClick={[Function]}
-            >
-              <img
-                className="css-55gwj7"
-                src="/images/flag.svg"
-              />
-              <img
-                className="css-jcgd1c"
-                src="/images/arrow.svg"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+    Add Item 
+  </h2>
   <div
-    className="css-u9y4yi"
+    className="css-1ieito0"
   >
-    <h2
-      className="css-te3fgk"
+    <form
+      className="css-0"
+      method="post"
+      onSubmit={[Function]}
     >
-      Add Item 
-    </h2>
-    <div
-      className="css-1ieito0"
-    >
-      <form
-        className="css-0"
-        method="post"
-        onSubmit={[Function]}
+      <div
+        className="css-vaakcf"
       >
         <div
-          className="css-vaakcf"
-        >
-          <div
-            className="css-u2ayx9"
-          >
-            <label
-              className="css-a1lghw"
-            >
-              Title
-            </label>
-          </div>
-          <input
-            className="css-175bpda"
-            name="title"
-            onChange={[Function]}
-            placeholder="Placeholder"
-            type="text"
-          />
-        </div>
-        <div
-          className="css-vaakcf"
-        >
-          <div
-            className="css-u2ayx9"
-          >
-            <label
-              className="css-1hrsy57"
-            >
-              Catogry
-            </label>
-          </div>
-          <select
-            className="css-1wke6u8"
-            name="category"
-            onChange={[Function]}
-            placeholder="Select catogry"
-            type="dropdown"
-          >
-            <option
-              className="css-0"
-              disabled={true}
-              selected={true}
-            >
-              Select catogry
-            </option>
-          </select>
-        </div>
-        <div
-          className="css-vaakcf"
-        >
-          <div
-            className="css-u2ayx9"
-          >
-            <label
-              className="css-1hrsy57"
-            >
-              Location
-            </label>
-          </div>
-          <select
-            className="css-1e1l5cm"
-            name="location"
-            onChange={[Function]}
-          >
-            <option
-              className="css-0"
-              disabled={true}
-              selected={true}
-            >
-              Select Location
-            </option>
-          </select>
-        </div>
-        <div
-          className="css-vaakcf"
-        >
-          <div
-            className="css-u2ayx9"
-          >
-            <label
-              className="css-1hrsy57"
-            >
-              Description
-            </label>
-          </div>
-          <textarea
-            className="css-11vrh9q"
-            cols="105"
-            name="description"
-            onChange={[Function]}
-            placeholder="Description Item"
-            rows="10"
-          />
-        </div>
-        <div
-          className="css-17djkoe"
+          className="css-u2ayx9"
         >
           <label
-            className="css-s7589y"
+            className="css-a1lghw"
           >
-            Upload Photos
+            Title
           </label>
-          <div
-            className="css-138mc57"
+        </div>
+        <input
+          className="css-175bpda"
+          name="title"
+          onChange={[Function]}
+          placeholder="Placeholder"
+          type="text"
+        />
+      </div>
+      <div
+        className="css-vaakcf"
+      >
+        <div
+          className="css-u2ayx9"
+        >
+          <label
+            className="css-1hrsy57"
           >
-            <div
-              className="css-nt1pnc"
-            >
-              <img
-                alt="thumbnail"
-                className="css-1g2jbla"
-                data-nimg="1"
-                decoding="async"
-                height={40}
-                loading="lazy"
-                onError={[Function]}
-                onLoad={[Function]}
-                src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-                style={
-                  Object {
-                    "color": "transparent",
-                  }
+            Catogry
+          </label>
+        </div>
+        <select
+          className="css-1wke6u8"
+          name="category"
+          onChange={[Function]}
+          placeholder="Select catogry"
+          type="dropdown"
+        >
+          <option
+            className="css-0"
+            disabled={true}
+            selected={true}
+          >
+            Select catogry
+          </option>
+        </select>
+      </div>
+      <div
+        className="css-vaakcf"
+      >
+        <div
+          className="css-u2ayx9"
+        >
+          <label
+            className="css-1hrsy57"
+          >
+            Location
+          </label>
+        </div>
+        <select
+          className="css-1e1l5cm"
+          name="location"
+          onChange={[Function]}
+        >
+          <option
+            className="css-0"
+            disabled={true}
+            selected={true}
+          >
+            Select Location
+          </option>
+        </select>
+      </div>
+      <div
+        className="css-vaakcf"
+      >
+        <div
+          className="css-u2ayx9"
+        >
+          <label
+            className="css-1hrsy57"
+          >
+            Description
+          </label>
+        </div>
+        <textarea
+          className="css-11vrh9q"
+          cols="105"
+          name="description"
+          onChange={[Function]}
+          placeholder="Description Item"
+          rows="10"
+        />
+      </div>
+      <div
+        className="css-17djkoe"
+      >
+        <label
+          className="css-s7589y"
+        >
+          Upload Photos
+        </label>
+        <div
+          className="css-138mc57"
+        >
+          <div
+            className="css-nt1pnc"
+          >
+            <img
+              alt="thumbnail"
+              className="css-1g2jbla"
+              data-nimg="1"
+              decoding="async"
+              height={40}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style={
+                Object {
+                  "color": "transparent",
                 }
-                width={40}
-              />
-              <div
-                className="css-u2ayx9"
+              }
+              width={40}
+            />
+            <div
+              className="css-u2ayx9"
+            >
+              <span
+                className="css-1byxpog"
               >
-                <span
-                  className="css-1byxpog"
-                >
-                  Upload Photos
-                </span>
-              </div>
-              <input
-                className="css-1tzc5tf"
-                multiple={true}
-                name="image"
-                onChange={[Function]}
-                placeholder="Upload Photos"
-                type="file"
-              />
+                Upload Photos
+              </span>
             </div>
+            <input
+              className="css-1tzc5tf"
+              multiple={true}
+              name="image"
+              onChange={[Function]}
+              placeholder="Upload Photos"
+              type="file"
+            />
           </div>
         </div>
-        <div
-          className="css-11bfjdc"
+      </div>
+      <div
+        className="css-11bfjdc"
+      >
+        <button
+          className="css-19qn6sk"
+          disabled={false}
+          type="submit"
+        >
+          <span
+            className="css-1t0xqtl"
+          >
+            Confirm
+          </span>
+        </button>
+        <a
+          href="/listOfItems"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
           <button
-            className="css-19qn6sk"
-            disabled={false}
+            className="css-1hhxna"
             type="submit"
           >
             <span
-              className="css-1t0xqtl"
+              className="css-whghps"
             >
-              Confirm
+              Cancel
             </span>
           </button>
-          <a
-            href="/listOfItems"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            <button
-              className="css-1hhxna"
-              type="submit"
-            >
-              <span
-                className="css-whghps"
-              >
-                Cancel
-              </span>
-            </button>
-          </a>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div
-    className="css-1yhlq7n"
-  >
-    <div
-      className="css-kp9m8d"
-    >
-      <div
-        className="css-xvkl1c"
-      >
-        <img
-          alt=""
-          className="css-n2b87z"
-          data-nimg="1"
-          decoding="async"
-          height={50}
-          loading="lazy"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="/images/footerlogo.svg"
-          style={
-            Object {
-              "color": "transparent",
-            }
-          }
-          width={50}
-        />
-      </div>
-      <div
-        className="css-xvkl1c"
-      >
-        <a
-          className="css-1dbkwr8"
-          href="/Aboutus"
-        >
-          About us
-        </a>
-        <a
-          className="css-1dbkwr8"
-          href="/Blogs"
-        >
-          Blogs
-        </a>
-        <a
-          className="css-1dbkwr8"
-          href="/Products"
-        >
-          Listed items
         </a>
       </div>
-      <div
-        className="css-xvkl1c"
-      >
-        <p>
-          Contact Us
-        </p>
-        <div
-          className="css-18icqaw"
-        >
-          <a
-            className="css-1i6zk58"
-          >
-            <img
-              alt=""
-              className="css-3g96gi"
-              data-nimg="1"
-              decoding="async"
-              height={50}
-              loading="lazy"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="/images/facebook .svg"
-              style={
-                Object {
-                  "color": "transparent",
-                }
-              }
-              width={50}
-            />
-          </a>
-          <a
-            className="css-1i6zk58"
-          >
-            <img
-              alt=""
-              className="css-3g96gi"
-              data-nimg="1"
-              decoding="async"
-              height={50}
-              loading="lazy"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="/images/instagram (2).svg"
-              style={
-                Object {
-                  "color": "transparent",
-                }
-              }
-              width={50}
-            />
-          </a>
-          <a
-            className="css-1i6zk58"
-          >
-            <img
-              alt=""
-              className="css-3g96gi"
-              data-nimg="1"
-              decoding="async"
-              height={50}
-              loading="lazy"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="/images/linkedin (2).svg"
-              style={
-                Object {
-                  "color": "transparent",
-                }
-              }
-              width={50}
-            />
-          </a>
-          <a
-            className="css-1i6zk58"
-          >
-            <img
-              alt=""
-              className="css-3g96gi"
-              data-nimg="1"
-              decoding="async"
-              height={50}
-              loading="lazy"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="/images/share.svg"
-              style={
-                Object {
-                  "color": "transparent",
-                }
-              }
-              width={50}
-            />
-          </a>
-        </div>
-      </div>
-      <div
-        className="css-xvkl1c"
-      >
-        <p>
-          Address
-        </p>
-        <p>
-          street 01,07
-        </p>
-        <p>
-          Yemen, Sanaa
-        </p>
-      </div>
-    </div>
+    </form>
   </div>
 </div>
 `;
