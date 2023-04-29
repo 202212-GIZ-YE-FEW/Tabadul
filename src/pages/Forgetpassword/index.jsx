@@ -1,5 +1,10 @@
+import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { useFormik } from "formik";
 import React from "react";
+import swal from "sweetalert";
+
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 
 import { basicSchema } from "@/schemas";
 import {
@@ -21,11 +26,26 @@ import {
 
 import lockphoto from "../../assets/Image/lock.svg";
 import Signin from "../../assets/Image/Signin.svg";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 const onSubmit = async (values) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    values.email = "";
+    const auth = getAuth();
+    await sendPasswordResetEmail(auth, values.email)
+        .then(() => {
+            swal({
+                title: "Email Sent!",
+                text: "Recover Email has Been Sent to your Email",
+                icon: "success",
+                button: "Cancel",
+            });
+        })
+        .catch((error) => {
+            const errorMessage = error.message;
+            swal({
+                title: "Email not found go & sigin up !",
+                text: errorMessage,
+                icon: "error",
+                button: "Cancel",
+            });
+        });
 };
 
 function Forgetpass() {
