@@ -24,7 +24,6 @@ import {
 import { NavItem } from "./NavItem";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "@/utils/firebase";
-import Router from "next/router";
 
 const MENU_LIST = [
     {
@@ -63,13 +62,6 @@ export default function Navbar() {
             Listerner();
         };
     }, []);
-
-    useEffect(() => {
-        let dir = Router.locale == "ar" ? "rtl" : "ltr";
-        let lang = Router.locale == "ar" ? "ar" : "en";
-        document.querySelector("html").setAttribute("dir", dir);
-        document.querySelector("html").setAttribute("lang", lang);
-    }, [Router, navActive]);
 
     useEffect(() => {
         let cb = function () {
