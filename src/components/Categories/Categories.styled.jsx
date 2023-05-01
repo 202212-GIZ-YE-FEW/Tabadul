@@ -7,6 +7,7 @@ export const ContainerBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     row-gap: 50px;
     column-gap: 40px;
@@ -33,7 +34,11 @@ export const ContainerCategories = styled.div`
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    @media (min-width: 768px) and (max-width: 1400px) {
+    @media (min-width: 992px) and (max-width: 1400px) {
+        width: 160px;
+        height: 200px;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
         width: 200px;
         height: 236px;
     }
