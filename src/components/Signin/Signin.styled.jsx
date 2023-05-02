@@ -102,7 +102,7 @@ export const Checklabel = styled.label`
     color: #888c95;
     margin-right: 300px;
     @media screen and (max-width: 600px) {
-        margin-left: 120px;
+        margin-right: 0;
     }
 `;
 export const Checkinput = styled.input`
@@ -122,14 +122,15 @@ export const Signinbutton = styled.button`
     background: #33956d;
     border-radius: 20px;
     margin-top: 40px;
+    border: none;
+    padding: 7px 0;
     @media screen and (max-width: 768px) {
-        width: 400px;
+        width: 280px;
     }
 `;
 export const Buttonspan = styled.span`
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-weight: 500;
+    font-size: 22px;
     text-align: center;
     color: #ffffff;
     @media screen and (max-width: 600px) {
@@ -149,7 +150,7 @@ export const Paraghraph = styled.p`
     text-align: center;
     color: #888c95;
     @media screen and (max-width: 600px) {
-        font-size: 20px;
+        font-size: 18px;
     }
 `;
 export const Linkparagraph = styled.a`
@@ -161,8 +162,13 @@ export const Linkparagraph = styled.a`
     line-height: 20px;
     text-decoration-line: underline;
     color: #4e5769;
+    margin-left: 10px;
+    &:hover {
+        color: #33956d;
+    }
     @media screen and (max-width: 600px) {
-        font-size: 20px;
+        font-size: 18px;
+        margin-left: 5px;
     }
 `;
 
@@ -175,15 +181,18 @@ export const ChangePass = styled.a`
     text-align: center;
     text-decoration-line: underline;
     color: #4e5769;
+    &:hover {
+        color: #33956d;
+    }
     @media screen and (max-width: 600px) {
-        font-size: 20px;
+        font-size: 18px;
     }
 `;
 export const ParaghraphConatainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
 `;
 
 export const Signinwith = styled.p`

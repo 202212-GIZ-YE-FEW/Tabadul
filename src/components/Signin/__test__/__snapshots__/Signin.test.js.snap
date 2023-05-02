@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1e2fy0l"
+  className="css-0"
 >
   <div
     className="css-1ieito0"
   >
     <div
-      className="css-1ppew63"
+      className="css-s5dkwi"
     >
       <h1
         className="css-2tqzfo"
@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
         Log in
       </h1>
       <form
-        className="css-16uc8yn"
+        className="css-1foojvz"
         onSubmit={[Function]}
       >
         <div
@@ -60,7 +60,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <label
-              className="css-1euclyk"
+              className="css-14nzprb"
             >
               <input
                 checked={false}
@@ -71,11 +71,11 @@ exports[`renders correctly 1`] = `
               keep me logged in
             </label>
             <button
-              className="css-1ai2m3g"
+              className="css-rrxtx3"
               type="submit"
             >
               <span
-                className="css-465t2s"
+                className="css-1rcc3de"
               >
                 Log in
               </span>
@@ -87,21 +87,21 @@ exports[`renders correctly 1`] = `
         className="css-tjuh7q"
       >
         <div
-          className="css-1x1ovri"
+          className="css-iur4jz"
         >
           <p
-            className="css-54j68d"
+            className="css-1l8i3w2"
           >
             Do not have an account ?
             <a
-              className="css-1p3t3s0"
+              className="css-10xd5ga"
               href="/Signup"
             >
               Sign up
             </a>
           </p>
           <a
-            className="css-gw1mbz"
+            className="css-87t8t8"
             href="/Forgetpassword"
           >
             Forget Password
