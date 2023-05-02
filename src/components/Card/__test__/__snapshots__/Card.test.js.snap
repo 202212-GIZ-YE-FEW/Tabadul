@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<a
+  className="css-1qj8w5r"
+  href="/Products/undefined"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onTouchStart={[Function]}
+>
+  <div
+    className="css-1u7n8t5"
+  >
+    <img
+      alt="CardImage"
+      className="css-tlhgah"
+      data-nimg="1"
+      decoding="async"
+      height={185.44}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src=""
+      style={
+        Object {
+          "color": "transparent",
+        }
+      }
+      width={258.4}
+    />
+    <div
+      className="css-12mcu80"
+    >
+      <p
+        className="css-1d0gjqw"
+      />
+      <div
+        className="css-z8cq9n"
+      >
+        <div
+          className="css-1povu0j"
+        >
+          <img
+            alt="Icon"
+            className="css-1vxmviq"
+            data-nimg="1"
+            decoding="async"
+            height={16}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/Vector.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={14}
+          />
+          <p
+            className="css-1m4mhwh"
+          />
+        </div>
+        <div
+          className="css-1povu0j"
+        >
+          <img
+            alt="Icon"
+            className="css-1vxmviq"
+            data-nimg="1"
+            decoding="async"
+            height={17}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/images/tag-fill.svg"
+            style={
+              Object {
+                "color": "transparent",
+              }
+            }
+            width={14}
+          />
+          <p
+            className="css-1m4mhwh"
+          />
+        </div>
+      </div>
+      <p
+        className="css-14yh97d"
+      >
+        undefined Invalid Date undefined
+      </p>
+      <p
+        className="css-175v29n"
+      />
+    </div>
+  </div>
+</a>
+`;
