@@ -86,7 +86,7 @@ const ListedItems = (props) => {
                 />
             </SearchAndFilterDiv>
             {filters?.length > 0 ? (
-                <ItemsList filters={filters} checkLang={checkLang} />
+                <ItemsList filters={filters} />
             ) : (
                 <ShimmerContainer>
                     <ShimmerPostList
