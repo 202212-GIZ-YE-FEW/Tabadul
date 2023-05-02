@@ -34,7 +34,7 @@ import {
     DeleteIcon,
     DisplayContainer,
 } from "./AddItem.styled";
-import { addItem } from "@/utils/firebase";
+import { addItem, auth } from "@/utils/firebase";
 import {
     deleteObject,
     getDownloadURL,
@@ -81,6 +81,7 @@ function AddItem({ categoriesList, locationList }) {
             time: current.toLocaleTimeString(),
             date: formatedDate,
             image: imagesList,
+            userId: auth?.currentUser?.uid,
         };
         let flagIsFilled = validateOnSubmit(updateItem);
         if (flagIsFilled === Object.entries(updateItem).length) {

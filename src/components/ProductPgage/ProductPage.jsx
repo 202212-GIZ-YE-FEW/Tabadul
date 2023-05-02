@@ -15,7 +15,15 @@ import {
     StyledProduct,
 } from "./product.style";
 
-const Product = ({ title, description, images = [], location }) => {
+const Product = ({
+    title,
+    description,
+    images = [],
+    location,
+    name,
+    phone,
+    email,
+}) => {
     const [activeImage, setActiveImage] = useState(
         images.length > 0 ? images[0].url : ""
     );
@@ -111,9 +119,9 @@ const Product = ({ title, description, images = [], location }) => {
                     <ContactInfo>
                         <InfoLogo src='/images/info.png' alt='Info' />
                         <div>
-                            <p>Name Surname</p>
-                            <p>Phone: 01122334455</p>
-                            <p>Email: mail@mail.com</p>
+                            <p>Name : {name}</p>
+                            <p>Phone :{phone}</p>
+                            <p>Email :{email}</p>
                         </div>
                     </ContactInfo>
                 </ProductDetails>

@@ -1,24 +1,31 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 
-export const SigninContainer = styled.div``;
+export const SigninContainer = styled.div`
+    // @media screen and (max-width: 600px) {
+    //  margin-left:100px;
+    // }
+`;
 
 export const Itemscontainer = styled.div`
     display: flex;
     justify-content: center;
-    items-align: center;
+    // items-align: center;
+    @media screen and (max-width: 600px) {
+        justify-content: end;
+    }
 `;
 
 export const Inputscontainer = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 110px;
-    @media screen and (max-width: 600px) {
-        margin-left: 400px;
-    }
-    @media screen and (max-width: 420px) {
-        margin-left: 700px;
-    }
+    // padding: 110px;
+    // // @media screen and (max-width: 600px) {
+    //     margin-left: 400px;
+    // }
+    // @media screen and (max-width: 420px) {
+    //     margin-left: 700px;
+    // }
 `;
 
 export const Signinheader = styled.h1`
@@ -30,12 +37,12 @@ export const Signinheader = styled.h1`
     text-align: center;
     color: #3c4347;
     margin-left: 180px;
-    @media screen and (max-width: 600px) {
-        width: 99px;
-        height: 26px;
-        font-size: 24px;
-        margin-left: 300px;
-    }
+    // @media screen and (max-width: 600px) {
+    //     width: 99px;
+    //     height: 26px;
+    //     font-size: 24px;
+    //     margin-left: 300px;
+    // }
 `;
 
 export const Signinform = styled.form``;
@@ -82,10 +89,10 @@ export const Signininput = styled.input`
         line-height: 30px;
         color: #cacaca;
     }
-    @media screen and (max-width: 600px) {
-        width: 364px;
-        height: 58.77;
-    }
+    // @media screen and (max-width: 600px) {
+    //     width: 364px;
+    //     height: 58.77;
+    // }
     &.input-error {
         border: 2px solid #ff00009b;
     }
@@ -100,9 +107,9 @@ export const Checklabel = styled.label`
     text-align: center;
     color: #888c95;
     margin-right: 300px;
-    @media screen and (max-width: 600px) {
-        margin-left: 120px;
-    }
+    // @media screen and (max-width: 600px) {
+    //     margin-left: 120px;
+    // }
 `;
 export const Checkinput = styled.input`
     box-sizing: border-box;
@@ -120,10 +127,10 @@ export const Signinbutton = styled.button`
     background: #33956d;
     border-radius: 20px;
     margin-top: 40px;
-    @media screen and (max-width: 600px) {
-        width: 271px;
-        height: 49px;
-    }
+    // @media screen and (max-width: 600px) {
+    //     width: 271px;
+    //     height: 49px;
+    // }
 `;
 export const Buttonspan = styled.span`
     width: 72px;
@@ -133,11 +140,11 @@ export const Buttonspan = styled.span`
     line-height: 36px;
     text-align: center;
     color: #ffffff;
-    @media screen and (max-width: 600px) {
-        width: 60px;
-        height: 30px;
-        font-size: 20px;
-    }
+    // @media screen and (max-width: 600px) {
+    //     width: 60px;
+    //     height: 30px;
+    //     font-size: 20px;
+    // }
 `;
 
 export const Paraghraph = styled.p`
@@ -150,9 +157,9 @@ export const Paraghraph = styled.p`
     line-height: 20px;
     text-align: center;
     color: #888c95;
-    @media screen and (max-width: 600px) {
-        font-size: 20px;
-    }
+    // @media screen and (max-width: 600px) {
+    //     font-size: 20px;
+    // }
 `;
 export const Linkparagraph = styled.a`
 width: 327px;
@@ -162,9 +169,9 @@ font-size: 16px;
 line-height: 20px
 text-decoration-line: underline;
 color: #4E5769;
-@media screen and (max-width: 600px) {
-    font-size:20px    
-}
+// @media screen and (max-width: 600px) {
+//     font-size:20px    
+// }
 `;
 
 export const ChangePass = styled.a`
@@ -176,9 +183,9 @@ export const ChangePass = styled.a`
     text-align: center;
     text-decoration-line: underline;
     color: #4e5769;
-    @media screen and (max-width: 600px) {
-        font-size: 20px;
-    }
+    // @media screen and (max-width: 600px) {
+    //     font-size: 20px;
+    // }
 `;
 export const ParaghraphConatainer = styled.div`
     display: flex;
@@ -195,9 +202,9 @@ export const Signinwith = styled.p`
     line-height: 20px;
     text-align: center;
     color: #3c4347;
-    @media screen and (max-width: 600px) {
-        font-size: 20px;
-    }
+    // @media screen and (max-width: 600px) {
+    //     font-size: 20px;
+    // }
 `;
 export const Imgsdev = styled.div`
     display: flex;
