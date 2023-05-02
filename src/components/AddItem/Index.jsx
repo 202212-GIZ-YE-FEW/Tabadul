@@ -264,7 +264,9 @@ function AddItem({ categoriesList, locationList }) {
                                         id={location.id}
                                         value={JSON.stringify(location)}
                                     >
-                                        {location.name}
+                                        {Router.locale === "ar"
+                                            ? location.name_ar
+                                            : location.name}
                                     </Locationoption>
                                 );
                             })}
