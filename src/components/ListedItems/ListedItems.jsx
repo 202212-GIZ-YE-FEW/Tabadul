@@ -13,7 +13,14 @@ import {
 import SearchComp from "./SearchComp";
 
 const ListedItems = (props) => {
-    const { setFilters, filters, setHandleFilter, handleFilter, items } = props;
+    const {
+        checkLang,
+        setFilters,
+        filters,
+        setHandleFilter,
+        handleFilter,
+        items,
+    } = props;
     const [locationList, setLocationList] = useState();
     const [dropDown, setDropDown] = useState(false);
 
@@ -69,6 +76,7 @@ const ListedItems = (props) => {
                     handleInputChange={handleInputChange}
                 />
                 <ButtonsComp
+                    checkLang={checkLang}
                     setDropDown={setDropDown}
                     dropDown={dropDown}
                     locationList={locationList}
@@ -78,7 +86,7 @@ const ListedItems = (props) => {
                 />
             </SearchAndFilterDiv>
             {filters?.length > 0 ? (
-                <ItemsList filters={filters} />
+                <ItemsList filters={filters} checkLang={checkLang} />
             ) : (
                 <ShimmerContainer>
                     <ShimmerPostList
