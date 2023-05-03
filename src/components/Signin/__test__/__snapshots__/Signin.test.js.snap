@@ -8,10 +8,10 @@ exports[`renders correctly 1`] = `
     className="css-1b9cteq"
   >
     <div
-      className="css-hnw815"
+      className="css-1ohf0ui"
     >
       <h1
-        className="css-1v47g50"
+        className="css-eecm3x"
       >
         Log in
       </h1>
@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
                 Email
               </label>
               <input
-                className="css-1ni9aoa"
+                className="css-4rjrxw"
                 id="email"
                 name="email"
                 onChange={[Function]}
@@ -52,7 +52,7 @@ exports[`renders correctly 1`] = `
                 Password
               </label>
               <input
-                className="css-1ni9aoa"
+                className="css-4rjrxw"
                 onChange={[Function]}
                 placeholder="Enter your password"
                 type="password"
@@ -60,7 +60,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <label
-              className="css-1i31gq8"
+              className="css-njmlkr"
             >
               <input
                 checked={false}
@@ -71,11 +71,11 @@ exports[`renders correctly 1`] = `
               keep me logged in
             </label>
             <button
-              className="css-zp0or5"
+              className="css-svycv2"
               type="submit"
             >
               <span
-                className="css-msh6so"
+                className="css-182iszc"
               >
                 Log in
               </span>
@@ -90,25 +90,25 @@ exports[`renders correctly 1`] = `
           className="css-1brzwz1"
         >
           <p
-            className="css-d4koqo"
+            className="css-s418wj"
           >
             Do not have an account ?
             <a
-              className="css-v98jw1"
+              className="css-18xlpws"
               href="/Signup"
             >
               Sign up
             </a>
           </p>
           <a
-            className="css-fg5824"
+            className="css-1v5yb7"
             href="/Forgetpassword"
           >
             Forget Password
           </a>
         </div>
         <p
-          className="css-yz0aof"
+          className="css-1al6cl5"
         >
           Log in with
         </p>
