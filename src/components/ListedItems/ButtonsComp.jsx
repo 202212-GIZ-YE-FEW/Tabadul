@@ -16,10 +16,13 @@ import {
 } from "./ListedItems.styled";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "@/utils/firebase";
+import { useRouter } from "next/router";
 
 const ButtonsComp = (props) => {
+    const router = useRouter();
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const {
+        checkLang,
         setDropDown,
         dropDown,
         locationList,
@@ -51,7 +54,9 @@ const ButtonsComp = (props) => {
                     onBlur={() => setDropDown(false)}
                 >
                     <InnerDiv>
-                        <ButtonName>Location</ButtonName>
+                        <ButtonName>
+                            {router.locale === "ar" ? "الموقع" : "Location"}
+                        </ButtonName>
                         {dropDown && (
                             <MenuList>
                                 {locationList?.map((location) => {
@@ -63,7 +68,7 @@ const ButtonsComp = (props) => {
                                             }}
                                         >
                                             <MenuItemDiv>
-                                                {location.name}
+                                                {checkLang(location)}
                                             </MenuItemDiv>
                                         </MenuItem>
                                     );
@@ -82,7 +87,9 @@ const ButtonsComp = (props) => {
                 </FilterButton>
                 <FilterButton onClick={sortRecent}>
                     <InnerDiv>
-                        <ButtonName>Recent</ButtonName>
+                        <ButtonName>
+                            {router.locale === "ar" ? "الأخير" : "Recent"}
+                        </ButtonName>
 
                         <ButtonDetailDiv>
                             <ButtonIcon
@@ -98,7 +105,9 @@ const ButtonsComp = (props) => {
             <div>
                 {isAuthenticated && (
                     <Link href='/addToItem'>
-                        <AddItem>Add item</AddItem>
+                        <AddItem>
+                            {router.locale === "ar" ? "إضافة منتج" : "Add item"}
+                        </AddItem>
                     </Link>
                 )}
             </div>

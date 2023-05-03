@@ -108,17 +108,9 @@ function AddItem({ categoriesList, locationList }) {
 
     function validateOnChange(e) {
         const name = e.target.name;
-        console.log(
-            "onchange vlaidtae",
-            name,
-            e.target.value,
-            e.target.value.length
-        );
         if (e.target.value.length <= 0) {
-            console.log("less than 0");
             setErrorMsg({ ...errorMsg, [name]: true });
         } else {
-            console.log("more than zero");
             setErrorMsg({ ...errorMsg, [name]: false });
         }
     }
@@ -138,7 +130,7 @@ function AddItem({ categoriesList, locationList }) {
 
         setItem({
             ...item,
-            [name]: { name: e.target.value, id: option },
+            [name]: { ...JSON.parse(e.target.value) },
         });
     }
 
@@ -240,8 +232,14 @@ function AddItem({ categoriesList, locationList }) {
                             </Selectoption>
                             {categoriesList?.map((cate) => {
                                 return (
-                                    <Selectoption key={cate.id} id={cate.id}>
-                                        {cate.name}
+                                    <Selectoption
+                                        key={cate.id}
+                                        id={cate.id}
+                                        value={JSON.stringify(cate)}
+                                    >
+                                        {Router.locale === "ar"
+                                            ? cate.name_ar
+                                            : cate.name}
                                     </Selectoption>
                                 );
                             })}
@@ -265,8 +263,11 @@ function AddItem({ categoriesList, locationList }) {
                                     <Locationoption
                                         key={location.id}
                                         id={location.id}
+                                        value={JSON.stringify(location)}
                                     >
-                                        {location.name}
+                                        {Router.locale === "ar"
+                                            ? location.name_ar
+                                            : location.name}
                                     </Locationoption>
                                 );
                             })}

@@ -172,6 +172,13 @@ export const RelatedItemsContainer = styled.div`
     padding-bottom: 10%;
 `;
 
+export const ProductsBox = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+`;
+
 export const RelatedItemCard = styled.div`
     width: 250px;
     margin: 10px;
