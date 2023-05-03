@@ -2,16 +2,16 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-0"
+  className="css-abe5w4"
 >
   <div
-    className="css-132yxzz"
+    className="css-1b9cteq"
   >
     <div
-      className="css-1caouas"
+      className="css-1ohf0ui"
     >
       <h1
-        className="css-wr410z"
+        className="css-eecm3x"
       >
         Log in
       </h1>
@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
                 Email
               </label>
               <input
-                className="css-17aovyj"
+                className="css-4rjrxw"
                 id="email"
                 name="email"
                 onChange={[Function]}
@@ -52,7 +52,7 @@ exports[`renders correctly 1`] = `
                 Password
               </label>
               <input
-                className="css-17aovyj"
+                className="css-4rjrxw"
                 onChange={[Function]}
                 placeholder="Enter your password"
                 type="password"
@@ -60,7 +60,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <label
-              className="css-1xfha8l"
+              className="css-njmlkr"
             >
               <input
                 checked={false}
@@ -71,11 +71,11 @@ exports[`renders correctly 1`] = `
               keep me logged in
             </label>
             <button
-              className="css-otrrrr"
+              className="css-svycv2"
               type="submit"
             >
               <span
-                className="css-1wr31v7"
+                className="css-182iszc"
               >
                 Log in
               </span>
@@ -90,25 +90,25 @@ exports[`renders correctly 1`] = `
           className="css-1brzwz1"
         >
           <p
-            className="css-lx5yh4"
+            className="css-s418wj"
           >
             Do not have an account ?
             <a
-              className="css-175it1b"
+              className="css-18xlpws"
               href="/Signup"
             >
               Sign up
             </a>
           </p>
           <a
-            className="css-gw1mbz"
+            className="css-1v5yb7"
             href="/Forgetpassword"
           >
             Forget Password
           </a>
         </div>
         <p
-          className="css-uc1awu"
+          className="css-1al6cl5"
         >
           Log in with
         </p>
