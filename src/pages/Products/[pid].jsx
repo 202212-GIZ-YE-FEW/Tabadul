@@ -74,7 +74,7 @@ const SingleProduct = ({ Item }) => {
                 category={Item.category}
                 name={userinfo?.name}
                 phone={userinfo?.phone}
-                email={userinfo.email}
+                email={userinfo?.email}
             />
 
             {relatedItems.length > 0 && (
