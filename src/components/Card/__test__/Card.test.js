@@ -1,6 +1,6 @@
 import renderer from "react-test-renderer";
 
-import ListedItems from "../ListedItems";
+import Card from "../Card";
 
 jest.mock("next/router", () => ({
     useRouter() {
@@ -12,6 +12,6 @@ jest.mock("next/router", () => ({
 }));
 
 it("renders correctly", () => {
-    const tree = renderer.create(<ListedItems />).toJSON();
+    const tree = renderer.create(<Card />).toJSON();
     expect(tree).toMatchSnapshot();
 });

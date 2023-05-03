@@ -24,6 +24,12 @@ const ProductsItems = () => {
         setItems(items);
     }
 
+    function checkLang(checkME) {
+        if (document.querySelector("html").lang === "en") {
+            return checkME?.name;
+        } else return checkME?.name_ar;
+    }
+
     useEffect(() => {
         if (selectedCategory.name === "ALL") {
             setHandleFilter();
@@ -42,8 +48,12 @@ const ProductsItems = () => {
 
     return (
         <Container>
-            <Categories handleCategory={handleSelectCategory} />
+            <Categories
+                handleCategory={handleSelectCategory}
+                checkLang={checkLang}
+            />
             <ListedItems
+                checkLang={checkLang}
                 setFilters={setFilters}
                 filters={filters}
                 setHandleFilter={setHandleFilter}

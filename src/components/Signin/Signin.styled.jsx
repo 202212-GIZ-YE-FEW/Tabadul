@@ -1,7 +1,11 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 
-export const SigninContainer = styled.div``;
+export const SigninContainer = styled.div`
+    // @media screen and (max-width: 600px) {
+    //  margin-left:100px;
+    // }
+`;
 
 export const Itemscontainer = styled.div`
     display: flex;
@@ -203,9 +207,6 @@ export const Signinwith = styled.p`
     line-height: 20px;
     text-align: center;
     color: #3c4347;
-    @media screen and (max-width: 600px) {
-        font-size: 20px;
-    }
 `;
 export const Imgsdev = styled.div`
     display: flex;

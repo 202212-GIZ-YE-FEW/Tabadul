@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-0"
+  className="css-abe5w4"
 >
   <div
     className="css-1ieito0"
@@ -94,21 +94,21 @@ exports[`renders correctly 1`] = `
           >
             Do not have an account ?
             <a
-              className="css-10xd5ga"
+              className="css-cvtfs1"
               href="/Signup"
             >
               Sign up
             </a>
           </p>
           <a
-            className="css-87t8t8"
+            className="css-7j3p8w"
             href="/Forgetpassword"
           >
             Forget Password
           </a>
         </div>
         <p
-          className="css-uc1awu"
+          className="css-1al6cl5"
         >
           Log in with
         </p>

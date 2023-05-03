@@ -10,18 +10,12 @@ import {
 import CategoriesImag from "../../assets/Image/icon_clothes_hanger_label_.svg";
 import { fetchCategories } from "@/utils/firebase";
 
-function Categories({ handleCategory }) {
+function Categories({ handleCategory, checkLang }) {
     const [categoriesList, setCategoriesList] = useState();
 
     async function getCategories() {
         const cat = await fetchCategories();
         setCategoriesList(cat);
-    }
-
-    function checkLang(category) {
-        if (document.querySelector("html").lang === "en") {
-            return category?.name;
-        } else return category?.name_ar;
     }
 
     useEffect(() => {
