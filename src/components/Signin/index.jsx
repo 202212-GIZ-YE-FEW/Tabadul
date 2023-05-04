@@ -1,4 +1,12 @@
+import {
+    browserSessionPersistence,
+    setPersistence,
+    signInWithEmailAndPassword,
+} from "firebase/auth";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
+
+import { auth } from "@/utils/firebase";
 
 import {
     Buttonspan,
@@ -30,14 +38,6 @@ import {
     Signinwith,
     Test,
 } from "./Signin.styled";
-import {
-    browserSessionPersistence,
-    inMemoryPersistence,
-    setPersistence,
-    signInWithEmailAndPassword,
-} from "firebase/auth";
-import { auth } from "@/utils/firebase";
-import { useRouter } from "next/router";
 
 function Signin() {
     const [email, setEmail] = useState("");

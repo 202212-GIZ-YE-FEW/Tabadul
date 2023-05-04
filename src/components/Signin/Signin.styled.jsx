@@ -10,15 +10,14 @@ export const SigninContainer = styled.div`
 export const Itemscontainer = styled.div`
     display: flex;
     justify-content: center;
-    // items-align: center;
-    @media screen and (max-width: 600px) {
-        justify-content: end;
-    }
+    align-items: center;
 `;
 
 export const Inputscontainer = styled.div`
     display: flex;
     flex-direction: column;
+    padding: 100px 0;
+    max-width: 100%;
 `;
 
 export const Signinheader = styled.h1`
@@ -30,9 +29,24 @@ export const Signinheader = styled.h1`
     text-align: center;
     color: #3c4347;
     margin-left: 180px;
+    display: none;
+    @media screen and (max-width: 600px) {
+        width: 99px;
+        height: 26px;
+        font-size: 24px;
+        margin-left: 300px;
+    }
 `;
 
-export const Signinform = styled.form``;
+export const Signinform = styled.form`
+    width: 500px;
+    max-width: 100%;
+    padding: 10px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+`;
+
 export const Containerinput = styled.div`
     display: flex;
     flex-direction: column;
@@ -43,6 +57,7 @@ export const Itemsdev = styled.div`
     flex-direction: column;
     padding: 20px;
     margin-top: 10px;
+    width: 100%;
 `;
 export const Test = styled.div`
     display: flex;
@@ -62,8 +77,8 @@ export const Signintitle = styled.label`
 `;
 export const Signininput = styled.input`
     box-sizing: border-box;
-    width: 500px;
-    height: 49px;
+    display: inline-block;
+    width: 100%;
     border: 2px solid #33956d;
     border-radius: 15px;
     font-size: 20px;
@@ -76,21 +91,23 @@ export const Signininput = styled.input`
         line-height: 30px;
         color: #cacaca;
     }
-
     &.input-error {
         border: 2px solid #ff00009b;
     }
 `;
 
 export const Checklabel = styled.label`
-    width: 298px;
-    height: 32px;
+    display: inline-block;
+    width: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
     color: #888c95;
     margin-right: 300px;
+    @media screen and (max-width: 600px) {
+        margin-right: 0;
+    }
 `;
 export const Checkinput = styled.input`
     box-sizing: border-box;
@@ -103,25 +120,32 @@ export const Checkinput = styled.input`
 `;
 
 export const Signinbutton = styled.button`
-    width: 502px;
-    height: 48px;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
     background: #33956d;
     border-radius: 20px;
     margin-top: 40px;
+    border: none;
+    padding: 7px 0;
+    @media screen and (max-width: 768px) {
+        width: 280px;
+    }
 `;
 export const Buttonspan = styled.span`
-    width: 72px;
-    height: 36px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-weight: 500;
+    font-size: 22px;
     text-align: center;
     color: #ffffff;
+    @media screen and (max-width: 600px) {
+        font-size: 20px;
+    }
 `;
 
 export const Paraghraph = styled.p`
     width: 327px;
     height: 28px;
+    max-width: 100%;
     left: 123px;
     top: 403px;
     font-weight: 400;
@@ -129,16 +153,27 @@ export const Paraghraph = styled.p`
     line-height: 20px;
     text-align: center;
     color: #888c95;
+    @media screen and (max-width: 600px) {
+        font-size: 18px;
+    }
 `;
 export const Linkparagraph = styled.a`
-width: 327px;
-height: 28px;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px
-text-decoration-line: underline;
-color: #4E5769;
-
+    width: 327px;
+    height: 28px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4e5769;
+    margin-left: 10px;
+    &:hover {
+        color: #33956d;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 18px;
+        margin-left: 5px;
+    }
 `;
 
 export const ChangePass = styled.a`
@@ -150,12 +185,18 @@ export const ChangePass = styled.a`
     text-align: center;
     text-decoration-line: underline;
     color: #4e5769;
+    &:hover {
+        color: #33956d;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 18px;
+    }
 `;
 export const ParaghraphConatainer = styled.div`
     display: flex;
     flex-direction: column;
-    items-align: center;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 0;
 `;
 
 export const Signinwith = styled.p`
