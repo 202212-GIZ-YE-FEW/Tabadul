@@ -23,7 +23,8 @@ function MyApp({ Component, pageProps }) {
         document.documentElement.dir = dir;
     }, [dir]);
     useEffect(() => {
-        setTimeout(() => setLoading(true), 1000);
+        let timer = setTimeout(() => setLoading(true), 500);
+        return () => clearTimeout(timer);
     }, []);
 
     return (
