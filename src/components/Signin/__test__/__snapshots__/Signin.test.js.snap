@@ -5,18 +5,18 @@ exports[`renders correctly 1`] = `
   className="css-abe5w4"
 >
   <div
-    className="css-1b9cteq"
+    className="css-1ieito0"
   >
     <div
-      className="css-1ohf0ui"
+      className="css-s5dkwi"
     >
       <h1
-        className="css-eecm3x"
+        className="css-2tqzfo"
       >
         Log in
       </h1>
       <form
-        className="css-0"
+        className="css-1foojvz"
         onSubmit={[Function]}
       >
         <div
@@ -26,7 +26,7 @@ exports[`renders correctly 1`] = `
             className="css-tjuh7q"
           >
             <div
-              className="css-crx4p4"
+              className="css-qhtill"
             >
               <label
                 className="css-3vajn4"
@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
                 Email
               </label>
               <input
-                className="css-4rjrxw"
+                className="css-kij3yw"
                 id="email"
                 name="email"
                 onChange={[Function]}
@@ -44,7 +44,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <div
-              className="css-crx4p4"
+              className="css-qhtill"
             >
               <label
                 className="css-3vajn4"
@@ -52,7 +52,7 @@ exports[`renders correctly 1`] = `
                 Password
               </label>
               <input
-                className="css-4rjrxw"
+                className="css-kij3yw"
                 onChange={[Function]}
                 placeholder="Enter your password"
                 type="password"
@@ -60,7 +60,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <label
-              className="css-njmlkr"
+              className="css-14nzprb"
             >
               <input
                 checked={false}
@@ -71,11 +71,11 @@ exports[`renders correctly 1`] = `
               keep me logged in
             </label>
             <button
-              className="css-svycv2"
+              className="css-rrxtx3"
               type="submit"
             >
               <span
-                className="css-182iszc"
+                className="css-1rcc3de"
               >
                 Log in
               </span>
@@ -87,21 +87,21 @@ exports[`renders correctly 1`] = `
         className="css-tjuh7q"
       >
         <div
-          className="css-1brzwz1"
+          className="css-iur4jz"
         >
           <p
-            className="css-s418wj"
+            className="css-1l8i3w2"
           >
             Do not have an account ?
             <a
-              className="css-18xlpws"
+              className="css-cvtfs1"
               href="/Signup"
             >
               Sign up
             </a>
           </p>
           <a
-            className="css-1v5yb7"
+            className="css-7j3p8w"
             href="/Forgetpassword"
           >
             Forget Password
