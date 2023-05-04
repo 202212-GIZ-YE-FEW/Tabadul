@@ -23,8 +23,9 @@ import {
     Signwith,
 } from "./Signup.styled";
 import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
-import { auth } from "@/utils/firebase";
+import { auth, db } from "@/utils/firebase";
 import { useRouter } from "next/router";
+import { addDoc, collection } from "firebase/firestore";
 
 function Signup() {
     const [email, setEmail] = useState("");
@@ -82,10 +83,22 @@ function Signup() {
                 setLocationError("");
             }
             if (email && password && name && phone && location && confirmpass) {
-                await createUserWithEmailAndPassword(auth, email, password);
+                await createUserWithEmailAndPassword(
+                    auth,
+                    email,
+                    password
+                ).then(async (registeredUser) => {
+                    await addDoc(collection(db, "users"), {
+                        uid: registeredUser.user.uid,
+                        name: name,
+                        phone: phone,
+                        location: location,
+                        email: email,
+                    });
 
-                rout.push("/");
-                setLoading(true);
+                    rout.push("/");
+                    setLoading(true);
+                });
             }
         } catch (err) {
             console.error(err);
