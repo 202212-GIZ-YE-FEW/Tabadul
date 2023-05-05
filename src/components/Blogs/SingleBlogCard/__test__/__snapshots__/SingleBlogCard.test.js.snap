@@ -2,14 +2,14 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1st69g8"
+  className="css-z93ngw"
 >
   <div
-    className="css-13gji6y"
+    className="css-1gqopfn"
   >
     <img
       alt="Blog Image"
-      className="css-1ygfzho"
+      className="css-1p61oty"
       data-nimg="1"
       decoding="async"
       height={217.41}
@@ -25,17 +25,17 @@ exports[`renders correctly 1`] = `
       width={328.57}
     />
     <div
-      className="css-1xxa61n"
+      className="css-1na5ars"
     >
        
       December
     </div>
   </div>
   <div
-    className="css-304k9"
+    className="css-2autj"
   />
   <p
-    className="css-s4ieb1"
+    className="css-t62ynz"
   />
 </div>
 `;

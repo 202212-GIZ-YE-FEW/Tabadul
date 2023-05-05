@@ -11,15 +11,170 @@ exports[`renders correctly 1`] = `
     }
   >
     <h1
-      className="css-1pvbwn7"
+      className="css-1cnjprz"
     >
       Popular Items
     </h1>
     <div
       className="css-1rmlzl6"
-    />
+    >
+      <div
+        className="css-nicycs"
+      >
+        <div
+          className="css-jd87c1"
+        >
+          <div
+            className="shimmer-card"
+          >
+            <div
+              className=""
+            >
+              <div
+                className="shimmer shimmer-thumbnail mb-0"
+                style={
+                  Object {
+                    "height": "250px",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="p-30"
+            >
+              <div
+                className="grid shimmer-title--secondary grid-gap-10"
+              >
+                <div
+                  className="shimmer shimmer-title-line"
+                />
+                <div
+                  className="shimmer shimmer-title-line"
+                />
+              </div>
+              <div
+                className="grid shimmer-text grid-gap-10"
+              >
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+              </div>
+              <div
+                className="shimmer shimmer-button shimmer-button--sm"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-jd87c1"
+        >
+          <div
+            className="shimmer-card"
+          >
+            <div
+              className=""
+            >
+              <div
+                className="shimmer shimmer-thumbnail mb-0"
+                style={
+                  Object {
+                    "height": "250px",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="p-30"
+            >
+              <div
+                className="grid shimmer-title--secondary grid-gap-10"
+              >
+                <div
+                  className="shimmer shimmer-title-line"
+                />
+                <div
+                  className="shimmer shimmer-title-line"
+                />
+              </div>
+              <div
+                className="grid shimmer-text grid-gap-10"
+              >
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+              </div>
+              <div
+                className="shimmer shimmer-button shimmer-button--sm"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-jd87c1"
+        >
+          <div
+            className="shimmer-card"
+          >
+            <div
+              className=""
+            >
+              <div
+                className="shimmer shimmer-thumbnail mb-0"
+                style={
+                  Object {
+                    "height": "250px",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="p-30"
+            >
+              <div
+                className="grid shimmer-title--secondary grid-gap-10"
+              >
+                <div
+                  className="shimmer shimmer-title-line"
+                />
+                <div
+                  className="shimmer shimmer-title-line"
+                />
+              </div>
+              <div
+                className="grid shimmer-text grid-gap-10"
+              >
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+                <div
+                  className="shimmer shimmer-text-line"
+                />
+              </div>
+              <div
+                className="shimmer shimmer-button shimmer-button--sm"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <hr
-      className="css-19ocln0"
+      className="css-y5d9ts"
     />
   </div>
 </div>
