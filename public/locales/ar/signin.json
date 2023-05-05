@@ -1,13 +1,13 @@
 {
-  "Login": "دخول",
-  "Email": "الايميل",
-  "Enteryouremail":"قم بأدخال كلمة الباسورد",
-  "Password": "الباسورد",
-  "Enteryourpassword" : "قم بأدخال الباسورد ",
-  "keepmeloggedin" : "تذكرني",
-  "Dothaveaccount" : "ليس لديك حساب؟",
-  "Signup" : "تسجيل الدخول", 
-  "ForgetPassword" : "نسيت كلمة الباسورد", 
-  "Loginwith" : "تسجيل الدخول بـ",
-  "Loginbutton" : "تسجيل الدخول"
+    "Login": "دخول",
+    "Email": "الايميل",
+    "Enteryouremail": "قم بأدخال كلمة الباسورد",
+    "Password": "الباسورد",
+    "Enteryourpassword": "قم بأدخال الباسورد ",
+    "keepmeloggedin": "تذكرني",
+    "Dothaveaccount": "ليس لديك حساب؟",
+    "Signup": "تسجيل الدخول",
+    "ForgetPassword": "نسيت كلمة الباسورد",
+    "Loginwith": "تسجيل الدخول بـ",
+    "Loginbutton": "تسجيل الدخول"
 }
