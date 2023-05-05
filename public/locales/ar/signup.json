@@ -1,0 +1,23 @@
+{
+  "SignUp":"تسجيل دخول",
+  "SignUpName": "أسمك",
+  "EnterYourname": "قم بأدخال اسمك",
+  "SignupEmail": "البريد الالكتروني",
+  "EnterYouremail": "قم بأدخال بريدك الالكتروني",
+  "Password":"كلمة المرو",
+  "Enteryourpassword": "ادخل كلمة المرور الخاصة بك",
+  "ConfirmPassword": "تأكيد كلمة المرور",
+  "Confirmyourpassword" : "تأكيد كلمة المرور",
+  "Phone" : "رقم الهاتف",
+  "EnteryourPhone" : " قم بأدخال كلمة المرور الخاصة بك",
+  "Location": "الموقع",
+  "SelectLocation":   "أختر موقعك",
+  "Mukalla": "المكلا", 
+  "Istanbul" : "اسطنبول", 
+  "Sana'a" : "صنغاء", 
+  "egypt": "مصر",
+  "SignUPbutton": "دخول",
+  "SignUpwith": "سجل عن طريق"
+
+
+}

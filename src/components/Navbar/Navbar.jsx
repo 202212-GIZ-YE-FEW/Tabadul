@@ -1,4 +1,8 @@
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { withTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
+
+import { auth } from "@/utils/firebase";
 
 import {
     Arrow,
@@ -20,27 +24,24 @@ import {
     Navmenulist,
 } from "./Nav.styled";
 import { NavItem } from "./NavItem";
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "@/utils/firebase";
+function Navbar({ t }) {
+    const MENU_LIST = [
+        {
+            id: 1,
+            text: t("home"),
 
-const MENU_LIST = [
-    {
-        id: 1,
-        text: "Home",
+            href: "/",
+        },
 
-        href: "/",
-    },
+        { id: 2, text: t("aboutus"), href: "/Aboutus" },
 
-    { id: 2, text: "About us", href: "/Aboutus" },
+        { id: 3, text: t("Products"), href: "/Products" },
 
-    { id: 3, text: "Products", href: "/Products" },
+        { id: 4, text: t("Blogs"), href: "/Blogs" },
 
-    { id: 4, text: "Blogs", href: "/Blogs" },
+        { id: 5, text: t("profile"), href: "/Profile" },
+    ];
 
-    { id: 5, text: "profile", href: "/Profile" },
-];
-
-export default function Navbar() {
     // const router = useRouter();
 
     const [navActive, setNavActive] = useState(false);
@@ -120,16 +121,18 @@ export default function Navbar() {
                             {navdrop && (
                                 <Dropdowncontent>
                                     {!isAuthenticated && (
-                                        <Lanlink href='/Signin'>Log in</Lanlink>
+                                        <Lanlink href='/Signin'>
+                                            {t("Login")}
+                                        </Lanlink>
                                     )}
                                     {!isAuthenticated && (
                                         <Lanlink href='/Signup'>
-                                            Sign up
+                                            {t("Signup")}
                                         </Lanlink>
                                     )}
                                     {isAuthenticated && (
                                         <Lanlink onClick={signout} href='/'>
-                                            Log out
+                                            {t("Logout")}
                                         </Lanlink>
                                     )}
                                 </Dropdowncontent>
@@ -145,16 +148,16 @@ export default function Navbar() {
                             </Dropbtn>
                             {navdroplan && (
                                 <Dropdowncontent>
-                                    <Lanlink href='#' locale='en'>
-                                        English
+                                    <Lanlink href='' locale='en'>
+                                        {t("English")}
                                         <Lan src='/images/flag.svg' />
                                     </Lanlink>
-                                    <Lanlink href='#' locale='ar'>
-                                        Arabic
+                                    <Lanlink href='' locale='ar'>
+                                        {t("Arabic")}
                                         <Lan src='/images/Saudi Arabia.svg' />
                                     </Lanlink>
-                                    <Lanlink href='#'>
-                                        Turkish
+                                    <Lanlink href=''>
+                                        {t("Turkish")}
                                         <Lan src='/images/Turkey.svg' />
                                     </Lanlink>
                                 </Dropdowncontent>
@@ -166,3 +169,5 @@ export default function Navbar() {
         </Header>
     );
 }
+
+export default withTranslation("common")(Navbar);

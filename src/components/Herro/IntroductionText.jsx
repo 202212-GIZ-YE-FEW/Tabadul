@@ -1,15 +1,12 @@
+import { withTranslation } from "next-i18next";
+
 import { HeroText, HeroTextContainer } from "./hero.style";
-const IntroductionText = () => {
+const IntroductionText = ({ t }) => {
     return (
         <HeroTextContainer>
-            <HeroText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-            </HeroText>
+            <HeroText>{t("herosectiontext")}</HeroText>
         </HeroTextContainer>
     );
 };
 
-export default IntroductionText;
+export default withTranslation("hero")(IntroductionText);

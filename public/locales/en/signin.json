@@ -1,0 +1,14 @@
+{
+  "Login" : "Log in",
+  "Email" : "Email",
+  "Enteryouremail":"Enter your email",
+  "Password" : "Password",
+  "Enteryourpassword" : "Enter your password",
+  "keepmeloggedin": "keep me logged in",
+  "Dothaveaccount" : " Do not have an account ?",
+  "Signup": "Sign up",
+  "ForgetPassword" : "Forget Password",
+  "Loginwith" : "Log in with",
+  "Loginbutton": "Log in"
+
+}

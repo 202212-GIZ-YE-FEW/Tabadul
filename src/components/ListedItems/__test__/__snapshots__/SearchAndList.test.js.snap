@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
       <input
         className="css-d0uq2k"
         onChange={[Function]}
-        placeholder="Search"
+        placeholder="Searchplaceholder"
         type="text"
       />
       <img

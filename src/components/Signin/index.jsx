@@ -1,4 +1,13 @@
+import {
+    browserSessionPersistence,
+    setPersistence,
+    signInWithEmailAndPassword,
+} from "firebase/auth";
+import { useRouter } from "next/router";
+import { withTranslation } from "next-i18next";
 import React, { useState } from "react";
+
+import { auth } from "@/utils/firebase";
 
 import {
     Buttonspan,
@@ -30,16 +39,8 @@ import {
     Signinwith,
     Test,
 } from "./Signin.styled";
-import {
-    browserSessionPersistence,
-    inMemoryPersistence,
-    setPersistence,
-    signInWithEmailAndPassword,
-} from "firebase/auth";
-import { auth } from "@/utils/firebase";
-import { useRouter } from "next/router";
 
-function Signin() {
+function Signin({ t }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [emailError, setEmailError] = useState("");
@@ -80,16 +81,16 @@ function Signin() {
         <SigninContainer>
             <Itemscontainer>
                 <Inputscontainer>
-                    <Signinheader>Log in</Signinheader>
+                    <Signinheader>{t("Login")}</Signinheader>
                     <Signinform onSubmit={signIn}>
                         <Containerinput>
                             <Test>
                                 <Itemsdev>
-                                    <Signintitle>Email</Signintitle>
+                                    <Signintitle>{t("Email")}</Signintitle>
                                     <Signininput
                                         id='email'
                                         name='email'
-                                        placeholder='Enter your email'
+                                        placeholder={t("Enteryouremail")}
                                         type='text'
                                         value={email}
                                         onChange={(e) =>
@@ -102,9 +103,9 @@ function Signin() {
                                     )}
                                 </Itemsdev>
                                 <Itemsdev>
-                                    <Signintitle>Password</Signintitle>
+                                    <Signintitle>{t("Password")}</Signintitle>
                                     <Signininput
-                                        placeholder='Enter your password'
+                                        placeholder={t("Enteryourpassword")}
                                         type='password'
                                         value={password}
                                         onChange={(e) =>
@@ -126,13 +127,13 @@ function Signin() {
                                             )
                                         }
                                     />
-                                    keep me logged in
+                                    {t("keepmeloggedin")}
                                 </Checklabel>
                                 <Signinbutton
                                     type='submit'
                                     // onClick={handleSubmit}
                                 >
-                                    <Buttonspan>Log in</Buttonspan>
+                                    <Buttonspan>{t("Loginbutton")}</Buttonspan>
                                 </Signinbutton>
                                 {loading && (
                                     <Loadding>
@@ -146,31 +147,31 @@ function Signin() {
                     <Test>
                         <ParaghraphConatainer>
                             <Paraghraph>
-                                Do not have an account ?
+                                {t("Dothaveaccount")}
                                 <Linkparagraph href='/Signup'>
-                                    Sign up
+                                    {t("Signup")}
                                 </Linkparagraph>
                             </Paraghraph>
                             <ChangePass href='/Forgetpassword'>
-                                Forget Password
+                                {t("ForgetPassword")}
                             </ChangePass>
                         </ParaghraphConatainer>
-                        <Signinwith>Log in with</Signinwith>
+                        <Signinwith>{t("Loginwith")}</Signinwith>
                         <Imgsdev>
                             <FaceBookImg
-                                src='./images/Facebook.svg'
+                                src='/images/Facebook.svg'
                                 alt='Facebook'
                                 width={42.3}
                                 height={42.3}
                             />
                             <InstagramImg
-                                src='./images/Instagram.svg'
+                                src='/images/Instagram.svg'
                                 alt='Instagram'
                                 width={42.3}
                                 height={42.3}
                             />
                             <LinedinImg
-                                src='./images/Linkedin.svg'
+                                src='/images/Linkedin.svg'
                                 alt='Linkedin'
                                 width={42.3}
                                 height={42.3}
@@ -180,7 +181,7 @@ function Signin() {
                 </Inputscontainer>
                 <ContainerImg>
                     <Signinimage
-                        src='./images/Signin.svg'
+                        src='/images/Signin.svg'
                         alt='sign in'
                         width={750}
                         height={650}
@@ -191,4 +192,4 @@ function Signin() {
     );
 }
 
-export default Signin;
+export default withTranslation("signin")(Signin);

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -16,7 +17,7 @@ import StatisticImage from "../../assets/Image/pyramid_chart.svg";
 import StatisticsContainerImage from "../../assets/Image/StatisticsContainer.svg";
 import StatisticImageFifth from "../../assets/Image/Vector.svg";
 
-function Statistics() {
+function Statistics({ t }) {
     return (
         <>
             <StatisticsContainer>
@@ -38,11 +39,7 @@ function Statistics() {
                             height={78.24}
                         />
                         <StatisticHeading>1/3</StatisticHeading>
-                        <StatisticParagraph>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.
-                        </StatisticParagraph>
+                        <StatisticParagraph>{t("p1")}</StatisticParagraph>
                     </Statistic>
                     <Statistic>
                         <Image
@@ -52,11 +49,7 @@ function Statistics() {
                             height={78.24}
                         />
                         <StatisticHeading>75%</StatisticHeading>
-                        <StatisticParagraph>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.
-                        </StatisticParagraph>
+                        <StatisticParagraph>{t("p2")}</StatisticParagraph>
                     </Statistic>
                     <Statistic>
                         <Image
@@ -66,11 +59,7 @@ function Statistics() {
                             height={78.24}
                         />
                         <StatisticHeading>312</StatisticHeading>
-                        <StatisticParagraph>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.
-                        </StatisticParagraph>
+                        <StatisticParagraph>{t("p3")}</StatisticParagraph>
                     </Statistic>
                     <Statistic>
                         <Image
@@ -79,12 +68,8 @@ function Statistics() {
                             width={78.24}
                             height={78.24}
                         />
-                        <StatisticHeading>Fact</StatisticHeading>
-                        <StatisticParagraph>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.
-                        </StatisticParagraph>
+                        <StatisticHeading>{t("fact")}</StatisticHeading>
+                        <StatisticParagraph>{t("p4")}</StatisticParagraph>
                     </Statistic>
                 </StatisticsParant>
             </div>
@@ -92,4 +77,4 @@ function Statistics() {
     );
 }
 
-export default Statistics;
+export default withTranslation("statistics")(Statistics);

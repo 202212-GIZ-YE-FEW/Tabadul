@@ -1,4 +1,9 @@
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useRouter } from "next/router";
+import { withTranslation } from "next-i18next";
 import React, { useState } from "react";
+
+import { auth } from "@/utils/firebase";
 
 import {
     Erorrsmsgs,
@@ -22,11 +27,8 @@ import {
     SignTitle,
     Signwith,
 } from "./Signup.styled";
-import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
-import { auth } from "@/utils/firebase";
-import { useRouter } from "next/router";
 
-function Signup() {
+function Signup({ t }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
@@ -96,41 +98,41 @@ function Signup() {
 
     return (
         <SignContainer>
-            <SignHeader>Sign Up</SignHeader>
+            <SignHeader>{t("SignUp")}</SignHeader>
             <SignForm>
                 <FormSign onSubmit={signUp}>
                     <Signdev>
-                        <SignTitle>Name</SignTitle>
+                        <SignTitle>{t("SignUpName")}</SignTitle>
                         <SignInput
                             id='name'
                             name='name'
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             type='text'
-                            placeholder='Enter your name'
+                            placeholder={t("EnterYourname")}
                         />
                         {nameError && <Erorrsmsgs>{nameError}</Erorrsmsgs>}
                     </Signdev>
 
                     <Signdev>
-                        <SignTitle>Email</SignTitle>
+                        <SignTitle>{t("SignupEmail")}</SignTitle>
                         <SignInput
                             id='email'
                             name='email'
                             type='email'
-                            placeholder='Enter your email'
+                            placeholder={t("EnterYouremail")}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         {emailErrors && <Erorrsmsgs>{emailErrors}</Erorrsmsgs>}
                     </Signdev>
                     <Signdev>
-                        <SignTitle>Password</SignTitle>
+                        <SignTitle>{t("Password")}</SignTitle>
                         <SignInput
                             id='password'
                             name='passwprd'
                             type='password'
-                            placeholder='Enter your password'
+                            placeholder={t("Enteryourpassword")}
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             autoComplete='current-password'
@@ -143,33 +145,33 @@ function Signup() {
                         )}
                     </Signdev>
                     <Signdev>
-                        <SignTitle>Confirm Password</SignTitle>
+                        <SignTitle>{t("ConfirmPassword")}</SignTitle>
                         <SignInput
                             id='confirmpassword'
                             name='confirmpassword'
                             value={confirmpass}
                             onChange={(e) => setConfirmpass(e.target.value)}
                             type='password'
-                            placeholder='Confirm your password'
+                            placeholder={t("Confirmyourpassword")}
                         />
                         {confirmpassError && (
                             <Erorrsmsgs>{confirmpassError}</Erorrsmsgs>
                         )}
                     </Signdev>
                     <Signdev>
-                        <SignTitle>Phone</SignTitle>
+                        <SignTitle>{t("Phone")}</SignTitle>
                         <SignInput
                             id='phone'
                             name='phone'
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
                             type='number'
-                            placeholder='Enter your Phone'
+                            placeholder={t("EnteryourPhone")}
                         />
                         {phoneError && <Erorrsmsgs>{phoneError}</Erorrsmsgs>}
                     </Signdev>
                     <Signdev>
-                        <SignTitle>Location</SignTitle>
+                        <SignTitle>{t("Location")}</SignTitle>
                         <LocationSelect
                             id='location'
                             name='location'
@@ -177,12 +179,12 @@ function Signup() {
                             onChange={(e) => setLocation(e.target.value)}
                         >
                             <Selectoption disabled selected>
-                                Select Location
+                                {t("SelectLocation")}
                             </Selectoption>
-                            <Selectoption>Mukalla</Selectoption>
-                            <Selectoption>Istanbul</Selectoption>
-                            <Selectoption>Sanaa</Selectoption>
-                            <Selectoption>egypt</Selectoption>
+                            <Selectoption>{t("Mukalla")}</Selectoption>
+                            <Selectoption>{t("Istanbul")}</Selectoption>
+                            <Selectoption>{t("Sana'a")}</Selectoption>
+                            <Selectoption>{t("egypt")}</Selectoption>
                         </LocationSelect>
                         {locationError && (
                             <Erorrsmsgs>{locationError}</Erorrsmsgs>
@@ -190,7 +192,7 @@ function Signup() {
                     </Signdev>
                     <InfoDev>
                         <SignButton type='submit'>
-                            <Signspan>Sign UP</Signspan>
+                            <Signspan>{t("SignUPbutton")}</Signspan>
                             {loading && (
                                 <Loaddingmeg>
                                     <i></i>
@@ -200,22 +202,22 @@ function Signup() {
                                 </Loaddingmeg>
                             )}
                         </SignButton>
-                        <Signwith>Sign Up with</Signwith>
+                        <Signwith>{t("SignUpwith")}</Signwith>
                         <Imgdev>
                             <FaceBook
-                                src='./images/Facebook.svg'
+                                src='/images/Facebook.svg'
                                 alt='Facebook'
                                 width={42.3}
                                 height={42.3}
                             />
                             <Instagram
-                                src='./images/Instagram.svg'
+                                src='/images/Instagram.svg'
                                 alt='Instagram'
                                 width={42.3}
                                 height={42.3}
                             />
                             <Linedin
-                                src='./images/Linkedin.svg'
+                                src='/images/Linkedin.svg'
                                 alt='Linkedin'
                                 width={42.3}
                                 height={42.3}
@@ -228,4 +230,4 @@ function Signup() {
     );
 }
 
-export default Signup;
+export default withTranslation("signup")(Signup);

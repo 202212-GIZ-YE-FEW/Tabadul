@@ -35,7 +35,7 @@ exports[`renders correctly 1`] = `
         className="css-1dbkwr8"
         href="/Aboutus"
       >
-        About us
+        Aboutus
       </a>
       <a
         className="css-1dbkwr8"
@@ -47,14 +47,14 @@ exports[`renders correctly 1`] = `
         className="css-1dbkwr8"
         href="/Products"
       >
-        Listed items
+        Listeditems
       </a>
     </div>
     <div
       className="css-xvkl1c"
     >
       <p>
-        Contact Us
+        ContactUs
       </p>
       <div
         className="css-18icqaw"
@@ -152,10 +152,10 @@ exports[`renders correctly 1`] = `
         Address
       </p>
       <p>
-        street 01,07
+        street
       </p>
       <p>
-        Yemen, Sanaa
+        YemenSanaa
       </p>
     </div>
   </div>

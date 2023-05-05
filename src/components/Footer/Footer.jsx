@@ -1,3 +1,4 @@
+import { withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -11,7 +12,7 @@ import {
     SocialLink,
 } from "./Footer.style";
 
-function Footer() {
+function Footer({ t }) {
     return (
         <Footercss>
             <Container>
@@ -25,13 +26,13 @@ function Footer() {
                 </Section>
 
                 <Section>
-                    <PagesList href='/Aboutus'>About us</PagesList>
-                    <PagesList href='/Blogs'>Blogs</PagesList>
-                    <PagesList href='/Products'>Listed items</PagesList>
+                    <PagesList href='/Aboutus'>{t("Aboutus")}</PagesList>
+                    <PagesList href='/Blogs'>{t("Blogs")}</PagesList>
+                    <PagesList href='/Products'>{t("Listeditems")}</PagesList>
                 </Section>
 
                 <Section>
-                    <p>Contact Us</p>
+                    <p>{t("ContactUs")}</p>
 
                     <Social>
                         <SocialLink>
@@ -73,13 +74,13 @@ function Footer() {
                 </Section>
 
                 <Section>
-                    <p>Address</p>
-                    <p>street 01,07</p>
-                    <p>Yemen, Sanaa</p>
+                    <p>{t("Address")}</p>
+                    <p>{t("street")}</p>
+                    <p>{t("YemenSanaa")}</p>
                 </Section>
             </Container>
         </Footercss>
     );
 }
 
-export default Footer;
+export default withTranslation("footer")(Footer);

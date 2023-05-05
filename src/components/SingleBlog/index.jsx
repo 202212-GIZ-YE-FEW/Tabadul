@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -11,7 +12,7 @@ import {
     ImageSide,
 } from "./SingleBlog.styled";
 
-function SingleBlog({ title, desc, id, photo }) {
+function SingleBlog({ title, desc, id, photo, t }) {
     return (
         <Blog>
             <ContentSide>
@@ -19,7 +20,7 @@ function SingleBlog({ title, desc, id, photo }) {
                 <BlogParagraph>{desc?.substring(0, 170)}...</BlogParagraph>
                 <BlogButton>
                     <Link href={`Blogs/${id}`}>
-                        <span>Read More</span>
+                        <span>{t("ReadMore")}</span>
                     </Link>
                 </BlogButton>
             </ContentSide>
@@ -36,4 +37,4 @@ function SingleBlog({ title, desc, id, photo }) {
     );
 }
 
-export default SingleBlog;
+export default withTranslation("common")(SingleBlog);

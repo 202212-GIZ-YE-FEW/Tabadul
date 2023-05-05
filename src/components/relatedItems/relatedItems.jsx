@@ -1,20 +1,22 @@
-import React from "react";
 import Link from "next/link";
+import { withTranslation } from "next-i18next";
+import React from "react";
+
 import {
-    RelatedItemsContainer,
     RelatedItemCard,
-    RelatedItemImage,
-    RelatedItemDetails,
-    RelatedItemTitle,
-    RelatedItemLocation,
     RelatedItemDescription,
+    RelatedItemDetails,
+    RelatedItemImage,
+    RelatedItemLocation,
+    RelatedItemsContainer,
+    RelatedItemTitle,
     Title,
 } from "../../components/ProductPgage/product.style";
 
-const RelatedItems = ({ relatedItems }) => {
+const RelatedItems = ({ relatedItems, t }) => {
     return (
         <RelatedItemsContainer>
-            <Title>Related Items</Title>
+            <Title>{t("RelatedItems")}</Title>
             {relatedItems.map((item) => (
                 <Link key={item.id} href={`/Products/${item.id}`}>
                     <div>
@@ -46,4 +48,4 @@ const RelatedItems = ({ relatedItems }) => {
     );
 };
 
-export default RelatedItems;
+export default withTranslation("common")(RelatedItems);

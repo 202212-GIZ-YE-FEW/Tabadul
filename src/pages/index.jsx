@@ -1,5 +1,4 @@
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import Link from "next/link";
+import { onAuthStateChanged } from "firebase/auth";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
@@ -33,7 +32,7 @@ export default function HomePage({ items, blogs }) {
 
     return (
         <Layout>
-            <p>{t("ooo")}</p>
+            {/* <p>{t("ooo")}</p>
             <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
                 <Link href='/' locale='en'>
                     English
@@ -41,7 +40,7 @@ export default function HomePage({ items, blogs }) {
                 <Link href='/' locale='ar'>
                     العربية
                 </Link>
-            </div>
+            </div> */}
             {isAuthenticated && auth?.currentUser?.email}
             {/* {isAuthenticated && <button onClick={signout}>logout</button>} */}
             <Hero />
@@ -60,7 +59,13 @@ export async function getStaticProps({ locale }) {
     const blogs = await fetchBlogs();
     return {
         props: {
-            ...(await serverSideTranslations(locale, ["common"])),
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "hero",
+                "causes",
+                "footer",
+                "statistics",
+            ])),
             // Will be passed to the page component as props
             items,
             blogs,

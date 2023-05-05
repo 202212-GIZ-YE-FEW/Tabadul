@@ -1,4 +1,18 @@
+import {
+    deleteObject,
+    getDownloadURL,
+    getMetadata,
+    ref,
+    uploadBytesResumable,
+} from "firebase/storage";
+import Image from "next/image";
+import Link from "next/link";
+import Router from "next/router";
+import { withTranslation } from "next-i18next";
 import React, { useEffect, useState } from "react";
+
+import { addItem } from "@/utils/firebase";
+import { storage } from "@/utils/firebase";
 
 import {
     Buttoncontainer,
@@ -7,50 +21,38 @@ import {
     CatogryInput,
     ConfirmButton,
     Confirmspan,
+    DeleteIcon,
     DescriptionInput,
+    DisplayContainer,
+    ErrorLabel,
     Formcontainer,
     FormItem,
+    ImagesDiv,
     ItemCatogry,
     ItemDescription,
     ItemHeader,
+    ItemImage,
+    ItemImageInput,
     ItemInput,
     ItemLocation,
     ItemTitle,
     Itemupload,
+    LabelDiv,
     LocationInput,
     Locationoption,
     Pagecontainer,
+    PlusDiv,
     Selectoption,
     TitleInput,
     UploadContainer,
     UploadInput,
     Uploadspan,
-    ItemImageInput,
-    ItemImage,
-    LabelDiv,
-    ErrorLabel,
-    ImagesDiv,
-    PlusDiv,
-    DeleteIcon,
-    DisplayContainer,
 } from "./AddItem.styled";
-import { addItem } from "@/utils/firebase";
-import {
-    deleteObject,
-    getDownloadURL,
-    getMetadata,
-    ref,
-    uploadBytesResumable,
-} from "firebase/storage";
-import { storage } from "@/utils/firebase";
-import thumbnail from "../../../public/thumbnails/default-image.png";
-import Link from "next/link";
-import Router from "next/router";
-import Image from "next/image";
-import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
+import thumbnail from "../../../public/thumbnails/default-image.png";
 
-function AddItem({ categoriesList, locationList }) {
+function AddItem({ categoriesList, locationList, t }) {
     const [imagesList, setImagesList] = useState([]);
     const [errorMsg, setErrorMsg] = useState({
         title: "",
@@ -204,20 +206,20 @@ function AddItem({ categoriesList, locationList }) {
         <div>
             <Navbar />
             <Pagecontainer>
-                <ItemHeader>Add Item </ItemHeader>
+                <ItemHeader>{t("AddItem")} </ItemHeader>
                 <Formcontainer>
                     <FormItem method='post' onSubmit={addto}>
                         <ItemInput>
                             <LabelDiv>
-                                <ItemTitle>Title</ItemTitle>
+                                <ItemTitle>{t("Title")}</ItemTitle>
                                 {errorMsg.title && (
                                     <ErrorLabel errorMsg={errorMsg}>
-                                        Title is Required
+                                        {t("TitleisRequired")}
                                     </ErrorLabel>
                                 )}
                             </LabelDiv>
                             <TitleInput
-                                placeholder='Placeholder'
+                                placeholder={t("titlePlaceholder")}
                                 type='text'
                                 name='title'
                                 onChange={handleChange}
@@ -225,21 +227,21 @@ function AddItem({ categoriesList, locationList }) {
                         </ItemInput>
                         <ItemInput>
                             <LabelDiv>
-                                <ItemCatogry>Catogry</ItemCatogry>
+                                <ItemCatogry>{t("Catogry")}</ItemCatogry>
                                 {errorMsg.category && (
                                     <ErrorLabel errorMsg={errorMsg}>
-                                        Category is Required
+                                        {t("CategoryisRequired")}
                                     </ErrorLabel>
                                 )}
                             </LabelDiv>
                             <CatogryInput
-                                placeholder='Select catogry'
+                                placeholder={t("Selectcatogryplaceholder")}
                                 type='dropdown'
                                 name='category'
                                 onChange={handleSelect}
                             >
                                 <Selectoption disabled selected>
-                                    Select catogry
+                                    {t("Selectcatogry")}
                                 </Selectoption>
                                 {categoriesList?.map((cate) => {
                                     return (
@@ -255,10 +257,10 @@ function AddItem({ categoriesList, locationList }) {
                         </ItemInput>
                         <ItemInput>
                             <LabelDiv>
-                                <ItemLocation>Location</ItemLocation>
+                                <ItemLocation>{t("Location")}</ItemLocation>
                                 {errorMsg.location && (
                                     <ErrorLabel errorMsg={errorMsg}>
-                                        Location is Required
+                                        {t("LocationisRequired")}
                                     </ErrorLabel>
                                 )}
                             </LabelDiv>
@@ -267,7 +269,7 @@ function AddItem({ categoriesList, locationList }) {
                                 onChange={handleSelect}
                             >
                                 <Locationoption disabled selected>
-                                    Select Location
+                                    {t("SelectLocation")}
                                 </Locationoption>
                                 {locationList?.map((location) => {
                                     return (
@@ -283,15 +285,17 @@ function AddItem({ categoriesList, locationList }) {
                         </ItemInput>
                         <ItemInput>
                             <LabelDiv>
-                                <ItemDescription>Description</ItemDescription>
+                                <ItemDescription>
+                                    {t("Description")}
+                                </ItemDescription>
                                 {errorMsg.description && (
                                     <ErrorLabel errorMsg={errorMsg}>
-                                        Description is Required
+                                        {t("DescriptionisRequired")}
                                     </ErrorLabel>
                                 )}
                             </LabelDiv>
                             <DescriptionInput
-                                placeholder='Description Item'
+                                placeholder={t("DescriptionItemplaceholder")}
                                 rows='10'
                                 cols='105'
                                 name='description'
@@ -299,7 +303,7 @@ function AddItem({ categoriesList, locationList }) {
                             />
                         </ItemInput>
                         <ItemImageInput>
-                            <Itemupload>Upload Photos</Itemupload>
+                            <Itemupload>{t("UploadPhotossection")}</Itemupload>
                             <ImagesDiv>
                                 {imagesList.length === 0 ? (
                                     <UploadContainer>
@@ -312,18 +316,20 @@ function AddItem({ categoriesList, locationList }) {
 
                                         <LabelDiv>
                                             <Uploadspan>
-                                                Upload Photos
+                                                {t("UploadPhotos")}
                                             </Uploadspan>
                                             {errorMsg.image && (
                                                 <ErrorLabel errorMsg={errorMsg}>
-                                                    photos are Required
+                                                    {t("photosareRequired")}
                                                 </ErrorLabel>
                                             )}
                                         </LabelDiv>
                                         <UploadInput
                                             type='file'
                                             name='image'
-                                            placeholder='Upload Photos'
+                                            placeholder={t(
+                                                "UploadPhotosplaceholder"
+                                            )}
                                             onChange={handleImageFile}
                                             multiple
                                         />
@@ -369,8 +375,9 @@ function AddItem({ categoriesList, locationList }) {
                                                                     errorMsg
                                                                 }
                                                             >
-                                                                photos are
-                                                                Required
+                                                                {t(
+                                                                    "photosareRequired"
+                                                                )}
                                                             </ErrorLabel>
                                                         )}
                                                     </LabelDiv>
@@ -399,11 +406,11 @@ function AddItem({ categoriesList, locationList }) {
                                 }
                                 type='submit'
                             >
-                                <Confirmspan>Confirm</Confirmspan>
+                                <Confirmspan>{t("Confirm")}</Confirmspan>
                             </ConfirmButton>
                             <Link href='/listOfItems'>
                                 <CancelButton type='submit'>
-                                    <Cancelspan>Cancel</Cancelspan>
+                                    <Cancelspan>{t("Cancel")}</Cancelspan>
                                 </CancelButton>
                             </Link>
                         </Buttoncontainer>
@@ -415,4 +422,4 @@ function AddItem({ categoriesList, locationList }) {
     );
 }
 
-export default AddItem;
+export default withTranslation("addItem")(AddItem);

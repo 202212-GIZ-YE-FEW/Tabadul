@@ -1,16 +1,15 @@
+import { withTranslation } from "next-i18next";
 import React from "react";
 
+import { CardLink } from "../ListedItems/ListedItems.styled";
 import PopularItems from "../PopularItems";
 import { Cards, Header, Line } from "../PopularItems/PopularItems.styled";
-import photoImg from "../../../public/images/Cardimg.svg";
-import Link from "next/link";
-import { CardLink } from "../ListedItems/ListedItems.styled";
 
-function PopularItemsSection({ items }) {
+function PopularItemsSection({ items, t }) {
     return (
         <div>
             <div style={{ position: "relative", top: "-90px" }}>
-                <Header>Popular Items</Header>
+                <Header>{t("PopularItems")}</Header>
                 <Cards>
                     {items?.slice(0, 5).map((item) => {
                         return (
@@ -36,4 +35,4 @@ function PopularItemsSection({ items }) {
     );
 }
 
-export default PopularItemsSection;
+export default withTranslation("common")(PopularItemsSection);

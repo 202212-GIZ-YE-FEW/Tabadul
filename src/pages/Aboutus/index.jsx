@@ -1,8 +1,10 @@
 import { team } from "data/db";
-import { useTranslation } from "next-i18next";
+import { withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 import TeamMember from "@/components/TeamMember";
 
 import AboutPhoto from "../../assets/Image/About.svg";
@@ -19,10 +21,7 @@ import {
     TeamSection,
     TextContent,
 } from "../../styles/aboutus.styled";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
-function Aboutus() {
-    const { t } = useTranslation("common");
+function Aboutus({ t }) {
     return (
         <div>
             <Navbar />
@@ -69,6 +68,8 @@ function Aboutus() {
     );
 }
 
+export default withTranslation("common")(Aboutus);
+
 export async function getStaticProps({ locale }) {
     return {
         props: {
@@ -77,4 +78,3 @@ export async function getStaticProps({ locale }) {
         },
     };
 }
-export default Aboutus;

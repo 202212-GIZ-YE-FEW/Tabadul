@@ -1,16 +1,17 @@
+import { withTranslation } from "next-i18next";
 import React from "react";
 
+import { CardLink } from "@/components/ListedItems/ListedItems.styled";
 import { Line } from "@/components/PopularItems/PopularItems.styled";
 
 import { Header } from "./BlogContainer.styled";
 import SingleBlogCard from "../SingleBlogCard";
 import { BlogCard } from "../SingleBlogCard/SingleBlogCard.styled";
-import { CardLink } from "@/components/ListedItems/ListedItems.styled";
 
-const BlogContainer = ({ blogs }) => {
+const BlogContainer = ({ blogs, t }) => {
     return (
         <>
-            <Header>Blogs</Header>
+            <Header>{t("blogs")}</Header>
             <BlogCard>
                 {blogs?.slice(0, 4).map((blog) => {
                     return (
@@ -30,4 +31,4 @@ const BlogContainer = ({ blogs }) => {
     );
 };
 
-export default BlogContainer;
+export default withTranslation("common")(BlogContainer);

@@ -1,5 +1,9 @@
+import { onAuthStateChanged } from "firebase/auth";
 import Link from "next/link";
+import { withTranslation } from "next-i18next";
 import React, { useEffect, useState } from "react";
+
+import { auth } from "@/utils/firebase";
 
 import {
     AddItem,
@@ -14,8 +18,6 @@ import {
     MenuItemDiv,
     MenuList,
 } from "./ListedItems.styled";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "@/utils/firebase";
 
 const ButtonsComp = (props) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -26,6 +28,7 @@ const ButtonsComp = (props) => {
         sortRecent,
         setFilters,
         items,
+        t,
     } = props;
 
     function itemlocation(location) {
@@ -51,7 +54,7 @@ const ButtonsComp = (props) => {
                     onBlur={() => setDropDown(false)}
                 >
                     <InnerDiv>
-                        <ButtonName>Location</ButtonName>
+                        <ButtonName>{t("Location")}</ButtonName>
                         {dropDown && (
                             <MenuList>
                                 {locationList?.map((location) => {
@@ -82,7 +85,7 @@ const ButtonsComp = (props) => {
                 </FilterButton>
                 <FilterButton onClick={sortRecent}>
                     <InnerDiv>
-                        <ButtonName>Recent</ButtonName>
+                        <ButtonName>{t("Recent")}</ButtonName>
 
                         <ButtonDetailDiv>
                             <ButtonIcon
@@ -98,7 +101,7 @@ const ButtonsComp = (props) => {
             <div>
                 {isAuthenticated && (
                     <Link href='/addToItem'>
-                        <AddItem>Add item</AddItem>
+                        <AddItem>{t("Additem")}</AddItem>
                     </Link>
                 )}
             </div>
@@ -106,4 +109,4 @@ const ButtonsComp = (props) => {
     );
 };
 
-export default ButtonsComp;
+export default withTranslation("common")(ButtonsComp);
