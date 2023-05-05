@@ -6,7 +6,7 @@ export const Header = styled.h1`
     // font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 40px;
     line-height: 84px;
     color: #3c4347;
     @media screen and (max-width: 768px) {
@@ -96,14 +96,16 @@ export const Line = styled.hr`
     // border: 1px solid #33956D;
     // color:background: rgba(51, 149, 109, 1);
 
-    position: relative;
-    left: 50%;
+    /* position: relative; */
+    /* left: 50%; */
+    /* align-items: center; */
     // bottom: 3%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    height: 0px;
+    /* transform: translate(-50%, -50%); */
+    width: 80%;
+    height: 2px;
+    border-radius: 50px;
     background-color: #33956d;
-    margin-top: 40px;
+    margin-top: 50px;
 `;
 
 export const Lo_Ca_Div = styled.div`

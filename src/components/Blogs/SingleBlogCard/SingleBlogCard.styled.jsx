@@ -5,19 +5,22 @@ export const Container = styled.div`
     background: #ffffff;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    width: 338px;
+    width: 300px;
     height: 413px;
+    padding: 5px;
 `;
 
 export const BlogCard = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 28px;
+    height: 100%;
+    padding-bottom: 40px;
 `;
 
 export const ImageContainer = styled.div`
-    padding-top: 4.68px;
+    /* padding-top: 4.68px; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -27,10 +30,11 @@ export const ImageContainer = styled.div`
 
 export const BlogImage = styled(Image)`
     border-radius: 19px 19px 0px 0px;
+    width: 100%;
 `;
 export const CardDate = styled.div`
     position: absolute;
-    left: 1.4%;
+    left: 0;
     bottom: 0%;
     width: 120.27px;
     line-height: 40.52px;
@@ -43,13 +47,13 @@ export const BlogTitle = styled.div`
     text-align: center;
     margin-top: 12.92px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 29px;
 `;
 
 export const BlogDescription = styled.p`
     color: #3c4347;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     text-align: center;
     padding: 10px 17.29px 0 17.29px;

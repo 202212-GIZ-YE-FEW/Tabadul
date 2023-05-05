@@ -85,3 +85,20 @@ export const CardDescription = styled.p`
     margin-top: 0;
     word-wrap: break-word;
 `;
+export const ShimmerDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    & div:first-child {
+        border-radius: 30px;
+    }
+    & div:first-child:first-child .shimmer-thumbnail {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+`;
+export const ShimmerItem = styled.div`
+    width: 274px;
+`;
