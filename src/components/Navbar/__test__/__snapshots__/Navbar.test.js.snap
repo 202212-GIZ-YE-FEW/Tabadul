@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <header
-  className="css-13um9b0"
+  className="css-15n33le"
 >
   <nav
-    className="css-1x3zj1f"
+    className="css-97a4l7"
   >
     <a
       className="css-1kc05pi"
@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
       onTouchStart={[Function]}
     >
       <div
-        className="css-1q0bv5v"
+        className="css-vhhyfh"
         onClick={[Function]}
       >
         <img
@@ -25,8 +25,7 @@ exports[`renders correctly 1`] = `
       </div>
     </a>
     <div
-      className="css-cnauqz"
-      onBlur={[Function]}
+      className="css-8fymys"
       onClick={[Function]}
     >
       <div
@@ -43,13 +42,103 @@ exports[`renders correctly 1`] = `
       className="css-1t7ejvz"
     >
       <div
+        className="css-1x194yc"
+      >
+        <div
+          onClick={[Function]}
+        >
+          <a
+            className="css-148a5t1"
+            href="/undefined/"
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "home",
+                }
+              }
+            />
+          </a>
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <a
+            className="css-148a5t1"
+            href="/undefined/Aboutus"
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "aboutus",
+                }
+              }
+            />
+          </a>
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <a
+            className="css-148a5t1"
+            href="/undefined/Products"
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Products",
+                }
+              }
+            />
+          </a>
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <a
+            className="css-148a5t1"
+            href="/undefined/Blogs"
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Blogs",
+                }
+              }
+            />
+          </a>
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <a
+            className="css-148a5t1"
+            href="/undefined/Profile"
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "profile",
+                }
+              }
+            />
+          </a>
+        </div>
+        <div
+          className="css-13uj0p8"
+          onClick={[Function]}
+        >
+          X
+        </div>
+      </div>
+      <div
         className="css-11erx38"
       >
         <div
-          className="css-cf8cyr"
+          className="css-1uoaaas"
         >
           <button
-            className="css-1a7iigq"
+            className="css-nru6sm"
             onBlur={[Function]}
             onClick={[Function]}
           >
@@ -60,10 +149,11 @@ exports[`renders correctly 1`] = `
           </button>
         </div>
         <div
-          className="css-cf8cyr"
+          className="css-1uoaaas"
         >
           <button
-            className="css-1a7iigq"
+            className="css-nru6sm"
+            onBlur={[Function]}
             onClick={[Function]}
           >
             <img

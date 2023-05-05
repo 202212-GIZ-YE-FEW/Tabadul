@@ -1,9 +1,5 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { useRouter } from "next/router";
 import { withTranslation } from "next-i18next";
 import React, { useState } from "react";
-
-import { auth } from "@/utils/firebase";
 
 import {
     Erorrsmsgs,
@@ -27,6 +23,10 @@ import {
     SignTitle,
     Signwith,
 } from "./Signup.styled";
+import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
+import { auth, db } from "@/utils/firebase";
+import { useRouter } from "next/router";
+import { addDoc, collection } from "firebase/firestore";
 
 function Signup({ t }) {
     const [email, setEmail] = useState("");
@@ -84,10 +84,22 @@ function Signup({ t }) {
                 setLocationError("");
             }
             if (email && password && name && phone && location && confirmpass) {
-                await createUserWithEmailAndPassword(auth, email, password);
+                await createUserWithEmailAndPassword(
+                    auth,
+                    email,
+                    password
+                ).then(async (registeredUser) => {
+                    await addDoc(collection(db, "users"), {
+                        uid: registeredUser.user.uid,
+                        name: name,
+                        phone: phone,
+                        location: location,
+                        email: email,
+                    });
 
-                rout.push("/");
-                setLoading(true);
+                    rout.push("/");
+                    setLoading(true);
+                });
             }
         } catch (err) {
             console.error(err);

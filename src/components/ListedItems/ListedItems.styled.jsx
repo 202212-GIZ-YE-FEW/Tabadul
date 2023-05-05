@@ -109,6 +109,7 @@ export const MenuList = styled.ul`
     border-radius: 5px;
 `;
 export const MenuItemDiv = styled.div`
+    text-align: start;
     margin-right: 20px;
     margin-left: 20px;
     border-bottom: 1px solid #dfe0e0;
@@ -192,14 +193,14 @@ export const AddItem = styled.button`
 `;
 
 export const ItemsListDiv = styled.div`
-    margin-top: 120px;
+    margin: 120px 0 80px 0;
     max-width: 1650px;
-    padding: 30px;
     width: 100%;
+    height: 100%;
     display: grid;
-    grid-gap: 18px 35px;
+    grid-gap: 43px 50px;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 259px);
+    grid-template-columns: repeat(auto-fit, 275px);
 `;
 
 export const CardImage = styled(Image)`
@@ -207,16 +208,24 @@ export const CardImage = styled(Image)`
     object-position: center top;
     border-radius: 19px 19px 0px 0px;
     width: 100%;
+    height: 244px;
 `;
 
 export const ItemCard = styled.div`
+    /* background-color: red; */
     width: 100%;
     height: 100%;
     background: #ffffff;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    background: #ffffff;
+    /* background: #ffffff; */
     margin: 10px;
+    padding: 4px 4px 0 4px;
+`;
+
+export const ProductDetail = styled.div`
+    padding: 0 13px 0 13px;
+    /* height: 100%; */
 `;
 
 export const ItemIcon = styled(Image)`
@@ -236,7 +245,7 @@ export const IconsTitles = styled.p`
 `;
 export const DateAndTime = styled.p`
     /* padding: 0 0 0 12px; */
-    margin: 0 0 20px 12px;
+    margin: 0 0 10px 12px;
     color: #8b8b8b;
     font-size: 13px;
 `;

@@ -1,18 +1,5 @@
-import {
-    deleteObject,
-    getDownloadURL,
-    getMetadata,
-    ref,
-    uploadBytesResumable,
-} from "firebase/storage";
-import Image from "next/image";
-import Link from "next/link";
-import Router from "next/router";
 import { withTranslation } from "next-i18next";
 import React, { useEffect, useState } from "react";
-
-import { addItem } from "@/utils/firebase";
-import { storage } from "@/utils/firebase";
 
 import {
     Buttoncontainer,
@@ -48,8 +35,18 @@ import {
     UploadInput,
     Uploadspan,
 } from "./AddItem.styled";
-import Footer from "../Footer/Footer";
-import Navbar from "../Navbar/Navbar";
+import { addItem, auth } from "@/utils/firebase";
+import {
+    deleteObject,
+    getDownloadURL,
+    getMetadata,
+    ref,
+    uploadBytesResumable,
+} from "firebase/storage";
+import { storage } from "@/utils/firebase";
+import Link from "next/link";
+import Router from "next/router";
+import Image from "next/image";
 import thumbnail from "../../../public/thumbnails/default-image.png";
 
 function AddItem({ categoriesList, locationList, t }) {
@@ -85,6 +82,7 @@ function AddItem({ categoriesList, locationList, t }) {
             time: current.toLocaleTimeString(),
             date: formatedDate,
             image: imagesList,
+            userId: auth?.currentUser?.uid,
         };
         let flagIsFilled = validateOnSubmit(updateItem);
         if (flagIsFilled === Object.entries(updateItem).length) {
@@ -111,17 +109,9 @@ function AddItem({ categoriesList, locationList, t }) {
 
     function validateOnChange(e) {
         const name = e.target.name;
-        console.log(
-            "onchange vlaidtae",
-            name,
-            e.target.value,
-            e.target.value.length
-        );
         if (e.target.value.length <= 0) {
-            console.log("less than 0");
             setErrorMsg({ ...errorMsg, [name]: true });
         } else {
-            console.log("more than zero");
             setErrorMsg({ ...errorMsg, [name]: false });
         }
     }
@@ -141,7 +131,7 @@ function AddItem({ categoriesList, locationList, t }) {
 
         setItem({
             ...item,
-            [name]: { name: e.target.value, id: option },
+            [name]: { ...JSON.parse(e.target.value) },
         });
     }
 
@@ -203,222 +193,212 @@ function AddItem({ categoriesList, locationList, t }) {
     useEffect(() => {}, [errorMsg]);
 
     return (
-        <div>
-            <Navbar />
-            <Pagecontainer>
-                <ItemHeader>{t("AddItem")} </ItemHeader>
-                <Formcontainer>
-                    <FormItem method='post' onSubmit={addto}>
-                        <ItemInput>
-                            <LabelDiv>
-                                <ItemTitle>{t("Title")}</ItemTitle>
-                                {errorMsg.title && (
-                                    <ErrorLabel errorMsg={errorMsg}>
-                                        {t("TitleisRequired")}
-                                    </ErrorLabel>
-                                )}
-                            </LabelDiv>
-                            <TitleInput
-                                placeholder={t("titlePlaceholder")}
-                                type='text'
-                                name='title'
-                                onChange={handleChange}
-                            />
-                        </ItemInput>
-                        <ItemInput>
-                            <LabelDiv>
-                                <ItemCatogry>{t("Catogry")}</ItemCatogry>
-                                {errorMsg.category && (
-                                    <ErrorLabel errorMsg={errorMsg}>
-                                        {t("CategoryisRequired")}
-                                    </ErrorLabel>
-                                )}
-                            </LabelDiv>
-                            <CatogryInput
-                                placeholder={t("Selectcatogryplaceholder")}
-                                type='dropdown'
-                                name='category'
-                                onChange={handleSelect}
-                            >
-                                <Selectoption disabled selected>
-                                    {t("Selectcatogry")}
-                                </Selectoption>
-                                {categoriesList?.map((cate) => {
-                                    return (
-                                        <Selectoption
-                                            key={cate.id}
-                                            id={cate.id}
-                                        >
-                                            {cate.name}
-                                        </Selectoption>
-                                    );
-                                })}
-                            </CatogryInput>
-                        </ItemInput>
-                        <ItemInput>
-                            <LabelDiv>
-                                <ItemLocation>{t("Location")}</ItemLocation>
-                                {errorMsg.location && (
-                                    <ErrorLabel errorMsg={errorMsg}>
-                                        {t("LocationisRequired")}
-                                    </ErrorLabel>
-                                )}
-                            </LabelDiv>
-                            <LocationInput
-                                name='location'
-                                onChange={handleSelect}
-                            >
-                                <Locationoption disabled selected>
-                                    {t("SelectLocation")}
-                                </Locationoption>
-                                {locationList?.map((location) => {
-                                    return (
-                                        <Locationoption
-                                            key={location.id}
-                                            id={location.id}
-                                        >
-                                            {location.name}
-                                        </Locationoption>
-                                    );
-                                })}
-                            </LocationInput>
-                        </ItemInput>
-                        <ItemInput>
-                            <LabelDiv>
-                                <ItemDescription>
-                                    {t("Description")}
-                                </ItemDescription>
-                                {errorMsg.description && (
-                                    <ErrorLabel errorMsg={errorMsg}>
-                                        {t("DescriptionisRequired")}
-                                    </ErrorLabel>
-                                )}
-                            </LabelDiv>
-                            <DescriptionInput
-                                placeholder={t("DescriptionItemplaceholder")}
-                                rows='10'
-                                cols='105'
-                                name='description'
-                                onChange={handleChange}
-                            />
-                        </ItemInput>
-                        <ItemImageInput>
-                            <Itemupload>{t("UploadPhotossection")}</Itemupload>
-                            <ImagesDiv>
-                                {imagesList.length === 0 ? (
-                                    <UploadContainer>
-                                        <ItemImage
-                                            alt='thumbnail'
-                                            src={thumbnail}
-                                            width='0'
-                                            height='0'
-                                        />
+        <Pagecontainer>
+            <ItemHeader>{t("AddItem")} </ItemHeader>
+            <Formcontainer>
+                <FormItem method='post' onSubmit={addto}>
+                    <ItemInput>
+                        <LabelDiv>
+                            <ItemTitle>{t("Title")}</ItemTitle>
+                            {errorMsg.title && (
+                                <ErrorLabel errorMsg={errorMsg}>
+                                    {t("TitleisRequired")}
+                                </ErrorLabel>
+                            )}
+                        </LabelDiv>
+                        <TitleInput
+                            placeholder={t("titlePlaceholder")}
+                            type='text'
+                            name='title'
+                            onChange={handleChange}
+                        />
+                    </ItemInput>
+                    <ItemInput>
+                        <LabelDiv>
+                            <ItemCatogry>{t("Catogry")}</ItemCatogry>
+                            {errorMsg.category && (
+                                <ErrorLabel errorMsg={errorMsg}>
+                                    {t("CategoryisRequired")}
+                                </ErrorLabel>
+                            )}
+                        </LabelDiv>
+                        <CatogryInput
+                            placeholder={t("Selectcatogryplaceholder")}
+                            type='dropdown'
+                            name='category'
+                            onChange={handleSelect}
+                        >
+                            <Selectoption disabled selected>
+                                {t("Selectcatogry")}
+                            </Selectoption>
+                            {categoriesList?.map((cate) => {
+                                return (
+                                    <Selectoption key={cate.id} id={cate.id}>
+                                        {Router.locale === "ar"
+                                            ? cate.name_ar
+                                            : cate.name}
+                                    </Selectoption>
+                                );
+                            })}
+                        </CatogryInput>
+                    </ItemInput>
+                    <ItemInput>
+                        <LabelDiv>
+                            <ItemLocation>{t("Location")}</ItemLocation>
+                            {errorMsg.location && (
+                                <ErrorLabel errorMsg={errorMsg}>
+                                    {t("LocationisRequired")}
+                                </ErrorLabel>
+                            )}
+                        </LabelDiv>
+                        <LocationInput name='location' onChange={handleSelect}>
+                            <Locationoption disabled selected>
+                                {t("SelectLocation")}
+                            </Locationoption>
+                            {locationList?.map((location) => {
+                                return (
+                                    <Locationoption
+                                        key={location.id}
+                                        id={location.id}
+                                        value={JSON.stringify(location)}
+                                    >
+                                        {Router.locale === "ar"
+                                            ? location.name_ar
+                                            : location.name}
+                                    </Locationoption>
+                                );
+                            })}
+                        </LocationInput>
+                    </ItemInput>
+                    <ItemInput>
+                        <LabelDiv>
+                            <ItemDescription>
+                                {t("Description")}
+                            </ItemDescription>
+                            {errorMsg.description && (
+                                <ErrorLabel errorMsg={errorMsg}>
+                                    {t("DescriptionisRequired")}
+                                </ErrorLabel>
+                            )}
+                        </LabelDiv>
+                        <DescriptionInput
+                            placeholder={t("DescriptionItemplaceholder")}
+                            rows='10'
+                            cols='105'
+                            name='description'
+                            onChange={handleChange}
+                        />
+                    </ItemInput>
+                    <ItemImageInput>
+                        <Itemupload>{t("UploadPhotossection")}</Itemupload>
+                        <ImagesDiv>
+                            {imagesList.length === 0 ? (
+                                <UploadContainer>
+                                    <ItemImage
+                                        alt='thumbnail'
+                                        src={thumbnail}
+                                        width='0'
+                                        height='0'
+                                    />
 
-                                        <LabelDiv>
-                                            <Uploadspan>
-                                                {t("UploadPhotos")}
-                                            </Uploadspan>
-                                            {errorMsg.image && (
-                                                <ErrorLabel errorMsg={errorMsg}>
-                                                    {t("photosareRequired")}
-                                                </ErrorLabel>
-                                            )}
-                                        </LabelDiv>
+                                    <LabelDiv>
+                                        <Uploadspan>
+                                            {t("UploadPhotos")}
+                                        </Uploadspan>
+                                        {errorMsg.image && (
+                                            <ErrorLabel errorMsg={errorMsg}>
+                                                {t("photosareRequired")}
+                                            </ErrorLabel>
+                                        )}
+                                    </LabelDiv>
+                                    <UploadInput
+                                        type='file'
+                                        name='image'
+                                        placeholder={t(
+                                            "UploadPhotosplaceholder"
+                                        )}
+                                        onChange={handleImageFile}
+                                        multiple
+                                    />
+                                </UploadContainer>
+                            ) : (
+                                <>
+                                    {imagesList.map((SingleImage) => {
+                                        return (
+                                            <DisplayContainer
+                                                key={SingleImage.url}
+                                                onClick={() =>
+                                                    deleteImage(
+                                                        SingleImage.name
+                                                    )
+                                                }
+                                            >
+                                                <DeleteIcon>
+                                                    <Image
+                                                        src='./addToItem/delete.svg'
+                                                        alt='delete icon'
+                                                        width={30}
+                                                        height={30}
+                                                    />
+                                                </DeleteIcon>
+                                                <ItemImage
+                                                    alt='product Image'
+                                                    src={SingleImage.url}
+                                                    width='300'
+                                                    height='300'
+                                                    quality={100}
+                                                />
+
+                                                <LabelDiv>
+                                                    <Uploadspan>
+                                                        {SingleImage.name === 0
+                                                            ? "photo name "
+                                                            : SingleImage.name}
+                                                    </Uploadspan>
+                                                    {errorMsg.image && (
+                                                        <ErrorLabel
+                                                            errorMsg={errorMsg}
+                                                        >
+                                                            {t(
+                                                                "photosareRequired"
+                                                            )}
+                                                        </ErrorLabel>
+                                                    )}
+                                                </LabelDiv>
+                                            </DisplayContainer>
+                                        );
+                                    })}
+                                    <PlusDiv>
+                                        +
                                         <UploadInput
                                             type='file'
-                                            name='image'
-                                            placeholder={t(
-                                                "UploadPhotosplaceholder"
-                                            )}
+                                            name='images'
+                                            placeholder='Upload Photos'
                                             onChange={handleImageFile}
                                             multiple
                                         />
-                                    </UploadContainer>
-                                ) : (
-                                    <>
-                                        {imagesList.map((SingleImage) => {
-                                            return (
-                                                <DisplayContainer
-                                                    key={SingleImage.url}
-                                                    onClick={() =>
-                                                        deleteImage(
-                                                            SingleImage.name
-                                                        )
-                                                    }
-                                                >
-                                                    <DeleteIcon>
-                                                        <Image
-                                                            src='./addToItem/delete.svg'
-                                                            alt='delete icon'
-                                                            width={30}
-                                                            height={30}
-                                                        />
-                                                    </DeleteIcon>
-                                                    <ItemImage
-                                                        alt='product Image'
-                                                        src={SingleImage.url}
-                                                        width='300'
-                                                        height='300'
-                                                        quality={100}
-                                                    />
-
-                                                    <LabelDiv>
-                                                        <Uploadspan>
-                                                            {SingleImage.name ===
-                                                            0
-                                                                ? "photo name "
-                                                                : SingleImage.name}
-                                                        </Uploadspan>
-                                                        {errorMsg.image && (
-                                                            <ErrorLabel
-                                                                errorMsg={
-                                                                    errorMsg
-                                                                }
-                                                            >
-                                                                {t(
-                                                                    "photosareRequired"
-                                                                )}
-                                                            </ErrorLabel>
-                                                        )}
-                                                    </LabelDiv>
-                                                </DisplayContainer>
-                                            );
-                                        })}
-                                        <PlusDiv>
-                                            +
-                                            <UploadInput
-                                                type='file'
-                                                name='images'
-                                                placeholder='Upload Photos'
-                                                onChange={handleImageFile}
-                                                multiple
-                                            />
-                                        </PlusDiv>
-                                    </>
-                                )}
-                            </ImagesDiv>
-                        </ItemImageInput>
-                        <Buttoncontainer>
-                            <ConfirmButton
-                                disabled={!imagesList}
-                                imagesList={
-                                    imagesList.length === 0 ? false : true
-                                }
-                                type='submit'
-                            >
-                                <Confirmspan>{t("Confirm")}</Confirmspan>
-                            </ConfirmButton>
-                            <Link href='/listOfItems'>
-                                <CancelButton type='submit'>
-                                    <Cancelspan>{t("Cancel")}</Cancelspan>
-                                </CancelButton>
-                            </Link>
-                        </Buttoncontainer>
-                    </FormItem>
-                </Formcontainer>
-            </Pagecontainer>
-            <Footer />
-        </div>
+                                    </PlusDiv>
+                                </>
+                            )}
+                        </ImagesDiv>
+                    </ItemImageInput>
+                    <Buttoncontainer>
+                        <ConfirmButton
+                            disabled={!imagesList}
+                            imagesList={imagesList.length === 0 ? false : true}
+                            type='submit'
+                        >
+                            <Confirmspan>{t("Confirm")}</Confirmspan>
+                        </ConfirmButton>
+                        <Link href='/listOfItems'>
+                            <CancelButton type='submit'>
+                                <Cancelspan>{t("Cancel")}</Cancelspan>
+                            </CancelButton>
+                        </Link>
+                    </Buttoncontainer>
+                </FormItem>
+            </Formcontainer>
+        </Pagecontainer>
     );
 }
 

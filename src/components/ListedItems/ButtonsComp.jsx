@@ -1,9 +1,6 @@
-import { onAuthStateChanged } from "firebase/auth";
 import Link from "next/link";
 import { withTranslation } from "next-i18next";
 import React, { useEffect, useState } from "react";
-
-import { auth } from "@/utils/firebase";
 
 import {
     AddItem,
@@ -18,10 +15,13 @@ import {
     MenuItemDiv,
     MenuList,
 } from "./ListedItems.styled";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "@/utils/firebase";
 
 const ButtonsComp = (props) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const {
+        checkLang,
         setDropDown,
         dropDown,
         locationList,
@@ -66,7 +66,7 @@ const ButtonsComp = (props) => {
                                             }}
                                         >
                                             <MenuItemDiv>
-                                                {location.name}
+                                                {checkLang(location)}
                                             </MenuItemDiv>
                                         </MenuItem>
                                     );

@@ -23,48 +23,42 @@ import {
 } from "../../styles/aboutus.styled";
 function Aboutus({ t }) {
     return (
-        <div>
-            <Navbar />
-            <AboutSection>
-                <AboutContainer>
-                    <HeroSection>
-                        <TextContent>
-                            <HeadingContent>
-                                {t("aboutheroheader")}
-                            </HeadingContent>
-                            <ParagrhContent>
-                                {t("aboutheroparagraph")}
-                            </ParagrhContent>
-                        </TextContent>
-                        <ImgContent>
-                            <AboutImg
-                                src={AboutPhoto}
-                                alt='AboutPhoto'
-                                width={896}
-                                height={651}
-                                priority='true'
-                            />
-                        </ImgContent>
-                    </HeroSection>
-                    <TeamSection>
-                        <TeamHeading>{t("teamheading")}</TeamHeading>
-                        <TeamMemberContainer>
-                            {team?.map((member) => {
-                                return (
-                                    <TeamMember
-                                        key={member.id}
-                                        surename={member.surename}
-                                        desc={member.desc}
-                                        Imgmember={member.memberImg}
-                                    />
-                                );
-                            })}
-                        </TeamMemberContainer>
-                    </TeamSection>
-                </AboutContainer>
-            </AboutSection>
-            <Footer />
-        </div>
+        <AboutSection>
+            <AboutContainer>
+                <HeroSection>
+                    <TextContent>
+                        <HeadingContent>{t("aboutheroheader")}</HeadingContent>
+                        <ParagrhContent>
+                            {t("aboutheroparagraph")}
+                        </ParagrhContent>
+                    </TextContent>
+                    <ImgContent>
+                        <AboutImg
+                            src={AboutPhoto}
+                            alt='AboutPhoto'
+                            width={896}
+                            height={651}
+                            priority='true'
+                        />
+                    </ImgContent>
+                </HeroSection>
+                <TeamSection>
+                    <TeamHeading>{t("teamheading")}</TeamHeading>
+                    <TeamMemberContainer>
+                        {team?.map((member) => {
+                            return (
+                                <TeamMember
+                                    key={member.id}
+                                    surename={member.surename}
+                                    desc={member.desc}
+                                    Imgmember={member.memberImg}
+                                />
+                            );
+                        })}
+                    </TeamMemberContainer>
+                </TeamSection>
+            </AboutContainer>
+        </AboutSection>
     );
 }
 

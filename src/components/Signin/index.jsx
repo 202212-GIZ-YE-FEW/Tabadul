@@ -1,10 +1,10 @@
+import { withTranslation } from "next-i18next";
 import {
     browserSessionPersistence,
     setPersistence,
     signInWithEmailAndPassword,
 } from "firebase/auth";
 import { useRouter } from "next/router";
-import { withTranslation } from "next-i18next";
 import React, { useState } from "react";
 
 import { auth } from "@/utils/firebase";

@@ -73,13 +73,13 @@ exports[`renders correctly 1`] = `
         />
         <div>
           <p>
-            Name Surname
+            Name : 
           </p>
           <p>
-            Phone: 01122334455
+            Phone :
           </p>
           <p>
-            Email: mail@mail.com
+            Email :
           </p>
         </div>
       </div>

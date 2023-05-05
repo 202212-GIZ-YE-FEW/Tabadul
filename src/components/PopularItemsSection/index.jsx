@@ -1,31 +1,51 @@
 import { withTranslation } from "next-i18next";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { CardLink } from "../ListedItems/ListedItems.styled";
-import PopularItems from "../PopularItems";
 import { Cards, Header, Line } from "../PopularItems/PopularItems.styled";
+import Card from "../Card/Card";
 
 function PopularItemsSection({ items, t }) {
+    const [width, setWidth] = useState(1791);
+
+    useEffect(() => {
+        let cb = function () {
+            setWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", cb);
+
+        return () => {
+            window.removeEventListener("resize", cb);
+        };
+    }, []);
+
+    function limitProductsNumber() {
+        if (width > 1791) {
+            return 5;
+        }
+        if (width < 1300) {
+            return 3;
+        } else if (width >= 1300) {
+            return 4;
+        }
+    }
     return (
         <div>
             <div style={{ position: "relative", top: "-90px" }}>
                 <Header>{t("PopularItems")}</Header>
                 <Cards>
-                    {items?.slice(0, 5).map((item) => {
+                    {items?.slice(0, limitProductsNumber()).map((item) => {
                         return (
-                            <CardLink
+                            <Card
                                 key={item.id}
-                                href={`Products/${item.id}`}
-                            >
-                                <PopularItems
-                                    location={item.location.name}
-                                    category={item.category.name}
-                                    photo={item.image[0].url}
-                                    description={item.description}
-                                    title={item.title}
-                                    date={item.date}
-                                />
-                            </CardLink>
+                                productImage={item.image[0].url}
+                                id={item.id}
+                                title={item.title}
+                                location={item.location}
+                                category={item.category}
+                                date={item.date}
+                                description={item.description}
+                            />
                         );
                     })}
                 </Cards>

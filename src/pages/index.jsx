@@ -13,7 +13,6 @@ import PopularItemsSection from "@/components/PopularItemsSection";
 import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
 
-import Layout from "@/layout/Layout";
 import { auth, fetchBlogs, fetchItems } from "@/utils/firebase";
 
 export default function HomePage({ items, blogs }) {
@@ -31,7 +30,7 @@ export default function HomePage({ items, blogs }) {
     }, []);
 
     return (
-        <Layout>
+        <div>
             {/* <p>{t("ooo")}</p>
             <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
                 <Link href='/' locale='en'>
@@ -40,7 +39,11 @@ export default function HomePage({ items, blogs }) {
                 <Link href='/' locale='ar'>
                     العربية
                 </Link>
-            </div> */}
+            </div> 
+
+
+               ^-^ just to make sure the nabvar is working 
+            */}
             {isAuthenticated && auth?.currentUser?.email}
             {/* {isAuthenticated && <button onClick={signout}>logout</button>} */}
             <Hero />
@@ -50,7 +53,7 @@ export default function HomePage({ items, blogs }) {
             <BlogContainer blogs={blogs} />
             <Partners />
             <ScrollTop /> {/* leave this at the bottom of layout */}
-        </Layout>
+        </div>
     );
 }
 

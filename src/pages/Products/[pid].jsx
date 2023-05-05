@@ -1,15 +1,21 @@
 import Product from "@/components/ProductPgage/ProductPage";
-import { db, fetchItems } from "@/utils/firebase";
-import { doc, getDoc } from "firebase/firestore";
+import { auth, db, fetchItems } from "@/utils/firebase";
+import {
+    collection,
+    doc,
+    getDoc,
+    getDocs,
+    query,
+    where,
+} from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import RelatedItems from "../../components/relatedItems/relatedItems";
 import styles from "./SingleProduct.module.css";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 
 const SingleProduct = ({ Item }) => {
     const [relatedItems, setRelatedItems] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [userinfo, setUserinfo] = useState();
 
     useEffect(() => {
         const fetchRelatedItems = async () => {
@@ -23,6 +29,9 @@ const SingleProduct = ({ Item }) => {
             setLoading(false);
         };
         fetchRelatedItems();
+        getUserInfo(Item.userId);
+        console.log("user", userinfo);
+        console.log("item", Item);
     }, [Item]);
 
     const updateRelatedItems = (newItems) => {
@@ -34,9 +43,24 @@ const SingleProduct = ({ Item }) => {
         });
     };
 
+    const usersCollectionRef = collection(db, "users");
+
+    const getUserInfo = async (id) => {
+        const q = query(usersCollectionRef, where("uid", "==", id));
+        try {
+            const data = await getDocs(q);
+            const filteredData = data.docs.map((doc) => ({
+                ...doc.data(),
+                id: doc.id,
+            }));
+            setUserinfo(filteredData[0]);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
     return (
         <div>
-            <Navbar />
             {loading && (
                 <div className={styles["loading-message"]}>
                     <div className={styles.loader}></div>
@@ -48,11 +72,14 @@ const SingleProduct = ({ Item }) => {
                 images={Item.image}
                 location={Item.location}
                 category={Item.category}
+                name={userinfo?.name}
+                phone={userinfo?.phone}
+                email={userinfo?.email}
             />
+
             {relatedItems.length > 0 && (
                 <RelatedItems relatedItems={relatedItems} />
             )}
-            <Footer />
         </div>
     );
 };

@@ -6,6 +6,7 @@ import { auth } from "@/utils/firebase";
 
 import {
     Arrow,
+    CancelIcon,
     Dropbtn,
     Dropdown,
     Dropdowncontent,
@@ -16,6 +17,7 @@ import {
     Imageicon,
     Lan,
     Lanlink,
+    LinkDiv,
     Mynav,
     Nav,
     NavButtons,
@@ -24,6 +26,7 @@ import {
     Navmenulist,
 } from "./Nav.styled";
 import { NavItem } from "./NavItem";
+
 function Navbar({ t }) {
     const MENU_LIST = [
         {
@@ -42,17 +45,12 @@ function Navbar({ t }) {
         { id: 5, text: t("profile"), href: "/Profile" },
     ];
 
-    // const router = useRouter();
-
     const [navActive, setNavActive] = useState(false);
     const [activeIdx, setActiveIdx] = useState(false);
     const [navdroplan, setNavdroplan] = useState(false);
     const [navdrop, setNavdrop] = useState(false);
     const [width, setWidth] = useState(0);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-    useEffect(() => {
-        setWidth(window.innerWidth);
-    }, []);
 
     const signout = async () => {
         await signOut(auth);
@@ -66,6 +64,24 @@ function Navbar({ t }) {
             Listerner();
         };
     }, []);
+
+    useEffect(() => {
+        let cb = function () {
+            setWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", cb);
+
+        return () => {
+            window.removeEventListener("resize", cb);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (width > 700) {
+            setNavActive(false);
+        }
+    }, [width]);
+
     return (
         <Header>
             <Nav>
@@ -76,37 +92,43 @@ function Navbar({ t }) {
                 </Homeiconlink>
 
                 <Navmenubar
-                    onClick={() => setNavActive((prevState) => !prevState)}
-                    onBlur={() => setNavdrop((prevState) => !prevState)}
+                    onClick={() => {
+                        setNavActive((prevState) => !prevState);
+                    }}
                 >
                     <Navmenubardiv></Navmenubardiv>
                     <Navmenubardiv></Navmenubardiv>
                     <Navmenubardiv></Navmenubardiv>
                 </Navmenubar>
                 <Mynav>
-                    {(navActive || width > 1000) && (
-                        <Navmenulist>
-                            {MENU_LIST.map((menu, idx) => {
-                                return (
-                                    <div
-                                        //ToDo: Style this to center it
-                                        onClick={() => {
-                                            setActiveIdx(idx);
-                                            setNavActive(
-                                                (prevState) => !prevState
-                                            );
-                                        }}
-                                        key={menu.text}
-                                    >
-                                        <NavItem
-                                            active={activeIdx === idx}
-                                            {...menu}
-                                        />
-                                    </div>
-                                );
-                            })}
-                        </Navmenulist>
-                    )}
+                    <Navmenulist navActive={navActive}>
+                        {MENU_LIST.map((menu, idx) => {
+                            return (
+                                <div
+                                    //ToDo: Style this to center it
+                                    onClick={() => {
+                                        setActiveIdx(idx);
+                                        setNavActive((prevState) => !prevState);
+                                    }}
+                                    key={menu.text}
+                                >
+                                    <NavItem
+                                        active={activeIdx === idx}
+                                        {...menu}
+                                    />
+                                </div>
+                            );
+                        })}
+                        <CancelIcon
+                            navActive={navActive}
+                            onClick={() => {
+                                setNavActive((prevState) => !prevState);
+                            }}
+                        >
+                            X
+                        </CancelIcon>
+                    </Navmenulist>
+
                     <NavButtons>
                         <Dropdown>
                             <Dropbtn
@@ -121,19 +143,25 @@ function Navbar({ t }) {
                             {navdrop && (
                                 <Dropdowncontent>
                                     {!isAuthenticated && (
-                                        <Lanlink href='/Signin'>
-                                            {t("Login")}
-                                        </Lanlink>
+                                        <LinkDiv>
+                                            <Lanlink href='/Signin'>
+                                                {t("Login")}
+                                            </Lanlink>
+                                        </LinkDiv>
                                     )}
                                     {!isAuthenticated && (
-                                        <Lanlink href='/Signup'>
-                                            {t("Signup")}
-                                        </Lanlink>
+                                        <LinkDiv>
+                                            <Lanlink href='/Signup'>
+                                                {t("Signup")}
+                                            </Lanlink>
+                                        </LinkDiv>
                                     )}
                                     {isAuthenticated && (
-                                        <Lanlink onClick={signout} href='/'>
-                                            {t("Logout")}
-                                        </Lanlink>
+                                        <LinkDiv>
+                                            <Lanlink onClick={signout} href='/'>
+                                                {t("Logout")}
+                                            </Lanlink>
+                                        </LinkDiv>
                                     )}
                                 </Dropdowncontent>
                             )}
@@ -141,25 +169,27 @@ function Navbar({ t }) {
                         <Dropdown>
                             <Dropbtn
                                 onClick={() => setNavdroplan(!navdroplan)}
-                                // onBlur={() => setNavdroplan(!navdroplan)}
+                                onBlur={() =>
+                                    setTimeout(() => setNavdroplan(false), 100)
+                                }
                             >
                                 <Imageicon src='/images/flag.svg' />
                                 <Arrow src='/images/arrow.svg' />
                             </Dropbtn>
                             {navdroplan && (
                                 <Dropdowncontent>
-                                    <Lanlink href='' locale='en'>
-                                        {t("English")}
-                                        <Lan src='/images/flag.svg' />
-                                    </Lanlink>
-                                    <Lanlink href='' locale='ar'>
-                                        {t("Arabic")}
-                                        <Lan src='/images/Saudi Arabia.svg' />
-                                    </Lanlink>
-                                    <Lanlink href=''>
-                                        {t("Turkish")}
-                                        <Lan src='/images/Turkey.svg' />
-                                    </Lanlink>
+                                    <LinkDiv>
+                                        <Lanlink href='#' locale='en'>
+                                            {t("English")}
+                                            <Lan src='/images/flag.svg' />
+                                        </Lanlink>
+                                    </LinkDiv>
+                                    <LinkDiv>
+                                        <Lanlink href='#' locale='ar'>
+                                            {t("Arabic")}
+                                            <Lan src='/images/Saudi Arabia.svg' />
+                                        </Lanlink>
+                                    </LinkDiv>
                                 </Dropdowncontent>
                             )}
                         </Dropdown>
