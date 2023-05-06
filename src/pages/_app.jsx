@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import { useRouter } from "next/router";
-import { appWithTranslation } from "next-i18next";
+import { appWithTranslation, useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 
 import "@/styles/globals.css";
@@ -17,6 +17,7 @@ const poppins = Poppins({
 function MyApp({ Component, pageProps }) {
     const [loading, setLoading] = useState(false);
     const { locale } = useRouter();
+
     const dir = locale === "ar" ? "rtl" : "ltr";
 
     useEffect(() => {

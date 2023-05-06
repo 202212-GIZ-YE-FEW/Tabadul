@@ -1,4 +1,4 @@
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -11,8 +11,15 @@ import {
     Social,
     SocialLink,
 } from "./Footer.style";
+import { useRouter } from "next/router";
 
-function Footer({ t }) {
+function Footer() {
+    const router = useRouter();
+    const { t } = useTranslation("footer");
+    const translateMe = (word) => {
+        return t(word);
+    };
+
     return (
         <Footercss>
             <Container>
@@ -26,13 +33,19 @@ function Footer({ t }) {
                 </Section>
 
                 <Section>
-                    <PagesList href='/Aboutus'>{t("Aboutus")}</PagesList>
-                    <PagesList href='/Blogs'>{t("Blogs")}</PagesList>
-                    <PagesList href='/Products'>{t("Listeditems")}</PagesList>
+                    <PagesList href={`/${router.locale}/Aboutus`}>
+                        {translateMe("Aboutus")}
+                    </PagesList>
+                    <PagesList href={`/${router.locale}/Blogs`}>
+                        {translateMe("Blogs")}
+                    </PagesList>
+                    <PagesList href={`/${router.locale}/Products`}>
+                        {translateMe("Products")}
+                    </PagesList>
                 </Section>
 
                 <Section>
-                    <p>{t("ContactUs")}</p>
+                    <p>{translateMe("ContactUs")}</p>
 
                     <Social>
                         <SocialLink>
@@ -74,13 +87,13 @@ function Footer({ t }) {
                 </Section>
 
                 <Section>
-                    <p>{t("Address")}</p>
-                    <p>{t("street")}</p>
-                    <p>{t("YemenSanaa")}</p>
+                    <p>{translateMe("Address")}</p>
+                    <p>{translateMe("street")}</p>
+                    <p>{translateMe("YemenSanaa")}</p>
                 </Section>
             </Container>
         </Footercss>
     );
 }
 
-export default withTranslation("footer")(Footer);
+export default Footer;

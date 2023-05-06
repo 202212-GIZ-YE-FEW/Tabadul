@@ -1,5 +1,5 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 
 import { auth } from "@/utils/firebase";
@@ -27,22 +27,27 @@ import {
 } from "./Nav.styled";
 import { NavItem } from "./NavItem";
 
-function Navbar({ t }) {
+function Navbar() {
+    const { t } = useTranslation("common");
+    const translateMe = (word) => {
+        return t(word);
+    };
+
     const MENU_LIST = [
         {
             id: 1,
-            text: t("home"),
+            text: translateMe("home"),
 
             href: "/",
         },
 
-        { id: 2, text: t("aboutus"), href: "/Aboutus" },
+        { id: 2, text: translateMe("aboutus"), href: "/Aboutus" },
 
-        { id: 3, text: t("Products"), href: "/Products" },
+        { id: 3, text: translateMe("Products"), href: "/Products" },
 
-        { id: 4, text: t("Blogs"), href: "/Blogs" },
+        { id: 4, text: translateMe("Blogs"), href: "/Blogs" },
 
-        { id: 5, text: t("profile"), href: "/Profile" },
+        { id: 5, text: translateMe("profile"), href: "/Profile" },
     ];
 
     const [navActive, setNavActive] = useState(false);
@@ -51,7 +56,6 @@ function Navbar({ t }) {
     const [navdrop, setNavdrop] = useState(false);
     const [width, setWidth] = useState(0);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-
     const signout = async () => {
         await signOut(auth);
     };
@@ -145,21 +149,21 @@ function Navbar({ t }) {
                                     {!isAuthenticated && (
                                         <LinkDiv>
                                             <Lanlink href='/Signin'>
-                                                {t("Login")}
+                                                {translateMe("Login")}
                                             </Lanlink>
                                         </LinkDiv>
                                     )}
                                     {!isAuthenticated && (
                                         <LinkDiv>
                                             <Lanlink href='/Signup'>
-                                                {t("Signup")}
+                                                {translateMe("Signup")}
                                             </Lanlink>
                                         </LinkDiv>
                                     )}
                                     {isAuthenticated && (
                                         <LinkDiv>
                                             <Lanlink onClick={signout} href='/'>
-                                                {t("Logout")}
+                                                {translateMe("Logout")}
                                             </Lanlink>
                                         </LinkDiv>
                                     )}
@@ -180,13 +184,13 @@ function Navbar({ t }) {
                                 <Dropdowncontent>
                                     <LinkDiv>
                                         <Lanlink href='#' locale='en'>
-                                            {t("English")}
+                                            {translateMe("English")}
                                             <Lan src='/images/flag.svg' />
                                         </Lanlink>
                                     </LinkDiv>
                                     <LinkDiv>
                                         <Lanlink href='#' locale='ar'>
-                                            {t("Arabic")}
+                                            {translateMe("Arabic")}
                                             <Lan src='/images/Saudi Arabia.svg' />
                                         </Lanlink>
                                     </LinkDiv>
@@ -200,4 +204,13 @@ function Navbar({ t }) {
     );
 }
 
-export default withTranslation("common")(Navbar);
+export default Navbar;
+
+// export async function getStaticProps({ locale }) {
+//     return {
+//         props: {
+//             ...(await serverSideTranslations(locale, ["common"])),
+//             // Will be passed to the page component as props
+//         },
+//     };
+// }

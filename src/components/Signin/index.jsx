@@ -1,4 +1,4 @@
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import {
     browserSessionPersistence,
     setPersistence,
@@ -40,7 +40,8 @@ import {
     Test,
 } from "./Signin.styled";
 
-function Signin({ t }) {
+function Signin() {
+    const { t } = useTranslation("signin");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [emailError, setEmailError] = useState("");
@@ -192,4 +193,4 @@ function Signin({ t }) {
     );
 }
 
-export default withTranslation("signin")(Signin);
+export default Signin;

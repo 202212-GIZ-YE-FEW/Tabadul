@@ -6,7 +6,10 @@ import SingleBlog from "@/components/SingleBlog";
 import { fetchBlogs } from "@/utils/firebase";
 
 import { BlogContainer } from "../../components/SingleBlog/SingleBlog.styled";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 function BlogPage({ blogs }) {
+    const { t } = useTranslation("common");
     return (
         <BlogContainer>
             {blogs?.length > 0 ? (
@@ -51,12 +54,13 @@ function BlogPage({ blogs }) {
 }
 export default BlogPage;
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
     const blogs = await fetchBlogs(); // getting the Data Ordered & orgainzed from fetchBlogs fun at firebase.js
 
     return {
         props: {
             blogs,
+            ...(await serverSideTranslations(locale, ["common", "footer"])),
         }, // will be passed to the page component as props
     };
 }

@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
               className="css-qhtill"
             >
               <label
-                className="css-3vajn4"
+                className="css-hfmtd3"
               >
                 Email
               </label>
@@ -47,7 +47,7 @@ exports[`renders correctly 1`] = `
               className="css-qhtill"
             >
               <label
-                className="css-3vajn4"
+                className="css-hfmtd3"
               >
                 Password
               </label>
@@ -94,7 +94,7 @@ exports[`renders correctly 1`] = `
           >
             Dothaveaccount
             <a
-              className="css-cvtfs1"
+              className="css-1hfqgw1"
               href="/Signup"
             >
               Signup

@@ -1,5 +1,5 @@
 import { team } from "data/db";
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
@@ -21,7 +21,8 @@ import {
     TeamSection,
     TextContent,
 } from "../../styles/aboutus.styled";
-function Aboutus({ t }) {
+function Aboutus() {
+    const { t } = useTranslation("common");
     return (
         <AboutSection>
             <AboutContainer>
@@ -62,12 +63,12 @@ function Aboutus({ t }) {
     );
 }
 
-export default withTranslation("common")(Aboutus);
+export default Aboutus;
 
 export async function getStaticProps({ locale }) {
     return {
         props: {
-            ...(await serverSideTranslations(locale, ["common"])),
+            ...(await serverSideTranslations(locale, ["common", "footer"])),
             // Will be passed to the page component as props
         },
     };
