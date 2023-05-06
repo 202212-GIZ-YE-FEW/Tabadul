@@ -9,6 +9,7 @@ import {
     Section,
     Social,
     SocialLink,
+    LinkSoial,
 } from "./Footer.style";
 
 function Footer() {
@@ -27,48 +28,53 @@ function Footer() {
                 <Section>
                     <PagesList href='/Aboutus'>About us</PagesList>
                     <PagesList href='/Blogs'>Blogs</PagesList>
-                    <PagesList href='/Products'>Listed items</PagesList>
+                    <PagesList href='/Products'>Products</PagesList>
                 </Section>
 
                 <Section>
                     <p>Contact Us</p>
 
                     <Social>
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/facebook .svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/instagram (2).svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/linkedin (2).svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/share.svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/facebook .svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/instagram (2).svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/linkedin (2).svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/share.svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
                     </Social>
                 </Section>
 

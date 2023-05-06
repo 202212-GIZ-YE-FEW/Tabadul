@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1yhlq7n"
+  className="css-16e8e6z"
 >
   <div
     className="css-kp9m8d"
@@ -47,7 +47,7 @@ exports[`renders correctly 1`] = `
         className="css-1dbkwr8"
         href="/Products"
       >
-        Listed items
+        Products
       </a>
     </div>
     <div
@@ -60,88 +60,120 @@ exports[`renders correctly 1`] = `
         className="css-18icqaw"
       >
         <a
-          className="css-1i6zk58"
+          className="css-8xe971"
+          href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <img
-            alt=""
-            className="css-3g96gi"
-            data-nimg="1"
-            decoding="async"
-            height={50}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/facebook .svg"
-            style={
-              Object {
-                "color": "transparent",
+          <a
+            className="css-1i6zk58"
+          >
+            <img
+              alt=""
+              className="css-3g96gi"
+              data-nimg="1"
+              decoding="async"
+              height={50}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/facebook .svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
               }
-            }
-            width={50}
-          />
+              width={50}
+            />
+          </a>
         </a>
         <a
-          className="css-1i6zk58"
+          className="css-8xe971"
+          href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <img
-            alt=""
-            className="css-3g96gi"
-            data-nimg="1"
-            decoding="async"
-            height={50}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/instagram (2).svg"
-            style={
-              Object {
-                "color": "transparent",
+          <a
+            className="css-1i6zk58"
+          >
+            <img
+              alt=""
+              className="css-3g96gi"
+              data-nimg="1"
+              decoding="async"
+              height={50}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/instagram (2).svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
               }
-            }
-            width={50}
-          />
+              width={50}
+            />
+          </a>
         </a>
         <a
-          className="css-1i6zk58"
+          className="css-8xe971"
+          href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <img
-            alt=""
-            className="css-3g96gi"
-            data-nimg="1"
-            decoding="async"
-            height={50}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/linkedin (2).svg"
-            style={
-              Object {
-                "color": "transparent",
+          <a
+            className="css-1i6zk58"
+          >
+            <img
+              alt=""
+              className="css-3g96gi"
+              data-nimg="1"
+              decoding="async"
+              height={50}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/linkedin (2).svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
               }
-            }
-            width={50}
-          />
+              width={50}
+            />
+          </a>
         </a>
         <a
-          className="css-1i6zk58"
+          className="css-8xe971"
+          href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <img
-            alt=""
-            className="css-3g96gi"
-            data-nimg="1"
-            decoding="async"
-            height={50}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/share.svg"
-            style={
-              Object {
-                "color": "transparent",
+          <a
+            className="css-1i6zk58"
+          >
+            <img
+              alt=""
+              className="css-3g96gi"
+              data-nimg="1"
+              decoding="async"
+              height={50}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/share.svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
               }
-            }
-            width={50}
-          />
+              width={50}
+            />
+          </a>
         </a>
       </div>
     </div>
