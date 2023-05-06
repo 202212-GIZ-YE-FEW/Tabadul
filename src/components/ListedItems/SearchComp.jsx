@@ -1,15 +1,19 @@
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import { SearchDiv, SearchIcon, SearchInput } from "./ListedItems.styled";
 
-const SearchComp = ({ handleInputChange, t }) => {
+const SearchComp = ({ handleInputChange }) => {
+    const { t } = useTranslation("common");
+    function translateMe(word) {
+        return t(word);
+    }
     return (
         <SearchDiv>
             <SearchInput
                 type='text'
                 onChange={(e) => handleInputChange(e)}
-                placeholder={t("Searchplaceholder")}
+                placeholder={translateMe("Searchplaceholder")}
             />
             <SearchIcon
                 src='/SearchFilterIcons/Search.svg'
@@ -21,4 +25,4 @@ const SearchComp = ({ handleInputChange, t }) => {
     );
 };
 
-export default withTranslation("common")(SearchComp);
+export default SearchComp;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React, { useEffect, useState } from "react";
 
 import {
@@ -28,8 +28,12 @@ const ButtonsComp = (props) => {
         sortRecent,
         setFilters,
         items,
-        t,
     } = props;
+
+    const { t } = useTranslation("common");
+    function translateMe(word) {
+        return t(word);
+    }
 
     function itemlocation(location) {
         const filteredLocs = items?.filter((item) => {
@@ -54,7 +58,7 @@ const ButtonsComp = (props) => {
                     onBlur={() => setDropDown(false)}
                 >
                     <InnerDiv>
-                        <ButtonName>{t("Location")}</ButtonName>
+                        <ButtonName>{translateMe("Location")}</ButtonName>
                         {dropDown && (
                             <MenuList>
                                 {locationList?.map((location) => {
@@ -85,7 +89,7 @@ const ButtonsComp = (props) => {
                 </FilterButton>
                 <FilterButton onClick={sortRecent}>
                     <InnerDiv>
-                        <ButtonName>{t("Recent")}</ButtonName>
+                        <ButtonName>{translateMe("Recent")}</ButtonName>
 
                         <ButtonDetailDiv>
                             <ButtonIcon
@@ -101,7 +105,7 @@ const ButtonsComp = (props) => {
             <div>
                 {isAuthenticated && (
                     <Link href='/addToItem'>
-                        <AddItem>{t("Additem")}</AddItem>
+                        <AddItem>{translateMe("Additem")}</AddItem>
                     </Link>
                 )}
             </div>
@@ -109,4 +113,4 @@ const ButtonsComp = (props) => {
     );
 };
 
-export default withTranslation("common")(ButtonsComp);
+export default ButtonsComp;
