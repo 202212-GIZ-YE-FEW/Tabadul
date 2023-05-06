@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-16e8e6z"
+  className="css-apkfcd"
 >
   <div
     className="css-kp9m8d"
@@ -60,7 +60,7 @@ exports[`renders correctly 1`] = `
         className="css-18icqaw"
       >
         <a
-          className="css-8xe971"
+          className="css-0"
           href="#"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -89,7 +89,7 @@ exports[`renders correctly 1`] = `
           </a>
         </a>
         <a
-          className="css-8xe971"
+          className="css-0"
           href="#"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -118,7 +118,7 @@ exports[`renders correctly 1`] = `
           </a>
         </a>
         <a
-          className="css-8xe971"
+          className="css-0"
           href="#"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -147,7 +147,7 @@ exports[`renders correctly 1`] = `
           </a>
         </a>
         <a
-          className="css-8xe971"
+          className="css-0"
           href="#"
           onClick={[Function]}
           onMouseEnter={[Function]}

@@ -5,11 +5,11 @@ import {
     Footercss,
     Imgsocial,
     Imgsociallogo,
+    LinkSoial,
     PagesList,
     Section,
     Social,
     SocialLink,
-    LinkSoial,
 } from "./Footer.style";
 
 function Footer() {
