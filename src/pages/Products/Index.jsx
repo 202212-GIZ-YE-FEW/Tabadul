@@ -5,8 +5,11 @@ import Categories from "@/components/Categories";
 import ListedItems from "@/components/ListedItems/ListedItems";
 
 import { fetchItems } from "@/utils/firebase";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const ProductsItems = () => {
+    const { t } = useTranslation("common");
     const [selectedCategory, setSelectedCategory] = useState("ALL");
     const [hitRecent, setHitRecent] = useState(false);
     const [filters, setFilters] = useState();
@@ -65,3 +68,12 @@ const ProductsItems = () => {
 };
 
 export default ProductsItems;
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ["common", "footer"])),
+            // Will be passed to the page component as props
+        },
+    };
+}

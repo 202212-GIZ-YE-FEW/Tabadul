@@ -7,7 +7,8 @@ exports[`renders correctly 1`] = `
   <h1
     className="css-1e6uix8"
   >
-     Causes
+     
+    Causes
   </h1>
   <div
     className="css-1xa8qvg"
@@ -34,12 +35,12 @@ exports[`renders correctly 1`] = `
       <p
         className="css-99xlp1"
       >
-        Title
+        sustainability
       </p>
       <p
         className="css-7ho1qp"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        sustainabilityartical
       </p>
     </div>
     <div
@@ -64,12 +65,12 @@ exports[`renders correctly 1`] = `
       <p
         className="css-99xlp1"
       >
-        Title
+        cooperation
       </p>
       <p
         className="css-7ho1qp"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        cooperationartical
       </p>
     </div>
     <div
@@ -94,12 +95,12 @@ exports[`renders correctly 1`] = `
       <p
         className="css-99xlp1"
       >
-        Title
+        giving
       </p>
       <p
         className="css-7ho1qp"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        givingartical
       </p>
     </div>
   </div>

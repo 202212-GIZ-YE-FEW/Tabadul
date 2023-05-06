@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
       <h1
         className="css-2tqzfo"
       >
-        Log in
+        Login
       </h1>
       <form
         className="css-1foojvz"
@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
               className="css-qhtill"
             >
               <label
-                className="css-3vajn4"
+                className="css-hfmtd3"
               >
                 Email
               </label>
@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
                 id="email"
                 name="email"
                 onChange={[Function]}
-                placeholder="Enter your email"
+                placeholder="Enteryouremail"
                 type="text"
                 value=""
               />
@@ -47,14 +47,14 @@ exports[`renders correctly 1`] = `
               className="css-qhtill"
             >
               <label
-                className="css-3vajn4"
+                className="css-hfmtd3"
               >
                 Password
               </label>
               <input
                 className="css-kij3yw"
                 onChange={[Function]}
-                placeholder="Enter your password"
+                placeholder="Enteryourpassword"
                 type="password"
                 value=""
               />
@@ -68,7 +68,7 @@ exports[`renders correctly 1`] = `
                 onChange={[Function]}
                 type="checkbox"
               />
-              keep me logged in
+              keepmeloggedin
             </label>
             <button
               className="css-rrxtx3"
@@ -77,7 +77,7 @@ exports[`renders correctly 1`] = `
               <span
                 className="css-1rcc3de"
               >
-                Log in
+                Loginbutton
               </span>
             </button>
           </div>
@@ -92,25 +92,25 @@ exports[`renders correctly 1`] = `
           <p
             className="css-1l8i3w2"
           >
-            Do not have an account ?
+            Dothaveaccount
             <a
-              className="css-cvtfs1"
+              className="css-1hfqgw1"
               href="/Signup"
             >
-              Sign up
+              Signup
             </a>
           </p>
           <a
             className="css-7j3p8w"
             href="/Forgetpassword"
           >
-            Forget Password
+            ForgetPassword
           </a>
         </div>
         <p
           className="css-1al6cl5"
         >
-          Log in with
+          Loginwith
         </p>
         <div
           className="css-1mzzuk6"
@@ -124,7 +124,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/Facebook.svg"
+            src="/images/Facebook.svg"
             style={
               Object {
                 "color": "transparent",
@@ -141,7 +141,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/Instagram.svg"
+            src="/images/Instagram.svg"
             style={
               Object {
                 "color": "transparent",
@@ -158,7 +158,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/Linkedin.svg"
+            src="/images/Linkedin.svg"
             style={
               Object {
                 "color": "transparent",
@@ -181,7 +181,7 @@ exports[`renders correctly 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="./images/Signin.svg"
+        src="/images/Signin.svg"
         style={
           Object {
             "color": "transparent",

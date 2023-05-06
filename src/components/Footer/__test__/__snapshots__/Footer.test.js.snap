@@ -33,28 +33,28 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="css-1dbkwr8"
-        href="/Aboutus"
+        href="/undefined/Aboutus"
       >
-        About us
+        Aboutus
       </a>
       <a
         className="css-1dbkwr8"
-        href="/Blogs"
+        href="/undefined/Blogs"
       >
         Blogs
       </a>
       <a
         className="css-1dbkwr8"
-        href="/Products"
+        href="/undefined/Products"
       >
-        Listed items
+        Products
       </a>
     </div>
     <div
       className="css-xvkl1c"
     >
       <p>
-        Contact Us
+        ContactUs
       </p>
       <div
         className="css-18icqaw"
@@ -152,10 +152,10 @@ exports[`renders correctly 1`] = `
         Address
       </p>
       <p>
-        street 01,07
+        street
       </p>
       <p>
-        Yemen, Sanaa
+        YemenSanaa
       </p>
     </div>
   </div>

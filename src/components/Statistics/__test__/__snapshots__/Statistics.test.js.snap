@@ -63,7 +63,7 @@ Array [
         <p
           className="css-3011nz"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p1
         </p>
       </div>
       <div
@@ -94,7 +94,7 @@ Array [
         <p
           className="css-3011nz"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p2
         </p>
       </div>
       <div
@@ -125,7 +125,7 @@ Array [
         <p
           className="css-3011nz"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p3
         </p>
       </div>
       <div
@@ -151,12 +151,12 @@ Array [
         <h2
           className="css-1gystw5"
         >
-          Fact
+          fact
         </h2>
         <p
           className="css-3011nz"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p4
         </p>
       </div>
     </div>

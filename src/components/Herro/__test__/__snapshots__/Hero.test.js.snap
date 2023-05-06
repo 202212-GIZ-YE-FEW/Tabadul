@@ -19,14 +19,14 @@ exports[`renders correctly 1`] = `
           <p
             className="css-y41u20"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            herosectiontext
           </p>
         </div>
         <button
           className="css-thbdpf"
           onClick={[Function]}
         >
-           Donate Now
+          DonateNow
         </button>
       </div>
       <img
