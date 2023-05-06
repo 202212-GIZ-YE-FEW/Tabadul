@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -11,10 +11,14 @@ import {
     Title,
 } from "./causes.styled";
 
-const Causes = ({ t }) => {
+const Causes = () => {
+    const { t } = useTranslation("causes");
+    function translateMe(word) {
+        return t(word);
+    }
     return (
         <CausesContainer>
-            <CausesWord> {t("Causes")}</CausesWord>
+            <CausesWord> {translateMe("Causes")}</CausesWord>
             <ThreeCausesDiv>
                 <SingleCause>
                     <Image
@@ -51,4 +55,4 @@ const Causes = ({ t }) => {
     );
 };
 
-export default withTranslation("causes")(Causes);
+export default Causes;

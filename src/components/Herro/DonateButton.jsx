@@ -1,13 +1,17 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { useRouter } from "next/router";
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 
 import { auth } from "@/utils/firebase";
 
 import { HeroButton } from "./hero.style";
 
-const DonateButton = ({ t }) => {
+const DonateButton = () => {
+    const { t } = useTranslation("hero");
+    function translateMe(word) {
+        return t(word);
+    }
     const route = useRouter();
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -30,4 +34,4 @@ const DonateButton = ({ t }) => {
     return <HeroButton onClick={handleclick}>{t("DonateNow")}</HeroButton>;
 };
 
-export default withTranslation("hero")(DonateButton);
+export default DonateButton;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -17,7 +17,11 @@ import StatisticImage from "../../assets/Image/pyramid_chart.svg";
 import StatisticsContainerImage from "../../assets/Image/StatisticsContainer.svg";
 import StatisticImageFifth from "../../assets/Image/Vector.svg";
 
-function Statistics({ t }) {
+function Statistics() {
+    const { t } = useTranslation("statistics");
+    function translateMe(word) {
+        return t(word);
+    }
     return (
         <>
             <StatisticsContainer>
@@ -77,4 +81,4 @@ function Statistics({ t }) {
     );
 }
 
-export default withTranslation("statistics")(Statistics);
+export default Statistics;

@@ -1,11 +1,15 @@
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React, { useEffect, useState } from "react";
 
 import { CardLink } from "../ListedItems/ListedItems.styled";
 import { Cards, Header, Line } from "../PopularItems/PopularItems.styled";
 import Card from "../Card/Card";
 
-function PopularItemsSection({ items, t }) {
+function PopularItemsSection({ items }) {
+    const { t } = useTranslation("common");
+    function translateMe(word) {
+        return t(word);
+    }
     const [width, setWidth] = useState(1791);
 
     useEffect(() => {
@@ -32,7 +36,7 @@ function PopularItemsSection({ items, t }) {
     return (
         <div>
             <div style={{ position: "relative", top: "-90px" }}>
-                <Header>{t("PopularItems")}</Header>
+                <Header>{translateMe("PopularItems")}</Header>
                 <Cards>
                     {items?.slice(0, limitProductsNumber()).map((item) => {
                         return (
@@ -55,4 +59,4 @@ function PopularItemsSection({ items, t }) {
     );
 }
 
-export default withTranslation("common")(PopularItemsSection);
+export default PopularItemsSection;

@@ -1,4 +1,4 @@
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React, { useState } from "react";
 
 import {
@@ -28,7 +28,11 @@ import { auth, db } from "@/utils/firebase";
 import { useRouter } from "next/router";
 import { addDoc, collection } from "firebase/firestore";
 
-function Signup({ t }) {
+function Signup() {
+    const { t } = useTranslation("signup");
+    function translateMe(word) {
+        return t(word);
+    }
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
@@ -242,4 +246,4 @@ function Signup({ t }) {
     );
 }
 
-export default withTranslation("signup")(Signup);
+export default Signup;

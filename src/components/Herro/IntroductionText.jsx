@@ -1,12 +1,17 @@
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 
 import { HeroText, HeroTextContainer } from "./hero.style";
-const IntroductionText = ({ t }) => {
+
+const IntroductionText = () => {
+    const { t } = useTranslation("hero");
+    function translateMe(word) {
+        return t(word);
+    }
     return (
         <HeroTextContainer>
-            <HeroText>{t("herosectiontext")}</HeroText>
+            <HeroText>{translateMe("herosectiontext")}</HeroText>
         </HeroTextContainer>
     );
 };
 
-export default withTranslation("hero")(IntroductionText);
+export default IntroductionText;

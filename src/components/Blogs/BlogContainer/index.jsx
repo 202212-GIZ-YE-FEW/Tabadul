@@ -1,4 +1,4 @@
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import { CardLink } from "@/components/ListedItems/ListedItems.styled";
@@ -8,10 +8,15 @@ import { Header } from "./BlogContainer.styled";
 import SingleBlogCard from "../SingleBlogCard";
 import { BlogCard } from "../SingleBlogCard/SingleBlogCard.styled";
 
-const BlogContainer = ({ blogs, t }) => {
+const BlogContainer = ({ blogs }) => {
+    const { t } = useTranslation("common");
+    function translateMe(word) {
+        return t(word);
+    }
+
     return (
         <>
-            <Header>{t("blogs")}</Header>
+            <Header>{translateMe("blogs")}</Header>
             <BlogCard>
                 {blogs?.slice(0, 4).map((blog) => {
                     return (
@@ -31,4 +36,4 @@ const BlogContainer = ({ blogs, t }) => {
     );
 };
 
-export default withTranslation("common")(BlogContainer);
+export default BlogContainer;
