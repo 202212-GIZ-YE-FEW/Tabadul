@@ -1,4 +1,4 @@
-import { withTranslation } from "next-i18next";
+import { useTranslation, withTranslation } from "next-i18next";
 import React, { useEffect, useState } from "react";
 
 import {
@@ -49,7 +49,12 @@ import Router from "next/router";
 import Image from "next/image";
 import thumbnail from "../../../public/thumbnails/default-image.png";
 
-function AddItem({ categoriesList, locationList, t }) {
+function AddItem({ categoriesList, locationList }) {
+    const { t } = useTranslation("addItem");
+    function translateMe(word) {
+        return t(word);
+    }
+
     const [imagesList, setImagesList] = useState([]);
     const [errorMsg, setErrorMsg] = useState({
         title: "",
@@ -194,20 +199,20 @@ function AddItem({ categoriesList, locationList, t }) {
 
     return (
         <Pagecontainer>
-            <ItemHeader>{t("AddItem")} </ItemHeader>
+            <ItemHeader>{translateMe("AddItem")} </ItemHeader>
             <Formcontainer>
                 <FormItem method='post' onSubmit={addto}>
                     <ItemInput>
                         <LabelDiv>
-                            <ItemTitle>{t("Title")}</ItemTitle>
+                            <ItemTitle>{translateMe("Title")}</ItemTitle>
                             {errorMsg.title && (
                                 <ErrorLabel errorMsg={errorMsg}>
-                                    {t("TitleisRequired")}
+                                    {translateMe("TitleisRequired")}
                                 </ErrorLabel>
                             )}
                         </LabelDiv>
                         <TitleInput
-                            placeholder={t("titlePlaceholder")}
+                            placeholder={translateMe("titlePlaceholder")}
                             type='text'
                             name='title'
                             onChange={handleChange}
@@ -215,21 +220,23 @@ function AddItem({ categoriesList, locationList, t }) {
                     </ItemInput>
                     <ItemInput>
                         <LabelDiv>
-                            <ItemCatogry>{t("Catogry")}</ItemCatogry>
+                            <ItemCatogry>{translateMe("Catogry")}</ItemCatogry>
                             {errorMsg.category && (
                                 <ErrorLabel errorMsg={errorMsg}>
-                                    {t("CategoryisRequired")}
+                                    {translateMe("CategoryisRequired")}
                                 </ErrorLabel>
                             )}
                         </LabelDiv>
                         <CatogryInput
-                            placeholder={t("Selectcatogryplaceholder")}
+                            placeholder={translateMe(
+                                "Selectcatogryplaceholder"
+                            )}
                             type='dropdown'
                             name='category'
                             onChange={handleSelect}
                         >
                             <Selectoption disabled selected>
-                                {t("Selectcatogry")}
+                                {translateMe("Selectcatogry")}
                             </Selectoption>
                             {categoriesList?.map((cate) => {
                                 return (
@@ -247,13 +254,13 @@ function AddItem({ categoriesList, locationList, t }) {
                             <ItemLocation>{t("Location")}</ItemLocation>
                             {errorMsg.location && (
                                 <ErrorLabel errorMsg={errorMsg}>
-                                    {t("LocationisRequired")}
+                                    {translateMe("LocationisRequired")}
                                 </ErrorLabel>
                             )}
                         </LabelDiv>
                         <LocationInput name='location' onChange={handleSelect}>
                             <Locationoption disabled selected>
-                                {t("SelectLocation")}
+                                {translateMe("SelectLocation")}
                             </Locationoption>
                             {locationList?.map((location) => {
                                 return (
@@ -273,16 +280,18 @@ function AddItem({ categoriesList, locationList, t }) {
                     <ItemInput>
                         <LabelDiv>
                             <ItemDescription>
-                                {t("Description")}
+                                {translateMe("Description")}
                             </ItemDescription>
                             {errorMsg.description && (
                                 <ErrorLabel errorMsg={errorMsg}>
-                                    {t("DescriptionisRequired")}
+                                    {translateMe("DescriptionisRequired")}
                                 </ErrorLabel>
                             )}
                         </LabelDiv>
                         <DescriptionInput
-                            placeholder={t("DescriptionItemplaceholder")}
+                            placeholder={translateMe(
+                                "DescriptionItemplaceholder"
+                            )}
                             rows='10'
                             cols='105'
                             name='description'
@@ -290,7 +299,9 @@ function AddItem({ categoriesList, locationList, t }) {
                         />
                     </ItemInput>
                     <ItemImageInput>
-                        <Itemupload>{t("UploadPhotossection")}</Itemupload>
+                        <Itemupload>
+                            {translateMe("UploadPhotossection")}
+                        </Itemupload>
                         <ImagesDiv>
                             {imagesList.length === 0 ? (
                                 <UploadContainer>
@@ -303,18 +314,20 @@ function AddItem({ categoriesList, locationList, t }) {
 
                                     <LabelDiv>
                                         <Uploadspan>
-                                            {t("UploadPhotos")}
+                                            {translateMe("UploadPhotos")}
                                         </Uploadspan>
                                         {errorMsg.image && (
                                             <ErrorLabel errorMsg={errorMsg}>
-                                                {t("photosareRequired")}
+                                                {translateMe(
+                                                    "photosareRequired"
+                                                )}
                                             </ErrorLabel>
                                         )}
                                     </LabelDiv>
                                     <UploadInput
                                         type='file'
                                         name='image'
-                                        placeholder={t(
+                                        placeholder={translateMe(
                                             "UploadPhotosplaceholder"
                                         )}
                                         onChange={handleImageFile}
@@ -359,7 +372,7 @@ function AddItem({ categoriesList, locationList, t }) {
                                                         <ErrorLabel
                                                             errorMsg={errorMsg}
                                                         >
-                                                            {t(
+                                                            {translateMe(
                                                                 "photosareRequired"
                                                             )}
                                                         </ErrorLabel>
@@ -388,11 +401,11 @@ function AddItem({ categoriesList, locationList, t }) {
                             imagesList={imagesList.length === 0 ? false : true}
                             type='submit'
                         >
-                            <Confirmspan>{t("Confirm")}</Confirmspan>
+                            <Confirmspan>{translateMe("Confirm")}</Confirmspan>
                         </ConfirmButton>
                         <Link href='/listOfItems'>
                             <CancelButton type='submit'>
-                                <Cancelspan>{t("Cancel")}</Cancelspan>
+                                <Cancelspan>{translateMe("Cancel")}</Cancelspan>
                             </CancelButton>
                         </Link>
                     </Buttoncontainer>
@@ -402,4 +415,4 @@ function AddItem({ categoriesList, locationList, t }) {
     );
 }
 
-export default withTranslation("addItem")(AddItem);
+export default AddItem;

@@ -78,11 +78,11 @@ exports[`renders correctly 1`] = `
           </p>
           <p>
             phone
-              : 
+             : 
           </p>
           <p>
             Email
-              : 
+             : 
           </p>
         </div>
       </div>

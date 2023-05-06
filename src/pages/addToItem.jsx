@@ -36,7 +36,11 @@ export default AddToItem;
 export async function getStaticProps({ locale }) {
     return {
         props: {
-            ...(await serverSideTranslations(locale, ["addItem"])),
+            ...(await serverSideTranslations(locale, [
+                "addItem",
+                "common",
+                "footer",
+            ])),
             // Will be passed to the page component as props
         },
     };
