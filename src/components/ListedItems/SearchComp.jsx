@@ -1,17 +1,19 @@
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import { SearchDiv, SearchIcon, SearchInput } from "./ListedItems.styled";
-import { useRouter } from "next/router";
 
 const SearchComp = ({ handleInputChange }) => {
-    const router = useRouter();
-
+    const { t } = useTranslation("common");
+    function translateMe(word) {
+        return t(word);
+    }
     return (
         <SearchDiv>
             <SearchInput
                 type='text'
                 onChange={(e) => handleInputChange(e)}
-                placeholder={router.locale === "ar" ? "البحث" : "Search"}
+                placeholder={translateMe("Searchplaceholder")}
             />
             <SearchIcon
                 src='/SearchFilterIcons/Search.svg'

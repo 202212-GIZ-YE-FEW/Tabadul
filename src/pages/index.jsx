@@ -1,5 +1,4 @@
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import Link from "next/link";
+import { onAuthStateChanged } from "firebase/auth";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
@@ -63,7 +62,13 @@ export async function getStaticProps({ locale }) {
     const blogs = await fetchBlogs();
     return {
         props: {
-            ...(await serverSideTranslations(locale, ["common"])),
+            ...(await serverSideTranslations(locale, [
+                "common",
+                "hero",
+                "causes",
+                "footer",
+                "statistics",
+            ])),
             // Will be passed to the page component as props
             items,
             blogs,

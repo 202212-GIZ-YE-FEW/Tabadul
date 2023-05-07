@@ -1,3 +1,4 @@
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -11,8 +12,15 @@ import {
     Social,
     SocialLink,
 } from "./Footer.style";
+import { useRouter } from "next/router";
 
 function Footer() {
+    const router = useRouter();
+    const { t } = useTranslation("footer");
+    const translateMe = (word) => {
+        return t(word);
+    };
+
     return (
         <Footercss>
             <Container>
@@ -26,13 +34,19 @@ function Footer() {
                 </Section>
 
                 <Section>
-                    <PagesList href='/Aboutus'>About us</PagesList>
-                    <PagesList href='/Blogs'>Blogs</PagesList>
-                    <PagesList href='/Products'>Products</PagesList>
+                    <PagesList href={`/${router.locale}/Aboutus`}>
+                        {translateMe("Aboutus")}
+                    </PagesList>
+                    <PagesList href={`/${router.locale}/Blogs`}>
+                        {translateMe("Blogs")}
+                    </PagesList>
+                    <PagesList href={`/${router.locale}/Products`}>
+                        {translateMe("Products")}
+                    </PagesList>
                 </Section>
 
                 <Section>
-                    <p>Contact Us</p>
+                    <p>{translateMe("ContactUs")}</p>
 
                     <Social>
                         <LinkSoial href='#'>
@@ -79,9 +93,9 @@ function Footer() {
                 </Section>
 
                 <Section>
-                    <p>Address</p>
-                    <p>street 01,07</p>
-                    <p>Yemen, Sanaa</p>
+                    <p>{translateMe("Address")}</p>
+                    <p>{translateMe("street")}</p>
+                    <p>{translateMe("YemenSanaa")}</p>
                 </Section>
             </Container>
         </Footercss>

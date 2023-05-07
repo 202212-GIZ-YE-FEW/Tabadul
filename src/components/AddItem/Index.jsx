@@ -1,3 +1,4 @@
+import { useTranslation, withTranslation } from "next-i18next";
 import React, { useEffect, useState } from "react";
 
 import {
@@ -7,32 +8,32 @@ import {
     CatogryInput,
     ConfirmButton,
     Confirmspan,
+    DeleteIcon,
     DescriptionInput,
+    DisplayContainer,
+    ErrorLabel,
     Formcontainer,
     FormItem,
+    ImagesDiv,
     ItemCatogry,
     ItemDescription,
     ItemHeader,
+    ItemImage,
+    ItemImageInput,
     ItemInput,
     ItemLocation,
     ItemTitle,
     Itemupload,
+    LabelDiv,
     LocationInput,
     Locationoption,
     Pagecontainer,
+    PlusDiv,
     Selectoption,
     TitleInput,
     UploadContainer,
     UploadInput,
     Uploadspan,
-    ItemImageInput,
-    ItemImage,
-    LabelDiv,
-    ErrorLabel,
-    ImagesDiv,
-    PlusDiv,
-    DeleteIcon,
-    DisplayContainer,
 } from "./AddItem.styled";
 import { addItem, auth } from "@/utils/firebase";
 import {
@@ -43,12 +44,17 @@ import {
     uploadBytesResumable,
 } from "firebase/storage";
 import { storage } from "@/utils/firebase";
-import thumbnail from "../../../public/thumbnails/default-image.png";
 import Link from "next/link";
 import Router from "next/router";
 import Image from "next/image";
+import thumbnail from "../../../public/thumbnails/default-image.png";
 
 function AddItem({ categoriesList, locationList }) {
+    const { t } = useTranslation("addItem");
+    function translateMe(word) {
+        return t(word);
+    }
+
     const [imagesList, setImagesList] = useState([]);
     const [errorMsg, setErrorMsg] = useState({
         title: "",
@@ -193,20 +199,20 @@ function AddItem({ categoriesList, locationList }) {
 
     return (
         <Pagecontainer>
-            <ItemHeader>Add Item </ItemHeader>
+            <ItemHeader>{translateMe("AddItem")} </ItemHeader>
             <Formcontainer>
                 <FormItem method='post' onSubmit={addto}>
                     <ItemInput>
                         <LabelDiv>
-                            <ItemTitle>Title</ItemTitle>
+                            <ItemTitle>{translateMe("Title")}</ItemTitle>
                             {errorMsg.title && (
                                 <ErrorLabel errorMsg={errorMsg}>
-                                    Title is Required
+                                    {translateMe("TitleisRequired")}
                                 </ErrorLabel>
                             )}
                         </LabelDiv>
                         <TitleInput
-                            placeholder='Placeholder'
+                            placeholder={translateMe("titlePlaceholder")}
                             type='text'
                             name='title'
                             onChange={handleChange}
@@ -214,29 +220,27 @@ function AddItem({ categoriesList, locationList }) {
                     </ItemInput>
                     <ItemInput>
                         <LabelDiv>
-                            <ItemCatogry>Catogry</ItemCatogry>
+                            <ItemCatogry>{translateMe("Catogry")}</ItemCatogry>
                             {errorMsg.category && (
                                 <ErrorLabel errorMsg={errorMsg}>
-                                    Category is Required
+                                    {translateMe("CategoryisRequired")}
                                 </ErrorLabel>
                             )}
                         </LabelDiv>
                         <CatogryInput
-                            placeholder='Select catogry'
+                            placeholder={translateMe(
+                                "Selectcatogryplaceholder"
+                            )}
                             type='dropdown'
                             name='category'
                             onChange={handleSelect}
                         >
                             <Selectoption disabled selected>
-                                Select catogry
+                                {translateMe("Selectcatogry")}
                             </Selectoption>
                             {categoriesList?.map((cate) => {
                                 return (
-                                    <Selectoption
-                                        key={cate.id}
-                                        id={cate.id}
-                                        value={JSON.stringify(cate)}
-                                    >
+                                    <Selectoption key={cate.id} id={cate.id}>
                                         {Router.locale === "ar"
                                             ? cate.name_ar
                                             : cate.name}
@@ -247,16 +251,16 @@ function AddItem({ categoriesList, locationList }) {
                     </ItemInput>
                     <ItemInput>
                         <LabelDiv>
-                            <ItemLocation>Location</ItemLocation>
+                            <ItemLocation>{t("Location")}</ItemLocation>
                             {errorMsg.location && (
                                 <ErrorLabel errorMsg={errorMsg}>
-                                    Location is Required
+                                    {translateMe("LocationisRequired")}
                                 </ErrorLabel>
                             )}
                         </LabelDiv>
                         <LocationInput name='location' onChange={handleSelect}>
                             <Locationoption disabled selected>
-                                Select Location
+                                {translateMe("SelectLocation")}
                             </Locationoption>
                             {locationList?.map((location) => {
                                 return (
@@ -275,15 +279,19 @@ function AddItem({ categoriesList, locationList }) {
                     </ItemInput>
                     <ItemInput>
                         <LabelDiv>
-                            <ItemDescription>Description</ItemDescription>
+                            <ItemDescription>
+                                {translateMe("Description")}
+                            </ItemDescription>
                             {errorMsg.description && (
                                 <ErrorLabel errorMsg={errorMsg}>
-                                    Description is Required
+                                    {translateMe("DescriptionisRequired")}
                                 </ErrorLabel>
                             )}
                         </LabelDiv>
                         <DescriptionInput
-                            placeholder='Description Item'
+                            placeholder={translateMe(
+                                "DescriptionItemplaceholder"
+                            )}
                             rows='10'
                             cols='105'
                             name='description'
@@ -291,7 +299,9 @@ function AddItem({ categoriesList, locationList }) {
                         />
                     </ItemInput>
                     <ItemImageInput>
-                        <Itemupload>Upload Photos</Itemupload>
+                        <Itemupload>
+                            {translateMe("UploadPhotossection")}
+                        </Itemupload>
                         <ImagesDiv>
                             {imagesList.length === 0 ? (
                                 <UploadContainer>
@@ -303,17 +313,23 @@ function AddItem({ categoriesList, locationList }) {
                                     />
 
                                     <LabelDiv>
-                                        <Uploadspan>Upload Photos</Uploadspan>
+                                        <Uploadspan>
+                                            {translateMe("UploadPhotos")}
+                                        </Uploadspan>
                                         {errorMsg.image && (
                                             <ErrorLabel errorMsg={errorMsg}>
-                                                photos are Required
+                                                {translateMe(
+                                                    "photosareRequired"
+                                                )}
                                             </ErrorLabel>
                                         )}
                                     </LabelDiv>
                                     <UploadInput
                                         type='file'
                                         name='image'
-                                        placeholder='Upload Photos'
+                                        placeholder={translateMe(
+                                            "UploadPhotosplaceholder"
+                                        )}
                                         onChange={handleImageFile}
                                         multiple
                                     />
@@ -356,7 +372,9 @@ function AddItem({ categoriesList, locationList }) {
                                                         <ErrorLabel
                                                             errorMsg={errorMsg}
                                                         >
-                                                            photos are Required
+                                                            {translateMe(
+                                                                "photosareRequired"
+                                                            )}
                                                         </ErrorLabel>
                                                     )}
                                                 </LabelDiv>
@@ -383,11 +401,11 @@ function AddItem({ categoriesList, locationList }) {
                             imagesList={imagesList.length === 0 ? false : true}
                             type='submit'
                         >
-                            <Confirmspan>Confirm</Confirmspan>
+                            <Confirmspan>{translateMe("Confirm")}</Confirmspan>
                         </ConfirmButton>
                         <Link href='/listOfItems'>
                             <CancelButton type='submit'>
-                                <Cancelspan>Cancel</Cancelspan>
+                                <Cancelspan>{translateMe("Cancel")}</Cancelspan>
                             </CancelButton>
                         </Link>
                     </Buttoncontainer>

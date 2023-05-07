@@ -1,3 +1,4 @@
+import { withTranslation } from "next-i18next";
 import React from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,10 +13,10 @@ import {
     PartnersContainer,
 } from "./Partners.styled";
 import sevenUp from "../../assets/Image/sevenup.svg";
-function Partners() {
+function Partners({ t }) {
     return (
         <PartnersContainer>
-            <Header>Our Partners</Header>
+            <Header>{t("OurPartners")}</Header>
             <Container>
                 <Swiper
                     breakpoints={{
@@ -71,4 +72,4 @@ function Partners() {
     );
 }
 
-export default Partners;
+export default withTranslation("common")(Partners);

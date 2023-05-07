@@ -26,6 +26,8 @@ import {
 
 import lockphoto from "../../assets/Image/lock.svg";
 import Signin from "../../assets/Image/Signin.svg";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 const onSubmit = async (values) => {
     const auth = getAuth();
     await sendPasswordResetEmail(auth, values.email)
@@ -49,6 +51,7 @@ const onSubmit = async (values) => {
 };
 
 function Forgetpass() {
+    const { t } = useTranslation("forgetPassword");
     const {
         values,
         errors,
@@ -73,17 +76,14 @@ function Forgetpass() {
                         width={200}
                         height={200}
                     />
-                    <ForgetHeading>Trouble Logging In ?</ForgetHeading>
-                    <ForgetText>
-                        Enter your email and we will send you a link to get back
-                        into your account
-                    </ForgetText>
+                    <ForgetHeading>{t("TroubleLoggingIn")}</ForgetHeading>
+                    <ForgetText>{t("EnterEmail")}</ForgetText>
                     <Forgetform onSubmit={handleSubmit}>
                         <ForgetInput
                             id='email'
                             name='email'
                             type='email'
-                            placeholder='Email'
+                            placeholder={t("EmailPlaceHolder")}
                             onChange={handleChange}
                             value={values.email}
                             onBlur={handleBlur}
@@ -93,12 +93,14 @@ function Forgetpass() {
                             <ForgetErorrs>{errors.email}</ForgetErorrs>
                         )}
                         <BtnResetPass type='submit' disabled={isSubmitting}>
-                            Reset Password
+                            {t("ResetPassword")}
                         </BtnResetPass>
                     </Forgetform>
                     <BackToLogin>
-                        Return to{" "}
-                        <LoginReturn href='/Signin'>Login</LoginReturn>
+                        {t("ReturnTo")}
+                        <LoginReturn href='/Signin'>{` ${t(
+                            "Login"
+                        )}`}</LoginReturn>
                     </BackToLogin>
                 </TextContent>
                 <ImgContent>
@@ -115,3 +117,16 @@ function Forgetpass() {
 }
 
 export default Forgetpass;
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                "forgetPassword",
+                "common",
+                "footer",
+            ])),
+            // Will be passed to the page component as props
+        },
+    };
+}

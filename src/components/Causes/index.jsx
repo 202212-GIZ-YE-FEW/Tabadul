@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -11,9 +12,13 @@ import {
 } from "./causes.styled";
 
 const Causes = () => {
+    const { t } = useTranslation("causes");
+    function translateMe(word) {
+        return t(word);
+    }
     return (
         <CausesContainer>
-            <CausesWord> Causes</CausesWord>
+            <CausesWord> {translateMe("Causes")}</CausesWord>
             <ThreeCausesDiv>
                 <SingleCause>
                     <Image
@@ -22,12 +27,8 @@ const Causes = () => {
                         height={100}
                         alt='pic'
                     />
-                    <Title>Title</Title>
-                    <Paragraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </Paragraph>
+                    <Title>{t("sustainability")}</Title>
+                    <Paragraph>{t("sustainabilityartical")}</Paragraph>
                 </SingleCause>
                 <SingleCause>
                     <Image
@@ -36,12 +37,8 @@ const Causes = () => {
                         height={100}
                         alt='pic'
                     />
-                    <Title>Title</Title>
-                    <Paragraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </Paragraph>
+                    <Title>{t("cooperation")}</Title>
+                    <Paragraph>{t("cooperationartical")}</Paragraph>
                 </SingleCause>
                 <SingleCause>
                     <Image
@@ -50,12 +47,8 @@ const Causes = () => {
                         height={100}
                         alt='pic'
                     />
-                    <Title>Title</Title>
-                    <Paragraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </Paragraph>
+                    <Title>{t("giving")}</Title>
+                    <Paragraph>{t("givingartical")}</Paragraph>
                 </SingleCause>
             </ThreeCausesDiv>
         </CausesContainer>
