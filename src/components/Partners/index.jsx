@@ -1,6 +1,6 @@
 import { withTranslation } from "next-i18next";
 import React from "react";
-import { Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -13,6 +13,7 @@ import {
     PartnersContainer,
 } from "./Partners.styled";
 import sevenUp from "../../assets/Image/sevenup.svg";
+import shephersInc from "../../../public/images/railogo.svg";
 function Partners({ t }) {
     return (
         <PartnersContainer>
@@ -42,14 +43,17 @@ function Partners({ t }) {
                             slidesPerView: 4,
                         },
                     }}
-                    modules={[Navigation, Pagination]}
+                    modules={[Autoplay, Navigation, Pagination]}
                     spaceBetween={50}
                     slidesPerView={3}
                     navigation
                     pagination={{ clickable: true }}
+                    autoplay={{
+                        delay: 3000,
+                    }}
                 >
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={shephersInc} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <PartnerImage src={sevenUp} />
