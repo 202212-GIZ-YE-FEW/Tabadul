@@ -6,6 +6,7 @@ import {
     Footercss,
     Imgsocial,
     Imgsociallogo,
+    LinkSoial,
     PagesList,
     Section,
     Social,
@@ -48,41 +49,46 @@ function Footer() {
                     <p>{translateMe("ContactUs")}</p>
 
                     <Social>
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/facebook .svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/instagram (2).svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/linkedin (2).svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/share.svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/facebook .svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/instagram (2).svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/linkedin (2).svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/share.svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
                     </Social>
                 </Section>
 

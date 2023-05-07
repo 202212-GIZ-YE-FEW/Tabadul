@@ -1,16 +1,19 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
-
+import Link from "next/link";
 export const Footercss = styled.div`
     width: 100%;
     background-color: #33956d;
     color: #fff;
-    @media screen and (max-width: 700px) {
+
+    @media screen and (max-width: 768px) {
         position: relative;
         bottom: 0px;
+        text-align: center;
+        font-size: 24px;
     }
 `;
-
+export const LinkSoial = styled(Link)``;
 export const Container = styled.div`
     display: flex;
     padding: 3rem;
