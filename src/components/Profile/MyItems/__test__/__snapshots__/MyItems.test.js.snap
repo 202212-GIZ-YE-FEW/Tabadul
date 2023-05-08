@@ -11,11 +11,11 @@ Array [
     className="css-3y093p"
   >
     <div
-      className="css-1tlh4yt"
+      className="css-1e7ytot"
     >
       <img
         alt="Product Title"
-        className="css-ynrdlw"
+        className="css-1hjj5uy"
         data-nimg="1"
         decoding="async"
         height={40}
@@ -32,13 +32,13 @@ Array [
         width={40}
       />
       <span
-        className="css-jsqn8a"
+        className="css-18rthda"
       >
         Product Title
       </span>
       <img
         alt="Product Title"
-        className="css-1mhya18"
+        className="css-1cjlyra"
         data-nimg="1"
         decoding="async"
         height={40}
@@ -57,7 +57,7 @@ Array [
       />
       <img
         alt="Product Title"
-        className="css-1mhya18"
+        className="css-1cjlyra"
         data-nimg="1"
         decoding="async"
         height={40}
