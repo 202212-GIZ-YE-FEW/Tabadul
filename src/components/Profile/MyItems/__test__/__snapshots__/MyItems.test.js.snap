@@ -1,87 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-Array [
-  <h1
-    className="css-127jica"
-  >
-    My Items
-  </h1>,
-  <div
-    className="css-3y093p"
-  >
-    <div
-      className="css-1e7ytot"
-    >
-      <img
-        alt="RealtedIcon"
-        className="css-1hjj5uy"
-        data-nimg="1"
-        decoding="async"
-        height={100}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src=""
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={100}
-      />
-      <span
-        className="css-18rthda"
-      />
-      <a
-        href="/Updateproduct"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
-      >
-        <img
-          alt="pen Icon"
-          className="css-1cjlyra"
-          data-nimg="1"
-          decoding="async"
-          height={40}
-          loading="lazy"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-          srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-          style={
-            Object {
-              "color": "transparent",
-            }
-          }
-          width={40}
-        />
-      </a>
-      <img
-        alt="Delete Icon"
-        className="css-1cjlyra"
-        data-nimg="1"
-        decoding="async"
-        height={40}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
-          }
-        }
-        width={40}
-      />
-    </div>
-  </div>,
-]
+<h1
+  className="css-127jica"
+>
+  My Items
+</h1>
 `;

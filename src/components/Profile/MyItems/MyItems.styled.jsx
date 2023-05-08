@@ -68,6 +68,7 @@ export const Icon = styled(Image)`
     align-items: center;
     justify-content: center; */
     margin: 35px;
+    cursor: pointer;
     @media screen and (max-width: 768px) {
         margin: 0px;
         width: 28px;

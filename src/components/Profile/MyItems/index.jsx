@@ -1,6 +1,7 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import swal from "sweetalert";
 
 import { auth, db } from "@/utils/firebase";
 
@@ -36,24 +37,47 @@ const MyItems = () => {
         };
         getallitems();
     }, []);
+    const deleteProduct = async (id) => {
+        const productDoc = doc(db, "items", id);
+        await deleteDoc(productDoc);
+        try {
+            swal({
+                title: "Product Detected!",
+                text: "Product has been Detected",
+                icon: "success",
+                button: "Cancel",
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    };
     return (
         <>
             <Header>My Items</Header>
-            <Container>
-                <ItemCard>
-                    <ItemImage
-                        src={relateditems?.image[0].url}
-                        alt='RealtedIcon'
-                        width={100}
-                        height={100}
-                    />
-                    <Text>{relateditems?.title}</Text>
-                    <Link href='/Updateproduct' style={{ marginLeft: "auto" }}>
-                        <Icon src={penIcon} alt='pen Icon' />
-                    </Link>
-                    <Icon src={deleteIcon} alt='Delete Icon' />
-                </ItemCard>
-            </Container>
+            {relateditems?.length > 0 && (
+                <Container>
+                    <ItemCard>
+                        <ItemImage
+                            src={relateditems?.image[0].url}
+                            alt='RealtedIcon'
+                            width={100}
+                            height={100}
+                        />
+                        <Text>{relateditems?.title}</Text>
+                        <Link
+                            href='/Updateproduct'
+                            style={{ marginLeft: "auto" }}
+                        >
+                            <Icon src={penIcon} alt='pen Icon' />
+                        </Link>
+                        <Icon
+                            src={deleteIcon}
+                            alt='Delete Icon'
+                            onClick={() => deleteProduct(relateditems.id)}
+                        />
+                    </ItemCard>
+                </Container>
+            )}
         </>
     );
 };
