@@ -54,7 +54,7 @@ const MyItems = () => {
     return (
         <>
             <Header>My Items</Header>
-            {relateditems?.length > 0 && (
+            {relateditems && (
                 <Container>
                     <ItemCard>
                         <ItemImage
