@@ -2,18 +2,17 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1j90myt"
+  className="css-il3fo8"
 >
   <div
     className="css-omk73n"
   >
     <img
-      alt="Profile Image"
-      className="css-13rhrcf"
+      alt="ProfileImage"
+      className="css-vn9ci3"
       data-nimg="1"
       decoding="async"
       height={222}
-      loading="lazy"
       onError={[Function]}
       onLoad={[Function]}
       src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
@@ -28,53 +27,44 @@ exports[`renders correctly 1`] = `
     <span
       className="css-35o1u0"
     >
-      Name
        
-      Surname
     </span>
     <span
       className="css-35o1u0"
-    >
-      Sana'a
-    </span>
+    />
   </div>
   <div
-    className="css-lj1f2b"
+    className="css-qacvvt"
   >
     <div
-      className="css-4dleh3"
+      className="css-1yw0kxu"
     >
       <span
         className="css-35o1u0"
       >
-        Name
          
-        Surname
       </span>
       <span
         className="css-35o1u0"
-      >
-        Sana'a
-      </span>
+      />
     </div>
     <div
-      className="css-4dleh3"
+      className="css-1yw0kxu"
     >
       <span
         className="css-35o1u0"
       >
         Phone:
-        777888999
       </span>
       <span
         className="css-35o1u0"
       >
         Email: 
-        test@example.com
+        ..
       </span>
     </div>
     <div
-      className="css-4dleh3"
+      className="css-1yw0kxu"
     >
       <span
         className="css-35o1u0"
@@ -84,25 +74,33 @@ exports[`renders correctly 1`] = `
       </span>
     </div>
     <button
-      className="css-1h6mr8"
+      className="css-1oi2fkr"
     >
-      <img
-        alt="Edit"
-        data-nimg="1"
-        decoding="async"
-        height={40}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-        style={
-          Object {
-            "color": "transparent",
+      <a
+        href="/Updateuser"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <img
+          alt="Edit"
+          className="css-1oygifg"
+          data-nimg="1"
+          decoding="async"
+          height={40}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style={
+            Object {
+              "color": "transparent",
+            }
           }
-        }
-        width={40}
-      />
+          width={40}
+        />
+      </a>
     </button>
   </div>
 </div>

@@ -29,6 +29,13 @@ export const ItemCard = styled.div`
     border-radius: 46px;
     width: 1458px;
     height: 104.63px;
+    max-width: 100%;
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        align-items: center;
+        padding: 3px 14px 0px 2px;
+        justify-content: space-between;
+    }
 `;
 
 export const ItemImage = styled(Image)`
@@ -37,6 +44,11 @@ export const ItemImage = styled(Image)`
     border-radius: 50%;
     margin-right: 50px;
     padding: 5px;
+    @media screen and (max-width: 768px) {
+        margin-right: 20px;
+        height: 73px;
+        width: 48px;
+    }
 `;
 
 export const Text = styled.span`
@@ -46,6 +58,9 @@ export const Text = styled.span`
     line-height: 20px;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
 `;
 
 export const Icon = styled(Image)`
@@ -53,4 +68,11 @@ export const Icon = styled(Image)`
     align-items: center;
     justify-content: center; */
     margin: 35px;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+        margin: 0px;
+        width: 28px;
+        height: 29px;
+        margin-left: 20px;
+    }
 `;

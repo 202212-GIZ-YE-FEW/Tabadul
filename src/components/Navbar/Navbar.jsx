@@ -167,6 +167,13 @@ function Navbar() {
                                             </Lanlink>
                                         </LinkDiv>
                                     )}
+                                    {isAuthenticated && (
+                                        <LinkDiv>
+                                            <Lanlink href='/Profile'>
+                                                Profile
+                                            </Lanlink>
+                                        </LinkDiv>
+                                    )}
                                 </Dropdowncontent>
                             )}
                         </Dropdown>
