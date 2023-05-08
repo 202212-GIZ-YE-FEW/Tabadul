@@ -1,10 +1,14 @@
-import Image from "next/image";
-import React from "react";
+import { collection, getDocs } from "firebase/firestore";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+
+import { auth, db } from "@/utils/firebase";
 
 import {
     Button,
     ImageSection,
     MainContainer,
+    PenImage,
     ProfileImg,
     Section,
     Text,
@@ -13,46 +17,67 @@ import {
 import Pen from "../../../../public/images/pen.svg";
 import ProfileImage from "../../../../public/images/ProfilePlaceholder.svg";
 
-const UserDetails = ({ user }) => {
+const UserDetails = () => {
     const localuser = {
-        fname: "Name",
-        surname: "Surname",
-        location: "Sana'a",
-        phone: "777888999",
-        email: "test@example.com",
         language: "En",
     };
+    const [currentuser, setCurrentUser] = useState();
+    const usersCollRef = collection(db, "users");
+    useEffect(() => {
+        const getalluser = async () => {
+            try {
+                const usersData = await getDocs(usersCollRef);
+                const usersDocs = usersData.docs
+                    .map((loc) => {
+                        return { ...loc.data(), id: loc.id };
+                    })
+                    .filter((ele) => {
+                        return ele.uid === auth.currentUser.uid;
+                    });
+                setCurrentUser(usersDocs[0]);
+            } catch (err) {
+                console.error(err);
+            }
+        };
+        getalluser();
+    }, []);
+
     return (
         <>
             <MainContainer>
                 <ImageSection>
                     <ProfileImg
                         src={ProfileImage}
-                        alt='Profile Image'
+                        alt='ProfileImage'
                         width={222}
                         height={222}
+                        priority
                     />
                     <Text>
-                        {localuser.fname} {localuser.surname}
+                        {currentuser?.name} {currentuser?.lname}
                     </Text>
-                    <Text>{localuser.location}</Text>
+                    <Text>{currentuser?.location}</Text>
                 </ImageSection>
                 <UserInfo>
                     <Section>
                         <Text>
-                            {localuser.fname} {localuser.surname}
+                            {currentuser?.name} {currentuser?.lname}
                         </Text>
-                        <Text>{localuser.location}</Text>
+                        <Text>{currentuser?.location}</Text>
                     </Section>
                     <Section>
-                        <Text>Phone:{localuser.phone}</Text>
-                        <Text>Email: {localuser.email}</Text>
+                        <Text>Phone:{currentuser?.phone}</Text>
+                        <Text>
+                            Email: {currentuser?.email.substring(0, 16)}..
+                        </Text>
                     </Section>
                     <Section>
                         <Text>Language: {localuser.language}</Text>
                     </Section>
                     <Button>
-                        <Image src={Pen} alt='Edit' />
+                        <Link href='/Updateuser'>
+                            <PenImage src={Pen} alt='Edit' />
+                        </Link>
                     </Button>
                 </UserInfo>
             </MainContainer>
