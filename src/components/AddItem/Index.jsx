@@ -240,7 +240,11 @@ function AddItem({ categoriesList, locationList }) {
                             </Selectoption>
                             {categoriesList?.map((cate) => {
                                 return (
-                                    <Selectoption key={cate.id} id={cate.id}>
+                                    <Selectoption
+                                        key={cate.id}
+                                        id={cate.id}
+                                        value={JSON.stringify(cate)}
+                                    >
                                         {Router.locale === "ar"
                                             ? cate.name_ar
                                             : cate.name}
