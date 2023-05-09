@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
 export const ErrorSection = styled.div`
-    background-color: #fff;
     position: relative;
 `;
 export const ErorrContainer = styled.div`

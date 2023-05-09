@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
       ...
     </p>
     <button
-      className="css-1e45nn1"
+      className="css-l0swh0"
     >
       <a
         href="Blogs/undefined"

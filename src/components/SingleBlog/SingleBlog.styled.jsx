@@ -126,9 +126,13 @@ export const BlogButton = styled.button`
     height: 49.16px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     & a {
         text-decoration: none;
         color: #fff;
+    }
+    &:hover {
+        background-color: #267548;
     }
     @media (min-width: 768px) and (max-width: 991px) {
         font-size: 22px;

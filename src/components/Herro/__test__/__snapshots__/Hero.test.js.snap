@@ -24,7 +24,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <button
-          className="css-thbdpf"
+          className="css-1nhme29"
           onClick={[Function]}
         >
           DonateNow

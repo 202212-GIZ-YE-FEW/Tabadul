@@ -13,6 +13,11 @@ import {
     PartnersContainer,
 } from "./Partners.styled";
 import sevenUp from "../../assets/Image/sevenup.svg";
+import recoded from "../../assets/Image/recoded.png";
+import shareshop from "../../assets/Image/share1.png";
+import shareshoptwo from "../../assets/Image/share2.png";
+import amazon from "../../assets/Image/amazon.png";
+import pebble from "../../assets/Image/pebble.png";
 import shephersInc from "../../../public/images/railogo.svg";
 function Partners({ t }) {
     return (
@@ -56,19 +61,19 @@ function Partners({ t }) {
                         <PartnerImage src={shephersInc} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={recoded} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={shareshop} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={pebble} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={shareshoptwo} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={amazon} />
                     </SwiperSlide>
                 </Swiper>
             </Container>

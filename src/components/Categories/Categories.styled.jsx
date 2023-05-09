@@ -11,6 +11,7 @@ export const ContainerBox = styled.div`
     flex-wrap: wrap;
     row-gap: 50px;
     column-gap: 40px;
+
     @media (min-width: 768px) and (max-width: 1400px) {
         column-gap: 28px;
         row-gap: 40px;
@@ -34,6 +35,11 @@ export const ContainerCategories = styled.div`
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        transform: translateY(-5px);
+        // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
     @media (min-width: 992px) and (max-width: 1400px) {
         width: 160px;
         height: 200px;

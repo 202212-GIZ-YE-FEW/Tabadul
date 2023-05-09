@@ -104,7 +104,7 @@ export const Checklabel = styled.label`
     line-height: 24px;
     text-align: center;
     color: #888c95;
-    margin-right: 300px;
+    margin-right: 250px;
     @media screen and (max-width: 600px) {
         margin-right: 0;
     }
@@ -128,6 +128,10 @@ export const Signinbutton = styled.button`
     margin-top: 40px;
     border: none;
     padding: 7px 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #267548;
+    }
     @media screen and (max-width: 768px) {
         width: 280px;
     }

@@ -7,6 +7,11 @@ export const Container = styled.div`
     border-radius: 20px;
     width: 338px;
     height: 413px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
 `;
 
 export const BlogCard = styled.div`

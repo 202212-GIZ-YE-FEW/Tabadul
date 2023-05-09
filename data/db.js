@@ -1,6 +1,12 @@
 import CardListed from "../public/images/Cardimg.svg";
 import CategoriesImag from "../src/assets/Image/icon_clothes_hanger_label_.svg";
 import simplephoto from "../src/assets/Image/TeamPhoto.svg";
+import Aseel from "../src/assets/Image/aseel.jpg";
+import Sana from "../src/assets/Image/sana.jpg";
+import Maria from "../src/assets/Image/FB_IMG_1660682652060.jpg";
+import Sara from "../src/assets/Image/sara.jpg";
+import Yassin from "../src/assets/Image/yassin.jpg";
+import Ahmed from "../src/assets/Image/Ahmed.jpg";
 export const CATEGORIES = [
     {
         id: 1,
@@ -97,36 +103,36 @@ export const team = [
         id: 1,
         surename: "Ahmed Alrai",
         desc: "Frontend Developer",
-        memberImg: simplephoto,
+        memberImg: Ahmed,
     },
     {
         id: 2,
         surename: "Sara Salem",
         desc: "Frontend Developer",
-        memberImg: simplephoto,
+        memberImg: Sara,
     },
     {
         id: 3,
         surename: "Yassin Alhumaidi",
         desc: "Frontend Developer",
-        memberImg: simplephoto,
+        memberImg: Yassin,
     },
     {
         id: 4,
         surename: "Maria Abdullah",
         desc: "Frontend Developer",
-        memberImg: simplephoto,
+        memberImg: Maria,
     },
     {
         id: 5,
         surename: "Aseel Flihan",
         desc: "Frontend Developer",
-        memberImg: simplephoto,
+        memberImg: Aseel,
     },
     {
         id: 6,
         surename: "Sanaa Abo Hager",
         desc: "Frontend Developer",
-        memberImg: simplephoto,
+        memberImg: Sana,
     },
 ];

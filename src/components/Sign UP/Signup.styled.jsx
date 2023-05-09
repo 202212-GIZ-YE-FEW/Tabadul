@@ -106,6 +106,10 @@ export const SignButton = styled.button`
     height: 53px;
     text-align: center;
     text-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #267548;
+    }
     @media screen and (max-width: 1130px) {
         width: 222px;
         height: 52.77px;

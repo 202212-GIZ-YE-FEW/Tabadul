@@ -169,7 +169,7 @@ exports[`renders correctly 1`] = `
         className="css-11bfjdc"
       >
         <button
-          className="css-19qn6sk"
+          className="css-vebk6d"
           disabled={false}
           type="submit"
         >
@@ -186,7 +186,7 @@ exports[`renders correctly 1`] = `
           onTouchStart={[Function]}
         >
           <button
-            className="css-1hhxna"
+            className="css-1xzm0us"
             type="submit"
           >
             <span

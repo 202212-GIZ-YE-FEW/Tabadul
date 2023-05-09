@@ -16,6 +16,7 @@ export const ProductCard = styled.div`
     /* background: #ffffff; */
     margin: 10px;
     padding: 4px 4px 0 4px;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
         transform: translateY(-5px);

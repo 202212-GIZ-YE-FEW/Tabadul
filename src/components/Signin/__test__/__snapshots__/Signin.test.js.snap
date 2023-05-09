@@ -60,7 +60,7 @@ exports[`renders correctly 1`] = `
               />
             </div>
             <label
-              className="css-14nzprb"
+              className="css-1o2r7e5"
             >
               <input
                 checked={false}
@@ -71,7 +71,7 @@ exports[`renders correctly 1`] = `
               keepmeloggedin
             </label>
             <button
-              className="css-rrxtx3"
+              className="css-1vtmhct"
               type="submit"
             >
               <span
