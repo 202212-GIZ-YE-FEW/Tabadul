@@ -113,9 +113,14 @@ export const BtnResetPass = styled.button`
     font-size: 16px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-top: 20px;
+    transition: all 0.3s ease-in-out;
     &:disabled {
         opacity: 0.35;
     }
+    &:hover {
+        background-color: #267548;
+    }
+
     @media screen and (max-width: 768px) {
         width: 80%;
         padding: 8px 0;

@@ -6,6 +6,7 @@ export const AboutContainer = styled.div`
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
     @media (min-width: 768px) {
         width: 750px;
     }
@@ -27,6 +28,7 @@ export const HeroSection = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
     @media screen and (max-width: 991px) {
         height: auto;
         flex-direction: column-reverse;
@@ -82,6 +84,7 @@ export const ParagrhContent = styled.p`
 export const TeamSection = styled.div`
     padding-top: 75px;
     padding-bottom: 75px;
+
     @media screen and (max-width: 768px) {
         padding-top: 50px;
         padding-bottom: 50px;

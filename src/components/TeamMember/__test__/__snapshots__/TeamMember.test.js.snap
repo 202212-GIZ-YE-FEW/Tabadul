@@ -2,11 +2,11 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-wr9924"
+  className="css-pykfed"
 >
   <img
     alt="member"
-    className="css-tba05b"
+    className="css-1k947s2"
     data-nimg="1"
     decoding="async"
     height={300}

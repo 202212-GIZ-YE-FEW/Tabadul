@@ -2,10 +2,6 @@ import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { useFormik } from "formik";
 import React from "react";
 import swal from "sweetalert";
-
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
-
 import { basicSchema } from "@/schemas";
 import {
     BackToLogin,

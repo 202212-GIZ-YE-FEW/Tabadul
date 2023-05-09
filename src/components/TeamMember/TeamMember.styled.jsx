@@ -3,6 +3,7 @@ import Image from "next/image";
 
 export const TeamCard = styled.div`
     margin: auto;
+
     @media screen and (max-width: 768px) {
         display: flex;
         justify-content: center;
@@ -14,6 +15,11 @@ export const TeamImg = styled(Image)`
     max-width: 100%;
     border-radius: 50%;
     object-fit: contain;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+    }
     @media (min-width: 1200px) and (max-width: 1500px) {
         width: 250px;
     }

@@ -19,8 +19,6 @@ import {
     TeamSection,
     TextContent,
 } from "../../styles/aboutus.styled";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 function Aboutus() {
     const { t } = useTranslation("common");
     return (

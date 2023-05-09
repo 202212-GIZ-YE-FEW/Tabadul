@@ -286,6 +286,10 @@ export const ConfirmButton = styled.button`
     height: 48.77px;
     text-align: center;
     text-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #267548;
+    }
     @media screen and (max-width: 768px) {
         width: 117px;
         height: 38;
@@ -307,6 +311,10 @@ export const CancelButton = styled.button`
     width: 150px;
     height: 48.77px;
     background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: rgb(221, 230, 225);
+    }
     @media screen and (max-width: 768px) {
         width: 117px;
         height: 38;

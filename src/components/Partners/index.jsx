@@ -12,6 +12,11 @@ import {
     PartnersContainer,
 } from "./Partners.styled";
 import sevenUp from "../../assets/Image/sevenup.svg";
+import recoded from "../../assets/Image/recoded.png";
+import shareshop from "../../assets/Image/share1.png";
+import shareshoptwo from "../../assets/Image/share2.png";
+import amazon from "../../assets/Image/amazon.png";
+import pebble from "../../assets/Image/pebble.png";
 function Partners() {
     return (
         <PartnersContainer>
@@ -51,19 +56,19 @@ function Partners() {
                         <PartnerImage src={sevenUp} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={recoded} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={shareshop} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={pebble} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={shareshoptwo} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={amazon} />
                     </SwiperSlide>
                 </Swiper>
             </Container>
