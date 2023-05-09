@@ -109,22 +109,6 @@ exports[`renders correctly 1`] = `
           </a>
         </div>
         <div
-          onClick={[Function]}
-        >
-          <a
-            className="css-148a5t1"
-            href="/undefined/Profile"
-          >
-            <span
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "profile",
-                }
-              }
-            />
-          </a>
-        </div>
-        <div
           className="css-13uj0p8"
           onClick={[Function]}
         >

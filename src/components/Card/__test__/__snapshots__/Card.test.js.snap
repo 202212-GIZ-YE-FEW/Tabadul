@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <a
   className="css-1qj8w5r"
+  data-aos="zoom-in"
   href="/Products/undefined"
   onClick={[Function]}
   onMouseEnter={[Function]}

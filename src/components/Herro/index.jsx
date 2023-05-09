@@ -8,13 +8,12 @@ import {
 } from "./hero.style";
 import IntroductionImage from "./IntroductionImage";
 import IntroductionText from "./IntroductionText";
-
 function Hero() {
     return (
         <HeroSection>
             <Container>
                 <InnerContainer>
-                    <LeftSideDiv>
+                    <LeftSideDiv data-aos='fade-right'>
                         <IntroductionText />
                         <DonateButton />
                     </LeftSideDiv>

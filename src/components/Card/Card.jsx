@@ -36,7 +36,7 @@ function Card(props) {
         })} ${dateIntoArray?.[2]}`;
     }
     return (
-        <CardLink href={`/Products/${id}`} key={id}>
+        <CardLink href={`/Products/${id}`} key={id} data-aos='zoom-in'>
             <ProductCard>
                 <CardImage
                     src={productImage}

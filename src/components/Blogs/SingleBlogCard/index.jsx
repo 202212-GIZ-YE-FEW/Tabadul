@@ -24,7 +24,7 @@ function SingleBlogCard(props) {
     }
 
     return (
-        <Container>
+        <Container data-aos='fade-up'>
             <ImageContainer>
                 <BlogImage
                     src={blogImage}

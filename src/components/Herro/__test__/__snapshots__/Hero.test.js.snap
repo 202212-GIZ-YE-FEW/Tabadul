@@ -12,6 +12,7 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="css-eie7o"
+        data-aos="fade-right"
       >
         <div
           className="css-1j4g1g"
@@ -32,6 +33,7 @@ exports[`renders correctly 1`] = `
       <img
         alt="Introduction"
         className="css-9japz0"
+        data-aos="zoom-in"
         data-nimg="1"
         decoding="async"
         height={370}

@@ -18,7 +18,7 @@ function SingleBlog({ title, desc, id, photo }) {
         return t(word);
     }
     return (
-        <Blog>
+        <Blog data-aos='fade-up' data-aos-duration='1000'>
             <ContentSide>
                 <BlogHeading>{title}</BlogHeading>
                 <BlogParagraph>{desc?.substring(0, 170)}...</BlogParagraph>

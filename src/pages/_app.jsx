@@ -2,7 +2,8 @@ import { Poppins } from "next/font/google";
 import { useRouter } from "next/router";
 import { appWithTranslation, useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "@/styles/globals.css";
 
 import Loading from "@/components/Loading";
@@ -27,7 +28,9 @@ function MyApp({ Component, pageProps }) {
         let timer = setTimeout(() => setLoading(true), 500);
         return () => clearTimeout(timer);
     }, []);
-
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <>
             {loading ? (

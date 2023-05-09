@@ -27,7 +27,7 @@ function Aboutus() {
         <AboutSection>
             <AboutContainer>
                 <HeroSection>
-                    <TextContent>
+                    <TextContent data-aos='fade-right'>
                         <HeadingContent>{t("aboutheroheader")}</HeadingContent>
                         <ParagrhContent>
                             {t("aboutheroparagraph")}
