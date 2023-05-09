@@ -46,8 +46,6 @@ function Navbar() {
         { id: 3, text: translateMe("Products"), href: "/Products" },
 
         { id: 4, text: translateMe("Blogs"), href: "/Blogs" },
-
-        { id: 5, text: translateMe("profile"), href: "/Profile" },
     ];
 
     const [navActive, setNavActive] = useState(false);
