@@ -2,7 +2,8 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1ji0bqs"
+  className="css-1st69g8"
+  data-aos="fade-up"
 >
   <div
     className="css-13gji6y"

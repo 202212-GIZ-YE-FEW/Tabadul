@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-1yhlq7n"
+  className="css-apkfcd"
 >
   <div
     className="css-kp9m8d"
@@ -33,115 +33,147 @@ exports[`renders correctly 1`] = `
     >
       <a
         className="css-1dbkwr8"
-        href="/Aboutus"
+        href="/undefined/Aboutus"
       >
-        About us
+        Aboutus
       </a>
       <a
         className="css-1dbkwr8"
-        href="/Blogs"
+        href="/undefined/Blogs"
       >
         Blogs
       </a>
       <a
         className="css-1dbkwr8"
-        href="/Products"
+        href="/undefined/Products"
       >
-        Listed items
+        Products
       </a>
     </div>
     <div
       className="css-xvkl1c"
     >
       <p>
-        Contact Us
+        ContactUs
       </p>
       <div
         className="css-18icqaw"
       >
         <a
-          className="css-1i6zk58"
+          className="css-0"
+          href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <img
-            alt=""
-            className="css-3g96gi"
-            data-nimg="1"
-            decoding="async"
-            height={50}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/facebook .svg"
-            style={
-              Object {
-                "color": "transparent",
+          <a
+            className="css-1i6zk58"
+          >
+            <img
+              alt=""
+              className="css-3g96gi"
+              data-nimg="1"
+              decoding="async"
+              height={50}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/facebook .svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
               }
-            }
-            width={50}
-          />
+              width={50}
+            />
+          </a>
         </a>
         <a
-          className="css-1i6zk58"
+          className="css-0"
+          href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <img
-            alt=""
-            className="css-3g96gi"
-            data-nimg="1"
-            decoding="async"
-            height={50}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/instagram (2).svg"
-            style={
-              Object {
-                "color": "transparent",
+          <a
+            className="css-1i6zk58"
+          >
+            <img
+              alt=""
+              className="css-3g96gi"
+              data-nimg="1"
+              decoding="async"
+              height={50}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/instagram (2).svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
               }
-            }
-            width={50}
-          />
+              width={50}
+            />
+          </a>
         </a>
         <a
-          className="css-1i6zk58"
+          className="css-0"
+          href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <img
-            alt=""
-            className="css-3g96gi"
-            data-nimg="1"
-            decoding="async"
-            height={50}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/linkedin (2).svg"
-            style={
-              Object {
-                "color": "transparent",
+          <a
+            className="css-1i6zk58"
+          >
+            <img
+              alt=""
+              className="css-3g96gi"
+              data-nimg="1"
+              decoding="async"
+              height={50}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/linkedin (2).svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
               }
-            }
-            width={50}
-          />
+              width={50}
+            />
+          </a>
         </a>
         <a
-          className="css-1i6zk58"
+          className="css-0"
+          href="#"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <img
-            alt=""
-            className="css-3g96gi"
-            data-nimg="1"
-            decoding="async"
-            height={50}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/share.svg"
-            style={
-              Object {
-                "color": "transparent",
+          <a
+            className="css-1i6zk58"
+          >
+            <img
+              alt=""
+              className="css-3g96gi"
+              data-nimg="1"
+              decoding="async"
+              height={50}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/images/share.svg"
+              style={
+                Object {
+                  "color": "transparent",
+                }
               }
-            }
-            width={50}
-          />
+              width={50}
+            />
+          </a>
         </a>
       </div>
     </div>
@@ -152,10 +184,10 @@ exports[`renders correctly 1`] = `
         Address
       </p>
       <p>
-        street 01,07
+        street
       </p>
       <p>
-        Yemen, Sanaa
+        YemenSanaa
       </p>
     </div>
   </div>

@@ -1,4 +1,8 @@
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { useTranslation, withTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
+
+import { auth } from "@/utils/firebase";
 
 import {
     Arrow,
@@ -22,34 +26,34 @@ import {
     Navmenulist,
 } from "./Nav.styled";
 import { NavItem } from "./NavItem";
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "@/utils/firebase";
 
-const MENU_LIST = [
-    {
-        id: 1,
-        text: "Home",
+function Navbar() {
+    const { t } = useTranslation("common");
+    const translateMe = (word) => {
+        return t(word);
+    };
 
-        href: "/",
-    },
+    const MENU_LIST = [
+        {
+            id: 1,
+            text: translateMe("home"),
 
-    { id: 2, text: "About us", href: "/Aboutus" },
+            href: "/",
+        },
 
-    { id: 3, text: "Products", href: "/Products" },
+        { id: 2, text: translateMe("aboutus"), href: "/Aboutus" },
 
-    { id: 4, text: "Blogs", href: "/Blogs" },
+        { id: 3, text: translateMe("Products"), href: "/Products" },
 
-    { id: 5, text: "profile", href: "/Profile" },
-];
+        { id: 4, text: translateMe("Blogs"), href: "/Blogs" },
+    ];
 
-export default function Navbar() {
     const [navActive, setNavActive] = useState(false);
     const [activeIdx, setActiveIdx] = useState(false);
     const [navdroplan, setNavdroplan] = useState(false);
     const [navdrop, setNavdrop] = useState(false);
     const [width, setWidth] = useState(0);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-
     const signout = async () => {
         await signOut(auth);
     };
@@ -143,21 +147,28 @@ export default function Navbar() {
                                     {!isAuthenticated && (
                                         <LinkDiv>
                                             <Lanlink href='/Signin'>
-                                                Log in
+                                                {translateMe("Login")}
                                             </Lanlink>
                                         </LinkDiv>
                                     )}
                                     {!isAuthenticated && (
                                         <LinkDiv>
                                             <Lanlink href='/Signup'>
-                                                Sign up
+                                                {translateMe("Signup")}
                                             </Lanlink>
                                         </LinkDiv>
                                     )}
                                     {isAuthenticated && (
                                         <LinkDiv>
                                             <Lanlink onClick={signout} href='/'>
-                                                Log out
+                                                {translateMe("Logout")}
+                                            </Lanlink>
+                                        </LinkDiv>
+                                    )}
+                                    {isAuthenticated && (
+                                        <LinkDiv>
+                                            <Lanlink href='/Profile'>
+                                                Profile
                                             </Lanlink>
                                         </LinkDiv>
                                     )}
@@ -178,13 +189,13 @@ export default function Navbar() {
                                 <Dropdowncontent>
                                     <LinkDiv>
                                         <Lanlink href='#' locale='en'>
-                                            English
+                                            {translateMe("English")}
                                             <Lan src='/images/flag.svg' />
                                         </Lanlink>
                                     </LinkDiv>
                                     <LinkDiv>
                                         <Lanlink href='#' locale='ar'>
-                                            Arabic
+                                            {translateMe("Arabic")}
                                             <Lan src='/images/Saudi Arabia.svg' />
                                         </Lanlink>
                                     </LinkDiv>
@@ -197,3 +208,14 @@ export default function Navbar() {
         </Header>
     );
 }
+
+export default Navbar;
+
+// export async function getStaticProps({ locale }) {
+//     return {
+//         props: {
+//             ...(await serverSideTranslations(locale, ["common"])),
+//             // Will be passed to the page component as props
+//         },
+//     };
+// }

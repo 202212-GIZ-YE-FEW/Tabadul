@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
     <h1
       className="css-1pvbwn7"
     >
-      Popular Items
+      PopularItems
     </h1>
     <div
       className="css-1rmlzl6"

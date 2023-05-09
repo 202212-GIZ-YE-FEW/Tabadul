@@ -1,13 +1,15 @@
+import { useTranslation, withTranslation } from "next-i18next";
+
 import { HeroText, HeroTextContainer } from "./hero.style";
+
 const IntroductionText = () => {
+    const { t } = useTranslation("hero");
+    function translateMe(word) {
+        return t(word);
+    }
     return (
         <HeroTextContainer>
-            <HeroText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-            </HeroText>
+            <HeroText>{translateMe("herosectiontext")}</HeroText>
         </HeroTextContainer>
     );
 };

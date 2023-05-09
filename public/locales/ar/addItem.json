@@ -1,0 +1,22 @@
+{
+    "AddItem": "اضف منتج",
+    "Title": "العنوان",
+    "TitleisRequired": "العنوان مطلوب",
+    "titlePlaceholder": "اضف عنوانك هنا",
+    "Catogry": "الفئات",
+    "CategoryisRequired": "الفئات مطلوبة",
+    "Selectcatogryplaceholder": "اختار فئة",
+    "Selectcatogry": "اختار فئة",
+    "Location": "الموقع",
+    "LocationisRequired": "الموقع مطلوب",
+    "SelectLocation": "اختار الموقع الخاص بك",
+    "Description": "الوصف",
+    "DescriptionisRequired": " الوصف مطلوب",
+    "DescriptionItemplaceholder": "اضف الوصف هنا",
+    "UploadPhotossection": "اضف الصور",
+    "UploadPhotos": "اضف الصور",
+    "photosareRequired": "الصور مطلوبة",
+    "UploadPhotosplaceholder": "اضف صورك هنا",
+    "Confirm": "تأكيد",
+    "Cancel": "حذف"
+}

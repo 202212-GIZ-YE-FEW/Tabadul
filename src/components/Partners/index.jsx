@@ -1,5 +1,6 @@
+import { withTranslation } from "next-i18next";
 import React from "react";
-import { Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -17,10 +18,11 @@ import shareshop from "../../assets/Image/share1.png";
 import shareshoptwo from "../../assets/Image/share2.png";
 import amazon from "../../assets/Image/amazon.png";
 import pebble from "../../assets/Image/pebble.png";
-function Partners() {
+import shephersInc from "../../../public/images/railogo.svg";
+function Partners({ t }) {
     return (
         <PartnersContainer>
-            <Header>Our Partners</Header>
+            <Header>{t("OurPartners")}</Header>
             <Container>
                 <Swiper
                     breakpoints={{
@@ -46,14 +48,17 @@ function Partners() {
                             slidesPerView: 4,
                         },
                     }}
-                    modules={[Navigation, Pagination]}
+                    modules={[Autoplay, Navigation, Pagination]}
                     spaceBetween={50}
                     slidesPerView={3}
                     navigation
                     pagination={{ clickable: true }}
+                    autoplay={{
+                        delay: 3000,
+                    }}
                 >
                     <SwiperSlide>
-                        <PartnerImage src={sevenUp} />
+                        <PartnerImage src={shephersInc} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <PartnerImage src={recoded} />
@@ -76,4 +81,4 @@ function Partners() {
     );
 }
 
-export default Partners;
+export default withTranslation("common")(Partners);

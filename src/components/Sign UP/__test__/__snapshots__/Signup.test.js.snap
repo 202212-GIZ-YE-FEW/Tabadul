@@ -7,7 +7,7 @@ exports[`renders correctly 1`] = `
   <h2
     className="css-143k8nc"
   >
-    Sign Up
+    SignUp
   </h2>
   <div
     className="css-1ieito0"
@@ -22,14 +22,14 @@ exports[`renders correctly 1`] = `
         <label
           className="css-18drj25"
         >
-          Name
+          SignUpName
         </label>
         <input
           className="css-1uo441q"
           id="name"
           name="name"
           onChange={[Function]}
-          placeholder="Enter your name"
+          placeholder="EnterYourname"
           type="text"
           value=""
         />
@@ -40,14 +40,14 @@ exports[`renders correctly 1`] = `
         <label
           className="css-18drj25"
         >
-          Email
+          SignupEmail
         </label>
         <input
           className="css-1uo441q"
           id="email"
           name="email"
           onChange={[Function]}
-          placeholder="Enter your email"
+          placeholder="EnterYouremail"
           type="email"
           value=""
         />
@@ -66,7 +66,7 @@ exports[`renders correctly 1`] = `
           id="password"
           name="passwprd"
           onChange={[Function]}
-          placeholder="Enter your password"
+          placeholder="Enteryourpassword"
           type="password"
           value=""
         />
@@ -77,14 +77,14 @@ exports[`renders correctly 1`] = `
         <label
           className="css-18drj25"
         >
-          Confirm Password
+          ConfirmPassword
         </label>
         <input
           className="css-1uo441q"
           id="confirmpassword"
           name="confirmpassword"
           onChange={[Function]}
-          placeholder="Confirm your password"
+          placeholder="Confirmyourpassword"
           type="password"
           value=""
         />
@@ -102,7 +102,7 @@ exports[`renders correctly 1`] = `
           id="phone"
           name="phone"
           onChange={[Function]}
-          placeholder="Enter your Phone"
+          placeholder="EnteryourPhone"
           type="number"
           value=""
         />
@@ -126,7 +126,7 @@ exports[`renders correctly 1`] = `
             disabled={true}
             selected={true}
           >
-            Select Location
+            SelectLocation
           </option>
           <option
             className="css-0"
@@ -141,7 +141,7 @@ exports[`renders correctly 1`] = `
           <option
             className="css-0"
           >
-            Sanaa
+            Sana'a
           </option>
           <option
             className="css-0"
@@ -160,13 +160,13 @@ exports[`renders correctly 1`] = `
           <span
             className="css-f4tyiu"
           >
-            Sign UP
+            SignUPbutton
           </span>
         </button>
         <p
           className="css-1057m3k"
         >
-          Sign Up with
+          SignUpwith
         </p>
         <div
           className="css-1mzzuk6"
@@ -180,7 +180,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/Facebook.svg"
+            src="/images/Facebook.svg"
             style={
               Object {
                 "color": "transparent",
@@ -197,7 +197,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/Instagram.svg"
+            src="/images/Instagram.svg"
             style={
               Object {
                 "color": "transparent",
@@ -214,7 +214,7 @@ exports[`renders correctly 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="./images/Linkedin.svg"
+            src="/images/Linkedin.svg"
             style={
               Object {
                 "color": "transparent",

@@ -1,3 +1,4 @@
+import { useTranslation, withTranslation } from "next-i18next";
 import React from "react";
 
 import {
@@ -5,13 +6,21 @@ import {
     Footercss,
     Imgsocial,
     Imgsociallogo,
+    LinkSoial,
     PagesList,
     Section,
     Social,
     SocialLink,
 } from "./Footer.style";
+import { useRouter } from "next/router";
 
 function Footer() {
+    const router = useRouter();
+    const { t } = useTranslation("footer");
+    const translateMe = (word) => {
+        return t(word);
+    };
+
     return (
         <Footercss>
             <Container>
@@ -25,57 +34,68 @@ function Footer() {
                 </Section>
 
                 <Section>
-                    <PagesList href='/Aboutus'>About us</PagesList>
-                    <PagesList href='/Blogs'>Blogs</PagesList>
-                    <PagesList href='/Products'>Listed items</PagesList>
+                    <PagesList href={`/${router.locale}/Aboutus`}>
+                        {translateMe("Aboutus")}
+                    </PagesList>
+                    <PagesList href={`/${router.locale}/Blogs`}>
+                        {translateMe("Blogs")}
+                    </PagesList>
+                    <PagesList href={`/${router.locale}/Products`}>
+                        {translateMe("Products")}
+                    </PagesList>
                 </Section>
 
                 <Section>
-                    <p>Contact Us</p>
+                    <p>{translateMe("ContactUs")}</p>
 
                     <Social>
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/facebook .svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/instagram (2).svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/linkedin (2).svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
-
-                        <SocialLink>
-                            <Imgsocial
-                                src='/images/share.svg'
-                                alt=''
-                                width={50}
-                                height={50}
-                            />
-                        </SocialLink>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/facebook .svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/instagram (2).svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/linkedin (2).svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
+                        <LinkSoial href='#'>
+                            <SocialLink>
+                                <Imgsocial
+                                    src='/images/share.svg'
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                />
+                            </SocialLink>
+                        </LinkSoial>
                     </Social>
                 </Section>
 
                 <Section>
-                    <p>Address</p>
-                    <p>street 01,07</p>
-                    <p>Yemen, Sanaa</p>
+                    <p>{translateMe("Address")}</p>
+                    <p>{translateMe("street")}</p>
+                    <p>{translateMe("YemenSanaa")}</p>
                 </Section>
             </Container>
         </Footercss>

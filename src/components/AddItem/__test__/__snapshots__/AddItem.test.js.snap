@@ -7,7 +7,8 @@ exports[`renders correctly 1`] = `
   <h2
     className="css-te3fgk"
   >
-    Add Item 
+    AddItem
+     
   </h2>
   <div
     className="css-1ieito0"
@@ -33,7 +34,7 @@ exports[`renders correctly 1`] = `
           className="css-175bpda"
           name="title"
           onChange={[Function]}
-          placeholder="Placeholder"
+          placeholder="titlePlaceholder"
           type="text"
         />
       </div>
@@ -53,7 +54,7 @@ exports[`renders correctly 1`] = `
           className="css-1wke6u8"
           name="category"
           onChange={[Function]}
-          placeholder="Select catogry"
+          placeholder="Selectcatogryplaceholder"
           type="dropdown"
         >
           <option
@@ -61,7 +62,7 @@ exports[`renders correctly 1`] = `
             disabled={true}
             selected={true}
           >
-            Select catogry
+            Selectcatogry
           </option>
         </select>
       </div>
@@ -87,7 +88,7 @@ exports[`renders correctly 1`] = `
             disabled={true}
             selected={true}
           >
-            Select Location
+            SelectLocation
           </option>
         </select>
       </div>
@@ -108,7 +109,7 @@ exports[`renders correctly 1`] = `
           cols="105"
           name="description"
           onChange={[Function]}
-          placeholder="Description Item"
+          placeholder="DescriptionItemplaceholder"
           rows="10"
         />
       </div>
@@ -118,7 +119,7 @@ exports[`renders correctly 1`] = `
         <label
           className="css-s7589y"
         >
-          Upload Photos
+          UploadPhotossection
         </label>
         <div
           className="css-138mc57"
@@ -150,7 +151,7 @@ exports[`renders correctly 1`] = `
               <span
                 className="css-1byxpog"
               >
-                Upload Photos
+                UploadPhotos
               </span>
             </div>
             <input
@@ -158,7 +159,7 @@ exports[`renders correctly 1`] = `
               multiple={true}
               name="image"
               onChange={[Function]}
-              placeholder="Upload Photos"
+              placeholder="UploadPhotosplaceholder"
               type="file"
             />
           </div>

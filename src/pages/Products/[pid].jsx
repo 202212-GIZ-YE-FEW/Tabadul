@@ -11,6 +11,7 @@ import {
 import React, { useEffect, useState } from "react";
 import RelatedItems from "../../components/relatedItems/relatedItems";
 import styles from "./SingleProduct.module.css";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const SingleProduct = ({ Item }) => {
     const [relatedItems, setRelatedItems] = useState([]);
@@ -96,17 +97,22 @@ export async function getStaticPaths({ locales }) {
 
     return {
         paths,
-        fallback: false, // can also be true or 'blocking'
+        fallback: "blocking", // can also be true or 'blocking'
     };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
     const docRef = doc(db, "items", params.pid);
     const data = await getDoc(docRef);
     const ItemData = data.data();
     return {
         props: {
             Item: ItemData,
+            ...(await serverSideTranslations(locale, [
+                "SingleProduct",
+                "common",
+                "footer",
+            ])),
         },
     };
 }

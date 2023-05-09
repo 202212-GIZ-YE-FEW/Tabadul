@@ -12,6 +12,7 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="css-eie7o"
+        data-aos="fade-right"
       >
         <div
           className="css-1j4g1g"
@@ -19,19 +20,20 @@ exports[`renders correctly 1`] = `
           <p
             className="css-y41u20"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            herosectiontext
           </p>
         </div>
         <button
           className="css-1nhme29"
           onClick={[Function]}
         >
-           Donate Now
+          DonateNow
         </button>
       </div>
       <img
         alt="Introduction"
         className="css-9japz0"
+        data-aos="zoom-in"
         data-nimg="1"
         decoding="async"
         height={370}

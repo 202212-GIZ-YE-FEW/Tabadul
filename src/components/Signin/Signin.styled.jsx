@@ -65,7 +65,7 @@ export const Test = styled.div`
     align-items: center;
 `;
 export const Signintitle = styled.label`
-    width: 55px;
+    /* width: 55px; */
     height: 30px;
     left: 50px;
     top: 59px;
@@ -171,6 +171,7 @@ export const Linkparagraph = styled.a`
     text-decoration-line: underline;
     color: #4e5769;
     margin-left: 10px;
+    margin: 0 5px 0 5px;
     &:hover {
         color: #33956d;
     }

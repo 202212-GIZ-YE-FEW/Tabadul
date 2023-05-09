@@ -54,7 +54,7 @@ exports[`renders correctly 1`] = `
             <span
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "Home",
+                  "__html": "home",
                 }
               }
             />
@@ -70,7 +70,7 @@ exports[`renders correctly 1`] = `
             <span
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "About us",
+                  "__html": "aboutus",
                 }
               }
             />
@@ -103,22 +103,6 @@ exports[`renders correctly 1`] = `
               dangerouslySetInnerHTML={
                 Object {
                   "__html": "Blogs",
-                }
-              }
-            />
-          </a>
-        </div>
-        <div
-          onClick={[Function]}
-        >
-          <a
-            className="css-148a5t1"
-            href="/undefined/Profile"
-          >
-            <span
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "profile",
                 }
               }
             />

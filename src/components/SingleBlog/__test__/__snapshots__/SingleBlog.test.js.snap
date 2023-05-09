@@ -3,6 +3,8 @@
 exports[`renders correctly 1`] = `
 <div
   className="css-10ofioq"
+  data-aos="fade-up"
+  data-aos-duration="1000"
 >
   <div
     className="css-4nncao"
@@ -25,7 +27,7 @@ exports[`renders correctly 1`] = `
         onTouchStart={[Function]}
       >
         <span>
-          Read More
+          ReadMore
         </span>
       </a>
     </button>

@@ -1,5 +1,7 @@
-import React from "react";
 import Link from "next/link";
+import { withTranslation } from "next-i18next";
+import React from "react";
+
 import {
     RelatedItemsContainer,
     Title,
@@ -7,10 +9,10 @@ import {
 } from "../../components/ProductPgage/product.style";
 import Card from "../Card/Card";
 
-const RelatedItems = ({ relatedItems }) => {
+const RelatedItems = ({ relatedItems, t }) => {
     return (
         <RelatedItemsContainer>
-            <Title>Related Items</Title>
+            <Title>{t("RelatedItems")}</Title>
             <ProductsBox>
                 {relatedItems?.slice(0, 4).map((item) => (
                     <Card
@@ -29,4 +31,4 @@ const RelatedItems = ({ relatedItems }) => {
     );
 };
 
-export default RelatedItems;
+export default withTranslation("common")(RelatedItems);

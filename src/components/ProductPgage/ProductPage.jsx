@@ -14,6 +14,8 @@ import {
     RightArrow,
     StyledProduct,
 } from "./product.style";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 const Product = ({
     title,
@@ -24,6 +26,8 @@ const Product = ({
     phone,
     email,
 }) => {
+    const { t } = useTranslation("SingleProduct");
+    const router = useRouter();
     const [activeImage, setActiveImage] = useState(
         images.length > 0 ? images[0].url : ""
     );
@@ -111,7 +115,11 @@ const Product = ({
                         />
                         {location && location.name && (
                             <div>
-                                <p>{location.name}</p>
+                                <p>
+                                    {router.locale === "en"
+                                        ? location.name
+                                        : location.name_ar}
+                                </p>
                             </div>
                         )}
                     </LocationWrapper>
@@ -119,9 +127,15 @@ const Product = ({
                     <ContactInfo>
                         <InfoLogo src='/images/info.png' alt='Info' />
                         <div>
-                            <p>Name : {name}</p>
-                            <p>Phone :{phone}</p>
-                            <p>Email :{email}</p>
+                            <p>
+                                {t("name")} : {name}
+                            </p>
+                            <p>
+                                {t("phone")} : {phone}
+                            </p>
+                            <p>
+                                {t("Email")} : {email}
+                            </p>
                         </div>
                     </ContactInfo>
                 </ProductDetails>
