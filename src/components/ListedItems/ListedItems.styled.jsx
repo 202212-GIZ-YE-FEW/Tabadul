@@ -107,6 +107,7 @@ export const MenuList = styled.ul`
     padding-right: 0;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    z-index: 2;
 `;
 export const MenuItemDiv = styled.div`
     text-align: start;
