@@ -20,7 +20,7 @@ const Causes = () => {
         <CausesContainer>
             <CausesWord> {translateMe("Causes")}</CausesWord>
             <ThreeCausesDiv>
-                <SingleCause>
+                <SingleCause data-aos='fade-right'>
                     <Image
                         src='/Causes/causes1.svg'
                         width={100}
@@ -40,7 +40,7 @@ const Causes = () => {
                     <Title>{t("cooperation")}</Title>
                     <Paragraph>{t("cooperationartical")}</Paragraph>
                 </SingleCause>
-                <SingleCause>
+                <SingleCause data-aos='fade-left'>
                     <Image
                         src='/Causes/causes3.svg'
                         width={100}

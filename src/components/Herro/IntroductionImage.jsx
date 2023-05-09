@@ -7,6 +7,7 @@ const IntroductionImage = () => {
             alt='Introduction'
             width='470'
             height='370'
+            data-aos='zoom-in'
         />
     );
 };
