@@ -76,3 +76,12 @@ export const Icon = styled(Image)`
         margin-left: 20px;
     }
 `;
+export const NoData = styled(Image)`
+    margin: 0 auto;
+    display: flex;
+    place-content: center;
+    max-width: 100%;
+    @media screen and (max-width: 786px) {
+        width: 70%;
+    }
+`;

@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import swal from "sweetalert";
 
+import noData from "@/assets/Image/nodata.svg";
 import { auth, db } from "@/utils/firebase";
 
 import {
@@ -11,6 +12,7 @@ import {
     Icon,
     ItemCard,
     ItemImage,
+    NoData,
     Text,
 } from "./MyItems.styled";
 import deleteIcon from "../../../../public/images/deleteIcon.svg";
@@ -54,29 +56,35 @@ const MyItems = () => {
     return (
         <>
             <Header>My Items</Header>
-            {relateditems && (
-                <Container>
-                    <ItemCard>
-                        <ItemImage
-                            src={relateditems?.image[0].url}
-                            alt='RealtedIcon'
-                            width={100}
-                            height={100}
-                        />
-                        <Text>{relateditems?.title}</Text>
-                        <Link
-                            href='/Updateproduct'
-                            style={{ marginLeft: "auto" }}
-                        >
-                            <Icon src={penIcon} alt='pen Icon' />
-                        </Link>
-                        <Icon
-                            src={deleteIcon}
-                            alt='Delete Icon'
-                            onClick={() => deleteProduct(relateditems.id)}
-                        />
-                    </ItemCard>
-                </Container>
+            {relateditems?.isEmptyArray ? (
+                relateditems?.map((ele, index) => {
+                    return (
+                        <Container key={index}>
+                            <ItemCard>
+                                <ItemImage
+                                    src={ele.image[0].url}
+                                    alt='RealtedIcon'
+                                    width={100}
+                                    height={100}
+                                />
+                                <Text>{ele.title}</Text>
+                                <Link
+                                    href='/Updateproduct'
+                                    style={{ marginLeft: "auto" }}
+                                >
+                                    <Icon src={penIcon} alt='pen Icon' />
+                                </Link>
+                                <Icon
+                                    src={deleteIcon}
+                                    alt='Delete Icon'
+                                    onClick={() => deleteProduct(ele.id)}
+                                />
+                            </ItemCard>
+                        </Container>
+                    );
+                })
+            ) : (
+                <NoData src={noData} />
             )}
         </>
     );
