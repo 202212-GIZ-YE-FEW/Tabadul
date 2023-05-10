@@ -27,6 +27,9 @@ const UserDetails = () => {
     const usersCollRef = collection(db, "users");
     const router = useRouter();
     const { t } = useTranslation("profile");
+    const translateMe = (word) => {
+        return t(word);
+    };
     useEffect(() => {
         const getalluser = async () => {
             try {
@@ -65,23 +68,24 @@ const UserDetails = () => {
                 <UserInfo>
                     <Section>
                         <Text>
-                            {t("name")} : {currentuser?.name}{" "}
+                            {translateMe("name")} : {currentuser?.name}{" "}
                             {currentuser?.lname}
                         </Text>
                         <Text>{currentuser?.location}</Text>
                     </Section>
                     <Section>
                         <Text>
-                            {t("phone")} : {currentuser?.phone}
+                            {translateMe("phone")} : {currentuser?.phone}
                         </Text>
                         <Text>
-                            {t("email")} : {currentuser?.email.substring(0, 16)}
+                            {translateMe("email")} :{" "}
+                            {currentuser?.email.substring(0, 16)}
                             ..
                         </Text>
                     </Section>
                     <Section>
                         <Text>
-                            {t("language")} : {localuser.language}
+                            {translateMe("language")} : {localuser.language}
                         </Text>
                     </Section>
                     <Button router={router.locale}>

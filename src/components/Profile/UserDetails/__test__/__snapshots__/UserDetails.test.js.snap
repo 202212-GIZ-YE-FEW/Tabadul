@@ -43,7 +43,7 @@ exports[`renders correctly 1`] = `
         className="css-35o1u0"
       >
         name
-         :  
+         : 
          
       </span>
       <span
@@ -57,13 +57,13 @@ exports[`renders correctly 1`] = `
         className="css-35o1u0"
       >
         phone
-         :  
+         : 
       </span>
       <span
         className="css-35o1u0"
       >
         email
-         :  
+         : 
         ..
       </span>
     </div>
@@ -79,7 +79,7 @@ exports[`renders correctly 1`] = `
       </span>
     </div>
     <button
-      className="css-jcwlzp"
+      className="css-u15tfz"
     >
       <a
         href="/Updateuser"
