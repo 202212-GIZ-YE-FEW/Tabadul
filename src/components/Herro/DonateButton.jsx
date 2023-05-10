@@ -26,7 +26,7 @@ const DonateButton = () => {
 
     function handleclick() {
         if (isAuthenticated) {
-            route.push("/AddItems");
+            route.push("/addToItem");
         } else {
             route.push("/Signin");
         }
