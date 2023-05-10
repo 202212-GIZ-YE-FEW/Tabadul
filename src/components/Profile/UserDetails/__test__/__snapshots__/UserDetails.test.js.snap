@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
     />
   </div>
   <div
-    className="css-qacvvt"
+    className="css-1e4byr1"
   >
     <div
       className="css-1yw0kxu"
@@ -42,6 +42,8 @@ exports[`renders correctly 1`] = `
       <span
         className="css-35o1u0"
       >
+        name
+         :  
          
       </span>
       <span
@@ -54,12 +56,14 @@ exports[`renders correctly 1`] = `
       <span
         className="css-35o1u0"
       >
-        Phone:
+        phone
+         :  
       </span>
       <span
         className="css-35o1u0"
       >
-        Email: 
+        email
+         :  
         ..
       </span>
     </div>
@@ -69,12 +73,13 @@ exports[`renders correctly 1`] = `
       <span
         className="css-35o1u0"
       >
-        Language: 
+        language
+         : 
         En
       </span>
     </div>
     <button
-      className="css-1oi2fkr"
+      className="css-jcwlzp"
     >
       <a
         href="/Updateuser"

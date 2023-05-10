@@ -16,6 +16,8 @@ import {
 } from "./UserDetails.style";
 import Pen from "../../../../public/images/pen.svg";
 import ProfileImage from "../../../../public/images/ProfilePlaceholder.svg";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 const UserDetails = () => {
     const localuser = {
@@ -23,6 +25,8 @@ const UserDetails = () => {
     };
     const [currentuser, setCurrentUser] = useState();
     const usersCollRef = collection(db, "users");
+    const router = useRouter();
+    const { t } = useTranslation("profile");
     useEffect(() => {
         const getalluser = async () => {
             try {
@@ -61,20 +65,26 @@ const UserDetails = () => {
                 <UserInfo>
                     <Section>
                         <Text>
-                            {currentuser?.name} {currentuser?.lname}
+                            {t("name")} : {currentuser?.name}{" "}
+                            {currentuser?.lname}
                         </Text>
                         <Text>{currentuser?.location}</Text>
                     </Section>
                     <Section>
-                        <Text>Phone:{currentuser?.phone}</Text>
                         <Text>
-                            Email: {currentuser?.email.substring(0, 16)}..
+                            {t("phone")} : {currentuser?.phone}
+                        </Text>
+                        <Text>
+                            {t("email")} : {currentuser?.email.substring(0, 16)}
+                            ..
                         </Text>
                     </Section>
                     <Section>
-                        <Text>Language: {localuser.language}</Text>
+                        <Text>
+                            {t("language")} : {localuser.language}
+                        </Text>
                     </Section>
-                    <Button>
+                    <Button router={router.locale}>
                         <Link href='/Updateuser'>
                             <PenImage src={Pen} alt='Edit' />
                         </Link>

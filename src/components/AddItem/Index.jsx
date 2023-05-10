@@ -48,6 +48,7 @@ import Link from "next/link";
 import Router from "next/router";
 import Image from "next/image";
 import thumbnail from "../../../public/thumbnails/default-image.png";
+import deleteIcon from "../../../public/addToItem/delete.svg";
 
 function AddItem({ categoriesList, locationList }) {
     const { t } = useTranslation("addItem");
@@ -352,7 +353,7 @@ function AddItem({ categoriesList, locationList }) {
                                             >
                                                 <DeleteIcon>
                                                     <Image
-                                                        src='./addToItem/delete.svg'
+                                                        src={deleteIcon}
                                                         alt='delete icon'
                                                         width={30}
                                                         height={30}
