@@ -157,6 +157,14 @@ export const Dropbtn = styled.button`
     align-items: center;
 `;
 
+export const LanguageDiv = styled.button`
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* bottom: 2px; */
+`;
+
 export const Dropdown = styled.div`
     /* display: flex; */
     position: relative;
@@ -232,12 +240,20 @@ export const NavButtons = styled.div`
 `;
 
 export const Imageicon = styled.img`
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+`;
+
+export const LangugaeIcon = styled.img`
+    height: 40px;
+    width: 40px;
+    position: relative;
+    /* bottom: 3px; */
 `;
 
 export const Arrow = styled.img`
     margin-left: 10px;
+    margin-right: 10px;
     height: 12px;
 `;
 
