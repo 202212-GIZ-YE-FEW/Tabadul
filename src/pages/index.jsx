@@ -44,7 +44,6 @@ export default function HomePage({ items, blogs }) {
 
                ^-^ just to make sure the nabvar is working 
             */}
-            {isAuthenticated && auth?.currentUser?.email}
             {/* {isAuthenticated && <button onClick={signout}>logout</button>} */}
             <Hero />
             <Causes />
