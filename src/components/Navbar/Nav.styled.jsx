@@ -162,7 +162,7 @@ export const LanguageDiv = styled.button`
     display: flex;
     flex-direction: row;
     align-items: center;
-    bottom: 2px;
+    /* bottom: 2px; */
 `;
 
 export const Dropdown = styled.div`
@@ -248,7 +248,7 @@ export const LangugaeIcon = styled.img`
     height: 40px;
     width: 40px;
     position: relative;
-    bottom: 3px;
+    /* bottom: 3px; */
 `;
 
 export const Arrow = styled.img`
