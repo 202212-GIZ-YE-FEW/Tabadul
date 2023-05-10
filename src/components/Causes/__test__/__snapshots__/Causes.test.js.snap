@@ -15,7 +15,6 @@ exports[`renders correctly 1`] = `
   >
     <div
       className="css-ie2zpt"
-      data-aos="fade-right"
     >
       <img
         alt="pic"
@@ -76,7 +75,6 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="css-ie2zpt"
-      data-aos="fade-left"
     >
       <img
         alt="pic"
