@@ -49,7 +49,7 @@ export const UserInfo = styled.div`
         flex-direction: column;
         height: 100%;
         width: 100%;
-        padding: 27px 0 31px;
+        /* padding: 27px 0 31px; */
     }
     @media screen and (max-width: 768px) {
         padding: 38px 0 0px 31px;
@@ -58,15 +58,35 @@ export const UserInfo = styled.div`
 
 export const Button = styled.button`
     background: #e8e8e8;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: ${(props) =>
+        props.router === "en" ? "0px 20px 20px 0px" : "20px 0px 0 20px"};
     border: none;
     width: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 
+    &:first-child{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    } */
 
     @media screen and (max-width: 768px) {
         background: #f5f5f5;
         position: absolute;
         top: 15px;
         right: -2px;
+    }
+    @media screen and (max-width: 991px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        /* height: 100%; */
+        width: auto;
+        margin: 0 5px 0 5px;
+        border-radius: 0 0 20px 20px;
+        /* padding: 27px 0 31px; */
     }
 `;
 export const PenImage = styled(Image)`

@@ -16,6 +16,7 @@ import {
     IconVector,
     Imageicon,
     Lan,
+    LangugaeIcon,
     Lanlink,
     LinkDiv,
     Mynav,
@@ -26,6 +27,7 @@ import {
     Navmenulist,
 } from "./Nav.styled";
 import { NavItem } from "./NavItem";
+import { useRouter } from "next/router";
 
 function Navbar() {
     const { t } = useTranslation("common");
@@ -33,6 +35,7 @@ function Navbar() {
         return t(word);
     };
 
+    const router = useRouter();
     const MENU_LIST = [
         {
             id: 1,
@@ -182,23 +185,32 @@ function Navbar() {
                                     setTimeout(() => setNavdroplan(false), 100)
                                 }
                             >
-                                <Imageicon src='/images/flag.svg' />
+                                <LangugaeIcon
+                                    src={
+                                        router.locale === "en"
+                                            ? "/images/flag.svg"
+                                            : "/images/Yemen_flag.svg"
+                                    }
+                                />
                                 <Arrow src='/images/arrow.svg' />
                             </Dropbtn>
                             {navdroplan && (
                                 <Dropdowncontent>
-                                    <LinkDiv>
-                                        <Lanlink href='#' locale='en'>
-                                            {translateMe("English")}
-                                            <Lan src='/images/flag.svg' />
-                                        </Lanlink>
-                                    </LinkDiv>
-                                    <LinkDiv>
-                                        <Lanlink href='#' locale='ar'>
-                                            {translateMe("Arabic")}
-                                            <Lan src='/images/Saudi Arabia.svg' />
-                                        </Lanlink>
-                                    </LinkDiv>
+                                    {router.locale === "en" ? (
+                                        <LinkDiv>
+                                            <Lanlink href='#' locale='ar'>
+                                                {translateMe("Arabic")}
+                                                <Lan src='/images/Yemen_flag.svg' />
+                                            </Lanlink>
+                                        </LinkDiv>
+                                    ) : (
+                                        <LinkDiv>
+                                            <Lanlink href='#' locale='en'>
+                                                {translateMe("English")}
+                                                <Lan src='/images/flag.svg' />
+                                            </Lanlink>
+                                        </LinkDiv>
+                                    )}
                                 </Dropdowncontent>
                             )}
                         </Dropdown>

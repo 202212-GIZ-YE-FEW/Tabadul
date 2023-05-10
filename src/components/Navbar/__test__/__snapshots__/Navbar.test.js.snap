@@ -127,7 +127,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
           >
             <img
-              className="css-55gwj7"
+              className="css-133tte9"
               src="/images/users.svg"
             />
           </button>
@@ -141,11 +141,11 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
           >
             <img
-              className="css-55gwj7"
-              src="/images/flag.svg"
+              className="css-e6717m"
+              src="/images/Yemen_flag.svg"
             />
             <img
-              className="css-jcgd1c"
+              className="css-qgmdbs"
               src="/images/arrow.svg"
             />
           </button>
