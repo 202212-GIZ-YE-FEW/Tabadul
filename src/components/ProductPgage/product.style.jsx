@@ -175,6 +175,7 @@ export const RelatedItemsContainer = styled.div`
 export const ProductsBox = styled.div`
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
     padding: 20px;
 `;

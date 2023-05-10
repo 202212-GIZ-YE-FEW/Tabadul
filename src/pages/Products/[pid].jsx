@@ -62,11 +62,11 @@ const SingleProduct = ({ Item }) => {
 
     return (
         <div>
-            {loading && (
+            {/* {loading && (
                 <div className={styles["loading-message"]}>
                     <div className={styles.loader}></div>
                 </div>
-            )}
+            )} */}
             <Product
                 title={Item.title}
                 description={Item.description}
