@@ -30,6 +30,7 @@ export const ItemCard = styled.div`
     width: 1458px;
     height: 104.63px;
     max-width: 100%;
+    margin-bottom: 40px;
     @media screen and (max-width: 768px) {
         height: 100%;
         align-items: center;
@@ -74,5 +75,14 @@ export const Icon = styled(Image)`
         width: 28px;
         height: 29px;
         margin-left: 20px;
+    }
+`;
+export const NoData = styled(Image)`
+    margin: 0 auto;
+    display: flex;
+    place-content: center;
+    max-width: 100%;
+    @media screen and (max-width: 786px) {
+        width: 70%;
     }
 `;

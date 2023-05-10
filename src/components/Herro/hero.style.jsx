@@ -3,8 +3,6 @@ import Image from "next/image";
 
 export const HeroSection = styled.div`
     background-color: #f1f1f1;
-    height: calc(100vh - 50px);
-
     @media screen and (max-width: 1200px) {
         height: auto;
         padding-bottom: 50px;
