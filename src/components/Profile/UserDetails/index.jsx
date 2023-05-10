@@ -27,9 +27,10 @@ const UserDetails = () => {
     const usersCollRef = collection(db, "users");
     const router = useRouter();
     const { t } = useTranslation("profile");
-    const translateMe = (word) => {
+
+    function translateMe(word) {
         return t(word);
-    };
+    }
     useEffect(() => {
         const getalluser = async () => {
             try {

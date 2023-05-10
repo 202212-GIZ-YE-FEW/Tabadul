@@ -63,7 +63,8 @@ exports[`renders correctly 1`] = `
         className="css-35o1u0"
       >
         email
-         : 
+         :
+         
         ..
       </span>
     </div>
