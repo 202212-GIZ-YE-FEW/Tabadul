@@ -30,6 +30,7 @@ export const ItemCard = styled.div`
     width: 1458px;
     height: 104.63px;
     max-width: 100%;
+    margin-bottom: 40px;
     @media screen and (max-width: 768px) {
         height: 100%;
         align-items: center;

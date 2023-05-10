@@ -23,6 +23,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right, #013299, #395faf);
+    background: linear-gradient(to right, #36926e, #36926e);
     border-radius: 3px;
 }

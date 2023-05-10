@@ -3,7 +3,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import swal from "sweetalert";
 
-import noData from "@/assets/Image/nodata.svg";
 import { auth, db } from "@/utils/firebase";
 
 import {
@@ -17,6 +16,7 @@ import {
 } from "./MyItems.styled";
 import deleteIcon from "../../../../public/images/deleteIcon.svg";
 import penIcon from "../../../../public/images/itemsPen.svg";
+import noData from "../../../assets/Image/nodata.svg";
 
 const MyItems = () => {
     const [relateditems, setrelateditems] = useState();
@@ -32,7 +32,7 @@ const MyItems = () => {
                     .filter((ele) => {
                         return ele.userId === auth.currentUser.uid;
                     });
-                setrelateditems(itemsDocs[0]);
+                setrelateditems(itemsDocs);
             } catch (err) {
                 console.error(err);
             }
@@ -53,10 +53,11 @@ const MyItems = () => {
             console.log(error);
         }
     };
+    console.log(relateditems);
     return (
         <>
             <Header>My Items</Header>
-            {relateditems?.isEmptyArray ? (
+            {relateditems?.length > 0 ? (
                 relateditems?.map((ele, index) => {
                     return (
                         <Container key={index}>
