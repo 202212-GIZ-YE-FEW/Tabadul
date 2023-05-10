@@ -13,21 +13,10 @@ import PopularItemsSection from "@/components/PopularItemsSection";
 import ScrollTop from "@/components/ScrollTop";
 import Statistics from "@/components/Statistics/Statistics";
 
-import { auth, fetchBlogs, fetchItems } from "@/utils/firebase";
+import { fetchBlogs, fetchItems } from "@/utils/firebase";
 
 export default function HomePage({ items, blogs }) {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
-
     const { t } = useTranslation("common");
-
-    useEffect(() => {
-        const Listerner = onAuthStateChanged(auth, async (user) => {
-            setIsAuthenticated(Boolean(user));
-        });
-        return () => {
-            Listerner();
-        };
-    }, []);
 
     return (
         <div>
@@ -44,8 +33,6 @@ export default function HomePage({ items, blogs }) {
 
                ^-^ just to make sure the nabvar is working 
             */}
-            {isAuthenticated && auth?.currentUser?.email}
-            {/* {isAuthenticated && <button onClick={signout}>logout</button>} */}
             <Hero />
             <Causes />
             <Statistics />

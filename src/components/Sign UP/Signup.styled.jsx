@@ -143,7 +143,7 @@ export const Imgdev = styled.div`
 `;
 
 export const FaceBook = styled(Image)`
-    padding: 10px;
+    padding: 7px;
     bottom: 0;
 `;
 

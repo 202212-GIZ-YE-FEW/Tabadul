@@ -117,54 +117,21 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Facebook"
-            className="css-1vai4q9"
+            className="css-tgyjcj"
             data-nimg="1"
             decoding="async"
-            height={42.3}
+            height={70.3}
             loading="lazy"
+            onClick={[Function]}
             onError={[Function]}
             onLoad={[Function]}
-            src="/images/Facebook.svg"
+            src="/images/google.svg"
             style={
               Object {
                 "color": "transparent",
               }
             }
-            width={42.3}
-          />
-          <img
-            alt="Instagram"
-            className="css-1vai4q9"
-            data-nimg="1"
-            decoding="async"
-            height={42.3}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/Instagram.svg"
-            style={
-              Object {
-                "color": "transparent",
-              }
-            }
-            width={42.3}
-          />
-          <img
-            alt="Linkedin"
-            className="css-1vai4q9"
-            data-nimg="1"
-            decoding="async"
-            height={42.3}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="/images/Linkedin.svg"
-            style={
-              Object {
-                "color": "transparent",
-              }
-            }
-            width={42.3}
+            width={70.3}
           />
         </div>
       </div>
