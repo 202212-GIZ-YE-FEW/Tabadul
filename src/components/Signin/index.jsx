@@ -41,7 +41,7 @@ import {
     Signinwith,
     Test,
 } from "./Signin.styled";
-
+import google from "../../../public/images/Google.svg";
 function Signin() {
     const { t } = useTranslation("signin");
     const [email, setEmail] = useState("");
@@ -172,8 +172,8 @@ function Signin() {
                         <Signinwith>{t("Loginwith")}</Signinwith>
                         <Imgsdev>
                             <FaceBookImg
-                                src='/images/google.svg'
-                                alt='Facebook'
+                                src={google}
+                                alt='Google'
                                 width={70.3}
                                 height={70.3}
                                 onClick={handleGoogleSignUp}

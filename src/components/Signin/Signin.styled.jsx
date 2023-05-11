@@ -220,6 +220,7 @@ export const Imgsdev = styled.div`
 export const FaceBookImg = styled(Image)`
     padding: 7px;
     bottom: 0;
+    cursor: pointer;
 `;
 
 export const InstagramImg = styled(Image)`

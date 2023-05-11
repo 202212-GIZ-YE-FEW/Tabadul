@@ -116,8 +116,8 @@ exports[`renders correctly 1`] = `
           className="css-1mzzuk6"
         >
           <img
-            alt="Facebook"
-            className="css-tgyjcj"
+            alt="Google"
+            className="css-118mud2"
             data-nimg="1"
             decoding="async"
             height={70.3}
@@ -125,7 +125,8 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
             onError={[Function]}
             onLoad={[Function]}
-            src="/images/google.svg"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
             style={
               Object {
                 "color": "transparent",
