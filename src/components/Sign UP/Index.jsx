@@ -23,7 +23,12 @@ import {
     SignTitle,
     Signwith,
 } from "./Signup.styled";
-import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
+import {
+    createUserWithEmailAndPassword,
+    GoogleAuthProvider,
+    signInWithPopup,
+    signOut,
+} from "firebase/auth";
 import { auth, db } from "@/utils/firebase";
 import { useRouter } from "next/router";
 import { addDoc, collection } from "firebase/firestore";
@@ -109,6 +114,25 @@ function Signup() {
             console.error(err);
             // alert("error")
             setLoading(false);
+        }
+    };
+
+    const handleGoogleSignUp = async () => {
+        const provider = new GoogleAuthProvider();
+        try {
+            await signInWithPopup(auth, provider).then(async (resulte) => {
+                const user = resulte.user;
+                console.log(user);
+                await addDoc(collection(db, "users"), {
+                    uid: user.uid,
+                    name: user?.displayName,
+                    phone: user?.phoneNumber,
+                    email: user?.email,
+                });
+                rout.push("/");
+            });
+        } catch {
+            console.log("error");
         }
     };
 
@@ -221,22 +245,11 @@ function Signup() {
                         <Signwith>{t("SignUpwith")}</Signwith>
                         <Imgdev>
                             <FaceBook
-                                src='/images/Facebook.svg'
+                                src='/images/google.svg'
                                 alt='Facebook'
-                                width={42.3}
-                                height={42.3}
-                            />
-                            <Instagram
-                                src='/images/Instagram.svg'
-                                alt='Instagram'
-                                width={42.3}
-                                height={42.3}
-                            />
-                            <Linedin
-                                src='/images/Linkedin.svg'
-                                alt='Linkedin'
-                                width={42.3}
-                                height={42.3}
+                                width={70.3}
+                                height={70.3}
+                                onClick={handleGoogleSignUp}
                             />
                         </Imgdev>
                     </InfoDev>

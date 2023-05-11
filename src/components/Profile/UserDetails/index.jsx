@@ -80,7 +80,7 @@ const UserDetails = () => {
                         </Text>
                         <Text>
                             {translateMe("email")} :{" "}
-                            {currentuser?.email.substring(0, 16)}
+                            {currentuser?.email?.substring(0, 16)}
                             ..
                         </Text>
                     </Section>
